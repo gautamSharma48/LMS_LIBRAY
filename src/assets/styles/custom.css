@@ -62,3 +62,8 @@ body {
 .bg-yellow-10 {
   background: linear-gradient(126deg, #f5a623, #f76b1c);
 }
+
+.login-sign-up-button:hover{
+  background: linear-gradient(126deg, #f5a623, #f76b1c);
+  @apply text-white-10;
+}
