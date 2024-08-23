@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth !important;
 }
@@ -58,5 +57,8 @@ body {
     font-family: "Roboto-Medium";
     src: url("../fonts/Roboto/Roboto-Medium.ttf");
   }
+}
 
+.bg-yellow-10 {
+  background: linear-gradient(126deg, #f5a623, #f76b1c);
 }

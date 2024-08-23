@@ -4,8 +4,8 @@ import history from "../../mangers/history";
 const BannerSection = () => {
   return (
     <>
-      <CustomBanner />
-      <img src="https://teclearns.com/images/main-banner.jpg" alt="" />
+      {/* <CustomBanner /> */}
+      <img className="h-[441px]" src="https://teclearns.com/images/main-banner.jpg" loading="lazy" alt="" />
       {/* <section className='bg-[url("https://teclearns.com/images/main-banner.jpg")] min-h-[500px]  h-auto w-full bg-no-repeat bg-cover bg-center relative'>
       </section> */}
     </>
