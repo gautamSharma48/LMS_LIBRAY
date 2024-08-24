@@ -42,10 +42,10 @@ const Header = () => {
             <span className="whitespace-nowrap text-ellipsis">Contact Us</span>
           </div>
           <div className="ml-5 flex items-center gap-2">
-          <button variant="outline" className="text-white-10 login-sign-up-button  whitespace-nowrap text-ellipsis cursor-pointer bg-black-10 h-10 px-3 rounded-sm">
+          <button onClick={()=>history.push("/login")} className="text-white-10 login-sign-up-button  whitespace-nowrap text-ellipsis cursor-pointer bg-black-10 h-10 px-3 rounded-sm">
             Login
           </button>
-          <button variant="outline" className="login-sign-up-button text-black whitespace-nowrap text-ellipsis cursor-pointer bg-white-10 px-3 h-10 text-center grid place-items-center rounded-sm">
+          <button onClick={()=>history.push("/sign-up")} className="login-sign-up-button text-black whitespace-nowrap text-ellipsis cursor-pointer bg-white-10 px-3 h-10 text-center grid place-items-center rounded-sm">
             Sign Up
             </button>
         </div>

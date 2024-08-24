@@ -71,3 +71,7 @@ body {
 .bg-courses{
  background: linear-gradient(242deg, #f49cae, #b05ce2);
 }
+
+.bg-blue-login{
+  background: linear-gradient(to top, #5E66D6, #4956BA, #777FFA);
+}

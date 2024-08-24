@@ -1,6 +1,44 @@
 import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 
+
+export const signUpData = []
+
+export const logoUrl="https://teclearns.com/images/logo.png";
+
+export const errorMessagesConstants = {
+  NAME_REQUIRED: "Username is required.",
+  PASSWORD_REQUIRED: "Password is required.",
+  PHONE_NUMBER_REQUIRED: "Phone Number is required.",
+  PASSWORD_MUST_8_CHARACTERS: "Password must be at least 8 characters.",
+  PASSWORD_ALPHA_NUMBER_ERROR:
+    "Password must include letters, numbers and special characters.",
+  INVALID_EMAIL: "Please enter a valid email.",
+  INVALID_PASSWORD: "Invalid password.",
+  NAME_IS_REQUIRED: "Please enter your name.",
+  EMAIL_REQUIRED: "Please enter your email.",
+  FEEDBACK_REQUIRED: "Please enter your feedback.",
+  USERID_REQUIRED: "User ID is required.",
+  CONFIRM_PASSWORD_REQUIRED: "Confirm password is required.",
+  PASSWORD_MUST_SAME: "New password and Confirm password must be same.",
+  ERROR_OCCURED_RAZORPAY:
+    "An error occurred while setting up razorpay, Please try again.",
+  LIMIT_EXCEEDED:
+    "You have exceeded your daily limit for stories. please consider upgrading your plan",
+  QUERY_LIMIT_EXCEEDED: "Reached the maximum number of queries for this month.",
+  PLAN_EXPIRED: "Plan expired, Please upgrade the plan.",
+  TENANT_INVITATION_ACCEPTED: "You have already given access to this account.",
+  ADD_TEST_QUESTIONS: "Please add test questions.",
+};
+
+export const successMessages = {
+  USER_INVITED: "User invited successfully.",
+  USER_UPDATED: "User updated successfully.",
+  COMPANY_SWITCHED: "Account switched successfully.",
+  SETTINGS_UPDATED: "Settings updated successfully.",
+  VERSION_DELETED: "Version deleted successfully.",
+};
+
 export const HeaderConstant = {
   name: "S",
   pages: [
