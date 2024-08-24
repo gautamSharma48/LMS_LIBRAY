@@ -67,6 +67,10 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      <div className='text-center my-5'>© 2022 Teclearns All rights Reserved.&nbsp;
+Terms & Conditions
+&nbsp;Legal & Privacy
+</div>
     </footer>
   );
 };
