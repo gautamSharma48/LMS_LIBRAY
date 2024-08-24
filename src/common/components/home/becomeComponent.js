@@ -1,4 +1,5 @@
 import React from "react";
+import CourseSection from "./courseSection";
 
 const data = [
   {
@@ -34,6 +35,7 @@ const BecomeComponent = () => {
           </div>
         ))}
       </div>
+      <CourseSection />
       <SectionComponent />
     </>
   );
@@ -51,9 +53,12 @@ const SectionComponent = () => {
         src="/business.png"
         alt="business"
       />
+      <div className="max-w-[1520px] mx-auto">
       <div className="text-2xl text-white-10 absolute  top-12 px-15 ">{data1}</div>
       <div className="text-xl text-white-10 absolute  top-20 px-15 ">{data2}</div>
       <button className="w-[170px] bg-white-10 hover:bg-indigo-600 hover:scale-110 hover:text-white-10 transition-all inset-0 top-29 mx-auto mt-5 uppercase h-10 rounded-sm text-ft12-18 text-[#0c5397] absolute">Learn more</button>
+      </div>
+     
     </div>
   );
 };

@@ -5,7 +5,7 @@ const BannerSection = () => {
   return (
     <>
       {/* <CustomBanner /> */}
-      <img className="h-[441px]" src="https://teclearns.com/images/main-banner.jpg" loading="lazy" alt="" />
+      <img className="min-h-[441px] w-full h-full" src="https://teclearns.com/images/main-banner.jpg" loading="lazy" alt="" />
       {/* <section className='bg-[url("https://teclearns.com/images/main-banner.jpg")] min-h-[500px]  h-auto w-full bg-no-repeat bg-cover bg-center relative'>
       </section> */}
     </>
