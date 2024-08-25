@@ -118,7 +118,7 @@ function SignUpScreen() {
         {isTop && (
            <div
            onClick={() => history.back()}
-           className="flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
+           className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
          >
            <BiLeftArrow
              alt=""
@@ -134,8 +134,9 @@ function SignUpScreen() {
          </div>
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 ">
-          <div className="flex mobile:py-10 pt-7 pb-7  drop-shadow-md ">
-            <img className=" " alt="" src={logoUrl} />
+          <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
+            <div className="text-center w-full text-2xl ">Sign up</div>
+            {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
           
           <div className="bg-white pt-8">
@@ -146,7 +147,7 @@ function SignUpScreen() {
               <input
                 placeholder="John smith"
                 autoComplete="off"
-                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full lg:w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
+                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
                 {...register("name", {
                   required: NAME_REQUIRED,
                   pattern: {
@@ -171,7 +172,7 @@ function SignUpScreen() {
                 autoComplete="off"
                 defaultValue={defaultEmail ? defaultEmail : ""}
                 readOnly={!!defaultEmail}
-                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full lg:w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
+                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
                 {...register("email", {
                   required: defaultEmail ? false : EMAIL_REQUIRED,
                   pattern: {
@@ -195,7 +196,7 @@ function SignUpScreen() {
                 placeholder="Password"
                 autoComplete="off"
                 type={passwordVisible ? "text" : "password"}
-                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full lg:w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
+                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
                 {...register("password", {
                   // pattern: {
                   //   value:
