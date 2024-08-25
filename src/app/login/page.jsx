@@ -235,7 +235,7 @@ function Login() {
             </div>
             <div className="flex items-center justify-between mb-13 ">
               <div className="flex justify-end font-PoppinsRegular font-normal text-ft15 text-white-10 md:text-black-10">
-                Don't have an account? Please
+                {"Don't have an account? Please"}
                 <Link
                   href={"/sign-up"}
                   className="text-blue-400 underline ml-1 font-InterRegular font-normal text-ft15"
