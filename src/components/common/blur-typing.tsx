@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import BlurFadeText from "./magicui/blur-fade-text";
+import BlurFadeText from "../magicui/blur-fade-text";
 
 interface CombinedAnimationProps {
   text: string;
