@@ -1,11 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Link  from "next/link";
-import { BiDotsHorizontalRounded, BiLoaderAlt, BiLeftArrow } from "react-icons/bi";
+import Link from "next/link";
+import { ChevronLeft, Loader } from "lucide-react";
 import LoginImage from "../../assets/lottie/login-image.json";
 import { signUpData, errorMessagesConstants, logoUrl } from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
+import Image from "next/image";
+import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD } =
   errorMessagesConstants;
@@ -86,7 +88,6 @@ function Login() {
         }}
         className="md:flex justify-center align-center px-5 py-auto h-full  md:w-1/2 md:static absolute w-full overflow-y-auto"
       >
-        
         <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
           <div className="flex">
             <Lottie options={defaultOptions} height={400} width={400} />
@@ -108,38 +109,42 @@ function Login() {
             <ChecklistItem key={index} checklistItem={item} />
           ))}
         </div>
-        <img
+        {/* <Image
           src="/images/login-side-frame.svg"
           alt=""
+          width={""}
+          height={}
           className="absolute bottom-0 right-0"
           style={{ position: "fixed" }}
-        />
+        /> */}
       </div>
       <div className="overflow-y-auto bg-white w-full md:w-1/2 tab:justify-center flex flex-col mobile:py-0 px-5 md:px-8">
         {isTop && (
-           <div
-           onClick={() => history.back()}
-           className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
-         >
-           <BiLeftArrow
-             alt=""
-             className="z-10"
-             src={
-               isHovered
-                 ? "/images/back-icon-hover.svg"
-                 : "/images/back-icon.svg"
-             }
-             onMouseEnter={handleMouseEnter}
-             onMouseLeave={handleMouseLeave}
-           />
-         </div>
+          <div
+            onClick={() => history.back()}
+            className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
+          >
+            <ChevronLeft
+              alt=""
+              className="z-10"
+              src={
+                isHovered
+                  ? "/images/back-icon-hover.svg"
+                  : "/images/back-icon.svg"
+              }
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
+          </div>
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 ">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-            <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">Sign in</div>
+            <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">
+              Sign in
+            </div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
-          
+
           <div className="bg-white pt-8">
             <label className="font-normal text-white-10 md:text-black-10 text-ft13 font-PoppinsMedium">
               Email ID
@@ -188,16 +193,12 @@ function Login() {
                   required: PASSWORD_REQUIRED,
                 })}
               />
-              <img
+              <div
                 className="right-4 top-6 my-auto absolute cursor-pointer"
-                alt=""
-                src={
-                  passwordVisible
-                    ? "/images/eye-icon.svg"
-                    : "/images/mask-icon.svg"
-                }
                 onClick={handlePasswordVisibility}
-              />
+              >
+                {passwordVisible ? <EyeOpenIcon /> : <EyeClosedIcon />}
+              </div>
             </div>
             {!!errors.password && (
               <div className="text-red-600 mb-1 font-PoppinsRegular text-ft2">
@@ -220,7 +221,7 @@ function Login() {
                 }  text-white-10 `}
               >
                 {loader ? (
-                  <BiLoaderAlt className="w-6 h-6 animate-spin" />
+                  <Loader className="w-6 h-6 animate-spin" />
                 ) : (
                   "Sign In"
                 )}
@@ -234,7 +235,7 @@ function Login() {
             </div>
             <div className="flex items-center justify-between mb-13 ">
               <div className="flex justify-end font-PoppinsRegular font-normal text-ft15 text-white-10 md:text-black-10">
-                 Don't have an account? Please
+                Don't have an account? Please
                 <Link
                   href={"/sign-up"}
                   className="text-blue-400 underline ml-1 font-InterRegular font-normal text-ft15"

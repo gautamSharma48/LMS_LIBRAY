@@ -1,11 +1,12 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { BiLeftArrow, BiLoaderAlt } from "react-icons/bi";
+import { ChevronLeft, Loader } from 'lucide-react';
 import LoginImage from "../../assets/lottie/login-image.json";
 import { signUpData, errorMessagesConstants } from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
+import Image from "next/image";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD, NAME_REQUIRED,NAME_IS_REQUIRED } =
   errorMessagesConstants;
@@ -108,7 +109,7 @@ function SignUpScreen() {
             <ChecklistItem key={index} checklistItem={item} />
           ))}
         </div>
-        <img
+        <Image
           src="/images/login-side-frame.svg"
           alt=""
           className="absolute bottom-0 right-0"
@@ -121,7 +122,7 @@ function SignUpScreen() {
            onClick={() => history.back()}
            className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
          >
-           <BiLeftArrow
+           <ChevronLeft
              alt=""
              className="z-10"
              src={
@@ -243,7 +244,7 @@ function SignUpScreen() {
                 }  text-white-10 `}
               >
                 {loader ? (
-                  <BiLoaderAlt className="w-6 h-6 animate-spin" />
+                  <Loader className="w-6 h-6 animate-spin" />
                 ) : (
                   "Sign Up"
                 )}
