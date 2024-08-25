@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { BiDotsHorizontalRounded, BiLoaderAlt } from "react-icons/bi";
+import { BiDotsHorizontalRounded, BiLeftArrow, BiLoaderAlt } from "react-icons/bi";
 import LoginImage from "../../assets/lottie/login-image.json";
 
 import { signUpData, errorMessagesConstants, logoUrl } from "../../constant";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
+import history from "../../mangers/history";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD, NAME_REQUIRED,NAME_IS_REQUIRED } =
   errorMessagesConstants;
@@ -115,22 +116,22 @@ function SignUpScreen() {
       </div>
       <div className="overflow-y-auto bg-white w-full md:w-1/2 tab:justify-center flex flex-col mobile:py-0 px-5 md:px-8">
         {isTop && (
-          <a
-            href="https://zbrain.ai/"
-            className="flex h-33px md:top-5 md:left-4 md:fixed mobile:mt-7"
-          >
-            <img
-              alt=""
-              className="z-10"
-              src={
-                isHovered
-                  ? "/images/back-icon-hover.svg"
-                  : "/images/back-icon.svg"
-              }
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            />
-          </a>
+           <div
+           onClick={() => history.back()}
+           className="flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
+         >
+           <BiLeftArrow
+             alt=""
+             className="z-10"
+             src={
+               isHovered
+                 ? "/images/back-icon-hover.svg"
+                 : "/images/back-icon.svg"
+             }
+             onMouseEnter={handleMouseEnter}
+             onMouseLeave={handleMouseLeave}
+           />
+         </div>
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 ">
           <div className="flex mobile:py-10 pt-7 pb-7  drop-shadow-md ">
