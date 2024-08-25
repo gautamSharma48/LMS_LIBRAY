@@ -8,11 +8,14 @@ import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
 import Image from "next/image";
 import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
+import { ToastAction } from "@/components/ui/toast";
+import { useToast } from "@/components/ui/use-toast";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD } =
   errorMessagesConstants;
 
 function Login() {
+  const { toast } = useToast();
   const [isTop, setIsTop] = useState(true);
   const [signInError, setSignInError] = useState("");
   const [loader, setloader] = useState(false);
@@ -42,7 +45,45 @@ function Login() {
     };
   }, []);
 
-  const handleLogin = async (data) => {};
+  const handleLogin = async (data) => {
+    const payload = {
+      email: data?.email,   // replace with the user's email
+      password: data?.password     // replace with the user's password
+    };
+  
+    try {
+      const response = await fetch("/api/user/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",  // Specify that you're sending JSON
+        },
+        body: JSON.stringify(payload),  // Convert the payload to a JSON string
+      });
+
+      const data = await response.json();  // Parse the JSON response
+  
+      if (!data.sucess) {
+        return toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "There was a problem with your request.",
+          action: <ToastAction altText="Try again">Try again</ToastAction>,
+        })
+      }
+      return toast({
+        variant: "default",
+        title: "Success",
+        color: "#34C759",
+        description: "Sign in successful",
+        // action: <ToastAction altText="Try again">Try again</ToastAction>,
+      })
+
+      console.log("Login successful:", data);
+      // Handle the successful login response here (e.g., storing token, redirecting user)
+    } catch (error) {
+      console.error("Error during login:", error);
+    }
+  };
 
   const handlePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);

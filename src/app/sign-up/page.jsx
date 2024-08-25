@@ -7,17 +7,21 @@ import { signUpData, errorMessagesConstants } from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
 import Image from "next/image";
+import { useToast } from "@/components/ui/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD, NAME_REQUIRED,NAME_IS_REQUIRED } =
   errorMessagesConstants;
 
 function SignUpScreen() {
+  const { toast } = useToast();
   const [isTop, setIsTop] = useState(true);
   const [signInError, setSignInError] = useState("");
   const [loader, setloader] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [isSigning, setIsSigning] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
   const [defaultEmail, setDefaultEmail] = useState("");
 
   const {
@@ -41,7 +45,44 @@ function SignUpScreen() {
     };
   }, []);
 
-  const handleLogin = async (data) => {};
+  const handleLogin = async (data) => {
+    const payload = {
+      name: data?.name,
+      email: data?.email,   // replace with the user's email
+      password: data?.password     // replace with the user's password
+    };
+  
+    try {
+      const response = await fetch("/api/user/create", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",  // Specify that you're sending JSON
+        },
+        body: JSON.stringify(payload),  // Convert the payload to a JSON string
+      });
+      const data = await response.json();  
+      console.log(data)
+  
+      if (!data.sucess) {
+        return toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "There was a problem with your request.",
+          action: <ToastAction altText="Try again">Try again</ToastAction>,
+        })
+      }
+      return toast({
+        variant: "default",
+        title: "Success",
+        description: "Sign up successful",
+        // action: <ToastAction altText="Try again">Try again</ToastAction>,
+      })
+      console.log("Login successful:", data);
+      // Handle the successful login response here (e.g., storing token, redirecting user)
+    } catch (error) {
+      console.error("Error during login:", error);
+    }
+  };
 
   const handlePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -152,11 +193,10 @@ function SignUpScreen() {
                 className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
                 {...register("name", {
                   required: NAME_REQUIRED,
-                  pattern: {
-                    value:
-                      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                    message: NAME_IS_REQUIRED,
-                  },
+                  // pattern: {
+                  //   value:
+                  //   message: NAME_IS_REQUIRED,
+                  // },
                 })}
               />
             </div>

@@ -1,11 +1,35 @@
 import { type ClassValue, clsx } from "clsx";
+import { NextApiResponse } from "next";
 import { twMerge } from "tailwind-merge";
+import axios from "axios";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export const apiErrorResponseMessage = (
+  res: NextApiResponse,
+  status: number,
+  message: string,
+  success?: boolean
+) => {
+  return res.status(status).json({ status, message, success:false });
+};
+
+export const apiSuccessResponseMessage = (
+  res: NextApiResponse,
+  status: number,
+  message: string,
+  response: any
+) => {
+  return res.status(status).json({ status, message, response: response,sucess:true });
+};
+
+
+const fetcher = (url: string) => axios.get(url).then((res) => res.data);
+
 export const handleError = (error: unknown) => {
+  console.log(error);
   if (error instanceof Error) {
     // This is a native JavaScript error (e.g., TypeError, RangeError)
     console.error(error.message);
