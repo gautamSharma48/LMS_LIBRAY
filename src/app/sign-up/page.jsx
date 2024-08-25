@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronLeft, Loader } from 'lucide-react';
-import LoginImage from "../../assets/lottie/login-image.json";
-import { signUpData, errorMessagesConstants } from "../../constants";
+import { signUpData, errorMessagesConstants, lottieImage } from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
 import Image from "next/image";
@@ -22,7 +21,6 @@ function SignUpScreen() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [isSigning, setIsSigning] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
   const [defaultEmail, setDefaultEmail] = useState("");
 
   const {
@@ -113,14 +111,7 @@ function SignUpScreen() {
     };
   }, []);
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: LoginImage,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+
 
   return (
     <div
@@ -136,7 +127,7 @@ function SignUpScreen() {
         
         <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
           <div className="flex">
-            <Lottie options={defaultOptions} height={400} width={400} />
+            <Lottie options={lottieImage?.signUpImage}  width={400} />
             <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-black-60 via-black-60/70 to-transparent pointer-events-none"></div>
           </div>
           {/* <div className="flex flex-col">
@@ -183,7 +174,7 @@ function SignUpScreen() {
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 my-auto lg:-my-0 ">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-          <div className="text-center w-full  text-white-10 md:text-blue-10 font-bold text-3xl ">
+          <div className="text-center w-full  text-white-10 md:text-blue-10 font-bold text-3xl uppercase ">
               Sign up
             </div>
             {/* <img className=" " alt="" src={logoUrl} /> */}

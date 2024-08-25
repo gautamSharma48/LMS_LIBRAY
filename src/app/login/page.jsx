@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronLeft, Loader } from "lucide-react";
-import LoginImage from "../../assets/lottie/login-image.json";
-import { signUpData, errorMessagesConstants, logoUrl } from "../../constants";
+import { signUpData, errorMessagesConstants, logoUrl, lottieImage } from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
 import Image from "next/image";
@@ -111,56 +110,13 @@ function Login() {
     };
   }, []);
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: LoginImage,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
 
   return (
     <div
       style={{ height: componentHeight }}
       className=" flex  lg:overflow-hidden"
     >
-      <div
-        style={{
-          background: "linear-gradient(to top, #5E66D6, #4956BA, #777FFA)",
-        }}
-        className="md:flex justify-center align-center px-5 py-auto h-full  md:w-1/2 md:static absolute w-full overflow-y-auto"
-      >
-        <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
-          <div className="flex">
-            <Lottie options={defaultOptions}  width={400} />
-            <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-black-60 via-black-60/70 to-transparent pointer-events-none"></div>
-          </div>
-          {/* <div className="flex flex-col">
-              <span className="font-PoppinsSemiBold text-white-10 text-ft7">
-                LMS
-              </span>
-              <span className=" text-grey-DDDFDE text-ft1 font-PoppinsRegular font-normal">
-                Bringing intelligence to your data.
-              </span>
-            </div> */}
-          <span className="md:flex hidden font-PoppinsSemiBold text-white-10 pt-9 text-ft24 w-90per">
-            Create a LMS account to get started with our platform!
-          </span>
-
-          {signUpData.map((item, index) => (
-            <ChecklistItem key={index} checklistItem={item} />
-          ))}
-        </div>
-        {/* <Image
-          src="/images/login-side-frame.svg"
-          alt=""
-          width={""}
-          height={}
-          className="absolute bottom-0 right-0"
-          style={{ position: "fixed" }}
-        /> */}
-      </div>
+     
       <div className="overflow-y-auto bg-white w-full md:w-1/2 tab:justify-center flex flex-col mobile:py-0 px-5 md:px-8">
         {isTop && (
           <div
@@ -182,7 +138,7 @@ function Login() {
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10  my-auto lg:-my-0">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-            <div className="text-center w-full  text-white-10 md:text-blue-10 font-bold text-3xl ">
+            <div className="text-center w-full  text-white-10 md:text-blue-10 font-bold text-3xl uppercase ">
               Sign in
             </div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
@@ -308,6 +264,42 @@ function Login() {
             </button> */}
           </div>
         </div>
+      </div>
+      <div
+        style={{
+          background: "linear-gradient(to top, #5E66D6, #4956BA, #777FFA)",
+        }}
+        className="md:flex justify-center align-center px-5 py-auto h-full  md:w-1/2 md:static absolute w-full overflow-y-auto"
+      >
+        <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
+          <div className="flex">
+            <Lottie options={lottieImage?.loginImage}  width={400} />
+            <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-black-60 via-black-60/70 to-transparent pointer-events-none"></div>
+          </div>
+          {/* <div className="flex flex-col">
+              <span className="font-PoppinsSemiBold text-white-10 text-ft7">
+                LMS
+              </span>
+              <span className=" text-grey-DDDFDE text-ft1 font-PoppinsRegular font-normal">
+                Bringing intelligence to your data.
+              </span>
+            </div> */}
+          <span className="md:flex hidden font-PoppinsSemiBold text-white-10 pt-9 text-ft24 w-90per">
+            Create a LMS account to get started with our platform!
+          </span>
+
+          {signUpData.map((item, index) => (
+            <ChecklistItem key={index} checklistItem={item} />
+          ))}
+        </div>
+        {/* <Image
+          src="/images/login-side-frame.svg"
+          alt=""
+          width={""}
+          height={}
+          className="absolute bottom-0 right-0"
+          style={{ position: "fixed" }}
+        /> */}
       </div>
     </div>
   );

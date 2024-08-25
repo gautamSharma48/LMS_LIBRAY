@@ -1,3 +1,5 @@
+import SignUpImage from "../assets/lottie/signup-image.json";
+import LoginImage from "../assets/lottie/login-image.json";
 export const signUpData = [];
 
 export const logoUrl="https://teclearns.com/images/logo.png" as string;
@@ -31,6 +33,25 @@ export const errorMessagesConstants = {
   PLAN_EXPIRED: "Plan expired, Please upgrade the plan.",
   TENANT_INVITATION_ACCEPTED: "You have already given access to this account.",
   ADD_TEST_QUESTIONS: "Please add test questions.",
+} as const;
+
+export const lottieImage = {
+  signUpImage: {
+    loop: true,
+    autoplay: true,
+    animationData: LoginImage,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  },
+  loginImage:  {
+    loop: true,
+    autoplay: true,
+    animationData: SignUpImage,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  }
 } as const;
 
 export const homeData = {
