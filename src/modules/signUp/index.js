@@ -85,11 +85,13 @@ function SignUpScreen() {
         style={{
           background: "linear-gradient(to top, #5E66D6, #4956BA, #777FFA)",
         }}
-        className="md:flex justify-center align-center px-5 py-auto h-full  w-1/2 hidden overflow-y-auto"
+        className="md:flex justify-center align-center px-5 py-auto h-full  md:w-1/2 md:static absolute w-full overflow-y-auto"
       >
+        
         <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
           <div className="flex">
             <Lottie options={defaultOptions} height={400} width={400} />
+            <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-red-400 via-red-400/70 to-transparent pointer-events-none"></div>
           </div>
           {/* <div className="flex flex-col">
               <span className="font-PoppinsSemiBold text-white-10 text-ft7">
@@ -99,7 +101,7 @@ function SignUpScreen() {
                 Bringing intelligence to your data.
               </span>
             </div> */}
-          <span className="font-PoppinsSemiBold text-white-10 pt-9 text-ft24 w-90per">
+          <span className="md:flex hidden font-PoppinsSemiBold text-white-10 pt-9 text-ft24 w-90per">
             Create a LMS account to get started with our platform!
           </span>
 
@@ -133,14 +135,14 @@ function SignUpScreen() {
            />
          </div>
         )}
-        <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 ">
+        <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 ">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-            <div className="text-center w-full text-2xl ">Sign up</div>
+            <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">Sign up</div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
           
           <div className="bg-white pt-8">
-          <label className="font-normal text-black-10 text-ft13 font-PoppinsMedium">
+          <label className="font-normal text-white-10 md:text-black-10  text-ft13 font-PoppinsMedium">
               Username
             </label>
             <div className="mt-2 mb-2">
@@ -163,7 +165,7 @@ function SignUpScreen() {
                 {errors.name.message}
               </div>
             )}
-            <label className="font-normal text-black-10 text-ft13 font-PoppinsMedium">
+            <label className="font-normal text-white-10 md:text-black-10 text-ft13 font-PoppinsMedium">
               Email ID
             </label>
             <div className="mt-2 mb-2">
@@ -188,7 +190,7 @@ function SignUpScreen() {
                 {errors.email.message}
               </div>
             )}
-            <label className="font-normal text-black-10 text-ft13 font-PoppinsMedium">
+            <label className="font-normal text-white-10 md:text-black-10text-ft13 font-PoppinsMedium">
               Password
             </label>
             <div className="mt-2 mb-2 relative">
@@ -248,14 +250,14 @@ function SignUpScreen() {
                 )}
               </button>
               <Link
-                className="flex mt-1 text-ft15 md:w-30per w-1/2 justify-end font-normal text-black-10 font-PoppinsRegular"
+                className="flex mt-1 text-ft15 md:w-30per w-1/2 justify-end font-normal  text-white-10 md:text-black-10 font-PoppinsRegular"
                 to="/forgot"
               >
                 Forgot Password?
               </Link>
             </div>
             <div className="flex items-center justify-between mb-13 ">
-              <div className="flex justify-end font-PoppinsRegular text-black-10 font-normal text-ft15">
+              <div className="flex justify-end font-PoppinsRegular font-normal text-ft15 text-white-10 md:text-black-10">
                  Do have an account? Please
                 <Link
                   to={"/login"}

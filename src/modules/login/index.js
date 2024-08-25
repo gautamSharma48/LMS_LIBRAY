@@ -80,35 +80,68 @@ function LoginScreen() {
       style={{ height: componentHeight }}
       className=" flex  lg:overflow-hidden"
     >
+      <div
+        style={{
+          background: "linear-gradient(to top, #5E66D6, #4956BA, #777FFA)",
+        }}
+        className="md:flex justify-center align-center px-5 py-auto h-full  md:w-1/2 md:static absolute w-full overflow-y-auto"
+      >
+        
+        <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
+          <div className="flex">
+            <Lottie options={defaultOptions} height={400} width={400} />
+            <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-red-400 via-red-400/70 to-transparent pointer-events-none"></div>
+          </div>
+          {/* <div className="flex flex-col">
+              <span className="font-PoppinsSemiBold text-white-10 text-ft7">
+                LMS
+              </span>
+              <span className=" text-grey-DDDFDE text-ft1 font-PoppinsRegular font-normal">
+                Bringing intelligence to your data.
+              </span>
+            </div> */}
+          <span className="md:flex hidden font-PoppinsSemiBold text-white-10 pt-9 text-ft24 w-90per">
+            Create a LMS account to get started with our platform!
+          </span>
+
+          {signUpData.map((item, index) => (
+            <ChecklistItem key={index} checklistItem={item} />
+          ))}
+        </div>
+        <img
+          src="/images/login-side-frame.svg"
+          alt=""
+          className="absolute bottom-0 right-0"
+          style={{ position: "fixed" }}
+        />
+      </div>
       <div className="overflow-y-auto bg-white w-full md:w-1/2 tab:justify-center flex flex-col mobile:py-0 px-5 md:px-8">
         {isTop && (
-          <div
-            onClick={() => history.back()}
-            className="hidden lg:flex h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-1 rounded-lg"
-          >
-            <BiLeftArrow
-              alt=""
-              className="z-10"
-              src={
-                isHovered
-                  ? "/images/back-icon-hover.svg"
-                  : "/images/back-icon.svg"
-              }
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            />
-          </div>
+           <div
+           onClick={() => history.back()}
+           className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
+         >
+           <BiLeftArrow
+             alt=""
+             className="z-10"
+             src={
+               isHovered
+                 ? "/images/back-icon-hover.svg"
+                 : "/images/back-icon.svg"
+             }
+             onMouseEnter={handleMouseEnter}
+             onMouseLeave={handleMouseLeave}
+           />
+         </div>
         )}
-        <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 ">
-        <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-            <div className="text-center w-full text-2xl ">Sign in</div>
+        <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 ">
+          <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
+            <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">Sign up</div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
-          <div className="flex font-PoppinsRegular font-semibold text-ft20 ">
-            {defaultEmail && <span>Sign in</span>}
-          </div>
+          
           <div className="bg-white pt-8">
-            <label className="font-normal text-black-10 text-ft13 font-PoppinsMedium">
+            <label className="font-normal text-white-10 md:text-black-10 text-ft13 font-PoppinsMedium">
               Email ID
             </label>
             <div className="mt-2 mb-2">
@@ -129,11 +162,11 @@ function LoginScreen() {
               />
             </div>
             {errors.email && (
-              <div className="text-red-50 font-PoppinsRegular text-ft2 mb-6">
+              <div className="text-red-600 font-PoppinsRegular text-ft2 mb-6">
                 {errors.email.message}
               </div>
             )}
-            <label className="font-normal text-black-10 text-ft13 font-PoppinsMedium">
+            <label className="font-normal text-white-10 md:text-black-10text-ft13 font-PoppinsMedium">
               Password
             </label>
             <div className="mt-2 mb-2 relative">
@@ -167,7 +200,7 @@ function LoginScreen() {
               />
             </div>
             {!!errors.password && (
-              <div className="text-red-50 mb-1 font-PoppinsRegular text-ft2">
+              <div className="text-red-600 mb-1 font-PoppinsRegular text-ft2">
                 {errors.password.message}
               </div>
             )}
@@ -189,19 +222,19 @@ function LoginScreen() {
                 {loader ? (
                   <BiLoaderAlt className="w-6 h-6 animate-spin" />
                 ) : (
-                  "Sign in"
+                  "Sign In"
                 )}
               </button>
               <Link
-                className="flex mt-1 text-ft15 md:w-30per w-1/2 justify-end font-normal text-black-10 font-PoppinsRegular"
+                className="flex mt-1 text-ft15 md:w-30per w-1/2 justify-end font-normal  text-white-10 md:text-black-10 font-PoppinsRegular"
                 to="/forgot"
               >
                 Forgot Password?
               </Link>
             </div>
             <div className="flex items-center justify-between mb-13 ">
-              <div className="flex justify-end font-PoppinsRegular text-black-10 font-normal text-ft15">
-                Don't have an account?
+              <div className="flex justify-end font-PoppinsRegular font-normal text-ft15 text-white-10 md:text-black-10">
+                 Don't have an account? Please
                 <Link
                   to={"/sign-up"}
                   className="text-blue-400 underline ml-1 font-InterRegular font-normal text-ft15"
@@ -231,39 +264,6 @@ function LoginScreen() {
             </button> */}
           </div>
         </div>
-      </div>
-      <div
-        style={{
-          background: "linear-gradient(to top, #5E66D6, #4956BA, #777FFA)",
-        }}
-        className="md:flex justify-center align-center px-5 py-auto h-full  w-1/2 hidden overflow-y-auto"
-      >
-        <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
-          <div className="flex">
-            <Lottie options={defaultOptions} height={400} width={400} />
-          </div>
-          {/* <div className="flex flex-col">
-              <span className="font-PoppinsSemiBold text-white-10 text-ft7">
-                LMS
-              </span>
-              <span className=" text-grey-DDDFDE text-ft1 font-PoppinsRegular font-normal">
-                Bringing intelligence to your data.
-              </span>
-            </div> */}
-          <span className="font-PoppinsSemiBold text-white-10 pt-9 text-ft24 w-90per">
-            Create a LMS account to get started with our platform!
-          </span>
-
-          {signUpData.map((item, index) => (
-            <ChecklistItem key={index} checklistItem={item} />
-          ))}
-        </div>
-        <img
-          src="/images/login-side-frame.svg"
-          alt=""
-          className="absolute bottom-0 right-0"
-          style={{ position: "fixed" }}
-        />
       </div>
     </div>
   );
