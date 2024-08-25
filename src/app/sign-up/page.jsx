@@ -181,7 +181,7 @@ function SignUpScreen() {
            />
          </div>
         )}
-        <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 ">
+        <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 my-auto lg:-my-0 ">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
             <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">Sign up</div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
