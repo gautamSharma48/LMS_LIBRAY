@@ -9,6 +9,7 @@ import Lottie from "react-lottie";
 import Image from "next/image";
 import { useToast } from "@/components/ui/use-toast";
 import { ToastAction } from "@/components/ui/toast";
+import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD, NAME_REQUIRED,NAME_IS_REQUIRED } =
   errorMessagesConstants;
@@ -46,6 +47,7 @@ function SignUpScreen() {
   }, []);
 
   const handleLogin = async (data) => {
+    setloader(true);
     const payload = {
       name: data?.name,
       email: data?.email,   // replace with the user's email
@@ -81,6 +83,9 @@ function SignUpScreen() {
       // Handle the successful login response here (e.g., storing token, redirecting user)
     } catch (error) {
       console.error("Error during login:", error);
+    }
+    finally{
+      setloader(false);
     }
   };
 
@@ -252,16 +257,12 @@ function SignUpScreen() {
                   required: PASSWORD_REQUIRED,
                 })}
               />
-              <img
+              <div
                 className="right-4 top-6 my-auto absolute cursor-pointer"
-                alt=""
-                src={
-                  passwordVisible
-                    ? "/images/eye-icon.svg"
-                    : "/images/mask-icon.svg"
-                }
                 onClick={handlePasswordVisibility}
-              />
+              >
+                {passwordVisible ? <EyeOpenIcon /> : <EyeClosedIcon />}
+              </div>
             </div>
             {!!errors.password && (
               <div className="text-red-600 mb-1 font-PoppinsRegular text-ft2">

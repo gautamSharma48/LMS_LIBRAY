@@ -46,6 +46,7 @@ function Login() {
   }, []);
 
   const handleLogin = async (data) => {
+    setloader(true);
     const payload = {
       email: data?.email,   // replace with the user's email
       password: data?.password     // replace with the user's password
@@ -77,11 +78,12 @@ function Login() {
         description: "Sign in successful",
         // action: <ToastAction altText="Try again">Try again</ToastAction>,
       })
-
-      console.log("Login successful:", data);
       // Handle the successful login response here (e.g., storing token, redirecting user)
     } catch (error) {
       console.error("Error during login:", error);
+    }
+    finally{
+      setloader(false);
     }
   };
 
