@@ -183,7 +183,9 @@ function SignUpScreen() {
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 my-auto lg:-my-0 ">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-            <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">Sign up</div>
+          <div className="text-center w-full  text-white-10 md:text-blue-10 font-bold text-3xl ">
+              Sign up
+            </div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
           
@@ -280,7 +282,7 @@ function SignUpScreen() {
               <button
                 onClick={handleSubmit(handleLogin)}
                 disabled={loader}
-                className={`bg-linear-grad-blue-10 w-[100px] outline-none flex justify-center py-[11px] px-4 text-ft14 font-PoppinsRegular font-medium rounded-md ${
+                className={`bg-blue-10 w-[100px] outline-none flex justify-center py-[11px] px-4 text-ft14 font-PoppinsRegular font-medium rounded-md ${
                   loader ? " opacity-60 cursor-not-allowed" : ""
                 }  text-white-10 `}
               >

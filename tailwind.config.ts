@@ -133,6 +133,9 @@ const config = {
         purple: {
           10: "#FF4500",
         },
+        blue:{
+          "10": "#646EDF"
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
