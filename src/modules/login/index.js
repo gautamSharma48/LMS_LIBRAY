@@ -136,7 +136,7 @@ function LoginScreen() {
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 ">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-            <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">Sign up</div>
+            <div className="text-center w-full text-2xl md:text-black-60 text-white-10 font-bold ">Sign in</div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
           
