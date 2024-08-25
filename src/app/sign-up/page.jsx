@@ -109,12 +109,12 @@ function SignUpScreen() {
             <ChecklistItem key={index} checklistItem={item} />
           ))}
         </div>
-        <Image
+        {/* <Image
           src="/images/login-side-frame.svg"
           alt=""
           className="absolute bottom-0 right-0"
           style={{ position: "fixed" }}
-        />
+        /> */}
       </div>
       <div className="overflow-y-auto bg-white w-full md:w-1/2 tab:justify-center flex flex-col mobile:py-0 px-5 md:px-8">
         {isTop && (
