@@ -133,7 +133,7 @@ function Login() {
       >
         <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
           <div className="flex">
-            <Lottie options={defaultOptions} height={400} width={400} />
+            <Lottie options={defaultOptions}  width={400} />
             <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-black-60 via-black-60/70 to-transparent pointer-events-none"></div>
           </div>
           {/* <div className="flex flex-col">
