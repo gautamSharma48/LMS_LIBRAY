@@ -28,7 +28,7 @@ function Login() {
     setValue,
   } = useForm({});
 
-  const [componentHeight, setComponentHeight] = useState(window.innerHeight);
+  const [componentHeight, setComponentHeight] = useState(0);
 
   const updateComponentHeight = () => {
     setComponentHeight(window.innerHeight);

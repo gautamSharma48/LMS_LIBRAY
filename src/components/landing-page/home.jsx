@@ -12,7 +12,7 @@ const HomePage = () => {
       />
       <div className="bg-white grid grid-cols-3 gap-10 max-w-[1124px] mx-auto relative -top-10 ">
         {homeData?.become?.map((ele, index) => (
-          <div className="relative">
+          <div key={index} className="relative">
             <div
               key={index}
               className="px-3 py-3 flex flex-col items-center gap-4 rounded-lg bg-linear-grad-yellow-10 shadow-md "

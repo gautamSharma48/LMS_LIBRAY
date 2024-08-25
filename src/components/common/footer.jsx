@@ -18,7 +18,7 @@ const Footer = () => {
             <div key={index} className="flex flex-col space-y-4">
               <h4 className="text-xl font-bold">{section.title}</h4>
               <ul className="list-disc pl-6 flex flex-col gap-2 cursor-pointer">
-                {section.items.map((item, itemIndex) => (
+                {section?.items?.map((item, itemIndex) => (
                   <li key={itemIndex} className="hover:underline">
                     <Link href={item.url}>{item.text}</Link>
                   </li>
