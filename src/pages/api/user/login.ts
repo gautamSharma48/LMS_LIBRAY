@@ -5,7 +5,6 @@ import {
   handleError,
 } from "@/lib/utils";
 import { NextApiRequest, NextApiResponse } from "next";
-import cookie from "cookie";
 
  const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== "POST") {
@@ -22,19 +21,8 @@ import cookie from "cookie";
   }
   try {
     const getUser = await loginUser({ email, password });
-    if (getUser) {
-     
-      res.setHeader(
-        "Set-Cookie",
-        cookie.serialize("token", getUser?.token, {
-          httpOnly: true, // Prevent access to the cookie from JavaScript
-          secure: process.env.NODE_ENV === "production", // Use secure cookies in production
-          maxAge: 60 * 60 * 24, // 1 day
-          sameSite: "strict", // Strictly send the cookie for same-site requests
-          path: "/", // Cookie will be accessible throughout the site
-        })
-      );
-
+    if (getUser) {  
+      res.setHeader('Set-Cookie', `token=${getUser?.token}; HttpOnly; Secure; Max-Age=86400; SameSite=Strict; Path=/`);
       return apiSuccessResponseMessage(res, 200, "login successfully", getUser);
     } else {
       return apiErrorResponseMessage(res, 404, "user not found", false);
