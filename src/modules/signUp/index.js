@@ -259,7 +259,7 @@ function SignUpScreen() {
                  Do have an account? Please
                 <Link
                   to={"/login"}
-                  className="text-blue-400 hover:underline ml-1 font-InterRegular font-normal text-ft15"
+                  className="text-blue-400 underline ml-1 font-InterRegular font-normal text-ft15"
                 >
                   Sign in
                 </Link>

@@ -84,7 +84,7 @@ function LoginScreen() {
         {isTop && (
           <div
             onClick={() => history.back()}
-            className="flex h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-1 rounded-lg"
+            className="hidden lg:flex h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-1 rounded-lg"
           >
             <BiLeftArrow
               alt=""
@@ -100,8 +100,9 @@ function LoginScreen() {
           </div>
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 ">
-          <div className="flex mobile:py-10 pt-7 pb-7  drop-shadow-md ">
-            <img className=" " alt="" src={logoUrl} />
+        <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
+            <div className="text-center w-full text-2xl ">Sign in</div>
+            {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
           <div className="flex font-PoppinsRegular font-semibold text-ft20 ">
             {defaultEmail && <span>Sign in</span>}
@@ -116,7 +117,7 @@ function LoginScreen() {
                 autoComplete="off"
                 defaultValue={defaultEmail ? defaultEmail : ""}
                 readOnly={!!defaultEmail}
-                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full lg:w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
+                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
                 {...register("email", {
                   required: defaultEmail ? false : EMAIL_REQUIRED,
                   pattern: {
@@ -140,7 +141,7 @@ function LoginScreen() {
                 placeholder="Password"
                 autoComplete="off"
                 type={passwordVisible ? "text" : "password"}
-                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full lg:w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
+                className="outline-none border-grey-10 rounded-[10px] h-14 relative mobile:w-full tab:w-full w-full px-[15px] pl-4 pr-10 border font-PoppinsMedium placeholder-grey-20"
                 {...register("password", {
                   // pattern: {
                   //   value:
@@ -203,7 +204,7 @@ function LoginScreen() {
                 Don't have an account?
                 <Link
                   to={"/sign-up"}
-                  className="text-blue-400 hover:underline ml-1 font-InterRegular font-normal text-ft15"
+                  className="text-blue-400 underline ml-1 font-InterRegular font-normal text-ft15"
                 >
                   Sign up
                 </Link>
