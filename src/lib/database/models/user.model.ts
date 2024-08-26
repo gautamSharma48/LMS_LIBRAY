@@ -6,7 +6,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
     unique: false,
-    trim: true
+    trim: true,
   },
   email: {
     type: String,
@@ -14,7 +14,7 @@ const userSchema = new Schema({
     unique: true,
     trim: true,
     lowercase: true,
-    match: [/.+\@.+\..+/, 'Please enter a valid email address'],
+    match: [/.+\@.+\..+/, "Please enter a valid email address"],
   },
   password: {
     type: String,
@@ -22,20 +22,21 @@ const userSchema = new Schema({
     minlength: 6,
   },
   token: {
-    type: String, 
+    type: String,
   },
   createdAt: {
     type: Date,
     default: Date.now,
   },
+  isVerified: { type: Boolean, default: false },
+  otp: { type: Number, default: null },
 });
 // Clear the model from the Mongoose cache if it exists
-if (models['lms-user']) {
-  delete models['lms-user'];
+if (models["lms-user"]) {
+  delete models["lms-user"];
 }
 
-
 // Check if the model already exists in the models cache
-const UserModel = model('lms-user', userSchema);
+const UserModel = model("lms-user", userSchema);
 
 export default UserModel;

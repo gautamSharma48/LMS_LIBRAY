@@ -9,11 +9,13 @@ import Image from "next/image";
 import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
 import { ToastAction } from "@/components/ui/toast";
 import { useToast } from "@/components/ui/use-toast";
+import { useRouter } from "next/navigation";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD } =
   errorMessagesConstants;
 
 function Login() {
+  const router = useRouter();
   const { toast } = useToast();
   const [isTop, setIsTop] = useState(true);
   const [signInError, setSignInError] = useState("");
@@ -70,13 +72,16 @@ function Login() {
           action: <ToastAction altText="Try again">Try again</ToastAction>,
         })
       }
-      return toast({
+       toast({
         variant: "default",
         title: "Success",
         color: "#34C759",
         description: "Sign in successful",
         // action: <ToastAction altText="Try again">Try again</ToastAction>,
       })
+      const  {otp, ...loginUser} =  data?.response 
+      localStorage.setItem("user",JSON.stringify(loginUser))
+      return data?.response?.isVerified ? router.push("/dashboard") : router.push("verify-otp")
       // Handle the successful login response here (e.g., storing token, redirecting user)
     } catch (error) {
       console.error("Error during login:", error);

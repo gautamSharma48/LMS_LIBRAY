@@ -1,5 +1,6 @@
 import SignUpImage from "../assets/lottie/signup-image.json";
 import LoginImage from "../assets/lottie/login-image.json";
+import OtpImage from "../assets/lottie/otp.json";
 export const signUpData = [];
 
 export const logoUrl="https://teclearns.com/images/logo.png" as string;
@@ -35,6 +36,16 @@ export const errorMessagesConstants = {
   ADD_TEST_QUESTIONS: "Please add test questions.",
 } as const;
 
+export const regexConstant = {
+  DIGIT_REGEX: new RegExp(/^\d+$/),
+  EMAIL_REGEX: new RegExp(
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  ),
+  PASSWORD_REGEX: new RegExp(
+    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~\\]{8,}$/
+  )
+};
+
 export const lottieImage = {
   signUpImage: {
     loop: true,
@@ -48,6 +59,14 @@ export const lottieImage = {
     loop: true,
     autoplay: true,
     animationData: SignUpImage,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  },
+  otpImage:  {
+    loop: true,
+    autoplay: true,
+    animationData: OtpImage,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

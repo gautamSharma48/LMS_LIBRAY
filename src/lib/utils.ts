@@ -26,7 +26,34 @@ export const apiSuccessResponseMessage = (
 };
 
 
-const fetcher = (url: string) => axios.get(url).then((res) => res.data);
+
+export async  function generateOTP(length = 6, options = { digits: true, alphabets: false }) {
+  const digits = '0123456789';
+  const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  let characters = '';
+
+  if (options.digits) {
+    characters += digits;
+  }
+  if (options.alphabets) {
+    characters += alphabets;
+  }
+
+  if (characters.length === 0) {
+    throw new Error('At least one option (digits or alphabets) must be true.');
+  }
+
+  let otp = '';
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    otp += characters[randomIndex];
+  }
+
+  return otp;
+}
+
+
+export const fetcher = (url: string) => axios.get(url).then((res) => res.data);
 
 export const handleError = (error: unknown) => {
   console.log(error);

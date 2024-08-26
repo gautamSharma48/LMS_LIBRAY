@@ -1,19 +1,32 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ChevronLeft, Loader } from 'lucide-react';
-import { signUpData, errorMessagesConstants, lottieImage } from "../../constants";
+import { ChevronLeft, Loader } from "lucide-react";
+import {
+  signUpData,
+  errorMessagesConstants,
+  lottieImage,
+} from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
 import Image from "next/image";
 import { useToast } from "@/components/ui/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
+import { useRouter } from "next/navigation";
+import axios from "axios";
 
-const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD, NAME_REQUIRED,NAME_IS_REQUIRED } =
-  errorMessagesConstants;
+const {
+  EMAIL_REQUIRED,
+  PASSWORD_REQUIRED,
+  INVALID_EMAIL,
+  INVALID_PASSWORD,
+  NAME_REQUIRED,
+  NAME_IS_REQUIRED,
+} = errorMessagesConstants;
 
 function SignUpScreen() {
+  const router = useRouter();
   const { toast } = useToast();
   const [isTop, setIsTop] = useState(true);
   const [signInError, setSignInError] = useState("");
@@ -48,41 +61,55 @@ function SignUpScreen() {
     setloader(true);
     const payload = {
       name: data?.name,
-      email: data?.email,   // replace with the user's email
-      password: data?.password     // replace with the user's password
+      email: data?.email, // replace with the user's email
+      password: data?.password, // replace with the user's password
     };
-  
+
     try {
       const response = await fetch("/api/user/create", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",  // Specify that you're sending JSON
+          "Content-Type": "application/json", // Specify that you're sending JSON
         },
-        body: JSON.stringify(payload),  // Convert the payload to a JSON string
+        body: JSON.stringify(payload), // Convert the payload to a JSON string
       });
-      const data = await response.json();  
-      console.log(data)
-  
-      if (!data.sucess) {
+      const result = await response.json();
+
+      if (!result.sucess) {
         return toast({
           variant: "destructive",
           title: "Uh oh! Something went wrong.",
-          description: "There was a problem with your request.",
+          description: data?.message || "something went wrong",
           action: <ToastAction altText="Try again">Try again</ToastAction>,
-        })
+        });
       }
-      return toast({
-        variant: "default",
-        title: "Success",
-        description: "Sign up successful",
-        // action: <ToastAction altText="Try again">Try again</ToastAction>,
-      })
-      console.log("Login successful:", data);
+
+      const loginPayload = {
+        email: data?.email, // replace with the user's email
+        password: data?.password, // replace with the user's password
+      };
+
+      const loginResponse = await axios.post("/api/user/login",loginPayload,{
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+      if (loginResponse?.data?.sucess) {
+        const  {otp, ...loginUser} =  loginResponse?.data?.response 
+        localStorage.setItem("user",JSON.stringify(loginUser));
+        const navigateUrl =  loginResponse?.data?.response?.isVerified ? "/dashboard" : "verify-otp";
+        toast({
+          variant: "default",
+          title: "Success",
+          description: "Sign up successful",
+          // action: <ToastAction altText="Try again">Try again</ToastAction>,
+        });
+        return router.push(navigateUrl);
+      }
       // Handle the successful login response here (e.g., storing token, redirecting user)
     } catch (error) {
       console.error("Error during login:", error);
-    }
-    finally{
+    } finally {
       setloader(false);
     }
   };
@@ -111,8 +138,6 @@ function SignUpScreen() {
     };
   }, []);
 
-
-
   return (
     <div
       style={{ height: componentHeight }}
@@ -124,10 +149,9 @@ function SignUpScreen() {
         }}
         className="md:flex justify-center align-center px-5 py-auto h-full  md:w-1/2 md:static absolute w-full overflow-y-auto"
       >
-        
         <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
           <div className="flex">
-            <Lottie options={lottieImage?.signUpImage}  width={400} />
+            <Lottie options={lottieImage?.signUpImage} width={400} />
             <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-black-60 via-black-60/70 to-transparent pointer-events-none"></div>
           </div>
           {/* <div className="flex flex-col">
@@ -155,33 +179,33 @@ function SignUpScreen() {
       </div>
       <div className="overflow-y-auto bg-white w-full md:w-1/2 tab:justify-center flex flex-col mobile:py-0 px-5 md:px-8">
         {isTop && (
-           <div
-           onClick={() => history.back()}
-           className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
-         >
-           <ChevronLeft
-             alt=""
-             className="z-10"
-             src={
-               isHovered
-                 ? "/images/back-icon-hover.svg"
-                 : "/images/back-icon.svg"
-             }
-             onMouseEnter={handleMouseEnter}
-             onMouseLeave={handleMouseLeave}
-           />
-         </div>
+          <div
+            onClick={() => history.back()}
+            className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
+          >
+            <ChevronLeft
+              alt=""
+              className="z-10"
+              src={
+                isHovered
+                  ? "/images/back-icon-hover.svg"
+                  : "/images/back-icon.svg"
+              }
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
+          </div>
         )}
         <div className="lg:mt-8 xl:w-499px xl:mx-auto mobile:pb-4 tab:mx-1 z-10 my-auto lg:-my-0 ">
           <div className="flex mobile:py-8 pt-7 pb-7  drop-shadow-md ">
-          <div className="text-center w-full  text-white-10 md:text-blue-10 font-bold text-3xl uppercase ">
+            <div className="text-center w-full  text-white-10 md:text-blue-10 font-bold text-3xl uppercase ">
               Sign up
             </div>
             {/* <img className=" " alt="" src={logoUrl} /> */}
           </div>
-          
+
           <div className="bg-white pt-8">
-          <label className="font-normal text-white-10 md:text-black-10  text-ft13 font-PoppinsMedium">
+            <label className="font-normal text-white-10 md:text-black-10  text-ft13 font-PoppinsMedium">
               Username
             </label>
             <div className="mt-2 mb-2">
@@ -292,7 +316,7 @@ function SignUpScreen() {
             </div>
             <div className="flex items-center justify-between mb-13 ">
               <div className="flex justify-end font-PoppinsRegular font-normal text-ft15 text-white-10 md:text-black-10">
-                 Do have an account? Please
+                Do have an account? Please
                 <Link
                   href={"/login"}
                   className="text-blue-400 underline ml-1 font-InterRegular font-normal text-ft15"
