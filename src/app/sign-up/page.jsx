@@ -9,12 +9,10 @@ import {
 } from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
-import Image from "next/image";
-import { useToast } from "@/components/ui/use-toast";
-import { ToastAction } from "@/components/ui/toast";
 import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 
 const {
   EMAIL_REQUIRED,
@@ -27,7 +25,6 @@ const {
 
 function SignUpScreen() {
   const router = useRouter();
-  const { toast } = useToast();
   const [isTop, setIsTop] = useState(true);
   const [signInError, setSignInError] = useState("");
   const [loader, setloader] = useState(false);
@@ -76,12 +73,7 @@ function SignUpScreen() {
       const result = await response.json();
 
       if (!result.sucess) {
-        return toast({
-          variant: "destructive",
-          title: "Uh oh! Something went wrong.",
-          description: data?.message || "something went wrong",
-          action: <ToastAction altText="Try again">Try again</ToastAction>,
-        });
+        return toast.error(data?.message || "something went wrong", {});
       }
 
       const loginPayload = {
@@ -89,24 +81,20 @@ function SignUpScreen() {
         password: data?.password, // replace with the user's password
       };
 
-      const loginResponse = await axios.post("/api/user/login",loginPayload,{
+      const loginResponse = await axios.post("/api/user/login", loginPayload, {
         headers: {
-          "Content-Type": "application/json"
-        }
+          "Content-Type": "application/json",
+        },
       });
       if (loginResponse?.data?.sucess) {
-        const  {otp, ...loginUser} =  loginResponse?.data?.response 
-        localStorage.setItem("user",JSON.stringify(loginUser));
-        const navigateUrl =  loginResponse?.data?.response?.isVerified ? "/dashboard" : "verify-otp";
-        toast({
-          variant: "default",
-          title: "Success",
-          description: "Sign up successful",
-          // action: <ToastAction altText="Try again">Try again</ToastAction>,
+        const navigateUrl = loginResponse?.data?.response?.isVerified
+          ? "/dashboard"
+          : `verify-otp/${loginResponse?.data?.response?._id}`;
+        toast.success("Sign up successful", {
+          style: { backgroundColor: "#34C759", color: "white" },
         });
-        return router.push(navigateUrl);
+        return router.replace(navigateUrl);
       }
-      // Handle the successful login response here (e.g., storing token, redirecting user)
     } catch (error) {
       console.error("Error during login:", error);
     } finally {

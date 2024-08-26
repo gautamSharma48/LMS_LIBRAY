@@ -2,13 +2,16 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronLeft, Loader } from "lucide-react";
-import { signUpData, errorMessagesConstants, logoUrl, lottieImage } from "../../constants";
+import {
+  signUpData,
+  errorMessagesConstants,
+  logoUrl,
+  lottieImage,
+} from "../../constants";
 import { useForm } from "react-hook-form";
 import Lottie from "react-lottie";
-import Image from "next/image";
 import { EyeClosedIcon, EyeOpenIcon } from "@radix-ui/react-icons";
-import { ToastAction } from "@/components/ui/toast";
-import { useToast } from "@/components/ui/use-toast";
+import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
 const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD } =
@@ -16,7 +19,6 @@ const { EMAIL_REQUIRED, PASSWORD_REQUIRED, INVALID_EMAIL, INVALID_PASSWORD } =
 
 function Login() {
   const router = useRouter();
-  const { toast } = useToast();
   const [isTop, setIsTop] = useState(true);
   const [signInError, setSignInError] = useState("");
   const [loader, setloader] = useState(false);
@@ -49,44 +51,35 @@ function Login() {
   const handleLogin = async (data) => {
     setloader(true);
     const payload = {
-      email: data?.email,   // replace with the user's email
-      password: data?.password     // replace with the user's password
+      email: data?.email, // replace with the user's email
+      password: data?.password, // replace with the user's password
     };
-  
+
     try {
       const response = await fetch("/api/user/login", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",  // Specify that you're sending JSON
+          "Content-Type": "application/json", // Specify that you're sending JSON
         },
-        body: JSON.stringify(payload),  // Convert the payload to a JSON string
+        body: JSON.stringify(payload), // Convert the payload to a JSON string
       });
 
-      const data = await response.json();  // Parse the JSON response
-  
+      const data = await response.json(); // Parse the JSON response
+
       if (!data.sucess) {
-        return toast({
-          variant: "destructive",
-          title: "Uh oh! Something went wrong.",
-          description: "There was a problem with your request.",
-          action: <ToastAction altText="Try again">Try again</ToastAction>,
-        })
+        return toast.error("There was a problem with your request.", {
+          className: "bg-green-10",
+        });
       }
-       toast({
-        variant: "default",
-        title: "Success",
-        color: "#34C759",
-        description: "Sign in successful",
-        // action: <ToastAction altText="Try again">Try again</ToastAction>,
-      })
-      const  {otp, ...loginUser} =  data?.response 
-      localStorage.setItem("user",JSON.stringify(loginUser))
-      return data?.response?.isVerified ? router.push("/dashboard") : router.push("verify-otp")
-      // Handle the successful login response here (e.g., storing token, redirecting user)
+      toast.success("Sign in successful", {
+        style: { backgroundColor: "#34C759",color: "white" },
+      });
+      return data?.response?.isVerified
+        ? router.replace("/dashboard")
+        : router.replace(`verify-otp/${data?.response?._id}`);
     } catch (error) {
       console.error("Error during login:", error);
-    }
-    finally{
+    } finally {
       setloader(false);
     }
   };
@@ -115,13 +108,11 @@ function Login() {
     };
   }, []);
 
-
   return (
     <div
       style={{ height: componentHeight }}
       className=" flex  lg:overflow-hidden"
     >
-     
       <div className="overflow-y-auto bg-white w-full md:w-1/2 tab:justify-center flex flex-col mobile:py-0 px-5 md:px-8">
         {isTop && (
           <div
@@ -155,6 +146,9 @@ function Login() {
             </label>
             <div className="mt-2 mb-2">
               <input
+                id="email"
+                label="Email"
+                type="email"
                 placeholder="someone@example.com"
                 autoComplete="off"
                 defaultValue={defaultEmail ? defaultEmail : ""}
@@ -180,6 +174,8 @@ function Login() {
             </label>
             <div className="mt-2 mb-2 relative">
               <input
+                id="password"
+                label="Password"
                 placeholder="Password"
                 autoComplete="off"
                 type={passwordVisible ? "text" : "password"}
@@ -278,7 +274,7 @@ function Login() {
       >
         <div className="flex flex-col px-auto py-auto my-auto overflow-hidden">
           <div className="flex">
-            <Lottie options={lottieImage?.loginImage}  width={400} />
+            <Lottie options={lottieImage?.loginImage} width={400} />
             <div className="md:hidden block absolute inset-0 bg-gradient-to-tr from-black-60 via-black-60/70 to-transparent pointer-events-none"></div>
           </div>
           {/* <div className="flex flex-col">

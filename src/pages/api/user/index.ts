@@ -1,4 +1,4 @@
-import { getUserDetail } from "@/lib/actions/user";
+import { getUserDetail, getUserFromToken } from "@/lib/actions/user";
 import UserModel from "@/lib/database/models/user.model";
 import { connectToDatabase } from "@/lib/database/mongoose";
 import {

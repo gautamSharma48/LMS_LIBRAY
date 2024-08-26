@@ -32,7 +32,7 @@ export const createUser = async (data) => {
       password,
       secretKey
     ).toString();
-    
+
     const reqData = {
       username: name,
       email,
@@ -49,6 +49,8 @@ export const createUser = async (data) => {
 export const loginUser = async (data) => {
   try {
     await connectToDatabase();
+    let otp = null;
+    let updateUser;
     const { email, password } = data;
     const getUser = await UserModel.findOne({ email });
     if (getUser) {
@@ -58,26 +60,29 @@ export const loginUser = async (data) => {
         secretKey
       );
       const originalPassword = decryptPassword.toString(CryptoJS.enc.Utf8);
-
       if (originalPassword !== password) {
         return;
       } else {
-        const token = jwt.sign(
-          { userId: getUser._id },
-          process.env.NEXT_APP_SECRET_KEY,
-          { expiresIn: "1d" }
-        );
-        let otp = null;
-        if(!getUser.isVerified){
-           otp = await generateOTP(6, { digits: true, alphabets: false });
-        }
-        const updateUser = await UserModel.findByIdAndUpdate(
-          getUser._id,
-          { token, otp }, // Update the token field
-          { new: true } // Return the updated document
-        );
-        if(!getUser?.isVerified){
+        if (!getUser.isVerified) {
+          otp = await generateOTP(6, { digits: true, alphabets: false });
+          updateUser = await UserModel.findByIdAndUpdate(
+            getUser._id,
+            { otp }, // Update the token field
+            { new: true } // Return the updated document
+          );
           sendEmail(email, otp);
+        } else {
+          const token = await jwt.sign(
+            { userId: getUser._id },
+            process.env.NEXT_APP_SECRET_KEY,
+            { expiresIn: "1d" }
+          );
+   
+          updateUser = await UserModel.findByIdAndUpdate(
+            getUser._id,
+            { token }, // Update the token field
+            { new: true } // Return the updated document
+          );
         }
         return updateUser;
       }
@@ -121,15 +126,30 @@ export const sendEmail = async (email, otp) => {
 
 export const verifiedUser = async (id) => {
   try {
+    const token = jwt.sign(
+      { userId: id },
+      process.env.NEXT_APP_SECRET_KEY,
+      { expiresIn: "1d" }
+    );
     const updateUser = await UserModel.findByIdAndUpdate(
       id,
-      { isVerified: true, otp: null },
+      { isVerified: true, otp: null, token },
       { new: true }
     );
     if (!updateUser) {
       return;
     }
     return updateUser;
+  } catch (error) {
+    handleError(error);
+    throw new Error("something went wrong");
+  }
+};
+
+export const getUserFromToken = (token) => {
+  try {
+    const decodedToken = jwt.verify(token, process.env.SECRET_KEY);
+    return decodedToken;
   } catch (error) {
     handleError(error);
     throw new Error("something went wrong");

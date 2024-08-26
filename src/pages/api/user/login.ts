@@ -21,8 +21,10 @@ import { NextApiRequest, NextApiResponse } from "next";
   }
   try {
     const getUser = await loginUser({ email, password });
-    if (getUser) {  
-      res.setHeader('Set-Cookie', `token=${getUser?.token}; HttpOnly; Secure; Max-Age=86400; SameSite=Strict; Path=/`);
+    if (getUser) { 
+      if(getUser.isVerified){
+        res.setHeader('Set-Cookie', `token=${getUser?.token}; HttpOnly; Secure; Max-Age=86400; SameSite=Strict; Path=/`);
+      } 
       return apiSuccessResponseMessage(res, 200, "login successfully", getUser);
     } else {
       return apiErrorResponseMessage(res, 404, "user not found", false);

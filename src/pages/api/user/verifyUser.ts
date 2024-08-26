@@ -20,6 +20,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     if(!user){
         return apiErrorResponseMessage(res, 404, "user is not able to update", false);
     }
+    if(user.isVerified){
+      res.setHeader('Set-Cookie', `token=${user?.token}; HttpOnly; Secure; Max-Age=86400; SameSite=Strict; Path=/`);
+    } 
     return apiSuccessResponseMessage(res,200,"User is verified successfully", true);
   } catch (error) {
     handleError(error);

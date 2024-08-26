@@ -1,29 +1,23 @@
 "use client";
 import { Loader } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import OtpInput from "../../components/common/otpInput";
-import { logoUrl, lottieImage } from "../../constants";
+import OtpInput from "../../../components/common/otpInput";
+import { logoUrl, lottieImage } from "../../../constants";
 import Lottie from "react-lottie";
 import axios from "axios";
-import { useToast } from "@/components/ui/use-toast";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import { useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
+import { toast } from "react-hot-toast";
 
 function VerifyOtp() {
   const router = useRouter();
-  const { currentUser } = useCurrentUser();
-  // console.log(currentUser);
-  const { toast } = useToast();
+  const { id } = useParams();
+  const { currentUser } = useCurrentUser(id);
   const [otp, setOtp] = useState("");
   const [loader, setLoader] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [componentHeight, setComponentHeight] = useState(0);
-
-  useEffect(()=>{
-    if(currentUser?.isVerified){
-      return router?.push("/dashboard")
-    }
-  },[currentUser])
 
   const updateComponentHeight = () => {
     setComponentHeight(window.innerHeight);
@@ -41,24 +35,18 @@ function VerifyOtp() {
   const submitHandler = async () => {
     setLoader(true);
     const inputOtp = Number(otp);
-
-    if (inputOtp !== currentUser?.otp) {
-      return toast({
-        title: "OTP",
-        variant: "destructive",
-        description: "Entered user OTP is wrong",
-      });
-    }
-
     try {
+      if (inputOtp !== currentUser?.otp) {
+        return toast.error("Entered user OTP is wrong",{
+
+        });
+      }
       await axios.put(`/api/user/verifyUser?id=${currentUser?._id}`);
-      toast({
-        title: "OTP",
-        variant: "default",
-        description: "otp is verified",
+      toast.success("OTP is verified", {
+        style: { backgroundColor: "#34C759",color: "white" },
       });
       setLoader(false);
-      router?.push("/dashboard");
+      router?.replace("/dashboard");
     } catch (error) {
       console.log(error);
     } finally {
@@ -76,16 +64,10 @@ function VerifyOtp() {
         `/api/user/resendEmail?id=${currentUser?._id}`
       );
       if (!response?.data?.sucess) {
-        return toast({
-          title: "Otp is not sending",
-          variant: "destructive",
-          description: "something went wrong",
-        });
+        return toast.error("something went wrong");
       }
-      return toast({
-        title: "OTP",
-        variant: "default",
-        description: "otp is send in your email address",
+      return toast.success("Otp is send your email address", {
+        style: { backgroundColor: "#34C759",color: "white" },
       });
     } catch (error) {
       console.log(error);

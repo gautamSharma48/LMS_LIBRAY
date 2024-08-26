@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Toaster as HotToaster } from "react-hot-toast"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
           <TooltipProvider delayDuration={0}>
             {children}
             <Toaster />
+            <HotToaster />
           </TooltipProvider>
         </ThemeProvider>
       </body>
