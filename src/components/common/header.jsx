@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { imageUrlConstant } from "@/constants";
+import { motion } from "framer-motion";
 
 const SearchIcon = () => {
   return (
@@ -31,11 +32,7 @@ const Header = () => {
     <nav className="bg-[#248de4] sticky top-0 z-20">
       <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-[#248de4] from-[#248de4] to-[#0c5397] shadow-lg max-w-[1920px] mx-auto ">
         <Link href={"/"} className="mr-6 flex items-center" prefetch={false}>
-          <img
-            loading="lazy"
-            src={imageUrlConstant?.logoUrl}
-            alt="logo"
-          />
+          <img loading="lazy" src={imageUrlConstant?.logoUrl} alt="logo" />
         </Link>
 
         <div className="flex justify-start items-center w-full">
@@ -49,17 +46,22 @@ const Header = () => {
           </div>
           <div className="flex-1 flex items-center justify-end">
             <div className="flex items-center gap-10 text-white-10 cursor-pointer">
-              <button>
+              <motion.button whileTap={{ scale: 0.85 }}>
                 <span className="whitespace-nowrap text-ellipsis">Courses</span>
-              </button>
+              </motion.button>
 
-              <button>
+              <motion.button
+                whileTap={{ scale: 0.85 }}
+                onClick={() => navigation("/about")}
+              >
                 <span className="whitespace-nowrap text-ellipsis">About</span>
-              </button>
+              </motion.button>
 
-              <span className="whitespace-nowrap text-ellipsis">
-                Contact Us
-              </span>
+              <motion.button whileTap={{ scale: 0.85 }}>
+                <span className="whitespace-nowrap text-ellipsis">
+                  Contact Us
+                </span>
+              </motion.button>
             </div>
             <div className="ml-5 flex items-center gap-2">
               <button
