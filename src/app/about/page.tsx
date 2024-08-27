@@ -157,7 +157,7 @@ const AboutPage = () => {
                 </div>
               )}
 
-              <div className="p-4 flex-1 flex flex-col justify-center">
+              <div className="p-4 flex-1 flex flex-col justify-center gap-3">
                 <p className="text-center text-bold text-2xl text-black-30">
                   {data?.name}
                 </p>
