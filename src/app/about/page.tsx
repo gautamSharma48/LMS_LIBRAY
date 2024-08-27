@@ -1,5 +1,4 @@
 "use client";
-import BlurTypingAnimation from "@/components/common/blur-typing";
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
