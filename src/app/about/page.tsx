@@ -158,20 +158,23 @@ const AboutPage = () => {
               )}
 
               <div className="p-4 flex-1 flex flex-col justify-center gap-3">
-                <p className="text-center text-bold text-2xl text-black-30">
+                <p className="text-start text-bold text-2xl text-black-30">
                   {data?.name}
                 </p>
-                <p className="text-center text-lg">
+                <p className="text-start text-lg">
                   <span className="font-semibold text-black-60 text-xl">
                     Profile:
                   </span>{" "}
                   {data?.profile}
                 </p>
-                <p className="text-center">
+                <p className="text-start">
                   <span className="font-semibold text-black-60 text-xl">
                     Education :
                   </span>{" "}
                   {data?.education}
+                </p>
+                <p className="text-start">
+                  {data?.bio}
                 </p>
               </div>
 
