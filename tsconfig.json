@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/constants/resume.jsx", "src/app/login/page.jsx", "src/app/login/page.jsx", "src/lib/actions/user.js", "src/components/common/otpInput.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/constants/resume.jsx", "src/app/login/page.tsx", "src/app/login/page.tsx", "src/lib/actions/user.js", "src/components/common/otpInput.jsx"],
   "exclude": ["node_modules"]
 }

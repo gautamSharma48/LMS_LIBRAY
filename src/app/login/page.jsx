@@ -120,7 +120,7 @@ function Login() {
             className="hidden md:flex bg-white-10 h-33px md:top-5 md:left-4 md:fixed mobile:mt-7 cursor-pointer shadow-md drop-shadow-sm p-3 outline-dashed outline-2 rounded-lg"
           >
             <ChevronLeft
-              alt=""
+              alt="back-icon"
               className="z-10"
               src={
                 isHovered
@@ -205,7 +205,7 @@ function Login() {
                 {errors.password.message}
               </div>
             )}
-            {!!signInError.length > 0 ? (
+            {!!signInError !== "" ? (
               <div className="font-PoppinsRegular text-red-50 flex justify-start text-ft2 ">
                 {signInError}
               </div>
@@ -289,9 +289,9 @@ function Login() {
             Create a LMS account to get started with our platform!
           </span>
 
-          {signUpData.map((item, index) => (
+          {/* {signUpData.map((item, index) => (
             <ChecklistItem key={index} checklistItem={item} />
-          ))}
+          ))} */}
         </div>
         {/* <Image
           src="/images/login-side-frame.svg"
@@ -307,21 +307,21 @@ function Login() {
 }
 export default Login;
 
-const ChecklistItem = ({ checklistItem }) => (
-  <div className="flex flex-col">
-    <div className="flex flex-row gap-2 pt-14 mb-3">
-      <img className="w-4 h-4 mt-1 " alt="" src={checklistItem.imageSrc} />
-      <span className="font-PoppinsRegular font-medium text-white-10 text-ft3 ">
-        {checklistItem.heading}
-      </span>
-    </div>
-    {checklistItem.paragraphs.map((paragraph, index) => (
-      <ul
-        key={index}
-        className="text-grey-DDDFDE text-ft15 font-PoppinsRegular font-normal pl-6 list-disc"
-      >
-        <li className="pl-6 py-1">{paragraph}</li>
-      </ul>
-    ))}
-  </div>
-);
+// const ChecklistItem = ({ checklistItem }) => (
+//   <div className="flex flex-col">
+//     <div className="flex flex-row gap-2 pt-14 mb-3">
+//       <img className="w-4 h-4 mt-1 " alt="" src={checklistItem.imageSrc} />
+//       <span className="font-PoppinsRegular font-medium text-white-10 text-ft3 ">
+//         {checklistItem.heading}
+//       </span>
+//     </div>
+//     {checklistItem.paragraphs.map((paragraph, index) => (
+//       <ul
+//         key={index}
+//         className="text-grey-DDDFDE text-ft15 font-PoppinsRegular font-normal pl-6 list-disc"
+//       >
+//         <li className="pl-6 py-1">{paragraph}</li>
+//       </ul>
+//     ))}
+//   </div>
+// );

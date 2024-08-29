@@ -79,64 +79,67 @@ const AboutPage = () => {
       <div className="w-full bg-white-10 shadow-2xl drop-shadow">
         <div className="grid grid-cols-1 w-full max-w-[1280px] mx-auto gap-10">
           {aboutUsData?.team?.map((data, index) => (
-            <motion.div
+            <div
               key={index}
               className="flex items-center w-full  min-h-[300px] justify-between border-b"
-              initial={{
-                opacity: 0,
-                // if odd index card,slide from right instead of left
-                x: index % 2 === 0 ? 50 : -50,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0, // Slide in to its original position
-                transition: {
-                  duration: 1, // Animation duration
-                },
-              }}
-              viewport={{ once: true }}
+              // initial={{
+              //   opacity: 0,
+              //   // if odd index card,slide from right instead of left
+              //   x: index % 2 === 0 ? 50 : -50,
+              // }}
+              // whileInView={{
+              //   opacity: 1,
+              //   x: 0, // Slide in to its original position
+              //   transition: {
+              //     duration: 1, // Animation duration
+              //   },
+              // }}
+              // viewport={{ once: true }}
             >
               {index % 2 === 0 && (
-                <div className="flex-1 flex justify-center">
+                <div className="flex-1 flex flex-col items-center justify-center gap-3">
                   <img
                     src={"https://teclearns.com/images/edu-avatar.jpg"}
                     className="w-[167px] h-[165px]"
                     alt="profile-pic"
                   />
+                  <p className="text-center text-bold text-2xl text-black-30">
+                  {data?.name}
+                </p>
+                <p className="text-center text-md">
+                  {data?.profile}
+                </p>
+                <p className="text-start">
+                  {"(" + data?.education +  ")"}
+                </p>
                 </div>
               )}
 
               <div className="p-4 flex-1 flex flex-col justify-center gap-3">
-                <p className="text-start text-bold text-2xl text-black-30">
-                  {data?.name}
-                </p>
-                <p className="text-start text-lg">
-                  <span className="font-semibold text-black-60 text-xl">
-                    Profile:
-                  </span>{" "}
-                  {data?.profile}
-                </p>
-                <p className="text-start">
-                  <span className="font-semibold text-black-60 text-xl">
-                    Education :
-                  </span>{" "}
-                  {data?.education}
-                </p>
                 <p className="text-start">
                   {data?.bio}
                 </p>
               </div>
 
               {index % 2 !== 0 && (
-                <div className="flex-1 flex justify-center">
+                <div className="flex-1 flex-col items-center flex justify-center gap-3">
                   <img
                     src={"https://teclearns.com/images/edu-avatar.jpg"}
                     className="w-[167px] h-[165px]"
                     alt="profile-pic"
                   />
+                  <p className="text-center text-bold text-2xl text-black-30">
+                  {data?.name}
+                </p>
+                <p className="text-center text-md">
+                  {data?.profile}
+                </p>
+                <p className="text-start">
+                  {"(" + data?.education +  ")"}
+                </p>
                 </div>
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

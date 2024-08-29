@@ -45,7 +45,7 @@ const Header = () => {
             />
           </div>
           <div className="flex-1 flex items-center justify-end">
-            <div className="flex items-center gap-10 text-white-10 cursor-pointer">
+            <div className="flex items-center gap-10 text-white-10 cursor-pointer hidden lg:flex">
               <motion.button whileTap={{ scale: 0.85 }}>
                 <span className="whitespace-nowrap text-ellipsis">Courses</span>
               </motion.button>
@@ -57,7 +57,7 @@ const Header = () => {
                 <span className="whitespace-nowrap text-ellipsis">About</span>
               </motion.button>
 
-              <motion.button whileTap={{ scale: 0.85 }}>
+              <motion.button    onClick={() => navigation("/contact-us")}  whileTap={{ scale: 0.85 }}>
                 <span className="whitespace-nowrap text-ellipsis">
                   Contact Us
                 </span>
