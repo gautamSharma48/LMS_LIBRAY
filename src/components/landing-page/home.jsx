@@ -1,5 +1,7 @@
+"use client";
 import { homeData, imageUrlConstant } from "@/constants";
 import React from "react";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
@@ -53,6 +55,9 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      <WhyChooseUs />
+      <Banner />
+      <BlogPost />
       <div className="relative w-full h-[230px]">
         <img
           className="absolute w-full h-full"
@@ -71,8 +76,155 @@ const HomePage = () => {
           </button>
         </div>
       </div>
+  
     </>
   );
 };
 
+const WhyChooseUs = () => {
+  const whyChooseData = [
+    {
+      img: "https://teclearns.com/images/icn-track.jpg",
+      heading1: "Live Instructors to address",
+      heading2: "questions in real time",
+    },
+    {
+      img: "https://teclearns.com/images/icn-unlimited.jpg",
+      heading1: "Online Training Portal",
+      heading2: "with Unlimited Access",
+    },
+    {
+      img: "https://teclearns.com/images/icn-24-7.jpg",
+      heading1: "Seek guidance from a",
+      heading2: "learning assistant",
+    },
+    {
+      img: "https://teclearns.com/images/icn-realtime.jpg",
+      heading1: "Monitor Your ",
+      heading2: "Learning",
+    },
+  ];
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 100 }}
+        viewport={{ once: true }}
+        className="my-9 p-3"
+      >
+        <p className="text-center text-gray-600 text-2xl font-bold uppercase">
+          Why Choose Us
+        </p>
+        <div className="grid-cols-4 grid place-items-center text-center">
+          {whyChooseData?.map((ele, index) => (
+            <div className="grid place-items-center" key={index}>
+              <img
+                loading="lazy"
+                src={ele?.img}
+                alt="why-choose"
+                className="w-auto "
+              ></img>
+              <p>Live Instructor to address </p>
+              <p>question in real time</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+    </>
+  );
+};
+
+const Banner = () => {
+  return (
+    <motion.div className="p-5 bg-linear-grad-blue-20 w-full my-10">
+      <motion.div className="flex items-center w-full justify-center">
+        <motion.p className="uppercase text-white-10">
+          When you learn better you do better! Study with us, grow with us.
+        </motion.p>
+        <motion.button
+          whileTap={{ scale: "0.8" }}
+          className="bg-black-10 h-10 text-white-10 rounded-xl ml-4 w-[150px]"
+        >
+          Log In
+        </motion.button>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+const BlogPost = () => {
+  const blogPost = [
+    {
+      img: "https://teclearns.com/images/blog/blog-1.jpg",
+      title: "Microsoft Project",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of
+                    type...`,
+    },
+    {
+      img: "https://teclearns.com/images/blog/blog-3.jpg",
+      title: "Business Management",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of
+                    type...`,
+    },
+    {
+      img: "https://teclearns.com/images/blog/blog-4.jpg",
+      title: "Finance Modeling",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of
+                    type...`,
+    },
+    {
+      img: "https://teclearns.com/images/blog/blog-2.jpg",
+      title: "Prince2 Foundation",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of
+                    type...`,
+    },
+  ];
+  return (
+    <motion.div className="max-w-[1280px] mx-auto my-10">
+      <p className="text-gray-600 my-10  px-4 text-center text-2xl font-bold uppercase">Latest blog post</p>
+
+      <div className="grid grid-cols-4 place-items-center">
+        {blogPost?.map((element, i) => (
+          <motion.div
+            key={i}
+            whileHover={{ scale: "1.06" }}
+            className="rounded-xl cursor-pointer bg-white-10 w-[300px] p-4 flex flex-col gap-4 shadow-2xl drop-shadow"
+          >
+            <motion.span
+              className="text-blue-10 text-center text-xl font-bold"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.25,
+                delay: i / 2,
+              }}
+              key={i}
+            >
+              {element?.title}
+            </motion.span>
+            <img
+              src={element?.img}
+              alt="blog-post"
+            />
+            <div className="text-sm">
+              {`Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type...`}
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
 export default HomePage;

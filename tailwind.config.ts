@@ -73,6 +73,7 @@ const config = {
       backgroundImage: (theme) => ({
         "linear-grad-blue-10": "linear-gradient(to top, #5E66D6, #4956BA, #777FFA)",
         "linear-grad-yellow-10": "linear-gradient(126deg, #f5a623, #f76b1c)",
+        "linear-grad-blue-20" : "linear-gradient(95deg,#64afef,#248ae4 50%,#244ee4 100%)",
       }),
       colors: {
         border: "hsl(var(--border))",
