@@ -2,6 +2,9 @@
 import { homeData, imageUrlConstant } from "@/constants";
 import React from "react";
 import { motion } from "framer-motion";
+import CourseCard from "../common/courseCard";
+import UserReviewCard from "../common/userReviewCard";
+import BlurFadeText from "../magicui/blur-fade-text";
 
 const HomePage = () => {
   return (
@@ -30,34 +33,16 @@ const HomePage = () => {
         ))}
       </div>
 
-      <div className=" mx-auto my-10">
-        <div className="text-2xl ml-4 mt-3">Top Trending Courses</div>
-
-        <div className="grid grid-cols-4">
-          {homeData?.courses?.map((element, index) => (
-            <div
-              key={index}
-              className="shadow-lg hover:shadow-blackShadow-20 bg-white-10 hover:scale-105 cursor-pointer transition-all rounded-lg  max-w-[300px] ml-4 my-4"
-            >
-              <i class="courseicon_Course-Icon-94"></i>
-              <div
-                style={{ background: element?.background || "" }}
-                className={` text-white min-h-[100px] p-2 text-center flex items-center justify-center text-white-10 rounded-md`}
-              >
-                <h3 className="text-xl font-bold">{element?.title}</h3>
-              </div>
-              <div className="p-7">
-                <div className="text-[#4a4a4a] text-1xl">
-                  {element?.description}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <CourseCard title={"Top Trending Courses"} data={homeData?.courses} />
       <WhyChooseUs />
       <Banner />
       <BlogPost />
+      <CourseCard
+        title={"Carrer Related Courses"}
+        data={homeData?.carrerRelatedCourse}
+      />
+      <CourseCard title={"Recent Addition"} data={homeData?.recentAddition} />
+      <UserReview />
       <div className="relative w-full h-[230px]">
         <img
           className="absolute w-full h-full"
@@ -76,34 +61,29 @@ const HomePage = () => {
           </button>
         </div>
       </div>
-  
     </>
   );
 };
 
+const UserReview = () => {
+  return (
+    <motion.div className="max-w-[1280px] mx-auto my-10">
+      <BlurFadeText
+        className="text-gray-600 my-10  px-4 w-full text-center text-2xl font-bold uppercase"
+        yOffset={3}
+        delay={0.4}
+        text={"Reviews"}
+      />
+      <div className="grid place-items-center gap-4 grid-flow-col   grid-cols-auto ">
+        {homeData?.reviewUsers?.map((review, index) => (
+          <UserReviewCard key={index} review={review} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
 const WhyChooseUs = () => {
-  const whyChooseData = [
-    {
-      img: "https://teclearns.com/images/icn-track.jpg",
-      heading1: "Live Instructors to address",
-      heading2: "questions in real time",
-    },
-    {
-      img: "https://teclearns.com/images/icn-unlimited.jpg",
-      heading1: "Online Training Portal",
-      heading2: "with Unlimited Access",
-    },
-    {
-      img: "https://teclearns.com/images/icn-24-7.jpg",
-      heading1: "Seek guidance from a",
-      heading2: "learning assistant",
-    },
-    {
-      img: "https://teclearns.com/images/icn-realtime.jpg",
-      heading1: "Monitor Your ",
-      heading2: "Learning",
-    },
-  ];
   return (
     <>
       <motion.div
@@ -116,13 +96,13 @@ const WhyChooseUs = () => {
           Why Choose Us
         </p>
         <div className="grid-cols-4 grid place-items-center text-center">
-          {whyChooseData?.map((ele, index) => (
+          {homeData?.whyChooseData?.map((ele, index) => (
             <div className="grid place-items-center" key={index}>
               <img
                 loading="lazy"
                 src={ele?.img}
                 alt="why-choose"
-                className="w-auto "
+                className="w-auto"
               ></img>
               <p>Live Instructor to address </p>
               <p>question in real time</p>
@@ -130,7 +110,6 @@ const WhyChooseUs = () => {
           ))}
         </div>
       </motion.div>
-
     </>
   );
 };
@@ -154,50 +133,18 @@ const Banner = () => {
 };
 
 const BlogPost = () => {
-  const blogPost = [
-    {
-      img: "https://teclearns.com/images/blog/blog-1.jpg",
-      title: "Microsoft Project",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type...`,
-    },
-    {
-      img: "https://teclearns.com/images/blog/blog-3.jpg",
-      title: "Business Management",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type...`,
-    },
-    {
-      img: "https://teclearns.com/images/blog/blog-4.jpg",
-      title: "Finance Modeling",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type...`,
-    },
-    {
-      img: "https://teclearns.com/images/blog/blog-2.jpg",
-      title: "Prince2 Foundation",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type...`,
-    },
-  ];
   return (
     <motion.div className="max-w-[1280px] mx-auto my-10">
-      <p className="text-gray-600 my-10  px-4 text-center text-2xl font-bold uppercase">Latest blog post</p>
+      <p className="text-gray-600 my-10  px-4 text-center text-2xl font-bold uppercase">
+        Latest blog post
+      </p>
 
-      <div className="grid grid-cols-4 place-items-center">
-        {blogPost?.map((element, i) => (
+      <div className="grid grid-cols-3 lg:grid-cols-4 place-items-center">
+        {homeData?.blogPost?.map((element, i) => (
           <motion.div
             key={i}
             whileHover={{ scale: "1.06" }}
-            className="rounded-xl cursor-pointer bg-white-10 w-[300px] p-4 flex flex-col gap-4 shadow-2xl drop-shadow"
+            className="rounded-xl cursor-pointer bg-white-10 lg:w-[300px] p-4 flex flex-col gap-4 shadow-2xl drop-shadow"
           >
             <motion.span
               className="text-blue-10 text-center text-xl font-bold"
@@ -211,10 +158,7 @@ const BlogPost = () => {
             >
               {element?.title}
             </motion.span>
-            <img
-              src={element?.img}
-              alt="blog-post"
-            />
+            <img src={element?.img} alt="blog-post" />
             <div className="text-sm">
               {`Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

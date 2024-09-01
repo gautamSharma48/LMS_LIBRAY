@@ -3,13 +3,12 @@ import LoginImage from "../assets/lottie/login-image.json";
 import OtpImage from "../assets/lottie/otp.json";
 export const signUpData = [];
 
-export const logoUrl="https://teclearns.com/images/logo.png" as string;
+export const logoUrl = "https://teclearns.com/images/logo.png" as string;
 
 export const imageUrlConstant = {
   logoUrl: "https://teclearns.com/images/logo.png",
-  mainBanner: "/main-banner.png"
-}
-
+  mainBanner: "/main-banner.png",
+};
 
 export const errorMessagesConstants = {
   NAME_REQUIRED: "Username is required.",
@@ -43,7 +42,7 @@ export const regexConstant = {
   ),
   PASSWORD_REGEX: new RegExp(
     /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~\\]{8,}$/
-  )
+  ),
 };
 
 export const lottieImage = {
@@ -55,7 +54,7 @@ export const lottieImage = {
       preserveAspectRatio: "xMidYMid slice",
     },
   },
-  loginImage:  {
+  loginImage: {
     loop: true,
     autoplay: true,
     animationData: SignUpImage,
@@ -63,14 +62,14 @@ export const lottieImage = {
       preserveAspectRatio: "xMidYMid slice",
     },
   },
-  otpImage:  {
+  otpImage: {
     loop: true,
     autoplay: true,
     animationData: OtpImage,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
-  }
+  },
 } as const;
 
 export const aboutUsData = {
@@ -123,7 +122,6 @@ export const aboutUsData = {
   ],
 } as const;
 
-
 export const homeData = {
   become: [
     {
@@ -138,42 +136,151 @@ export const homeData = {
       title: "Become A Business Manager",
     },
   ],
-  courses:  [
-      {
-        title: "Microsoft Project",
-        description: "Analyze the facts and make forecasts.",
-        background: "linear-gradient(110deg, #53a2ff, #2a387b)",
-      },
-      {
-        title: "Microsoft Excel",
-        description: "Analyze the facts and make forecasts.",
-        background: "linear-gradient(242deg, #f49cae, #b05ce2)",
-      },
-      {
-        title: "PRINCE2® Foundation",
-        description: "Develop project-related abilities",
-        background: "linear-gradient(240deg,#6568ff,#d879ec)",
-      },
-      {
-        title: "PMI RMP Certification Training Course",
-        description: "Schedules that PMI RMP course will include",
-        background: "linear-gradient(240deg,#d677c0,#41bbbd)",
-      },
-      {
-        title: "PMP® Certification Training Course",
-        description: "Schedules that PMP course will include",
-        background: "linear-gradient(240deg,#d677c0,#41bbbd)",
-      },
-      {
-        title: "Six Sigma yellow",
-        description: "Learn Six Sigma Expert",
-        background: "linear-gradient(240deg,#ff6364,#ff88bc)",
-      },
-    ],
-    bannerMsgTitle: "No more dull edges in your company. Make your employees into masters.",
-    bannerMsgTitle2: "Nurture talent with instructor-led courses on trending technologies",
+  courses: [
+    {
+      title: "Microsoft Project",
+      description: "Analyze the facts and make forecasts.",
+      background: "linear-gradient(110deg, #53a2ff, #2a387b)",
+    },
+    {
+      title: "Microsoft Excel",
+      description: "Analyze the facts and make forecasts.",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+    },
+    {
+      title: "PRINCE2® Foundation",
+      description: "Develop project-related abilities",
+      background: "linear-gradient(240deg,#6568ff,#d879ec)",
+    },
+    {
+      title: "PMI RMP Certification Training Course",
+      description: "Schedules that PMI RMP course will include",
+      background: "linear-gradient(240deg,#d677c0,#41bbbd)",
+    },
+    {
+      title: "PMP® Certification Training Course",
+      description: "Schedules that PMP course will include",
+      background: "linear-gradient(240deg,#d677c0,#41bbbd)",
+    },
+    {
+      title: "Six Sigma yellow",
+      description: "Learn Six Sigma Expert",
+      background: "linear-gradient(240deg,#ff6364,#ff88bc)",
+    },
+  ],
+  carrerRelatedCourse: [
+    {
+      title: "Business Case Writing",
+      description: "Business Case Writing",
+      background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
+    },
+    {
+      title: "CBAP® Certification Training Course",
+      description: "CBAP® Certification Training Course",
+      background: "linear-gradient(240deg,#ff6364,#ff88bc)",
+    },
+    {
+      title: "PMI-ACP",
+      description: "PMI-ACP",
+      background: "linear-gradient(240deg,#55e4ef,#c23af1)",
+    },
+  ],
+  recentAddition: [
+    {
+      title: "Leading SAFe 5.1",
+      description: "Business Case Writing",
+      background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
+    },
+    {
+      title: "Agile Scrum Master (ASM®)",
+      description: "Agile Scrum Master (ASM®)",
+      background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
+    },
+  ],
+  reviewUsers: [
+    {
+      name: "Vivek",
+      profession: "Data science",
+      rating: 3,
+      description: "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
+      createdAt: "22 May 2014"
+    },
+    {
+      name: "Gautam",
+      profession: "Devops Eng",
+      rating: 3,
+      description: "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
+      createdAt: "22 May 2014"
+    },
+    {
+      name: "Rishab",
+      profession: "Software Eng",
+      rating: 3,
+      description: "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
+      createdAt: "22 May 2014"
+    },
+  ],
+  bannerMsgTitle:
+    "No more dull edges in your company. Make your employees into masters.",
+  bannerMsgTitle2:
+    "Nurture talent with instructor-led courses on trending technologies",
+  whyChooseData: [
+    {
+      img: "https://teclearns.com/images/icn-track.jpg",
+      heading1: "Live Instructors to address",
+      heading2: "questions in real time",
+    },
+    {
+      img: "https://teclearns.com/images/icn-unlimited.jpg",
+      heading1: "Online Training Portal",
+      heading2: "with Unlimited Access",
+    },
+    {
+      img: "https://teclearns.com/images/icn-24-7.jpg",
+      heading1: "Seek guidance from a",
+      heading2: "learning assistant",
+    },
+    {
+      img: "https://teclearns.com/images/icn-realtime.jpg",
+      heading1: "Monitor Your ",
+      heading2: "Learning",
+    },
+  ],
+  blogPost: [
+    {
+      img: "https://teclearns.com/images/blog/blog-1.jpg",
+      title: "Microsoft Project",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a galley of
+                      type...`,
+    },
+    {
+      img: "https://teclearns.com/images/blog/blog-3.jpg",
+      title: "Business Management",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a galley of
+                      type...`,
+    },
+    {
+      img: "https://teclearns.com/images/blog/blog-4.jpg",
+      title: "Finance Modeling",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a galley of
+                      type...`,
+    },
+    {
+      img: "https://teclearns.com/images/blog/blog-2.jpg",
+      title: "Prince2 Foundation",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a galley of
+                      type...`,
+    },
+  ],
 } as const;
-
 
 export const footerData = [
   {
