@@ -361,7 +361,7 @@ export const homeData = {
                       type...`,
     },
   ],
-} as const;
+};
 
 export const footerData = [
   {
