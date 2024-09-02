@@ -17,8 +17,9 @@ const CourseDetail = () => {
   }
 
   return (
-    <div className="overflow-x-hidden">   
+    <div className="overflow-x-hidden bg-grey-50">   
       <FrequentlyAskedQuestions data={courseData?.curriculm} type="curriculm" />
+      <FrequentlyAskedQuestions data={courseData?.courseDescription?.courseData} heading={courseData?.courseDescription?.courseHeading} />
       <FrequentlyAskedQuestions data={courseData?.faqs?.faqsData} heading={courseData?.faqs?.faqsHeading} />
     </div>
   );

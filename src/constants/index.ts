@@ -172,9 +172,9 @@ export const homeData = {
         },
       ],
 
-      faqs: {
-        faqsHeading: "Course Description",
-        faqsData: [
+      courseDescription: {
+        courseHeading: "Course Description",
+        courseData: [
           {
             question: "About The Course",
             answer:
@@ -202,6 +202,61 @@ export const homeData = {
             question: "Why Learn Microsoft® Project 2013?",
             answer:
               "MS Project is used across industries in many organizations. Many clients want the projects to be planned and tracked in MS Project.",
+          },
+        ],
+      },
+
+      faqs: {
+        faqsHeading: "FAQ's",
+        faqsData: [
+          {
+            question:
+              "How soon after Signing up would I get access to the Learning Content?",
+            answer:
+              "As soon as you enrol into the course, your LMS (The Learning Management System) access will be functional. You will immediately get access to our course content in the form of a complete set of videos, PPTs, PDFs and  Assignments. You can start learning right away.",
+          },
+          {
+            question: "For how long will I have access to the course materials?",
+            answer: `All the videos and other materials like PPTs, Quiz and Assignments, etc are hosted in our Learning Management System (LMS) and you will have a lifetime access to that. `,
+          },
+          {
+            question: "Are there any pre-requisite to attend MS Project training?",
+            answer: `There are no pre-requisites for this course. But basic understanding of the project and project environment will be helpful.`,
+          },
+          {
+            question: "What is MS Project?",
+            answer: "Microsoft Project is a project management software program, developed by Microsoft, which is designed to assist a project manager in developing a plan, assigning resources to tasks, tracking progress, managing the budget, and analyzing workloads.",
+          },
+          {
+            question: "What will happen if I have technical queries?",
+            answer:
+              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
+          },
+
+          {
+            question: "What will happen if I have technical queries?",
+            answer:
+              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
+          },
+          {
+            question: "What are new features of MS project 2013?",
+            answer:
+              "1. Run Project in the cloud 2. Improved scheduling engine 3. Improved Workflow Management engine 4. Enhanced Reporting capabilities 5. Simplified time sheets and task 6. management Lightweight project management leveraging SharePoint 7. Simpler Security Model.",
+          },
+          {
+            question: "How will be the practicals done?",
+            answer:
+              "By following the instructions provided in the Installation guide present in the LMS, you can install MS Project on your local system and execute all the practicals present in the course. ",
+          },
+          {
+            question: "What are the payment options?",
+            answer:
+              "You can pay by Credit Card, Debit Card or Net Banking from all the leading banks. For INR payment, you can use CCAvenue Payment Gateway. For USD payment, you can pay by Paypal. We also have EMI options available.",
+          },
+          {
+            question: "What if I have more queries?",
+            answer:
+              "Just give us a CALL at +91 1234567890 OR email at sales@teclearns.com Toll free number is 1800 123 4567.",
           },
         ],
       },
