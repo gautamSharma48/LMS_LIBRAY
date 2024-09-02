@@ -114,7 +114,7 @@ const FaqsQuestion = ({ data = "", heading = "" }) => {
           text={heading || "Curriculm"}
         />
 
-        <div className="flex flex-col w-full gap-2">
+        <div className="flex flex-col w-full gap-2 mt-5">
           {data?.map((element, index) => (
             <motion.div
               initial={{
