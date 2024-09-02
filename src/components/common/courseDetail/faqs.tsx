@@ -18,7 +18,7 @@ const FrequentlyAskedQuestions = ({ type = "", ...props }) => {
   );
 };
 
-const Curriculm = ({ data = "", heading = "" }) => {
+const Curriculm = ({ data = [], heading = "" }) => {
   const [openIndex, setOpenIndex] = useState(1);
   return (
     <section className="mx-auto max-w-[1024px] pt-5 sm:px-0 px-4">
@@ -33,14 +33,14 @@ const Curriculm = ({ data = "", heading = "" }) => {
 
           <motion.div
             whileTap={{ scale: 0.8 }}
-            className="border cursor-pointer select-none border-blue-10 text-blue-10 p-2 rounded-lg"
+            className="border cursor-pointer select-none bg-blue-10 text-white-10 p-2 rounded-lg"
           >
             Download Curriculm
           </motion.div>
         </div>
 
         <div className="flex flex-col w-full gap-2">
-          {data?.map((element, index) => (
+          {data?.map((element: any, index:number) => (
             <motion.div
               initial={{
                 opacity: 0,
@@ -102,7 +102,7 @@ const Curriculm = ({ data = "", heading = "" }) => {
   );
 };
 
-const FaqsQuestion = ({ data = "", heading = "" }) => {
+const FaqsQuestion = ({ data = [], heading = "" }) => {
   const [openIndex, setOpenIndex] = useState(1);
   return (
     <section className="mx-auto max-w-[1024px] pt-5 sm:px-0 px-4">
@@ -115,7 +115,7 @@ const FaqsQuestion = ({ data = "", heading = "" }) => {
         />
 
         <div className="flex flex-col w-full gap-2 mt-5">
-          {data?.map((element, index) => (
+          {data?.map((element: any, index: number) => (
             <motion.div
               initial={{
                 opacity: 0,
