@@ -25,7 +25,7 @@ const Curriculm = ({ data = "", heading = "" }) => {
       <div className="">
         <div className="flex items-center justify-between mb-5 gap-3">
           <BlurFadeText
-            className="text-black-70 text-xl font-bold mb-5"
+            className="text-black-70 text-xl font-bold"
             yOffset={3}
             delay={0.4}
             text={heading || "Curriculm"}
@@ -108,7 +108,7 @@ const FaqsQuestion = ({ data = "", heading = "" }) => {
     <section className="mx-auto max-w-[1024px] pt-5 sm:px-0 px-4">
       <div className="">
         <BlurFadeText
-          className="text-black-70 text-xl font-bold mb-5"
+          className="text-black-70 text-xl font-bold"
           yOffset={3}
           delay={0.4}
           text={heading || "Curriculm"}
