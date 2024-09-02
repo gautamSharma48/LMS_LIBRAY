@@ -138,63 +138,141 @@ export const homeData = {
   ],
   courses: [
     {
+      id: 1,
       title: "Microsoft Project",
       description: "Analyze the facts and make forecasts.",
       background: "linear-gradient(110deg, #53a2ff, #2a387b)",
+      type: "",
+      curriculm: [
+        {
+          heading: "Introduction to Microsoft® Project",
+          description: "",
+          type: "curriculm",
+          objective:
+            "Familiarize with MS project tool and the initial settings. ",
+          topic:
+            "The Interface, Tabs (Task, Resource, Report, Project, View, Format), Backstage view, Project Information, Setup a new project, Setup Project Calendar, Setup non working days, Enter basic project information.",
+        },
+        {
+          heading: "Creating Tasks and Task Management",
+          description: "",
+          type: "curriculm",
+          objective: "Understand how to define scope on project. ",
+          topic:
+            "Auto Scheduled and Manually Scheduled Tasks, Entering Tasks and subtasks, Duration, Notes, Constraints, Hyperlinks, Deadlines, Entering and Deleting Tasks, Indent and Outdent, Establishing Dependencies and Assigning Milestones, Recurring Tasks.",
+        },
+        {
+          heading: "Listing Resources, Assigning Resources and Project Costs",
+          description: "",
+          type: "curriculm",
+          objective:
+            "Understand how to create resources and assign resources, understanding how to view costs for individual Tasks, Modules and the Total Project. ",
+          topic:
+            "Creating Resources, Resource type, Group, Code, Setting Resource Calendar, Cost, Notes, Assigning Resources and Resource Load Analysis, Viewing Project Costs.",
+        },
+      ],
+
+      faqs: {
+        faqsHeading: "Course Description",
+        faqsData: [
+          {
+            question: "About The Course",
+            answer:
+              "This self-paced online program covers the overview of Project Management and explains how to manage projects using Microsoft Project. Microsoft Project assists Project Managers to do Scope Planning, Assign Resources, Prepare Schedule, Baseline, Update Progress, Track and Report. This training is imperative for all who need to plan, track and effectively communicate with stakeholders. This course helps participants to practically implement the learning through hands-on on MS Project.",
+          },
+          {
+            question: "Course Objectives",
+            answer: `After the completion of Microsoft Project Course at Edureka, you should be able to:<br/>
+
+                1. Understand the importance of MS Project in following a structured approach to managing projects.<br/>
+                2. Define the initial settings in MS Project.<br/>
+                3. Prepare and use MS Project for planning, tracking and reporting on projects.<br/>
+                4. Understand how to document lessons learned and close projects.<br/>`,
+          },
+          {
+            question: "Who should go for this course?",
+            answer: `Anybody associated with Project Management, in any industry or domain can attend this course.`,
+          },
+          {
+            question: "Pre-requisites",
+            answer:
+              "A basic understanding of the project and project environment is helpful.",
+          },
+          {
+            question: "Why Learn Microsoft® Project 2013?",
+            answer:
+              "MS Project is used across industries in many organizations. Many clients want the projects to be planned and tracked in MS Project.",
+          },
+        ],
+      },
     },
     {
+      id: 2,
       title: "Microsoft Excel",
       description: "Analyze the facts and make forecasts.",
       background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
     },
     {
+      id: 3,
       title: "PRINCE2® Foundation",
       description: "Develop project-related abilities",
       background: "linear-gradient(240deg,#6568ff,#d879ec)",
+      type: "",
     },
     {
+      id: 4,
       title: "PMI RMP Certification Training Course",
       description: "Schedules that PMI RMP course will include",
       background: "linear-gradient(240deg,#d677c0,#41bbbd)",
+      type: "",
     },
     {
+      id: 5,
       title: "PMP® Certification Training Course",
       description: "Schedules that PMP course will include",
       background: "linear-gradient(240deg,#d677c0,#41bbbd)",
     },
     {
+      id: 6,
       title: "Six Sigma yellow",
       description: "Learn Six Sigma Expert",
       background: "linear-gradient(240deg,#ff6364,#ff88bc)",
     },
-  ],
-  carrerRelatedCourse: [
     {
+      id: 7,
       title: "Business Case Writing",
       description: "Business Case Writing",
       background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
+      type: "carrer-related",
     },
     {
+      id: 8,
       title: "CBAP® Certification Training Course",
       description: "CBAP® Certification Training Course",
       background: "linear-gradient(240deg,#ff6364,#ff88bc)",
+      type: "carrer-related",
     },
     {
+      id: 9,
       title: "PMI-ACP",
       description: "PMI-ACP",
       background: "linear-gradient(240deg,#55e4ef,#c23af1)",
+      type: "carrer-related",
     },
-  ],
-  recentAddition: [
     {
+      id: 10,
       title: "Leading SAFe 5.1",
       description: "Business Case Writing",
       background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
+      type: "recent-addition",
     },
     {
+      id: 11,
       title: "Agile Scrum Master (ASM®)",
       description: "Agile Scrum Master (ASM®)",
       background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
+      type: "recent-addition",
     },
   ],
   reviewUsers: [
@@ -202,22 +280,25 @@ export const homeData = {
       name: "Vivek",
       profession: "Data science",
       rating: 3,
-      description: "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
-      createdAt: "22 May 2014"
+      description:
+        "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
+      createdAt: "22 May 2014",
     },
     {
       name: "Gautam",
       profession: "Devops Eng",
       rating: 3,
-      description: "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
-      createdAt: "22 May 2014"
+      description:
+        "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
+      createdAt: "22 May 2014",
     },
     {
       name: "Rishab",
       profession: "Software Eng",
       rating: 3,
-      description: "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
-      createdAt: "22 May 2014"
+      description:
+        "I am glad to write testimonial for Teclearn after undergoing 2 months of training in Mac",
+      createdAt: "22 May 2014",
     },
   ],
   bannerMsgTitle:

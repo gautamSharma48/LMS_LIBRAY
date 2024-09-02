@@ -2,11 +2,19 @@
 import { homeData, imageUrlConstant } from "@/constants";
 import React from "react";
 import { motion } from "framer-motion";
-import CourseCard from "../common/courseCard";
-import UserReviewCard from "../common/userReviewCard";
+import CourseCard from "./courseCard";
+import UserReviewCard from "./userReviewCard";
 import BlurFadeText from "../magicui/blur-fade-text";
 
 const HomePage = () => {
+  const courses = homeData?.courses?.filter((ele) => ele.type === "");
+  const carrerRelated = homeData?.courses?.filter(
+    (ele) => ele?.type === "carrer-related"
+  );
+  const recentAddition = homeData?.courses?.filter(
+    (ele) => ele?.type === "recent-addition"
+  );
+
   return (
     <>
       <img
@@ -33,35 +41,38 @@ const HomePage = () => {
         ))}
       </div>
 
-      <CourseCard title={"Top Trending Courses"} data={homeData?.courses} />
+      <CourseCard title={"Top Trending Courses"} data={courses} />
       <WhyChooseUs />
       <Banner />
       <BlogPost />
-      <CourseCard
-        title={"Carrer Related Courses"}
-        data={homeData?.carrerRelatedCourse}
-      />
-      <CourseCard title={"Recent Addition"} data={homeData?.recentAddition} />
+      <CourseCard title={"Carrer Related Courses"} data={carrerRelated} />
+      <CourseCard title={"Recent Addition"} data={recentAddition} />
       <UserReview />
-      <div className="relative w-full h-[230px]">
-        <img
-          className="absolute w-full h-full"
-          src="/business.png"
-          alt="business"
-        />
-        <div className="max-w-[1520px] mx-auto">
-          <div className="text-2xl text-white-10 absolute  top-12 px-15 ">
-            {homeData?.bannerMsgTitle}
-          </div>
-          <div className="text-xl text-white-10 absolute  top-20 px-15 ">
-            {homeData?.bannerMsgTitle2}
-          </div>
-          <button className="w-[170px] bg-white-10 hover:bg-indigo-600 hover:scale-110 hover:text-white-10 transition-all inset-0 top-29 mx-auto mt-5 uppercase h-10 rounded-sm text-ft12-18 text-[#0c5397] absolute">
-            Learn more
-          </button>
-        </div>
-      </div>
+      <BottomBanner />
     </>
+  );
+};
+
+const BottomBanner = () => {
+  return (
+    <div className="relative w-full h-[230px]">
+      <img
+        className="absolute w-full h-full"
+        src="/business.png"
+        alt="business"
+      />
+      <div className="max-w-[1520px] mx-auto">
+        <div className="text-2xl text-white-10 absolute  top-12 px-15 ">
+          {homeData?.bannerMsgTitle}
+        </div>
+        <div className="text-xl text-white-10 absolute  top-20 px-15 ">
+          {homeData?.bannerMsgTitle2}
+        </div>
+        <button className="w-[170px] bg-white-10 hover:bg-indigo-600 hover:scale-110 hover:text-white-10 transition-all inset-0 top-29 mx-auto mt-5 uppercase h-10 rounded-sm text-ft12-18 text-[#0c5397] absolute">
+          Learn more
+        </button>
+      </div>
+    </div>
   );
 };
 

@@ -1,7 +1,9 @@
 import React from "react";
 import BlurFadeText from "../magicui/blur-fade-text";
+import { useRouter } from "next/navigation";
 
 const CourseCard = ({ title, data }) => {
+  const router = useRouter();
   return (
     <div className=" mx-auto my-10">
       <BlurFadeText
@@ -13,6 +15,7 @@ const CourseCard = ({ title, data }) => {
       <div className="grid grid-cols-4">
         {data?.map((element, index) => (
           <div
+            onClick={()=> router.push(`/course-detail/${element?.id}`)}
             key={index}
             className="shadow-lg hover:shadow-blackShadow-20 bg-white-10 hover:scale-105 cursor-pointer transition-all rounded-lg  max-w-[300px] ml-4 my-4"
           >
