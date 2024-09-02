@@ -32,20 +32,25 @@ const Header = () => {
     <nav className="bg-[#248de4] sticky top-0 z-20">
       <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-[#248de4] from-[#248de4] to-[#0c5397] shadow-lg max-w-[1920px] mx-auto ">
         <Link href={"/"} className="mr-6 flex items-center" prefetch={false}>
-          <img loading="lazy" src={imageUrlConstant?.logoUrl} alt="logo" />
+          <img
+            loading="lazy"
+            src={imageUrlConstant?.logoUrl}
+            alt="logo"
+            className="min-w-[100px]"
+          />
         </Link>
 
         <div className="flex justify-start items-center w-full">
-          <div className="flex items-center flex-1  bg-white-10 mx-10 rounded-full px-3">
+          <div className=" items-center flex-1  bg-white-10 mx-10 rounded-full px-3 hidden sm:flex">
             <SearchIcon className="animate-spin" />
             <input
-              className="pl-2 w-full h-10 rounded-lg bg-background hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none transition-colors duration-300 ease-in-out"
+              className="pl-2 w-full h-10 min-w-[100px] rounded-lg bg-background hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none transition-colors duration-300 ease-in-out"
               placeholder="Search courses, resources, and more..."
               type="text"
             />
           </div>
           <div className="flex-1 flex items-center justify-end">
-            <div className="flex items-center gap-10 text-white-10 cursor-pointer hidden lg:flex">
+            <div className="items-center gap-10 text-white-10 cursor-pointer hidden lg:flex">
               <motion.button whileTap={{ scale: 0.85 }}>
                 <span className="whitespace-nowrap text-ellipsis">Courses</span>
               </motion.button>
@@ -57,7 +62,10 @@ const Header = () => {
                 <span className="whitespace-nowrap text-ellipsis">About</span>
               </motion.button>
 
-              <motion.button    onClick={() => navigation("/contact-us")}  whileTap={{ scale: 0.85 }}>
+              <motion.button
+                onClick={() => navigation("/contact-us")}
+                whileTap={{ scale: 0.85 }}
+              >
                 <span className="whitespace-nowrap text-ellipsis">
                   Contact Us
                 </span>
