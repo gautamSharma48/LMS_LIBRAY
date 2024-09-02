@@ -105,7 +105,7 @@ const Curriculm = ({ data = [], heading = "" }) => {
 const FaqsQuestion = ({ data = [], heading = "" }) => {
   const [openIndex, setOpenIndex] = useState(1);
   return (
-    <section className="mx-auto max-w-[1024px] pt-5 sm:px-0 px-4">
+    <section className="mx-auto max-w-[1024px] pt-5 sm:px-0 px-4 mb-5">
       <div className="">
         <BlurFadeText
           className="text-blue-10 text-xl font-bold"
