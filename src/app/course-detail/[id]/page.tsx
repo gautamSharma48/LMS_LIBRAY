@@ -3,7 +3,13 @@ import FrequentlyAskedQuestions from "@/components/common/courseDetail/faqs";
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import { homeData } from "@/constants";
-import { CheckCircle, CheckCircle2Icon, HeadphonesIcon, ListTodoIcon, Monitor } from "lucide-react";
+import {
+  CheckCircle,
+  CheckCircle2Icon,
+  HeadphonesIcon,
+  ListTodoIcon,
+  Monitor,
+} from "lucide-react";
 import { useParams } from "next/navigation";
 import React from "react";
 import { motion } from "framer-motion";
@@ -33,10 +39,12 @@ const CourseDetail = () => {
       <TrainingFeature />
       <FrequentlyAskedQuestions data={courseData?.curriculm} type="curriculm" />
       <CourseDetailSection />
+      <LearningObjective />
       <FrequentlyAskedQuestions
         data={courseData?.courseDescription?.courseData}
         heading={courseData?.courseDescription?.courseHeading}
       />
+     
       <TestimonialReview />
       <FrequentlyAskedQuestions
         data={courseData?.faqs?.faqsData}
@@ -214,8 +222,7 @@ const TrainingFeature = () => {
       <p className="text-xl font-bold">Training Features</p>
 
       <div className="grid grid-cols-3 gap-4 mt-5">
-
-      <div className="bg-white-10 max-w-[300px] p-3 rounded-xl shadow-2xl drop-shadow">
+        <div className="bg-white-10 max-w-[300px] p-3 rounded-xl shadow-2xl drop-shadow">
           <div className="flex items-center gap-3">
             <Monitor />
             <div className="text-xl">Course Duration</div>
@@ -232,7 +239,9 @@ const TrainingFeature = () => {
             <div className="text-xl">Real-life Case Studies</div>
           </div>
           <div className="mt-10 text-sm">
-          Towards the end of the training, you will be working on a project where you will implement the techniques learnt to visualize and analyze
+            Towards the end of the training, you will be working on a project
+            where you will implement the techniques learnt to visualize and
+            analyze
           </div>
         </div>
 
@@ -242,20 +251,148 @@ const TrainingFeature = () => {
             <div className="text-xl">Assignments</div>
           </div>
           <div className="mt-10 text-sm">
-          Each class has practical assignments which shall be finished before the next class and helps you to apply the concepts taught during
+            Each class has practical assignments which shall be finished before
+            the next class and helps you to apply the concepts taught during
           </div>
         </div>
 
         <div className="bg-white-10 max-w-[300px] p-3 rounded-xl shadow-2xl drop-shadow">
           <div className="flex items-center gap-2">
-          <HeadphonesIcon className="text-grey-40" />
+            <HeadphonesIcon className="text-grey-40" />
             <div className="text-xl">Lifetime Access</div>
           </div>
           <div className="mt-10 text-sm">
-          
-          You get lifetime access to Learning Management System (LMS) where presentations, quizzes, installation guide & class recordings are there.
+            You get lifetime access to Learning Management System (LMS) where
+            presentations, quizzes, installation guide & class recordings are
+            there.
           </div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+const LearningObjective = () => {
+  return (
+    <div className="bg-white-10 p-8 rounded-lg shadow-2xl max-w-[1024px] drop-shadow my-10 mx-auto">
+      <h2 className="text-sm text-gray-500 font-semibold mb-2">
+        WHAT YOU WILL LEARN
+      </h2>
+      <h1 className="text-2xl font-bold mb-6">Learning Objectives</h1>
+      <div className="space-y-6">
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            1
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Scrum Theory</h3>
+            <p className="text-gray-600">
+              Understand the definition of Scrum, its values and pillars. Learn
+              about the benefits of an iterative approach and the dangers of
+              partial implementation.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            2
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">The Scrum Team</h3>
+            <p className="text-gray-600">
+              Illustrate the interaction between the Product Owner, Developers,
+              and Scrum Master in delivering Increments within a Sprint.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            3
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">
+              Scrum Events and Activities
+            </h3>
+            <p className="text-gray-600">
+              Understand the benefits of timeboxing, sprint purpose and
+              duration, key Scrum events and Product Backlog refinement.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            4
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">
+              Scrum Artifacts and Commitments
+            </h3>
+            <p className="text-gray-600">
+              Learn about Agile artifacts (Backlog, Sprint Backlog, Increment)
+              and their roles in iterative development, goal setting.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            5
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">The Team</h3>
+            <p className="text-gray-600">
+              Understand the three Scrum Roles: development team builds, PO owns
+              backlog (prioritizes), Scrum Master coaches and protects process.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            6
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">
+              Scrum Events and Activities
+            </h3>
+            <p className="text-gray-600">
+              Learn to plan sprints, review work, reflect and adapt. Delve into
+              daily Scrum Events/Practices and Definition of Done (DoD).
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            7
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">
+              Scrum Master Core Competencies
+            </h3>
+            <p className="text-gray-600">
+              Learn the role of the Scrum Master in facilitating the needs of
+              the Scrum Team and organization, including facilitating group
+              decision-making.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-semibold">
+            8
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">
+              Service to the Team, PO, and Org
+            </h3>
+            <p className="text-gray-600">
+              Identify the Scrum Master's role in leading the Scrum Team,
+              managing technical debt, supporting the Product Owner and more.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-6 text-center">
+        <a href="#" className="text-green-600 font-semibold">
+          View less <i className="fas fa-chevron-up"></i>
+        </a>
       </div>
     </div>
   );
