@@ -42,12 +42,12 @@ const CourseDetail = () => {
       <CourseDetailSection />
       <LearningObjective />
 
-      <Banner3 />
       <FrequentlyAskedQuestions
         data={courseData?.courseDescription?.courseData}
         heading={courseData?.courseDescription?.courseHeading}
       />
      
+     <Banner3 />
       <TestimonialReview />
       <FrequentlyAskedQuestions
         data={courseData?.faqs?.faqsData}
