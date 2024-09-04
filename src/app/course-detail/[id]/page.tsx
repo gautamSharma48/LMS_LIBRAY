@@ -37,9 +37,12 @@ const CourseDetail = () => {
       <Banner />
       <Banner2 />
       <TrainingFeature />
+    
       <FrequentlyAskedQuestions data={courseData?.curriculm} type="curriculm" />
       <CourseDetailSection />
       <LearningObjective />
+
+      <Banner3 />
       <FrequentlyAskedQuestions
         data={courseData?.courseDescription?.courseData}
         heading={courseData?.courseDescription?.courseHeading}
@@ -123,6 +126,7 @@ const Banner = () => {
 const Banner2 = () => {
   return (
     <section className="max-w-[1024px] mx-auto">
+      
       <div className="text-center text-3xl font-bold">
         Our Secret Sauce for Exam and Career Success
       </div>
@@ -174,6 +178,34 @@ const Banner2 = () => {
     </section>
   );
 };
+
+const Banner3 = () => {
+  return (
+    <div className="bg-white-10 p-8 rounded-lg shadow-2xl drop-shadow flex items-center justify-between max-w-[1024px] mx-auto">
+    <div>
+        <h4 className="text-sm text-gray-500 mb-2">WHO CAN ATTEND THE CSM COURSE</h4>
+        <h2 className="text-2xl font-bold mb-4">Who This Course Is For</h2>
+        <div className="grid grid-cols-2 gap-4 text-lg">
+            <ul className="list-disc list-inside">
+                <li>Software Engineers</li>
+                <li>Project Managers</li>
+                <li>Business Analysts</li>
+                <li>Testers</li>
+            </ul>
+            <ul className="list-disc list-inside">
+                <li>Product Managers</li>
+                <li>Team Leaders</li>
+                <li>Developers</li>
+            </ul>
+        </div>
+    </div>
+    <div className="relative">
+        <img src="https://d2o2utebsixu4k.cloudfront.net/Prerequisites-7a0e6d93848a4b9baec819249cc90c5d.svg" alt="A person standing with arms crossed, smiling confidently" className="rounded-full w-full h-full" />
+        
+    </div>
+</div>
+  )
+}
 
 const CourseDetailSection = () => {
   return (
