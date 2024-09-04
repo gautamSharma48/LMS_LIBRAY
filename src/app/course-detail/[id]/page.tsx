@@ -383,8 +383,7 @@ const LearningObjective = () => {
               Service to the Team, PO, and Org
             </h3>
             <p className="text-gray-600">
-              Identify the Scrum Master's role in leading the Scrum Team,
-              managing technical debt, supporting the Product Owner and more.
+              {"Identify the Scrum Master's role in leading the Scrum Team, managing technical debt, supporting the Product Owner and more."}
             </p>
           </div>
         </div>
