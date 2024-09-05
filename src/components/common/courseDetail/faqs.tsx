@@ -21,7 +21,7 @@ const FrequentlyAskedQuestions = ({ type = "", ...props }) => {
 const Curriculm = ({ data = [], heading = "" }) => {
   const [openIndex, setOpenIndex] = useState(1);
   return (
-    <section className="mx-auto max-w-[1024px] pt-5 sm:px-0 px-4">
+    <section className="mx-auto max-w-[1280px] pt-5 sm:px-0 px-4">
       <div className="">
         <div className="flex items-center justify-between mb-5 gap-3">
           <BlurFadeText
@@ -105,7 +105,7 @@ const Curriculm = ({ data = [], heading = "" }) => {
 const FaqsQuestion = ({ data = [], heading = "" }) => {
   const [openIndex, setOpenIndex] = useState(1);
   return (
-    <section className="mx-auto max-w-[1024px] pt-5 sm:px-0 px-4 mb-5">
+    <section className="mx-auto max-w-[1280px] pt-5 sm:px-0 px-4 mb-5">
       <div className="">
         <BlurFadeText
           className="text-blue-10 text-xl font-bold"

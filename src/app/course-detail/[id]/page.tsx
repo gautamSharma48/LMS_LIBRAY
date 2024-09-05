@@ -6,6 +6,7 @@ import { homeData } from "@/constants";
 import {
   CheckCircle,
   CheckCircle2Icon,
+  Clock10Icon,
   HeadphonesIcon,
   ListTodoIcon,
   Monitor,
@@ -37,17 +38,18 @@ const CourseDetail = () => {
       <Banner />
       <Banner2 />
       <TrainingFeature />
-    
+
       <FrequentlyAskedQuestions data={courseData?.curriculm} type="curriculm" />
       <CourseDetailSection />
+      <DemandAndAccelerated />
       <LearningObjective />
 
       <FrequentlyAskedQuestions
         data={courseData?.courseDescription?.courseData}
         heading={courseData?.courseDescription?.courseHeading}
       />
-     
-     <Banner3 />
+
+      <Banner3 />
       <TestimonialReview />
       <FrequentlyAskedQuestions
         data={courseData?.faqs?.faqsData}
@@ -61,7 +63,7 @@ const CourseDetail = () => {
 const Banner = () => {
   return (
     <section className="my-10">
-      <div className="flex justify-between items-center max-w-[1024px] mx-auto">
+      <div className="flex justify-between items-center max-w-[1280px] mx-auto">
         <div className="flex-1 flex flex-col gap-4">
           <p className="font-semibold text-sm">
             Certified ScrumMaster Certification Training Course
@@ -125,8 +127,7 @@ const Banner = () => {
 
 const Banner2 = () => {
   return (
-    <section className="max-w-[1024px] mx-auto">
-      
+    <section className="max-w-[1280px] mx-auto">
       <div className="text-center text-3xl font-bold">
         Our Secret Sauce for Exam and Career Success
       </div>
@@ -181,36 +182,41 @@ const Banner2 = () => {
 
 const Banner3 = () => {
   return (
-    <div className="bg-white-10 p-8 rounded-lg shadow-2xl drop-shadow flex items-center justify-between max-w-[1024px] mx-auto">
-    <div>
-        <h4 className="text-sm text-gray-500 mb-2">WHO CAN ATTEND THE CSM COURSE</h4>
+    <div className="bg-white-10 p-8 rounded-lg shadow-2xl drop-shadow flex items-center justify-between max-w-[1280px] mx-auto">
+      <div>
+        <h4 className="text-sm text-gray-500 mb-2">
+          WHO CAN ATTEND THE CSM COURSE
+        </h4>
         <h2 className="text-2xl font-bold mb-4">Who This Course Is For</h2>
         <div className="grid grid-cols-2 gap-4 text-lg">
-            <ul className="list-disc list-inside">
-                <li>Software Engineers</li>
-                <li>Project Managers</li>
-                <li>Business Analysts</li>
-                <li>Testers</li>
-            </ul>
-            <ul className="list-disc list-inside">
-                <li>Product Managers</li>
-                <li>Team Leaders</li>
-                <li>Developers</li>
-            </ul>
+          <ul className="list-disc list-inside">
+            <li>Software Engineers</li>
+            <li>Project Managers</li>
+            <li>Business Analysts</li>
+            <li>Testers</li>
+          </ul>
+          <ul className="list-disc list-inside">
+            <li>Product Managers</li>
+            <li>Team Leaders</li>
+            <li>Developers</li>
+          </ul>
         </div>
+      </div>
+      <div className="relative">
+        <img
+          src="https://d2o2utebsixu4k.cloudfront.net/Prerequisites-7a0e6d93848a4b9baec819249cc90c5d.svg"
+          alt="A person standing with arms crossed, smiling confidently"
+          className="rounded-full w-full h-full"
+        />
+      </div>
     </div>
-    <div className="relative">
-        <img src="https://d2o2utebsixu4k.cloudfront.net/Prerequisites-7a0e6d93848a4b9baec819249cc90c5d.svg" alt="A person standing with arms crossed, smiling confidently" className="rounded-full w-full h-full" />
-        
-    </div>
-</div>
-  )
-}
+  );
+};
 
 const CourseDetailSection = () => {
   return (
     <section className="bg-blue-10  w-full my-10">
-      <ul className="flex items-center p-10 max-w-[1024px] mx-auto justify-between text-white-10">
+      <ul className="flex items-center p-10 max-w-[1280px] mx-auto justify-between text-white-10">
         <li className="flex flex-col">
           <p className="text-2xl font-bold">450K+</p>
           <div>Professionals trained</div>
@@ -232,7 +238,7 @@ const CourseDetailSection = () => {
 
 const TestimonialReview = () => {
   return (
-    <motion.div className="max-w-[1024px] mx-auto my-10">
+    <motion.div className="max-w-[1280px] mx-auto my-10">
       <BlurFadeText
         className="text-gray-600 my-10  px-4 w-full text-start text-2xl font-bold"
         yOffset={3}
@@ -250,10 +256,10 @@ const TestimonialReview = () => {
 
 const TrainingFeature = () => {
   return (
-    <div className="w-full max-w-[1024px] mx-auto my-10">
+    <div className="w-full max-w-[1280px] mx-auto my-10">
       <p className="text-xl font-bold">Training Features</p>
 
-      <div className="grid grid-cols-3 gap-4 mt-5">
+      <div className="grid grid-cols-4 gap-4 mt-5">
         <div className="bg-white-10 max-w-[300px] p-3 rounded-xl shadow-2xl drop-shadow">
           <div className="flex items-center gap-3">
             <Monitor />
@@ -306,7 +312,7 @@ const TrainingFeature = () => {
 
 const LearningObjective = () => {
   return (
-    <div className="bg-white-10 p-8 rounded-lg shadow-2xl max-w-[1024px] drop-shadow my-10 mx-auto">
+    <div className="bg-white-10 p-8 rounded-lg shadow-2xl max-w-[1280px] drop-shadow my-10 mx-auto">
       <h2 className="text-sm text-gray-500 font-semibold mb-2">
         WHAT YOU WILL LEARN
       </h2>
@@ -415,7 +421,9 @@ const LearningObjective = () => {
               Service to the Team, PO, and Org
             </h3>
             <p className="text-gray-600">
-              {"Identify the Scrum Master's role in leading the Scrum Team, managing technical debt, supporting the Product Owner and more."}
+              {
+                "Identify the Scrum Master's role in leading the Scrum Team, managing technical debt, supporting the Product Owner and more."
+              }
             </p>
           </div>
         </div>
@@ -425,6 +433,167 @@ const LearningObjective = () => {
           View less <i className="fas fa-chevron-up"></i>
         </a>
       </div>
+    </div>
+  );
+};
+
+const DemandAndAccelerated = () => {
+  return (
+    <div className="p-8 max-w-[1280px] mx-auto">
+      <div className="flex items-start gap-3 w-full">
+      <div className="bg-[#f8f8f8] flex-1 w-full p-8 rounded-lg shadow-2xl drop-shadow">
+        <h2 className="text-sm text-gray-500 mb-2">WHY GET CSM CERTIFIED</h2>
+        <h1 className="text-3xl font-bold text-gray-800 mb-6">
+          Soaring Demand and Accelerated Growth
+        </h1>
+        <div className="bg-white-10 p-6 rounded-lg shadow-md">
+          <div className="flex justify-center mb-6">
+            <button className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700">
+              Scrum Master
+            </button>
+            <button className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 mx-4">
+              Senior Scrum Master
+            </button>
+            <button className="px-4 py-2 border border-green-300 rounded-lg text-green-700 bg-green-100">
+              Chief Scrum Master
+            </button>
+          </div>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="text-center">
+              <h3 className="text-sm text-gray-500 mb-2">Salary</h3>
+              <div className="flex justify-center items-end h-24">
+                <div className="bg-[#f8e5c2] w-8 h-16 mx-1"></div>
+                <div className="bg-[#f8e5c2] w-8 h-24 mx-1"></div>
+                <div className="bg-[#f8e5c2] w-8 h-20 mx-1"></div>
+              </div>
+              <div className="flex justify-center gap-2 text-sm text-gray-500 mt-2">
+                <span>₹20L</span>
+                <span>₹29L</span>
+                <span>₹42L</span>
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="text-sm text-gray-500 mb-2">Hiring Companies</h3>
+              <div className="flex flex-wrap justify-center items-center h-24">
+                <img
+                  src="https://placehold.co/100x40?text=Accenture"
+                  alt="Accenture logo"
+                  className="m-2"
+                />
+                <img
+                  src="https://placehold.co/100x40?text=Allianz"
+                  alt="Allianz logo"
+                  className="m-2"
+                />
+                <img
+                  src="https://placehold.co/100x40?text=Bank+of+America"
+                  alt="Bank of America logo"
+                  className="m-2"
+                />
+                <img
+                  src="https://placehold.co/100x40?text=Bosch"
+                  alt="Bosch logo"
+                  className="m-2"
+                />
+                <img
+                  src="https://placehold.co/100x40?text=Danske+Bank"
+                  alt="Danske Bank logo"
+                  className="m-2"
+                />
+                <img
+                  src="https://placehold.co/100x40?text=Comcast"
+                  alt="Comcast logo"
+                  className="m-2"
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="text-sm text-gray-500 mb-2">Demand</h3>
+              <div className="flex justify-center items-center h-24">
+                <i className="fas fa-briefcase text-4xl text-yellow-500"></i>
+              </div>
+              <div className="text-sm text-gray-500 mt-2">
+                <span>11%</span>
+                <p>Estimated growth in Scrum Master job listings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="text-gray-600 text-sm mt-6">
+          Armed with this coveted Scrum certification, not only will you be well
+          positioned to command salaries{" "}
+          <span className="font-bold">21% on average higher</span> than that
+          earned by your non-certified peers, but also ready to land in-demand
+          Scrum roles like Scrum Master, Delivery Lead, Agile
+        </p>
+        <a href="#" className="text-blue-500 text-sm mt-2 inline-block">
+          Read More <i className="fas fa-chevron-down"></i>
+        </a>
+        <div className="mt-6 w-full flex justify-center">
+          <button className="bg-blue-600 text-white-10 px-6 py-3 rounded-lg">
+            Connect with us
+          </button>
+        </div>
+      </div>
+
+      <div className=" p-6 flex-1 max-w-[300px] bg-white-10 border border-gray-200 rounded-xl shadow-md">
+      <div className="flex items-center space-x-2">
+        <Clock10Icon className="text-black-30" />
+        <p className="text-sm font-medium text-gray-500">
+          Next Cohort starts in <span className="text-green-600 font-semibold">2 days</span>
+        </p>
+      </div>
+
+      <form className="mt-4 space-y-4">
+        <div>
+          <input
+            type="text"
+            placeholder="Full Name"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+        <div className="flex">
+          <div className="flex items-center border border-gray-300 rounded-l-md bg-gray-100">
+            <select
+              className="bg-transparent px-2 py-2 text-sm text-gray-700 focus:outline-none"
+            >
+              <option value="+91">🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              {/* Add more country codes as needed */}
+            </select>
+          </div>
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            className="w-full px-4 py-2 border-t border-r border-b border-gray-300 rounded-r-md focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+        <p className="text-xs text-gray-500">
+          By Signing up, you agree to our{' '}
+          <a href="#" className="text-blue-500 underline">Terms & Conditions</a> and our{' '}
+          <a href="#" className="text-blue-500 underline">Privacy and Policy</a>
+        </p>
+        <button
+          type="submit"
+          className="w-full py-2 bg-blue-500 text-white-10 rounded-md font-semibold hover:bg-blue-600"
+        >
+          Talk to our advisor
+        </button>
+      </form>
+    </div>
+      </div>
+      
     </div>
   );
 };
