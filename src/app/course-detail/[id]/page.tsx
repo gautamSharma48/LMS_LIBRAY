@@ -6,6 +6,7 @@ import { homeData } from "@/constants";
 import {
   CheckCircle,
   CheckCircle2Icon,
+  ChevronDown,
   Clock10Icon,
   HeadphonesIcon,
   ListTodoIcon,
@@ -524,10 +525,10 @@ const DemandAndAccelerated = () => {
           positioned to command salaries{" "}
           <span className="font-bold">21% on average higher</span> than that
           earned by your non-certified peers, but also ready to land in-demand
-          Scrum roles like Scrum Master, Delivery Lead, Agile
+          Scrum roles like Scrum Master, Delivery Lead, Agile ....
         </p>
-        <a href="#" className="text-blue-500 text-sm mt-2 inline-block">
-          Read More <i className="fas fa-chevron-down"></i>
+        <a href="#" className="text-blue-500 flex items-center  justify-center text-sm mt-2">
+          Read More <ChevronDown />
         </a>
         <div className="mt-6 w-full flex justify-center">
           <button className="bg-blue-600 text-white-10 px-6 py-3 rounded-lg">
