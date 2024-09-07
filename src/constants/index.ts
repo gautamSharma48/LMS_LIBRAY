@@ -6,7 +6,7 @@ export const signUpData = [];
 export const logoUrl = "https://teclearns.com/images/logo.png" as string;
 
 export const imageUrlConstant = {
-  logoUrl: "https://teclearns.com/images/logo.png",
+  logoUrl: "/logo.png",
   mainBanner: "/main-banner.png",
 };
 
@@ -122,6 +122,15 @@ export const aboutUsData = {
   ],
 } as const;
 
+export const headerItems = [
+  { id: 1, label: "Overview", link: "#overview" },
+  { id: 2, label: "Why Knowledge Hut", link: "#why-knowledge-hut" },
+  { id: 3, label: "Tuition", link: "#tuition" },
+  { id: 4, label: "Instructor", link: "#instructor" },
+  { id: 5, label: "Curriculum", link: "#curriculum" },
+  { id: 6, label: "FAQs", link: "#faqs" },
+];
+
 export const homeData = {
   become: [
     {
@@ -216,16 +225,19 @@ export const homeData = {
               "As soon as you enrol into the course, your LMS (The Learning Management System) access will be functional. You will immediately get access to our course content in the form of a complete set of videos, PPTs, PDFs and  Assignments. You can start learning right away.",
           },
           {
-            question: "For how long will I have access to the course materials?",
+            question:
+              "For how long will I have access to the course materials?",
             answer: `All the videos and other materials like PPTs, Quiz and Assignments, etc are hosted in our Learning Management System (LMS) and you will have a lifetime access to that. `,
           },
           {
-            question: "Are there any pre-requisite to attend MS Project training?",
+            question:
+              "Are there any pre-requisite to attend MS Project training?",
             answer: `There are no pre-requisites for this course. But basic understanding of the project and project environment will be helpful.`,
           },
           {
             question: "What is MS Project?",
-            answer: "Microsoft Project is a project management software program, developed by Microsoft, which is designed to assist a project manager in developing a plan, assigning resources to tasks, tracking progress, managing the budget, and analyzing workloads.",
+            answer:
+              "Microsoft Project is a project management software program, developed by Microsoft, which is designed to assist a project manager in developing a plan, assigning resources to tasks, tracking progress, managing the budget, and analyzing workloads.",
           },
           {
             question: "What will happen if I have technical queries?",
@@ -258,6 +270,161 @@ export const homeData = {
             answer:
               "Just give us a CALL at +91 1234567890 OR email at sales@teclearns.com Toll free number is 1800 123 4567.",
           },
+        ],
+      },
+    },
+
+    {
+      id: 22,
+      title: "ITIL® 4 Foundation Training",
+      courseSubtitle: "ITIL® 4 Foundation Training",
+      description:
+        "The Ultimate Immersive Learning Program to Master ITIL 4 and Ace the Foundation Exam",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "IT Service Management",
+        careerDetail: [
+          { carrer: "Carrer Transformation", value: "450,00" },
+          { carrer: "Workshops Every Month", value: "250" },
+          { carrer: "Countries and Counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "16 Hours of Live Instructor-Led Sessions",
+            },
+            {
+              icon: "",
+              value: "Earn 16 PDUs for Continued Learning",
+            },
+            {
+              icon: "",
+              value: "49+ Hours of On-Demand Self-Paced Learning",
+            },
+            {
+              icon: "",
+              value: "5 Simulation Exams and 8 Mock Tests to Ace ITIL Exam",
+            },
+            {
+              icon: "",
+              value: "8 Assessments with More Than 200 Questions",
+            },
+            {
+              icon: "",
+              value: "Get 5 Complimentary Courses from Top 100",
+            },
+            {
+              icon: "",
+              value: "PeopleCert Official eBook and Training Material",
+            },
+            {
+              icon: "",
+              value: "Course Fee Includes Exam Fee and Online Proctoring",
+            },
+            {
+              icon: "",
+              value: "Lifetime Access to On-Demand Courseware",
+            },
+          ],
+          overviewDetail: `Fast-track your career in the booming IT service management domain and master the skills to drive successful IT service delivery. 
+          The ITIL4 Certification isn't just a credential—it's your passport to a common language and powerful tools fostering collaboration within IT teams, unlocking unparalleled value across the business.
+
+Our unparalleled course is designed for one spectacular goal: to prepare you comprehensively to ace the ITIL 4 Foundation exam on your very first attempt.
+
+Immerse yourself in our blended learning ITIL Training program, a unique blend of live, instructor-led sessions and on-demand self-paced learning. But here's where the adventure truly begins—our live training sessions are more than just learning; they're an exhilarating experience that will fuel your passion for ITIL. Dive deep into ITIL concepts with real-life case studies, engage in hands-on role-play exercises that simulate work environments, and step into the dynamic world of an ITIL professional through engaging activities.
+
+Guiding you through this thrilling journey are our seasoned trainers, experts with over 20 years in the ITIL domain. They don't just teach; they live and breathe ITIL, ready to share their wealth of knowledge and ensure you conquer every twist and turn in your learning adventure.
+
+Start with the core concepts of ITIL 4, the latest evolution of the ITIL framework, and delve into the intricacies of the ITIL 4 service value system. With an array of exciting learning resources, we guarantee you'll be well-equipped not just to pass the exam, but to power collaboration within IT and deliver unparalleled value across the enterprise.`,
+
+          overviewPoints: [
+            {
+              title: "Live Instructor-Led Sessions",
+              value:
+                "Master ITIL with in our exclusive 16-hour live training. Dive into real-world scenarios, tackle hands-on role-play exercises, and amplify your skills with interactive activities. With trainers boasting over two decades in ITIL brilliance, clear all doubts, and transform into an ITIL pro.",
+            },
+            {
+              title: "PDUs for Continued Learning",
+              value:
+                "Earn 16 Professional Development Units (PDUs) as you seek to maintain or elevate your skills and certifications, ensuring continuous professional growth.",
+            },
+            {
+              title: "On-Demand Self-Paced Learning",
+              value:
+                "Dive into over 49 hours of on-demand self-paced learning, giving you the flexibility to study at your own pace and ensuring a comprehensive understanding of ITIL concepts tailored to your schedule.",
+            },
+            {
+              title: "Simulation Exams",
+              value:
+                "Familiarize yourself with the actual ITIL Foundation exam format and difficulty level through 5 simulation exams, preparing you for success.",
+            },
+            {
+              title: "Mock Tests and Assessments",
+              value:
+                "Reinforce your learning and identify areas for improvement with 8 mock tests and 8 assessments, ensuring you are thoroughly prepared.",
+            },
+            {
+              title: "Complimentary Courses",
+              value:
+                "Enhance your knowledge and skills in related areas with 5 complimentary courses from the top 100, enriching your learning experience",
+            },
+            {
+              title: "Take² Re-Sit Exam Option",
+              value:
+                "In case of an unsuccessful attempt, put your worries at ease by opting for the Take² Re-sit Exam Option at the time of registration with the help of your learning advisor. Retake the exam for a fraction of the price and get 6 months from the date of the initial exam to prepare for your second try which you can schedule at your own convenience and attempt from the comfort of your home or office.",
+            },
+            {
+              title: "All-Inclusive Program",
+              value:
+                "Your course fee covers the ITIL Foundation exam fee, online proctoring, ITIL4 Foundation official e-book, and ITIL4 Foundation official training materials, streamlining your certification process for a hassle-free experience.",
+            },
+            {
+              title: "Lifetime Access to On-Demand Courseware",
+              value:
+                "Enjoy lifetime access to on-demand courseware, allowing you to revisit and reinforce your knowledge whenever needed, ensuring lasting competence.",
+            },
+            {
+              title: "PeopleCert Official eBook and Training Material",
+              value:
+                "Access official ITIL 4 Foundation e-book and training materials from PeopleCert, aligning your learning with the official certification requirements.",
+            },
+          ],
+
+          overviewCourseDescription: `The ITIL Foundation certification isn't just a certification; it's your ticket to mastering the common language and tools that drive collaboration within IT teams, ultimately delivering unmatched value across the entire business landscape.
+
+Elevate your IT journey with a certification that can unlock the door to a future where your expertise sets the standard. Your journey begins here—exciting, transformative, and geared for success!
+
+          NOTE: ITIL®, ITIL® Foundation, and AXELOS are registered trademarks of AXELOS Limited, used under the permission of AXELOS Limited. The Swirl logo™ is a trademark of AXELOS Limited, used under the permission of AXELOS Limited. PeopleCert® is the registered trademark of PeopleCert International Ltd., the sole Examination Institute (EI) for the delivery of AXELOS Accreditation and Examination services worldwide. KnowledgeHut is a Certified Partner of AXELOS and an Accredited Training Organization (ATO) with PeopleCert®.`,
+        },
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "120,750+ Learners Enrolled",
+        bannerImage:
+          "https://ww2.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FBI-10-a1cdf54df4e74060af71db72cc024436.webp&w=3840&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        highlights: [
+          "World's #1 ITIL Exam Prep to Pass in Your First Attempt",
+          "Includes Exam Fee, eBook, and PeopleCert Training Material",
+          "Gear up for a thriving IT career and enjoy greater job security",
+          "Immersive Learning with Simulations, Case Studies, Assessments, and more!",
         ],
       },
     },

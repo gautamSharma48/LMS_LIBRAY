@@ -22,14 +22,14 @@ const SearchIcon = () => {
   );
 };
 
-const Header = () => {
+const Header = ({isSticky = true}) => {
   const router = useRouter();
 
   const navigation = (data) => {
     router.push(data || "/");
   };
   return (
-    <nav className="bg-[#248de4] sticky top-0 z-20">
+    <nav className={isSticky ? "bg-[#248de4] sticky top-0 z-20" : "bg-[#248de4] z-20" }>
       <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-[#248de4] from-[#248de4] to-[#0c5397] shadow-lg max-w-[1920px] mx-auto ">
         <Link href={"/"} className="mr-6 flex items-center" prefetch={false}>
           <img

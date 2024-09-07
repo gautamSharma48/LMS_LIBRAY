@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/constants/resume.jsx", "src/app/login/page.tsx", "src/app/login/page.tsx", "src/lib/actions/user.js", "src/components/common/otpInput.jsx", "src/components/common/courseDetail/faqs.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/constants/resume.jsx", "src/app/login/page.tsx", "src/app/login/page.tsx", "src/lib/actions/user.js", "src/components/common/otpInput.jsx", "src/components/courseDetail/faqs.tsx", "src/components/courseDetail/overviewSection.tsx"],
   "exclude": ["node_modules"]
 }
