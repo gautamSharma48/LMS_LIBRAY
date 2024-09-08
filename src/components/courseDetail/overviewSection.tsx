@@ -240,6 +240,7 @@ export const CourseCurriculm: React.FC<any> = ({ data }) => {
         <h2 className="text-2xl font-bold mb-4">Curriculum</h2>
         {curriculm?.map((element: any, index: number) => (
           <div
+          key={index}
             onClick={() => setSelectedIndex(index)}
             className="border cursor-pointer border-gray-300 rounded-lg mb-4 shadow shadow-green-800"
           >
