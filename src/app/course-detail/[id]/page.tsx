@@ -9,7 +9,6 @@ import { homeData } from "@/constants";
 import { Course } from "@/types";
 import AdvisorForm from "@/components/courseDetail/advisorForm";
 import StickyHeader from "@/components/courseDetail/stickyHeader";
-import CarrerDetailBanner from "@/components/courseDetail/carrerDetailBanner";
 import OverviewSection from "@/components/courseDetail/overviewSection";
 
 const CourseDetail = () => {
@@ -49,7 +48,6 @@ const CourseDetail = () => {
 
         <div className="w-[70%] p-4">
           <div className="mb-8 h-auto">
-           <CarrerDetailBanner data={courseData?.courseDetail?.careerDetail} />
            <OverviewSection courseData={courseData} />
           </div>
         </div>

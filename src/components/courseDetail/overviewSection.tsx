@@ -14,64 +14,14 @@ import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { CheckmarkIcon } from "react-hot-toast";
 
 const OverviewSection: React.FC<any> = ({ courseData }) => {
-  const [showOverviewDescription, setShowOverviewDescription] = useState(false);
   const overview = courseData?.courseDetail?.overview;
   return (
     <section className="mt-5">
-      <p className="text-sm uppercase font-semibold text-neutral-500">
-        {courseData?.title}
-      </p>
-      <p className="text-3xl leading-9.75 font-bold text-mono-black mt-spacing6 mb-spacing40 my-5">
-        The Most Effective ITIL Foundation Exam Preparation
-      </p>
-      <div className="grid grid-cols-3 w-full gap-3">
-        {overview?.courseDetail?.map((element: any, index: number) => (
-          <CourseInfoCard
-            key={index}
-            element={element}
-            className="p-2 text-base leading-6.5 w-full md:max-w-[300px] text-neutral-800  overview-list bg-white-10 shadow-sm rounded-xl drop-shadow"
-          />
-        ))}
-      </div>
+      {/* upper-banner */}
+      <CarrerDetailBanner data={courseData?.courseDetail?.careerDetail} />
 
-      {!showOverviewDescription && (
-        <div
-          onClick={() => setShowOverviewDescription(!showOverviewDescription)}
-          className="underline cursor-pointer text-blue-10 font-bold my-3 flex items-center gap-2"
-        >
-          {showOverviewDescription ? <PanelBottomOpenIcon /> : <PanelTop />}
-          {showOverviewDescription ? "Read Less" : "Read More"}
-        </div>
-      )}
-
-      {showOverviewDescription && (
-        <FadeIn delay={0.2}>
-          <div className="transition-all duration-500 overflow-hidden w-full">
-            <p className="text-sm  text-ellipsis my-5">
-              {overview?.overviewDetail}
-            </p>
-            <ol className="list-decimal list-inside ml-6 space-y-4 mt-3">
-              {overview?.overviewPoints?.map((element: any, index: number) => (
-                <OrderedList key={index} element={element} index={index} />
-              ))}
-            </ol>
-
-            <p className="mt-3 text-sm">
-              {overview?.overviewCourseDescription}
-            </p>
-          </div>
-        </FadeIn>
-      )}
-
-      {showOverviewDescription && (
-        <div
-          onClick={() => setShowOverviewDescription(!showOverviewDescription)}
-          className="underline cursor-pointer text-blue-10 font-bold my-3 flex items-center gap-2"
-        >
-          {showOverviewDescription ? <PanelBottomOpenIcon /> : <PanelTop />}
-          {showOverviewDescription ? "Read Less" : "Read More"}
-        </div>
-      )}
+      {/* most effective section */}
+      <MostEffectiveSection courseData={courseData} overview={overview} />
 
       {/* HIGH DEMAND AND PROFFesional */}
       <HighDemandAndAccerlated
@@ -93,13 +43,11 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
       {/* Pre-requistics and eligiblity */}
       <PrequisticsEligiblity data={courseData} />
 
-       {/* course certification and banner */}
-       <CourseCertification data={courseData} />
+      {/* course certification and banner */}
+      <CourseCertification data={courseData} />
 
       {/* who can attend the course */}
       <WhoCanAttendTheCourse data={courseData} />
-
-     
 
       {/* contact learning advisor */}
       <ContactLearningAdvisor />
@@ -247,19 +195,21 @@ export const LearningObjective: React.FC<any> = ({ data }) => {
       <h1 className="text-2xl font-bold mt-2">Learning Objectives</h1>
       <hr className="my-3" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        {data.slice(0, viewAll ? data?.length : 6).map((element: any, index: number) => (
-          <div key={index} className="flex items-start space-x-4">
-            <div className="flex items-center justify-center  bg-grey-50 border border-green-700 rounded-full">
-              <span className="text-green-600 font-bold px-4 py-2">
-                {index + 1}
-              </span>
+        {data
+          .slice(0, viewAll ? data?.length : 6)
+          .map((element: any, index: number) => (
+            <div key={index} className="flex items-start space-x-4">
+              <div className="flex items-center justify-center  bg-grey-50 border border-green-700 rounded-full">
+                <span className="text-green-600 font-bold px-4 py-2">
+                  {index + 1}
+                </span>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold">{element?.title}</h3>
+                <p className="text-gray-600">{element?.description}</p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold">{element?.title}</h3>
-              <p className="text-gray-600">{element?.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
       </div>
       <hr className="my-3" />
       <div className="mt-6 text-center w-full">
@@ -268,7 +218,7 @@ export const LearningObjective: React.FC<any> = ({ data }) => {
           className="text-blue-600 cursor-pointer flex items-center gap-2 justify-center font-semibold"
         >
           {viewAll ? "View Less" : "View All"}
-           {viewAll ?  <ChevronUp />  :  <ChevronDown />}
+          {viewAll ? <ChevronUp /> : <ChevronDown />}
         </div>
       </div>
     </div>
@@ -578,6 +528,88 @@ export const OrderedList: React.FC<any> = ({ element, index }) => {
         <span className="text-gray-600">{element?.value}</span>
       </div>
     </li>
+  );
+};
+
+export const MostEffectiveSection: React.FC<any> = ({
+  courseData,
+  overview,
+}) => {
+  const [showOverviewDescription, setShowOverviewDescription] = useState(false);
+  return (
+    <section className="my-10">
+      <p className="text-sm uppercase font-semibold text-neutral-500">
+        {courseData?.title}
+      </p>
+      <p className="text-3xl leading-9.75 font-bold text-mono-black mt-spacing6 mb-spacing40 my-5">
+        The Most Effective ITIL Foundation Exam Preparation
+      </p>
+      <div className="grid grid-cols-3 w-full gap-3">
+        {overview?.courseDetail?.map((element: any, index: number) => (
+          <CourseInfoCard
+            key={index}
+            element={element}
+            className="p-2 text-base leading-6.5 w-full md:max-w-[300px] text-neutral-800  overview-list bg-white-10 shadow-sm rounded-xl drop-shadow"
+          />
+        ))}
+      </div>
+
+      {!showOverviewDescription && (
+        <div
+          onClick={() => setShowOverviewDescription(!showOverviewDescription)}
+          className="underline cursor-pointer text-blue-10 font-bold my-3 flex items-center gap-2"
+        >
+          {showOverviewDescription ? <PanelBottomOpenIcon /> : <PanelTop />}
+          {showOverviewDescription ? "Read Less" : "Read More"}
+        </div>
+      )}
+
+      {showOverviewDescription && (
+        <FadeIn delay={0.2}>
+          <div className="transition-all duration-500 overflow-hidden w-full">
+            <p className="text-sm  text-ellipsis my-5">
+              {overview?.overviewDetail}
+            </p>
+            <ol className="list-decimal list-inside ml-6 space-y-4 mt-3">
+              {overview?.overviewPoints?.map((element: any, index: number) => (
+                <OrderedList key={index} element={element} index={index} />
+              ))}
+            </ol>
+
+            <p className="mt-3 text-sm">
+              {overview?.overviewCourseDescription}
+            </p>
+          </div>
+        </FadeIn>
+      )}
+
+      {showOverviewDescription && (
+        <div
+          onClick={() => setShowOverviewDescription(!showOverviewDescription)}
+          className="underline cursor-pointer text-blue-10 font-bold my-3 flex items-center gap-2"
+        >
+          {showOverviewDescription ? <PanelBottomOpenIcon /> : <PanelTop />}
+          {showOverviewDescription ? "Read Less" : "Read More"}
+        </div>
+      )}
+    </section>
+  );
+};
+
+export const CarrerDetailBanner: React.FC<any> = ({ data = [] }) => {
+  return (
+    <div className="flex relative overflow-hidden p-9 bg-cream-10  justify-between w-full rounded-xl ">
+      {data.map((element: any, index: number) => (
+        <div key={index} className="">
+          <p className="text-2xl font-bold text-brown-10 mb-spacing2">
+            {element?.value}+
+          </p>
+          <p className="text-sm  leading-5.5 font-normal text-brown-20">
+            {element.carrer}
+          </p>
+        </div>
+      ))}
+    </div>
   );
 };
 
