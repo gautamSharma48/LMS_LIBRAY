@@ -48,7 +48,7 @@ const CourseDetail = () => {
         <StickyHeader isSticky={isSticky} />
 
         <div className="w-[70%] p-4">
-          <div className="mb-8 h-[5000px]">
+          <div className="mb-8 h-auto">
            <CarrerDetailBanner data={courseData?.courseDetail?.careerDetail} />
            <OverviewSection courseData={courseData} />
           </div>

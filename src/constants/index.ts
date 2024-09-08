@@ -338,7 +338,6 @@ Immerse yourself in our blended learning ITIL Training program, a unique blend o
 Guiding you through this thrilling journey are our seasoned trainers, experts with over 20 years in the ITIL domain. They don't just teach; they live and breathe ITIL, ready to share their wealth of knowledge and ensure you conquer every twist and turn in your learning adventure.
 
 Start with the core concepts of ITIL 4, the latest evolution of the ITIL framework, and delve into the intricacies of the ITIL 4 service value system. With an array of exciting learning resources, we guarantee you'll be well-equipped not just to pass the exam, but to power collaboration within IT and deliver unparalleled value across the enterprise.`,
-
           overviewPoints: [
             {
               title: "Live Instructor-Led Sessions",
@@ -397,6 +396,235 @@ Elevate your IT journey with a certification that can unlock the door to a futur
 
           NOTE: ITIL®, ITIL® Foundation, and AXELOS are registered trademarks of AXELOS Limited, used under the permission of AXELOS Limited. The Swirl logo™ is a trademark of AXELOS Limited, used under the permission of AXELOS Limited. PeopleCert® is the registered trademark of PeopleCert International Ltd., the sole Examination Institute (EI) for the delivery of AXELOS Accreditation and Examination services worldwide. KnowledgeHut is a Certified Partner of AXELOS and an Accredited Training Organization (ATO) with PeopleCert®.`,
         },
+        highDemandAndAccerlated: {
+          demandTitle: "High Demand For ITSM Professionals",
+          demandHeading:
+            "ITIL Foundation Among the Highest Paying Certifications",
+          demandDetail: `The future is bright for service management, whether looked at through an IT lens or a business focus. Covid-19 has further put service management under the microscope and delivered business value rather than technology solutions. This demand is set to see an upward curve in the near future, making this a prime time for IT Service Management.
+
+The ITIL® framework for IT service management is used by approximately 45 percent of companies throughout the world, according to estimates (ITSM). Aligned with various international quality standards, including ISO/IEC 20000 (IT Service Management Code of Practice), ITIL has been adopted by thousands of organizations worldwide, such as NASA, the UK National Health Service (NHS), and Disney™.
+
+To succeed as an ITSM professional in industry 4.0, equip yourself with the skills to deal with the latest advancements in service management. ITIL’s incorporation of working practices such as Agile, DevOps, and value stream mapping, and of technical practices and technologies such as Cloud, automation, and advanced analytics ensures you will always utilize the latest best-practice methods from across the IT functions.
+
+ITIL® 4 Foundation is the start of your ITIL certification journey and will help you validate your expertise in successfully implementing ITIL principles and concepts to enhance business value. This credential is also a stepping-stone for you to gain more advanced ITIL certification. Grow your ITSM career with confidence with the ITIL 4 Foundation Certification.
+
+For those aspiring to embark on the journey of ITIL certification courses, the ITIL certification exam and obtaining an ITIL certificate, the ITIL Foundation certification course provides a solid foundation. This course not only aligns with the globally recognized IT Infrastructure Library (ITIL) but also ensures that you are well-prepared to navigate the complexities of contemporary IT service management.`,
+          demandData: [
+            {
+              type: "IT Service Manager",
+              averageSalary: [12, 15, 18],
+              hiringCompany: [],
+              demand: {
+                percant: "18%",
+                description:
+                  "ITIL Foundation Among the Highest Paying Certifications",
+              },
+            },
+            {
+              type: "IT Director",
+              averageSalary: [23, 50, 73],
+              hiringCompany: [],
+              demand: {
+                percant: "18%",
+                description:
+                  "High rate of adoption of ITIL across industries and geographies",
+              },
+            },
+            {
+              type: "Chief Information Officer",
+              averageSalary: [30, 55, 84],
+              hiringCompany: [],
+              demand: {
+                percant: "2M",
+                description:
+                  "Professionals across the globe, certified in ITIL",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          title: "WHY KNOWLEDGEHUT FOR ITIL CERTIFICATION TRAINING",
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Solid Track Record",
+              value:
+                "KnowledgeHut has empowered thousands of professionals across the globe with certifications in ITSM.",
+            },
+            {
+              icon: "",
+              topic: "Experiential Training",
+              value:
+                "Dive into 16 hours of instructor-led training with real-world scenarios, role-plays, case studies and trainers with 20+ years of rich experience.",
+            },
+            {
+              icon: "",
+              topic: "Comprehensive Exam Support",
+              value:
+                "Theoretical and practical learning backed by mock tests. We’re right by you for any certification assistance.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship by Industry Experts",
+              value:
+                "One-to-one mentorship, real-world tips and time-tested techniques from accredited expert practitioners.",
+            },
+            {
+              icon: "",
+              topic: "Take² Re-Sit Exam Option",
+              value:
+                "Retake the exam for fraction of the price and get 6 months from date of initial exam to prepare a second attempt.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive Post-Training Sessions",
+              value:
+                "Make the best of exclusive six-month post-training mentor guidance to overcome challenges in your ITSM career.",
+            },
+          ],
+        },
+        courseAuthor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Maheshwar Nynaru-661980df7288463f842b2aae105322a0.svg",
+            instructorName: "Maheshwar Nynarus",
+            instructorProfession: "Trainer & Consultant",
+            experience: "30",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/capgemini 60x26-45b78461bcc14011898baf17b9965ddb.svg",
+            instructorDetail: `With 30+ years of experience in Banking and IT, Maheshwar Nynaru is a seasoned consultant specializing in Project Management and IT Service Management. A PMP Certified professional and PMI Authorized Training Partner Instructor, he holds the ITIL Expert Level Certification and has delivered over 500 ITIL and PMP training sessions, showcasing a commitment to excellence and knowledge dissemination in the field.`,
+          },
+        ],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Alpesh Vasant-9cfb4f70ff2444cf8e37e21aa85ec8e5.svg",
+            instructorName: "Alpesh Vasant",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+            Alpesh Vasant is an experienced and certified professional, currently leading as the Director and Principal Trainer. With a strong background in ITIL4, he excels in understanding client operations and processes, identifying technical training needs, and providing customized, effective solutions. Alpesh's expertise extends to offering turnkey consultancy and fostering a culture of continuous process improvement within organizations. 
+            His ITIL 2011 certification complements his wide array of specialties, including Project Management (covering PMP 6th Edition, PRINCE2, Prince2Agile, Scrum), Office Automation (expertise in various Office suites and Macro Programming using VBA), Databases (Oracle, SQL Server, MySQL, PostgreSQL, MongoDB), Web Technology (HTML, CSS, JavaScript, XML, ASP, JSP), and Networking (Windows, Linux, Server Administration). Alpesh is also skilled in Six Sigma DMAIC Methodology, Minitab, FMEA, 5 S, and 8 D. 
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Santhosh Kannan-100a3c877b1544cc8a8dc0fe7a7a987b.svg",
+            instructorName: "Santhosh Kannan",
+            instructorProfession: "Trainer & Consultant",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+            Alpesh Vasant is an experienced and certified professional, currently leading as the Director and Principal Trainer. With a strong background in ITIL4, he excels in understanding client operations and processes, identifying technical training needs, and providing customized, effective solutions. Alpesh's expertise extends to offering turnkey consultancy and fostering a culture of continuous process improvement within organizations. 
+            His ITIL 2011 certification complements his wide array of specialties, including Project Management (covering PMP 6th Edition, PRINCE2, Prince2Agile, Scrum), Office Automation (expertise in various Office suites and Macro Programming using VBA), Databases (Oracle, SQL Server, MySQL, PostgreSQL, MongoDB), Web Technology (HTML, CSS, JavaScript, XML, ASP, JSP), and Networking (Windows, Linux, Server Administration). Alpesh is also skilled in Six Sigma DMAIC Methodology, Minitab, FMEA, 5 S, and 8 D. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Imgcert cta-01-91a5fc0ae3944155a4d6c1843bc9da5e.svg",
+          bannerTitle: "Maximize Your ITIL Foundation Exam Success",
+          certificationDetail:
+            "Obtaining the ITIL 4 Foundation Certification goes beyond simply acquiring a new set of skills—it serves as a recognition of your proficiency in IT service management from the globally recognized ITIL framework. This certification is not merely a piece of paper; it symbolizes your unwavering commitment and competence in implementing ITIL practices. It acts as a key to unlock various possibilities in your career, signaling to employers and colleagues that you have the expertise and dedication to thrive in effectively managing IT services within an organization.",
+          certificateImage:
+            "https://d2o2utebsixu4k.cloudfront.net/ITIL (3)-928de885a0af40109172497041f4c5b5.svg",
+        },
+        prerequisites: [
+          "No specific prerequisites or prior qualifications required",
+          "Suitable for beginners and experienced professionals alike",
+          "Basic understanding of IT terminology is beneficial",
+        ],
+        courseCurriculm: [
+          {
+            title: "Introduction to ITIL 4",
+            isPreview: true,
+            objective:
+              " In this learning module, you will embark on a comprehensive exploration of the ITIL 4 framework and delve into its foundational elements, principles, and the myriad advantages it offers to organizations. Gain a nuanced understanding of the evolution and significance of ITIL 4, discovering key characteristics that distinguish it and exploring the core principles guiding its approach to service management.",
+            topics: [
+              "About ITIL4",
+              "Components of ITIL4 Framework",
+              "Benefits of ITIL",
+            ],
+          },
+          {
+            title: "ITIL Key Concepts",
+            isPreview: false,
+            objective:
+              " In this learning module, you will delve into the core concepts of service, its management, and the creation of value. You will explore the intricate components that contribute to the overall value of a service or product, gaining insights into the dynamic relationships between stakeholders, products, and services.",
+            topics: [
+              "Service and Service Management",
+              "Components of Service Value",
+              "Determine the Value of a Service or Product",
+              "Stakeholders and Value Creation",
+              "Products, Services, and Service Offering",
+              "Service Relationship",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Fundamental Concepts of ITIL",
+            description:
+              "Understand the core principles and concepts that drive the ITIL framework",
+          },
+          {
+            title: "Key ITSM Components and Processes",
+            description:
+              "Explore the key components and processes that form the foundation of IT service management.",
+          },
+          {
+            title: "Aligning IT Services with Business",
+            description:
+              "Learn how to align IT services with business goals and cater to customer requirements effectively.",
+          },
+          {
+            title: "Best Practices for IT Service Delivery",
+            description:
+              "Discover industry best practices to ensure efficient and effective IT service delivery.",
+          },
+          {
+            title: "ITIL Service Lifecycle Stages",
+            description:
+              "Gain insights into the different stages of the ITIL service lifecycle and their significance.",
+          },
+          {
+            title: "Roles and Responsibilities",
+            description:
+              "Understand the various roles and responsibilities within an IT service management framework.",
+          },
+          {
+            title: "Incident, Problem, and Change",
+            description:
+              "Learn how to handle incidents, problems, and changes in IT environments to ensure smooth operations.",
+          },
+          {
+            title: "Measuring and Reporting Service",
+            description:
+              "Master the art of measuring and reporting IT service performance and quality metrics.",
+          },
+          {
+            title: "Benefits of ITIL Adoption",
+            description:
+              "Discover the advantages of implementing ITIL practices and their positive impact on enterprise success.",
+          },
+          {
+            title: "ITIL Principles and Continual",
+            description:
+              "Learn effective strategies to implement ITIL principles and foster a culture of continual improvement.",
+          },
+        ],
+        whoCanAttendCourse: [
+          "IT Professionals",
+          "IT Practitioners",
+          "IT Support Staff",
+          "IT Managers",
+          "IT Project Managers",
+          "Business Managers",
+        ],
         enrolledImage:
           "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
         learnersEnrolled: "120,750+ Learners Enrolled",
