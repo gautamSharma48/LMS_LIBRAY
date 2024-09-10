@@ -32,6 +32,9 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
       {/* KnowledgeHUT */}
       <KnowledgeHutAdvantage data={courseData?.courseDetail?.knowledgeHut} />
 
+      {/* TutitionAndTrainigFee */}
+      <TutitionAndTrainigFeeCard />
+
       {/* CourseAndInstructor */}
       <CourseAndInstructor data={courseData} />
 
@@ -59,8 +62,7 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
       {/* contact learning advisor */}
       <ContactLearningAdvisor />
 
-      
-
+      {/* FAQ's Section */}
       <FaqsQuestions
         courseName={courseData?.title}
         data={courseData?.courseDetail?.faqs}
@@ -69,16 +71,75 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
   );
 };
 
+export const TutitionAndTrainigFeeCard: React.FC<any> = () => {
+  return (
+    <div
+      id="tuition"
+      className="my-3 bg-white-10 rounded-lg shadow-lg p-6 max-w-md border border-gray-200"
+    >
+      <div className="bg-green-600 text-white-10 text-center rounded-t-lg py-1">
+        Best Seller
+      </div>
+      <div className="p-4">
+        <h2 className="text-xl font-bold text-center">
+          Instructor-Led Training
+        </h2>
+        <p className="text-center text-gray-600">
+          Learn in Expert-Led Sessions
+        </p>
+        <hr className="my-4" />
+        <h3 className="font-semibold">Solid Experiential Learning</h3>
+        <ul className="mt-2 space-y-2">
+          <li className="flex items-center">
+            <i className="fas fa-check-circle text-green-500 mr-2"></i>
+            16 Hours of Instructor-led Training
+          </li>
+          <li className="flex items-center">
+            <i className="fas fa-check-circle text-green-500 mr-2"></i>
+            Lifetime Access to On-Demand Courseware
+          </li>
+          <li className="flex items-center">
+            <i className="fas fa-check-circle text-green-500 mr-2"></i>5
+            Simulation Exams, 8 Mock Tests, 8 Assessments
+          </li>
+          <li className="flex items-center">
+            <i className="fas fa-check-circle text-green-500 mr-2"></i>
+            Includes Exam Fee & PeopleCert Training Material
+          </li>
+        </ul>
+        <hr className="my-4" />
+        <h3 className="font-semibold">Upcoming Batches</h3>
+        <p className="mt-2">14 Sep : Weekend Batch</p>
+        <p>21 Sep : Weekend Batch</p>
+      </div>
+      <div className="bg-green-50 p-4 rounded-b-lg">
+        <p className="text-green-600 font-semibold">21% OFF</p>
+        <p className="text-2xl font-bold text-green-800">
+          ₹27,999 <span className="line-through text-gray-500">₹35,499</span>
+        </p>
+        <p className="text-gray-500">
+          As low as ₹3,111/month <i className="fas fa-info-circle"></i>
+        </p>
+        <button className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">
+          Apply Now
+        </button>
+      </div>
+    </div>
+  );
+};
+
 export const FaqsQuestions: React.FC<any> = ({ data, courseName = "" }) => {
-  const faqType =  Array.from(new Set(data?.map((element: any) => element?.type)));;
+  const faqType = Array.from(
+    new Set(data?.map((element: any) => element?.type))
+  );
   const [selectedMode, setSelectedMode] = useState(faqType ? faqType[0] : "");
- 
-  const filterFaq = useMemo(()=>{
+
+  const filterFaq = useMemo(() => {
     return data?.filter((element: any) => element.type === selectedMode);
-  },[data, selectedMode])
+  }, [data, selectedMode]);
 
   return (
-    <section className="my-10">
+    <section id="faqs" className="my-10">
       <div className="w-full p-6 bg-white-10  rounded-lg shadow-sm shadow-black-50  my-10">
         <h2 className="text-gray-600 text-sm font-semibold text-center">
           {courseName} FAQS
@@ -105,9 +166,8 @@ export const FaqsQuestions: React.FC<any> = ({ data, courseName = "" }) => {
         </div>
 
         <div className="my-4">
-        <AccordinCourse data={filterFaq} />
+          <AccordinCourse data={filterFaq} />
         </div>
-       
       </div>
     </section>
   );
@@ -130,7 +190,9 @@ export const AccordinCourse: React.FC<any> = ({ courseName, data }) => {
             onClick={() => setSelectedIndex(index)}
             key={index}
             className={`${
-              selectedIndex === index ? "border-green-700 shadow-md shadow-green-700" : "border-grey-30"
+              selectedIndex === index
+                ? "border-green-700 shadow-md shadow-green-700"
+                : "border-grey-30"
             } p-4 border  rounded-xl  cursor-pointer`}
           >
             <div className="flex w-full justify-between items-center font-semibold text-lg ">
@@ -327,7 +389,7 @@ export const CourseCurriculm: React.FC<any> = ({ data }) => {
   const curriculm = data?.courseDetail.courseCurriculm;
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <>
+    <section id="curriculum">
       <h3 className="font-bold text-bold text-blue-10 uppercase text-center text-2xl">
         Course Curriculm
       </h3>
@@ -394,14 +456,14 @@ export const CourseCurriculm: React.FC<any> = ({ data }) => {
           </button>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
 export const CourseAndInstructor: React.FC<any> = ({ data }) => {
   const [selectedMode, setSelectedMode] = useState("instructor");
   return (
-    <section className="my-20">
+    <section id="instructor" className="my-20">
       <div className="text-sm uppercase font-semibold text-neutral-500">
         OUR SUPPORT SYSTEM FOR {data?.title}
       </div>
@@ -492,7 +554,7 @@ export const CourseInstructorCard: React.FC<any> = ({ element }) => {
 
 export const KnowledgeHutAdvantage: React.FC<any> = ({ data }) => {
   return (
-    <div className="">
+    <div id="why-knowledge-hut" className="">
       <p className="text-sm uppercase font-semibold text-neutral-500">
         {data?.title}
       </p>
