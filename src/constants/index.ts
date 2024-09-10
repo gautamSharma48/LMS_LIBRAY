@@ -625,6 +625,103 @@ For those aspiring to embark on the journey of ITIL certification courses, the I
           "IT Project Managers",
           "Business Managers",
         ],
+        aboutCourse: [
+          {
+            question: "What is the ITIL Foundation exam all about?",
+            answer: `ITIL Foundation Exam is an entry-level certification for embarking on a career in Information Technology Service Management (ITSM). Clearing the ITIL Foundation Exam will equip one with the right tools to implement all the processes essential for an organization to comply with the ITIL® framework, which describes the most suitable way of performing processes within the IT cycle.The exam is based on the implementation of the ITIL® V3 Foundation level curriculum. By the AXELOS standard, the ITIL Foundation exam usually takes this format:
+               Multiple choice examination questions
+               40 questions
+               26 marks required to pass (out of 40 available) - 65%
+               60 minutes duration
+               Closed book.`,
+          },
+          {
+            question: "Who conducts the exam?",
+            answer: `The exam is conducted through PeopleCert®. (KnowledgeHut is an ATO with PeopleCert®.`,
+          },
+
+          {
+            question: "What does the exam cover?",
+            answer: `The Foundation exam covers Continuous Service Improvement, Service Strategy, Service Design, Service Transition, and Service Operation.`,
+          },
+          {
+            question:
+              "where can I find the link to take the ITIL Foundation exam?",
+            answer:
+              "After you finish your the 2-day ITIL Foundation classes, PeopleCert® will send you an email with all of the information you need to take the test.",
+          },
+          {
+            question:
+              "Will I be able to pause the test and return to it later?",
+            answer:
+              "No, you will be given a 60-minute time limit and will not be able to pause the exam. If you accidentally close the window, then you’ll be able to reopen it immediately. If your exam page freezes, simply reload your browser and you'll be able to resume where you left off. If you have difficulty with your web browser, you can use the start link in your email to return to the previous question.",
+          },
+        ],
+        faqs: [
+          {
+            type: "Trainig",
+            question:
+              " What can I expect to accomplish after completing the ITIL Foundation Course?",
+            answer: `Our ITIL Foundation Course program is designed to help you learn the fundamentals of the ITIL framework and launch a successful ITSM career. By the completion of the ITIL course online, you will have the knowledge and skills to:
+
+Build products and services with stakeholders and customers to co-create value.
+Apply the guiding principles of the ITIL framework to ensure business value
+To achieve company goals, master and implement the essential ideas of DevOps, Agile, and Lean.
+Apply the four dimensions of Service Management to different areas of service`,
+          },
+          {
+            type: "Trainig",
+            question:
+              "What are the prerequisites for the ITIL® 4 Foundation Certification Course?",
+            answer:
+              "The ITIL Foundation course and the accompanying ITIL4 Foundation test have no prerequisites.",
+          },
+
+          {
+            type: "Carrer Benefit",
+            question: "What are the companies that use ITIL®?",
+            answer: `An ITIL® Lifecycle Expert is responsible for the following and many more:
+
+Computing current ITIL® environment and existing Implementation
+Planning to identify areas for improvement,
+Setting up leadership and ITIL® experiences to simplify and improve the current processes based on industry best practices,
+Performing gap analysis and providing recommendations,
+Liaising with stakeholders to communicate ITSM vision and benefits,
+Identifying and mitigating risks associated with processes,
+Providing ITIL® best practice service management consulting at a strategic design, and operational level,
+Helping with the organization’s transformational efforts.`,
+          },
+
+          {
+            type: "Carrer Benefit",
+            question:
+              "What is the average annual pay of a Project Manager having an ITIL® 3 certification or ITIL 4 certification in India, US and around the globe?",
+            answer: `The salary of a Project Manager having an ITIL® 3 certification or ITIL 4 certification varies from country to country. We have covered them below:
+
+India: The national average salary for a Project Manager is INR 1,251,978 in India.
+US: The national average salary for a Project Manager is $132,453 in the United States.
+UK: The national average salary for a Project Manager is £61,188 in the United Kingdom.`,
+          },
+          {
+            type: "Standard and Pro",
+            question: "How do I know which plan is right for me?",
+            answer: `When deciding between the Standard and Pro plans, consider your aspirations, budget, and the level of support you desire. With the Pro plan, you'll gain access to additional guidance and premium resources, ensuring you reach your full potential.
+
+Don't settle for less—choose Pro for an unmatched learning path to success.`,
+          },
+
+          {
+            type: "Finance Queries",
+            question: "Can I pay the course fees in instalments?",
+            answer: `Yes, instalment options are available for payment of course fees. To avail the instalment option, please get in touch with us at kh.support@upgrad.com. The team will explain how the instalments work and provide timelines for your case. Typically, the number of instalments varies from 2 to 3, but the full amount must be paid before you complete the course.
+            Don't settle for less—choose Pro for an unmatched learning path to success.`,
+          },
+          {
+            type: "Finance Queries",
+            question: "What is the certification exam fee?",
+            answer: `The certification fee for the ITIL4 Foundation exam is not charged separately. Once you enrol for the ITIL4 Foundation certification training with KnowledgeHut, the exam fee is included in the course fee. The course fee is inclusive of charges for ITIL4 Foundation exam, online proctoring, ITIL4 Foundation official e-book, and ITIL4 Foundation official training materials.`,
+          },
+        ],
         enrolledImage:
           "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
         learnersEnrolled: "120,750+ Learners Enrolled",

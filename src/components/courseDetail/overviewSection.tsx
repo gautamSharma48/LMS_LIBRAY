@@ -8,10 +8,11 @@ import {
   PlayCircleIcon,
   UserIcon,
 } from "lucide-react";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { FadeIn } from "../animation";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { CheckmarkIcon } from "react-hot-toast";
+import { cn } from "@/lib/utils";
 
 const OverviewSection: React.FC<any> = ({ courseData }) => {
   const overview = courseData?.courseDetail?.overview;
@@ -49,8 +50,105 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
       {/* who can attend the course */}
       <WhoCanAttendTheCourse data={courseData} />
 
+      {/* About course page */}
+      <AccordinCourse
+        data={courseData?.courseDetail?.aboutCourse}
+        courseName={courseData?.title}
+      />
+
       {/* contact learning advisor */}
       <ContactLearningAdvisor />
+
+      
+
+      <FaqsQuestions
+        courseName={courseData?.title}
+        data={courseData?.courseDetail?.faqs}
+      />
+    </section>
+  );
+};
+
+export const FaqsQuestions: React.FC<any> = ({ data, courseName = "" }) => {
+  const faqType =  Array.from(new Set(data?.map((element: any) => element?.type)));;
+  const [selectedMode, setSelectedMode] = useState(faqType ? faqType[0] : "");
+ 
+  const filterFaq = useMemo(()=>{
+    return data?.filter((element: any) => element.type === selectedMode);
+  },[data, selectedMode])
+
+  return (
+    <section className="my-10">
+      <div className="w-full p-6 bg-white-10  rounded-lg shadow-sm shadow-black-50  my-10">
+        <h2 className="text-gray-600 text-sm font-semibold text-center">
+          {courseName} FAQS
+        </h2>
+        <h1 className="text-2xl font-bold mt-2 text-center">
+          {" "}
+          Frequently Asked Questions
+        </h1>
+
+        <div className="border-[2px] border-grey-500 rounded-2xl px-3 py-1 flex items-center mt-6 w-fit mx-auto ">
+          {faqType?.map((data: any, index: number) => (
+            <button
+              key={index}
+              onClick={() => setSelectedMode(data)}
+              className={`text-sm ${
+                selectedMode === data
+                  ? "bg-blue-10 text-white-10 "
+                  : "text-black-10"
+              }  px-3 py-2 rounded-xl`}
+            >
+              {data}
+            </button>
+          ))}
+        </div>
+
+        <div className="my-4">
+        <AccordinCourse data={filterFaq} />
+        </div>
+       
+      </div>
+    </section>
+  );
+};
+
+export const AccordinCourse: React.FC<any> = ({ courseName, data }) => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  return (
+    <section className="">
+      {/* <div className="text-blue-10 text-center text-3xl font-bold">About</div> */}
+      {courseName && (
+        <div className="text-3xl leading-9.75 font-bold my-4 text-center">
+          About {courseName}{" "}
+        </div>
+      )}
+
+      <ul className="flex flex-col gap-4">
+        {data.map((element: any, index: number) => (
+          <li
+            onClick={() => setSelectedIndex(index)}
+            key={index}
+            className={`${
+              selectedIndex === index ? "border-green-700 shadow-md shadow-green-700" : "border-grey-30"
+            } p-4 border  rounded-xl  cursor-pointer`}
+          >
+            <div className="flex w-full justify-between items-center font-semibold text-lg ">
+              {index + 1} . {element.question}
+              {selectedIndex !== index ? <ChevronDown /> : <ChevronUp />}
+            </div>
+            {selectedIndex === index && (
+              <hr className="my-3 bg-green-950 text-green-900 stroke-gray-900" />
+            )}
+
+            {selectedIndex === index && (
+              <div className="my-5 text-sm ">{element?.answer}</div>
+            )}
+          </li>
+        ))}
+      </ul>
+
+      <div className=""></div>
     </section>
   );
 };
@@ -240,7 +338,7 @@ export const CourseCurriculm: React.FC<any> = ({ data }) => {
         <h2 className="text-2xl font-bold mb-4">Curriculum</h2>
         {curriculm?.map((element: any, index: number) => (
           <div
-          key={index}
+            key={index}
             onClick={() => setSelectedIndex(index)}
             className="border cursor-pointer border-gray-300 rounded-lg mb-4 shadow shadow-green-800"
           >
