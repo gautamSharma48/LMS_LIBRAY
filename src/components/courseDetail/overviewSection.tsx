@@ -33,7 +33,10 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
       <KnowledgeHutAdvantage data={courseData?.courseDetail?.knowledgeHut} />
 
       {/* TutitionAndTrainigFee */}
-      <TutitionAndTrainigFeeCard />
+      <TutitionAndTrainigFee
+          data={courseData?.courseDetail?.aboutCourse}
+          courseName={courseData?.title}
+      />
 
       {/* CourseAndInstructor */}
       <CourseAndInstructor data={courseData} />
@@ -71,6 +74,18 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
   );
 };
 
+export const TutitionAndTrainigFee : React.FC<any> = ({courseName}) =>{
+  return (
+    <section id="tuition"  className="bg-grey-30 p-3  my-5 shadow-md shadow-gray-500 rounded-xl ">
+      <div className="text-center text-xl py-3">{courseName} Price</div>
+      <div className="flex items-center gap-3">
+      <TutitionAndTrainigFeeCard />
+      <TutitionAndTrainigFeeCard  />
+      </div>
+    </section>
+  )
+}
+
 export const TutitionAndTrainigFeeCard: React.FC<any> = () => {
   return (
     <div
@@ -89,38 +104,34 @@ export const TutitionAndTrainigFeeCard: React.FC<any> = () => {
         </p>
         <hr className="my-4" />
         <h3 className="font-semibold">Solid Experiential Learning</h3>
-        <ul className="mt-2 space-y-2">
-          <li className="flex items-center">
-            <i className="fas fa-check-circle text-green-500 mr-2"></i>
+        <ul className="mt-2 flex flex-col gap-3">
+          <li className="flex items-start gap-3">
+           <CheckmarkIcon className="w-4 h-4" />
             16 Hours of Instructor-led Training
           </li>
-          <li className="flex items-center">
-            <i className="fas fa-check-circle text-green-500 mr-2"></i>
+          <li className="flex items-start gap-3">
+          <CheckmarkIcon />
             Lifetime Access to On-Demand Courseware
           </li>
-          <li className="flex items-center">
-            <i className="fas fa-check-circle text-green-500 mr-2"></i>5
-            Simulation Exams, 8 Mock Tests, 8 Assessments
+          <li className="flex items-start gap-3">
+          <CheckmarkIcon />
+            5 Simulation Exams, 8 Mock Tests, 8 Assessments
           </li>
-          <li className="flex items-center">
-            <i className="fas fa-check-circle text-green-500 mr-2"></i>
+          <li className="flex items-start gap-3 w-full">
+           <CheckmarkIcon className="w-full h-full"  />
             Includes Exam Fee & PeopleCert Training Material
           </li>
         </ul>
         <hr className="my-4" />
-        <h3 className="font-semibold">Upcoming Batches</h3>
-        <p className="mt-2">14 Sep : Weekend Batch</p>
-        <p>21 Sep : Weekend Batch</p>
       </div>
       <div className="bg-green-50 p-4 rounded-b-lg">
-        <p className="text-green-600 font-semibold">21% OFF</p>
+        <p className="text-green-600 font-semibold">
+          <span className="text-red-500">Offer Discount: &nbsp;</span>
+          21% OFF</p>
         <p className="text-2xl font-bold text-green-800">
           ₹27,999 <span className="line-through text-gray-500">₹35,499</span>
         </p>
-        <p className="text-gray-500">
-          As low as ₹3,111/month <i className="fas fa-info-circle"></i>
-        </p>
-        <button className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">
+        <button className="mt-4 w-full bg-blue-600 text-white-10 py-2 rounded-lg">
           Apply Now
         </button>
       </div>
@@ -759,7 +770,7 @@ export const MostEffectiveSection: React.FC<any> = ({
 
 export const CarrerDetailBanner: React.FC<any> = ({ data = [] }) => {
   return (
-    <div className="flex relative overflow-hidden p-9 bg-cream-10  justify-between w-full rounded-xl ">
+    <div  id="overview" className="flex relative overflow-hidden p-9 bg-cream-10  justify-between w-full rounded-xl ">
       {data.map((element: any, index: number) => (
         <div key={index} className="">
           <p className="text-2xl font-bold text-brown-10 mb-spacing2">

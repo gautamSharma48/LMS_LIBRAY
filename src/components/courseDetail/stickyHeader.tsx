@@ -8,7 +8,7 @@ const StickyHeader = ({ isSticky = false }) => {
       <div
         className={`${
           isSticky
-            ? "fixed top-0 left-0 w-full bg-white-10  flex items-center gap-4 border-b   px-7 py-4 none z-50"
+            ? "fixed top-0 left-0 w-full bg-white-10  flex items-center justify-center gap-4 border-b   px-7 py-4 none z-50"
             : "hidden"
         }`}
       >
