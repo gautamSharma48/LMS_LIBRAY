@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { footerData } from "@/constants";
+import { footerData, imageUrlConstant } from "@/constants";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <Link href="/" className="mr-6 flex items-center">
           <img
             loading="lazy"
-            src="https://teclearns.com/images/logo.png"
+            src={imageUrlConstant?.logoUrl}
             alt="logo"
           />
         </Link>

@@ -30,12 +30,15 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
       />
 
       {/* KnowledgeHUT */}
-      <KnowledgeHutAdvantage title={courseData?.title} data={courseData?.courseDetail?.knowledgeHut} />
+      <KnowledgeHutAdvantage
+        title={courseData?.title}
+        data={courseData?.courseDetail?.knowledgeHut}
+      />
 
       {/* TutitionAndTrainigFee */}
       <TutitionAndTrainigFee
-          data={courseData?.courseDetail?.aboutCourse}
-          courseName={courseData?.title}
+        data={courseData?.courseDetail?.aboutCourse}
+        courseName={courseData?.title}
       />
 
       {/* CourseAndInstructor */}
@@ -74,17 +77,20 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
   );
 };
 
-export const TutitionAndTrainigFee : React.FC<any> = ({courseName}) =>{
+export const TutitionAndTrainigFee: React.FC<any> = ({ courseName }) => {
   return (
-    <section id="tuition"  className="bg-grey-30 p-3  my-5 shadow-md shadow-gray-500 rounded-xl ">
+    <section
+      id="tuition"
+      className="bg-grey-30 p-3  my-5 shadow-md shadow-gray-500 rounded-xl "
+    >
       <div className="text-center text-xl py-3">{courseName} Price</div>
       <div className="flex items-center gap-3">
-      <TutitionAndTrainigFeeCard />
-      <TutitionAndTrainigFeeCard  />
+        <TutitionAndTrainigFeeCard />
+        <TutitionAndTrainigFeeCard />
       </div>
     </section>
-  )
-}
+  );
+};
 
 export const TutitionAndTrainigFeeCard: React.FC<any> = () => {
   return (
@@ -106,19 +112,18 @@ export const TutitionAndTrainigFeeCard: React.FC<any> = () => {
         <h3 className="font-semibold">Solid Experiential Learning</h3>
         <ul className="mt-2 flex flex-col gap-3">
           <li className="flex items-start gap-3">
-           <CheckmarkIcon className="w-4 h-4" />
+            <CheckmarkIcon className="w-4 h-4" />
             16 Hours of Instructor-led Training
           </li>
           <li className="flex items-start gap-3">
-          <CheckmarkIcon />
+            <CheckmarkIcon />
             Lifetime Access to On-Demand Courseware
           </li>
           <li className="flex items-start gap-3">
-          <CheckmarkIcon />
-            5 Simulation Exams, 8 Mock Tests, 8 Assessments
+            <CheckmarkIcon />5 Simulation Exams, 8 Mock Tests, 8 Assessments
           </li>
           <li className="flex items-start gap-3 w-full">
-           <CheckmarkIcon className="w-full h-full"  />
+            <CheckmarkIcon className="w-full h-full" />
             Includes Exam Fee & PeopleCert Training Material
           </li>
         </ul>
@@ -127,7 +132,8 @@ export const TutitionAndTrainigFeeCard: React.FC<any> = () => {
       <div className="bg-green-50 p-4 rounded-b-lg">
         <p className="text-green-600 font-semibold">
           <span className="text-red-500">Offer Discount: &nbsp;</span>
-          21% OFF</p>
+          21% OFF
+        </p>
         <p className="text-2xl font-bold text-green-800">
           ₹27,999 <span className="line-through text-gray-500">₹35,499</span>
         </p>
@@ -145,12 +151,11 @@ export const FaqsQuestions: React.FC<any> = ({ data, courseName = "" }) => {
   );
   const [selectedMode, setSelectedMode] = useState(faqType ? faqType[0] : "");
 
-  useEffect(()=>{
-    if(faqType){
+  useEffect(() => {
+    if (faqType) {
       setSelectedMode(faqType[0]);
     }
- 
-  },[faqType])
+  }, []);
 
   const filterFaq = useMemo(() => {
     return data?.filter((element: any) => element.type === selectedMode);
@@ -193,6 +198,10 @@ export const FaqsQuestions: React.FC<any> = ({ data, courseName = "" }) => {
 
 export const AccordinCourse: React.FC<any> = ({ courseName, data }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+
+  if(!data?.length){
+    return;
+  }
   return (
     <section className="">
       {/* <div className="text-blue-10 text-center text-3xl font-bold">About</div> */}
@@ -261,28 +270,35 @@ export const ContactLearningAdvisor: React.FC<any> = () => {
 
 export const CourseCertification: React.FC<any> = ({ data }) => {
   const certification = data?.courseDetail?.certification;
+
   return (
     <section className="my-10">
-      <div className="text-sm uppercase font-semibold text-neutral-500">
-        {data?.title} Certification
-      </div>
-      <div className="text-3xl leading-9.75 font-bold my-4">
-        Earn The Coveted {data?.title}
-      </div>
+      {certification?.certificateImage &&
+        certification?.certificateImage !== "" && (
+          <>
+            <div className="text-sm uppercase font-semibold text-neutral-500">
+              {data?.title} Certification
+            </div>
+            <div className="text-3xl leading-9.75 font-bold my-4">
+              Earn The Coveted {data?.title}
+            </div>
 
-      <div className="text-sm leading-5.5 text-black-50 mt-5 mb-4">
-        {certification.certificationDetail}
-      </div>
+            <div className="text-sm leading-5.5 text-black-50 mt-5 mb-4">
+              {certification.certificationDetail}
+            </div>
 
-      <img
-        className="w-full h-full"
-        alt="certificate-image"
-        src={certification.certificateImage}
-      ></img>
+            <img
+              className="w-full h-full"
+              alt="certificate-image"
+              src={certification.certificateImage}
+            ></img>
 
-      <div className="text-3xl w-full flex items-center gap-3 justify-end ">
-        Shareable On <LinkedInLogoIcon className="text-[blue] w-10 h-10" />
-      </div>
+            <div className="text-3xl w-full flex items-center gap-3 justify-end ">
+              Shareable On{" "}
+              <LinkedInLogoIcon className="text-[blue] w-10 h-10" />
+            </div>
+          </>
+        )}
 
       <div className="bg-cream-10 p-3 mt-4 rounded-xl shadow-xl drop-shadow-sm flex items-center gap-4 justify-between">
         <img className="h-[100px]" src={certification?.bannerImage}></img>
@@ -331,7 +347,7 @@ export const WhoCanAttendTheCourse: React.FC<any> = ({ data }) => {
 };
 
 export const PrequisticsEligiblity: React.FC<any> = ({ data }) => {
-  if(!data?.courseDetail?.prerequisites){
+  if (!data?.courseDetail?.prerequisites) {
     return;
   }
   return (
@@ -392,16 +408,20 @@ export const LearningObjective: React.FC<any> = ({ data }) => {
             </div>
           ))}
       </div>
-      <hr className="my-3" />
-      <div className="mt-6 text-center w-full">
-        <div
-          onClick={() => setViewAll(!viewAll)}
-          className="text-blue-600 cursor-pointer flex items-center gap-2 justify-center font-semibold"
-        >
-          {viewAll ? "View Less" : "View All"}
-          {viewAll ? <ChevronUp /> : <ChevronDown />}
-        </div>
-      </div>
+      {data?.length > 6 && (
+        <>
+          <hr className="my-3" />
+          <div className="mt-6 text-center w-full">
+            <div
+              onClick={() => setViewAll(!viewAll)}
+              className="text-blue-600 cursor-pointer flex items-center gap-2 justify-center font-semibold"
+            >
+              {viewAll ? "View Less" : "View All"}
+              {viewAll ? <ChevronUp /> : <ChevronDown />}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
@@ -483,6 +503,13 @@ export const CourseCurriculm: React.FC<any> = ({ data }) => {
 
 export const CourseAndInstructor: React.FC<any> = ({ data }) => {
   const [selectedMode, setSelectedMode] = useState("instructor");
+
+  if (
+    !data?.courseDetail?.courseInstructor?.length &&
+    !data?.courseDetail?.courseAuthor?.length
+  ) {
+    return;
+  }
   return (
     <section id="instructor" className="my-20">
       <div className="text-sm uppercase font-semibold text-neutral-500">
@@ -503,18 +530,17 @@ export const CourseAndInstructor: React.FC<any> = ({ data }) => {
           Instructors
         </button>
         {data?.courseAuthor && (
-        <button
-        onClick={() => setSelectedMode("author")}
-        className={`text-sm ${
-          selectedMode === "author"
-            ? "bg-blue-10 text-white-10 "
-            : "text-black-10"
-        } px-2 py-2 rounded-xl`}
-        >
-        Course Author
-        </button>
+          <button
+            onClick={() => setSelectedMode("author")}
+            className={`text-sm ${
+              selectedMode === "author"
+                ? "bg-blue-10 text-white-10 "
+                : "text-black-10"
+            } px-2 py-2 rounded-xl`}
+          >
+            Course Author
+          </button>
         )}
-       
       </div>
 
       <div className="flex items-center justify-start w-full my-10 gap-4">
@@ -576,11 +602,11 @@ export const CourseInstructorCard: React.FC<any> = ({ element }) => {
   );
 };
 
-export const KnowledgeHutAdvantage: React.FC<any> = ({ data,title }) => {
+export const KnowledgeHutAdvantage: React.FC<any> = ({ data, title }) => {
   return (
     <div id="why-knowledge-hut" className="">
       <p className="text-sm uppercase font-semibold text-neutral-500">
-      WHY KNOWLEDGEHUT FOR {title}
+        WHY KNOWLEDGEHUT FOR {title}
       </p>
       <p className="text-3xl leading-9.75 font-bold text-mono-black mt-spacing6 mb-spacing40 my-5">
         {data?.subtitle}
@@ -601,6 +627,11 @@ export const KnowledgeHutAdvantage: React.FC<any> = ({ data,title }) => {
 export const HighDemandAndAccerlated: React.FC<any> = ({ data }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [showReadMore, setReadMore] = useState(false);
+
+  if (!data?.demandData?.length) {
+    return;
+  }
+
   return (
     <div className="mt-10 mb-20 max-w-[1280px] mx-auto">
       <div className="flex items-start gap-3 w-full">
@@ -783,7 +814,10 @@ export const MostEffectiveSection: React.FC<any> = ({
 
 export const CarrerDetailBanner: React.FC<any> = ({ data = [] }) => {
   return (
-    <div  id="overview" className="flex relative overflow-hidden p-9 bg-cream-10  justify-between w-full rounded-xl ">
+    <div
+      id="overview"
+      className="flex relative overflow-hidden p-9 bg-cream-10  justify-between w-full rounded-xl "
+    >
       {data.map((element: any, index: number) => (
         <div key={index} className="">
           <p className="text-2xl font-bold text-brown-10 mb-spacing2">

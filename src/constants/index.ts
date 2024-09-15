@@ -146,8 +146,6 @@ export const homeData = {
     },
   ],
   courses: [
-  
-
     {
       id: 22,
       title: "ITIL® 4 Foundation Training",
@@ -626,11 +624,11 @@ Don't settle for less—choose Pro for an unmatched learning path to success.`,
       },
     },
 
-
     {
       id: 23,
       title: "Leading SAFe® 6.0",
-      courseSubtitle: "Leading SAFe® 6.0 Training with SAFe Agile Certification",
+      courseSubtitle:
+        "Leading SAFe® 6.0 Training with SAFe Agile Certification",
       description:
         "Become an In-Demand SAFe Agilist and Lead Enterprise Lean-Agile Transformation",
       background: "linear-gradient(242deg, #f49cae, #b05ce2)",
@@ -737,8 +735,7 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
         },
         highDemandAndAccerlated: {
           demandTitle: "DEMAND FOR LEADING SAFE CERTIFIED PROFESSIONALS",
-          demandHeading:
-            "Soaring Demand and Accelerated Growth",
+          demandHeading: "Soaring Demand and Accelerated Growth",
           demandDetail: `While Agile methods have been found to be readily applicable to small teams, most organizations today work across collaborative teams, complex systems and geographies. This requires Agile to work across the enterprise to bring in the benefits of faster delivery, better quality products and quick response to customer queries. However, agile transformation across such a large scale is prone to failures due to a lack of proper structure and processes, which results in agile implementations not yielding the expected impact.
           The Scaled Agile Framework® (SAFe®) is a complete methodology for large-scale Agile project teams to carry out an Agile transformation seamlessly. Applying Lean/Agile principles and practices across all levels within an enterprise is the first step toward such a change. The SAFe® methodology effortlessly synchronizes the alignment, collaboration, and delivery of multiple Agile teams, leading the way to enterprise success. Now in its latest release (version 6.0), SAFe® promises to bring in full business agility with significant advances in strategy, execution, and leadership competencies that will help individuals and organizations deliver innovative business solutions and supersede the competition.
 
@@ -765,8 +762,7 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
               hiringCompany: [],
               demand: {
                 percant: "70%",
-                description:
-                  "Of Fortune 500 companies actively employ SAFe",
+                description: "Of Fortune 500 companies actively employ SAFe",
               },
             },
             {
@@ -785,10 +781,8 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
               hiringCompany: [],
               demand: {
                 percant: "20,000+",
-                description:
-                  "Organizations around the world use SAFe",
+                description: "Organizations around the world use SAFe",
               },
-              
             },
             {
               type: "Agile Coach",
@@ -799,7 +793,6 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
                 description:
                   "Job openings demanding SAFe experience, just in the US",
               },
-              
             },
           ],
         },
@@ -893,7 +886,7 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
           "There are no prerequisites to attend this course.",
           "5+ years experience in software development and testing is useful.",
           "Experience in product or project management is recommended.",
-          "Prior working experience in Scrum is beneficial."
+          "Prior working experience in Scrum is beneficial.",
         ],
         courseCurriculm: [
           {
@@ -905,7 +898,6 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
               "Thriving in the Digital Age",
               "SAFe as an operating system for Business Agility",
               "The Seven Core Competencies of Business Agility",
-                            
             ],
           },
           {
@@ -927,7 +919,7 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
             topics: [
               "Forming Cross-Functional Agile Teams",
               "Built-In Quality",
-              "Organizing Agile Release Trains around Flow of Value"
+              "Organizing Agile Release Trains around Flow of Value",
             ],
           },
         ],
@@ -959,8 +951,7 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
           },
           {
             title: "Program Increments",
-            description:
-              "Plan and successfully execute Program Increments.",
+            description: "Plan and successfully execute Program Increments.",
           },
           {
             title: "Agile Release Trains",
@@ -969,8 +960,7 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
           },
           {
             title: "Lean-Agile Budgeting",
-            description:
-              "Build an Agile portfolio with Lean-Agile budgeting.",
+            description: "Build an Agile portfolio with Lean-Agile budgeting.",
           },
           {
             title: "Lean-Agile Transformation",
@@ -994,7 +984,8 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
         aboutCourse: [
           {
             question: "What is the SAFe Agilist certification all about?",
-            answer: "A Certified SAFe Agilist (SA) is a professional who has completed the Leading SAFe certification and been successful in the Scaled Agile Framework certification test. By acquiring the SAFe Agilist certification provided by Scaled Agile, Inc, you will be able to address the critical challenges of creating and delivering enterprise-level software and systems in the shortest time. It gives guidance for all levels of organizations involved in solution development: Portfolio, Program, Team, and Large Solutions.",
+            answer:
+              "A Certified SAFe Agilist (SA) is a professional who has completed the Leading SAFe certification and been successful in the Scaled Agile Framework certification test. By acquiring the SAFe Agilist certification provided by Scaled Agile, Inc, you will be able to address the critical challenges of creating and delivering enterprise-level software and systems in the shortest time. It gives guidance for all levels of organizations involved in solution development: Portfolio, Program, Team, and Large Solutions.",
           },
           {
             question: "Why should I go for the SAFe Agilist certification?",
@@ -1002,7 +993,8 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
           },
 
           {
-            question: "What is the importance of a SAFe 6.0 Agilist certification?",
+            question:
+              "What is the importance of a SAFe 6.0 Agilist certification?",
             answer: `While applying Lean/Agile principles at the team or department level is relatively straightforward, achieving the same benefits at the enterprise level presents significant challenges due to the scale of the required change. Consequently, organizations often turn to the Scaled Agile Framework (SAFe) to facilitate large-scale, multi-team transformations seamlessly.
             SAFe 6.0 Agilists are highly sought after for their proficiency in spearheading this transformation. They excel in planning and executing program releases with careful consideration and possess the ability to identify the necessary roles and structures essential for scaling Agile practices to the program level.`,
           },
@@ -1012,9 +1004,9 @@ The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale A
               "Scaled Agile, Inc. is the provider of SAFe which is one of the best-known frameworks for enterprise agility. SAFe was initially released in 2011 by Dean Leffingwell as a knowledge base for enterprises to adopt Agile. It is the leading provider of SAFe courses for implementing Agile practices at enterprise level. The SAFe Agilist (SA) Certification is given to those who have undertaken the SAFe 6.0 Agilist Certification Exam and received a passing score. ",
           },
           {
-            question:
-              "How much does the SAFe Agilist certification cost?",
-            answer: "The Scaled Agile Framework certification cost is included in the SAFe Agilist course fee.",
+            question: "How much does the SAFe Agilist certification cost?",
+            answer:
+              "The Scaled Agile Framework certification cost is included in the SAFe Agilist course fee.",
           },
         ],
         faqs: [
@@ -1036,8 +1028,7 @@ Establish business alignment via Strategic Themes and Lean Portfolio Management 
             type: "Course",
             question:
               "What practical skills can I expect to have after completing this course?",
-            answer:
-              `Our Leading SAFe training aims to equip you with all the skills to be a sought-after SAFe Agilist. In this engaging and interactive two-day program, you will develop the practical skills employers look for in a SAFe Agilist:
+            answer: `Our Leading SAFe training aims to equip you with all the skills to be a sought-after SAFe Agilist. In this engaging and interactive two-day program, you will develop the practical skills employers look for in a SAFe Agilist:
               Leadership
               Coaching
               Change management
@@ -1064,7 +1055,8 @@ Establish business alignment via Strategic Themes and Lean Portfolio Management 
             type: "PDUs and SEUs",
             question:
               "How many PDUs will I need to maintain my SAFe Agilist certification?",
-            answer: "You will need 10 continuing education or outreach hours (PDUs) to maintain your SAFe Agilist certification.",
+            answer:
+              "You will need 10 continuing education or outreach hours (PDUs) to maintain your SAFe Agilist certification.",
           },
           {
             type: "PDUs and SEUs",
@@ -1080,7 +1072,8 @@ SEUs demonstrate that you are furthering your proficiency as a Scrum practitione
 
           {
             type: "Standard and Pro Plans",
-            question: "Are there any differences in course content between the Standard and Pro plans?",
+            question:
+              "Are there any differences in course content between the Standard and Pro plans?",
             answer: `While the core content remains consistent across both plans, the Pro plan enriches your experience with supplementary resources and advanced learning material. It is a meticulously crafted pathway not just for achieving the CSPO certification, but also for propelling your Product Owner career growth to new heights.`,
           },
           {
@@ -1106,7 +1099,8 @@ Listen, learn, ask questions, and get all your doubts clarified from your instru
           },
           {
             type: "Workshop Experience ",
-            question: "How different is the Leading SAFe online training from the conventional in-person training?",
+            question:
+              "How different is the Leading SAFe online training from the conventional in-person training?",
             answer: `The conventional in-person Leading SAFe training from Scaled Agile, Inc. (SAI) will be delivered for 2-days. The online course is divided into several sessions of shorter duration, unlike the in-person class that consists of 2 classes with 7 to 8 hours-long sessions. The size of the class is capped at 30 so that students gain a better learning experience. The participants and our trainers will be able to virtually collaborate with one another with the help of webcam tool.`,
           },
           {
@@ -1148,12 +1142,315 @@ Subject matter experts who are active in software development and local Agile co
         ],
       },
     },
-    
-    
-    
-    
-    
-    
+
+    {
+      id: 24,
+      title: "Agile and Scrum",
+      courseSubtitle: "Agile and Scrum Training",
+      description:
+        "Comprehensive Agile and Scrum training to equip yourself with the skills to excel",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Agile Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "40,335+ Enrolled",
+        bannerImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner_Pointers-51994aa4899f483eadc3d6d552d5d200.svg",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        highlights: [
+          "Get the foundational skills to become an enabler of high-performance",
+          "Explore high-demand career-defining certification opportunities",
+          "Experience immersive learning and gain a deeper understanding of Agile and Scrum",
+        ],
+        careerDetail: [
+          { carrer: "Professionals Trained", value: "450k" },
+          { carrer: "Workshops every month", value: "250" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "8 Hours of Live Instructor-Led Training Sessions",
+            },
+            {
+              icon: "",
+              value: "Earn 8 PDUs and 8 SEUs with the Live Training",
+            },
+            {
+              icon: "",
+              value: "54+ Hours of On-Demand Self-Paced Learning",
+            },
+            {
+              icon: "",
+              value: "15 Assessments and 13 Recall Quizzes",
+            },
+            {
+              icon: "",
+              value: "11 Comprehensive Assignments for Practice",
+            },
+            {
+              icon: "",
+              value: "Lifetime Access to Agile and Scrum Courseware",
+            },
+          ],
+          overviewDetail: `Get introduced to the incredible concepts of Agile and Scrum with this beginner’s skills development course. Start with the basics of Agile and its foundations (values, principles, and pillars) and move on to learn about the various Agile variants including Scrum, Kanban, XP, and their tools. Master Agile Project Management (APM) and the 5-stage process for Agile software development, before diving deep into Scrum.
+
+Understand how Agile is used in project development, including Agile estimation, planning, monitoring, and tracking, and Agile metrics and tools. Gain an understanding of SAFe®, Disciplined Agile Delivery (DAD), and Large-Scale Scrum (LeSS) frameworks and get ready to take advantage of career-defining certification opportunities from global accreditation bodies like Scrum Alliance®, Scaled Agile Inc.® and Scrum.org™.
+
+The Agile and Scrum Training program is delivered both in a Blended Learning and Self-Paced mode.`,
+          overviewPoints: [],
+          overviewCourseDescription: `We're excited to embark on this SAFe journey with you, equipping you with the skills and knowledge you need to lead Agile transformation initiatives successfully. Let's embrace the SAFe way together and achieve excellence in Agile practices. Welcome to the Leading SAFe course!`,
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "",
+          demandHeading: "",
+          demandDetail: "",
+          demandData: [],
+        },
+        knowledgeHut: {
+          subtitle: "Get the KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Experiential Workshops",
+              value:
+                "Activities, team-based exercises, practical case studies: High energy workshops with hands-on learning.",
+            },
+            {
+              icon: "",
+              topic: "Elite Panel of Scrum Trainers",
+              value:
+                "Certified Scrum Trainers with rich experience across industries.",
+            },
+            {
+              icon: "",
+              topic: "Expert Practitioners",
+              value:
+                "Real-world tips and time-tested techniques for your Agile toolbox from leading expert practitioners.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship by Industry Experts",
+              value:
+                "One-to-one mentorship, real-world tips and time-tested techniques from highly qualified trainers.",
+            },
+            {
+              icon: "",
+              topic: "Continual Learning Support",
+              value:
+                "Webinars, e-books, tutorials, articles, and interview questions - we're right by you in your learning journey!",
+            },
+            {
+              icon: "",
+              topic: "Exclusive Post-Training Sessions",
+              value:
+                "Six months of post-training mentor guidance to overcome challenges in your Scrum career.",
+            },
+          ],
+        },
+        courseInstructor: [],
+        courseAuthor: [],
+        certification: {
+          bannerImage: "https://d2o2utebsixu4k.cloudfront.net/Imgcert cta-10-356e659eed7f437f83063de6a2cc85eb.svg",
+          bannerTitle: "Ready to go from novice to Agile and Scrum expert?",
+          certificationDetail: "",
+          certificateImage: "",
+        },
+        prerequisites: [
+          "No prior experience needed! Jumpstart your Agile and Scrum journey.",
+          "Get started with powerful management frameworks – everyone is welcome!",
+        ],
+        courseCurriculm: [
+          {
+            title: "Background to Agile",
+            isPreview: false,
+            objective:
+              "Know the history of the Agile Manifesto and explain the importance of implementing 4 values and 12 principles in Agile projects. Describe the elements of the house of Agile.",
+            topics: [
+              "Background to Agile",
+              "A day in the life of a Project Manager",
+              "The need for change",
+              "Traditional Projects vs Agile Projects",
+              "Benefits of Agile Methodology"
+            ],
+          },
+          {
+            title: "Agile Basics",
+            isPreview: false,
+            objective:
+              "Know the history of the Agile Manifesto and explain the importance of implementing 4 values and 12 principles in Agile projects. Describe the elements of the house of Agile and discuss the Agile principles in depth.",
+            topics: [
+              "Basics of Agile",
+              "Agile Software Development – Part 1",
+              "Agile Software Development – Part 2",
+              "History: The Agile Manifesto",
+              "The Agile Values – Part 1",
+              "The Agile Values – Part 2",
+              "The Agile Principles - Ensuring customer satisfaction through frequent delivery",
+              "The Agile Principles - Encouraging collaboration and accommodating ever-changing requirements",
+              "The Agile Principles - Authorizing your team for enhanced responsibility",
+            ],
+          },
+          {
+            title: "Business Inputs",
+            isPreview: false,
+            objective:
+              "Understand why conversations are more important than writing requirements. Explain the dimensions of business value and understand the details of the user story prioritization techniques. Learn about the Minimum Viable Product and the Minimum marketable feature. Understand the criteria for, and the components of a well-formed user story. Understand the four stages of User story maturity.",
+            topics: [
+              "Business inputs",
+              "Business 'value' in Agile",
+              "Stakeholders value in Agile",
+              "What’s so great about User stories",
+              "Measuring value",
+              "3 Cs of a User story",
+              "Investing in User stories",
+              "Prioritizing User stories",
+              "User story maturity",
+              "Minimum viable product and minimum marketable feature"
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Agile Fundamentals",
+            description:
+              "Understand Agile values and 12 Agile principles at work, Agile variants.",
+          },
+          {
+            title: "Agile Business Inputs",
+            description:
+              "Learn about user stories and how to create them.",
+          },
+          {
+            title: "Agile Planning Events",
+            description:
+              "Learn about product planning, release planning, and iteration planning workshops.",
+          },
+          {
+            title: "Scrum Ceremonies",
+            description:
+              "Sprint, sprint planning, sprint review, sprint retrospective and daily scrum.",
+          },
+          {
+            title: "Agile Estimation & Metrics",
+            description:
+              "Understand the Techniques of Agile estimation and learn how to calculate Agile metrics and use them.",
+          },
+          {
+            title: "Scaling Agile",
+            description: "Discover how to scale Agile effectively at the enterprise level.",
+          },
+        ],
+        whoCanAttendCourse: [
+          "Project Managers",
+          "Developers",
+          "Product Owners",
+          "Managers-Software Development",
+          "Architects-Software Development",
+          "Product Managers"
+        ],
+        aboutCourse: [],
+        faqs: [
+          {
+            type: "Training",
+           question:
+              "What practical skills can I expect to have after completing the Agile and Scrum training course?",
+            answer: `Our Agile and Scrum introductory course is designed to make you a skilled contributor to your Scrum team. You will develop the skills to:
+
+Apply the Agile manifesto, the 4 Agile values, and the 12 Agile Principles to drive successful projects
+Create User Stories using the User Story format to enhance collaboration and creativity
+Apply User story prioritization techniques to a product backlog and use the mandatory 3 Cs
+Distinguish High-level overview for Agile variants and run the Project lifecycle for Agile Product development
+Understand the responsibilities for Scrum and Other roles in an Agile setup
+Run Scrum ceremonies and apply techniques of Agile estimation
+Apply Agile planning events and conduct Daily Scrum to reach goals
+Scale Agile with SAFE®, DAD, and LeSS and lead enterprise-wide Agile transformation`,
+          },
+          {
+            type: "Training",
+            question:
+              "What are the prerequisites for the Agile and Scrum Course?",
+            answer: `There is no set of eligibility requirements to attend this Scrum Master Certification course and it can be taken by novices or professionals.
+`,
+          },
+
+          {
+            type: "Workshop",
+            question: "What are the modes of training offered for the Agile and Scrum Course?",
+            answer: `The Agile and Scrum workshop at KnowledgeHut is delivered through PRISM, our immersive learning experience platform, via two modes of delivery:
+Blended learning:
+
+Get the best of both worlds with live and interactive instructor-led training sessions along with the convenience and flexibility of self-paced learning.
+Listen, learn, ask questions, and get all your doubts clarified from your instructor, who is an experienced practitioner.
+You also get to collaborate and learn from the experience of your peers in real-world simulations and activities.
+On-Demand Self-Learning:
+
+Learn conveniently at your own pace, whenever and wherever you choose. Spend as much time as you need to on areas or topics that you find most difficult, pausing and replaying relevant segments of video as often as you need to. Benefit from the limitless educational possibility that comes with lifetime access. The entire courseware and all the features of our immersive learning experience platform will remain at your fingertips whenever you wish to refresh concepts and clear your doubts.`,
+          },
+
+          {
+            type: "Workshop",
+            question:
+              "Who are the instructors?",
+            answer:
+              "Your instructors are experienced industry professionals who have significant experience in Agile and Scrum across various industries. They are leading practitioners who bring current best practices and case studies from their experience to the live and interactive training sessions. The instructors are industry-recognized experts with more than 10 years of experience implementing Agile.",
+          },
+
+          {
+            type: "Finance",
+            question: "Can I cancel my enrolment to the Agile and Scrum course? Do I get a refund?",
+            answer: `You can cancel your enrolment and receive refunds in line with our Cancellations and Refunds policy.`,
+          },
+
+          {
+            type: "Finance",
+            question:"Can I switch my start date?",
+            answer: "Yes, you may switch your start date with prior notice of at least 24 hrs and subject to availability in the desired batch."
+          },
+          {
+            type: "Finance",
+            question: "Is there a money-back guarantee?",
+            answer: `We offer a 100% Satisfaction Guarantee. Should you require additional clarification, please reach out to your Learning Advisor.`,
+          },
+          {
+            type: "Agile and  Scrum",
+            question: "What is Agile Scrum?",
+            answer: `Agile is an iterative approach to project management and software development. It enables teams to deliver work in small increments instead of a big launch. Requirements, plans, and deliverables are evaluated on a continuous basis so that teams can respond to change easily.
+
+Widely adopted by top organizations across the globe, Agile is a methodology that has proven to be highly effective in transforming businesses, catalyzing innovation, and accelerating profitable growth.
+
+Scrum stands out as the most dominant Agile framework with a 58% adoption rate across organizations globally. It challenges the notion of the top-down approach to project management and focuses on a software development life cycle based on an incremental and iterative approach. Products are built in short sprints and the focus is on maximizing performance and quality.`,
+          },
+          {
+            type: "Agile and  Scrum",
+            question: "What is the difference between Agile Scrum Master and Certified Scrum Master?",
+            answer: `Agile Scrum Master is a certification offered by EXIN, a foundation originally established by the Ministry of Economic Affairs in the Netherlands. The EXIN Foundation provides certification standards and examinations for technology professionals. Agile Scrum Master is one of the certifications from this organization. It validates a professional’s ability to use coach and facilitate teams in Agile and Scrum practices. The course is open to all who want to pursue a career as Scrum and Agile professionals.
+
+The Certified ScrumMaster® (CSM®) on the other hand, is offered by Scrum Alliance®, a world-renowned body dedicated to furthering the practices of Scrum and Agile. The CSM is an entry-level credential, accepted globally and has high credibility. It validates the holder’s ability to successfully perform the role of servant leader, coach, facilitator, and creator of high-performing scrum teams.`,
+          },
+        ],
+      },
+    },
+
     {
       id: 1,
       title: "Microsoft Project",
