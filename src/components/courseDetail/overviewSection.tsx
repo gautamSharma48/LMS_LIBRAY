@@ -1,3 +1,5 @@
+import { homeData } from "@/constants";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import {
   BriefcaseBusinessIcon,
   ChevronDown,
@@ -9,19 +11,16 @@ import {
   UserIcon,
 } from "lucide-react";
 import React, { useEffect, useMemo, useState } from "react";
-import { FadeIn } from "../animation";
-import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { CheckmarkIcon } from "react-hot-toast";
-import { cn } from "@/lib/utils";
+import { FadeIn } from "../animation";
+import { useRouter } from "next/navigation";
 
-const OverviewSection: React.FC<any> = ({ courseData }) => {
+const OverviewSection: React.FC<any> = ({ courseData, id }) => {
   const overview = courseData?.courseDetail?.overview;
   return (
     <section className="mt-5">
-      
       {/* upper-banner */}
       <CarrerDetailBanner data={courseData?.courseDetail?.careerDetail} />
-      
 
       {/* most effective section */}
       <MostEffectiveSection courseData={courseData} overview={overview} />
@@ -75,13 +74,30 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
         courseName={courseData?.title}
         data={courseData?.courseDetail?.faqs}
       />
+
+      <OtherCourses id={id} courses={homeData?.courses} />
+    </section>
+  );
+};
+
+export const OtherCourses: React.FC<any> = ({ id, courses }) => {
+  const otherCourses = courses?.filter((data: any) => data?.id !== id);
+  const router = useRouter();
+  return (
+    <section className="">
+      <p className="text-xl my-3 uppercase text-center">Other Courses</p>
+      <div className="flex w-full flex-wrap items-center gap-3">
+      {otherCourses?.map((element:any,index:number)=>(
+        <div onClick={()=> router.push(`/course-detail/${element?.id}`)} key={index} className="bg-grey-30 p-3 cursor-pointer">{element?.title}</div>
+      ))}
+      </div>
+     
     </section>
   );
 };
 
 export const SecretSauceCourse: React.FC<any> = ({ data }) => {
-
-  if(!data?.length){
+  if (!data?.length) {
     return;
   }
   return (
@@ -90,16 +106,12 @@ export const SecretSauceCourse: React.FC<any> = ({ data }) => {
         Our Secret Sauce for Exam and Career Success
       </div>
       <div className="grid grid-cols-4 place-items-center gap-4 mt-5">
-        {data?.map((element:any, index:number) => (
+        {data?.map((element: any, index: number) => (
           <div
             key={index}
             className="bg-white-10 border border-grey-10 shadow-2xl drop-shadow rounded-xl"
           >
-            <img
-              className="w-full h-[188px]"
-              src={element?.image}
-              alt=""
-            />
+            <img className="w-full h-[188px]" src={element?.image} alt="" />
             <div className="w-full bg-grey-50 text-center p-4 rounded-xl text-ellipsis">
               {element?.detail}
             </div>

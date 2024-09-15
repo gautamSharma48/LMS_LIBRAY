@@ -56,7 +56,7 @@ const CourseDetail = () => {
 
         <div className="w-[70%] p-4">
           <div className="mb-8 h-auto">
-            <OverviewSection courseData={courseData} />
+            <OverviewSection id={id} courseData={courseData} />
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 const CourseCard = ({ title, data }) => {
   const router = useRouter();
-  console.log(data);
+
   return (
     <div className=" mx-auto my-10">
       <BlurFadeText
