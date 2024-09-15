@@ -1,15 +1,14 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
-import { useParams } from "next/navigation";
-import Banner from "@/components/courseDetail/banner";
-import FrequentlyAskedQuestions from "@/components/courseDetail/faqs";
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
+import AdvisorForm from "@/components/courseDetail/advisorForm";
+import Banner from "@/components/courseDetail/banner";
+import OverviewSection from "@/components/courseDetail/overviewSection";
+import StickyHeader from "@/components/courseDetail/stickyHeader";
 import { homeData } from "@/constants";
 import { Course } from "@/types";
-import AdvisorForm from "@/components/courseDetail/advisorForm";
-import StickyHeader from "@/components/courseDetail/stickyHeader";
-import OverviewSection from "@/components/courseDetail/overviewSection";
+import { useParams } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 const CourseDetail = () => {
   const params = useParams();
@@ -19,12 +18,16 @@ const CourseDetail = () => {
   );
   const [isSticky, setIsSticky] = useState(false);
   const bannerRef = useRef<HTMLDivElement>(null);
+  const footerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (bannerRef.current) {
+      if (bannerRef.current && footerRef.current) {
         const bannerBottom = bannerRef.current.getBoundingClientRect().bottom;
-        setIsSticky(bannerBottom <=0);
+        const footerTop = footerRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        setIsSticky(bannerBottom <= 0 && footerTop > windowHeight);
       }
     };
 
@@ -60,7 +63,9 @@ const CourseDetail = () => {
         </div>
       </div>
 
-      <Footer />
+      <div ref={footerRef}>
+        <Footer />
+      </div>
     </div>
   );
 };

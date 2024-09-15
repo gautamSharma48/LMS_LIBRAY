@@ -8,7 +8,7 @@ import {
   PlayCircleIcon,
   UserIcon,
 } from "lucide-react";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { FadeIn } from "../animation";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { CheckmarkIcon } from "react-hot-toast";
@@ -30,7 +30,7 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
       />
 
       {/* KnowledgeHUT */}
-      <KnowledgeHutAdvantage data={courseData?.courseDetail?.knowledgeHut} />
+      <KnowledgeHutAdvantage title={courseData?.title} data={courseData?.courseDetail?.knowledgeHut} />
 
       {/* TutitionAndTrainigFee */}
       <TutitionAndTrainigFee
@@ -144,6 +144,13 @@ export const FaqsQuestions: React.FC<any> = ({ data, courseName = "" }) => {
     new Set(data?.map((element: any) => element?.type))
   );
   const [selectedMode, setSelectedMode] = useState(faqType ? faqType[0] : "");
+
+  useEffect(()=>{
+    if(faqType){
+      setSelectedMode(faqType[0]);
+    }
+ 
+  },[faqType])
 
   const filterFaq = useMemo(() => {
     return data?.filter((element: any) => element.type === selectedMode);
@@ -324,6 +331,9 @@ export const WhoCanAttendTheCourse: React.FC<any> = ({ data }) => {
 };
 
 export const PrequisticsEligiblity: React.FC<any> = ({ data }) => {
+  if(!data?.courseDetail?.prerequisites){
+    return;
+  }
   return (
     <div className="bg-white-10 p-8 rounded-lg shadow-sm shadow-black-50 drop-shadow flex items-center justify-between max-w-[1280px] mx-auto">
       <div className="">
@@ -481,7 +491,7 @@ export const CourseAndInstructor: React.FC<any> = ({ data }) => {
       <div className="text-3xl leading-9.75 font-bold my-4">
         {"Meet the Team That's Invested in Your Success"}
       </div>
-      <div className="border border-green-500 rounded-2xl p-3  flex items-center justify-between gap-3 max-w-[250px]">
+      <div className="border border-green-500 rounded-2xl p-3  flex items-center justify-between gap-3 max-w-fit">
         <button
           onClick={() => setSelectedMode("instructor")}
           className={`text-sm ${
@@ -492,16 +502,19 @@ export const CourseAndInstructor: React.FC<any> = ({ data }) => {
         >
           Instructors
         </button>
+        {data?.courseAuthor && (
         <button
-          onClick={() => setSelectedMode("author")}
-          className={`text-sm ${
-            selectedMode === "author"
-              ? "bg-blue-10 text-white-10 "
-              : "text-black-10"
-          } px-2 py-2 rounded-xl`}
+        onClick={() => setSelectedMode("author")}
+        className={`text-sm ${
+          selectedMode === "author"
+            ? "bg-blue-10 text-white-10 "
+            : "text-black-10"
+        } px-2 py-2 rounded-xl`}
         >
-          Course Author
+        Course Author
         </button>
+        )}
+       
       </div>
 
       <div className="flex items-center justify-start w-full my-10 gap-4">
@@ -563,11 +576,11 @@ export const CourseInstructorCard: React.FC<any> = ({ element }) => {
   );
 };
 
-export const KnowledgeHutAdvantage: React.FC<any> = ({ data }) => {
+export const KnowledgeHutAdvantage: React.FC<any> = ({ data,title }) => {
   return (
     <div id="why-knowledge-hut" className="">
       <p className="text-sm uppercase font-semibold text-neutral-500">
-        {data?.title}
+      WHY KNOWLEDGEHUT FOR {title}
       </p>
       <p className="text-3xl leading-9.75 font-bold text-mono-black mt-spacing6 mb-spacing40 my-5">
         {data?.subtitle}
@@ -714,7 +727,7 @@ export const MostEffectiveSection: React.FC<any> = ({
         {courseData?.title}
       </p>
       <p className="text-3xl leading-9.75 font-bold text-mono-black mt-spacing6 mb-spacing40 my-5">
-        The Most Effective ITIL Foundation Exam Preparation
+        The Most Effective {courseData?.title} Preparation
       </p>
       <div className="grid grid-cols-3 w-full gap-3">
         {overview?.courseDetail?.map((element: any, index: number) => (

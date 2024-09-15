@@ -146,133 +146,7 @@ export const homeData = {
     },
   ],
   courses: [
-    {
-      id: 1,
-      title: "Microsoft Project",
-      description: "Analyze the facts and make forecasts.",
-      background: "linear-gradient(110deg, #53a2ff, #2a387b)",
-      type: "",
-      curriculm: [
-        {
-          heading: "Introduction to Microsoft® Project",
-          description: "",
-          type: "curriculm",
-          objective:
-            "Familiarize with MS project tool and the initial settings. ",
-          topic:
-            "The Interface, Tabs (Task, Resource, Report, Project, View, Format), Backstage view, Project Information, Setup a new project, Setup Project Calendar, Setup non working days, Enter basic project information.",
-        },
-        {
-          heading: "Creating Tasks and Task Management",
-          description: "",
-          type: "curriculm",
-          objective: "Understand how to define scope on project. ",
-          topic:
-            "Auto Scheduled and Manually Scheduled Tasks, Entering Tasks and subtasks, Duration, Notes, Constraints, Hyperlinks, Deadlines, Entering and Deleting Tasks, Indent and Outdent, Establishing Dependencies and Assigning Milestones, Recurring Tasks.",
-        },
-        {
-          heading: "Listing Resources, Assigning Resources and Project Costs",
-          description: "",
-          type: "curriculm",
-          objective:
-            "Understand how to create resources and assign resources, understanding how to view costs for individual Tasks, Modules and the Total Project. ",
-          topic:
-            "Creating Resources, Resource type, Group, Code, Setting Resource Calendar, Cost, Notes, Assigning Resources and Resource Load Analysis, Viewing Project Costs.",
-        },
-      ],
-
-      courseDescription: {
-        courseHeading: "Course Description",
-        courseData: [
-          {
-            question: "About The Course",
-            answer:
-              "This self-paced online program covers the overview of Project Management and explains how to manage projects using Microsoft Project. Microsoft Project assists Project Managers to do Scope Planning, Assign Resources, Prepare Schedule, Baseline, Update Progress, Track and Report. This training is imperative for all who need to plan, track and effectively communicate with stakeholders. This course helps participants to practically implement the learning through hands-on on MS Project.",
-          },
-          {
-            question: "Course Objectives",
-            answer: `After the completion of Microsoft Project Course at Edureka, you should be able to:<br/>
-
-                1. Understand the importance of MS Project in following a structured approach to managing projects.<br/>
-                2. Define the initial settings in MS Project.<br/>
-                3. Prepare and use MS Project for planning, tracking and reporting on projects.<br/>
-                4. Understand how to document lessons learned and close projects.<br/>`,
-          },
-          {
-            question: "Who should go for this course?",
-            answer: `Anybody associated with Project Management, in any industry or domain can attend this course.`,
-          },
-          {
-            question: "Pre-requisites",
-            answer:
-              "A basic understanding of the project and project environment is helpful.",
-          },
-          {
-            question: "Why Learn Microsoft® Project 2013?",
-            answer:
-              "MS Project is used across industries in many organizations. Many clients want the projects to be planned and tracked in MS Project.",
-          },
-        ],
-      },
-
-      faqs: {
-        faqsHeading: "FAQ's",
-        faqsData: [
-          {
-            question:
-              "How soon after Signing up would I get access to the Learning Content?",
-            answer:
-              "As soon as you enrol into the course, your LMS (The Learning Management System) access will be functional. You will immediately get access to our course content in the form of a complete set of videos, PPTs, PDFs and  Assignments. You can start learning right away.",
-          },
-          {
-            question:
-              "For how long will I have access to the course materials?",
-            answer: `All the videos and other materials like PPTs, Quiz and Assignments, etc are hosted in our Learning Management System (LMS) and you will have a lifetime access to that. `,
-          },
-          {
-            question:
-              "Are there any pre-requisite to attend MS Project training?",
-            answer: `There are no pre-requisites for this course. But basic understanding of the project and project environment will be helpful.`,
-          },
-          {
-            question: "What is MS Project?",
-            answer:
-              "Microsoft Project is a project management software program, developed by Microsoft, which is designed to assist a project manager in developing a plan, assigning resources to tasks, tracking progress, managing the budget, and analyzing workloads.",
-          },
-          {
-            question: "What will happen if I have technical queries?",
-            answer:
-              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
-          },
-
-          {
-            question: "What will happen if I have technical queries?",
-            answer:
-              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
-          },
-          {
-            question: "What are new features of MS project 2013?",
-            answer:
-              "1. Run Project in the cloud 2. Improved scheduling engine 3. Improved Workflow Management engine 4. Enhanced Reporting capabilities 5. Simplified time sheets and task 6. management Lightweight project management leveraging SharePoint 7. Simpler Security Model.",
-          },
-          {
-            question: "How will be the practicals done?",
-            answer:
-              "By following the instructions provided in the Installation guide present in the LMS, you can install MS Project on your local system and execute all the practicals present in the course. ",
-          },
-          {
-            question: "What are the payment options?",
-            answer:
-              "You can pay by Credit Card, Debit Card or Net Banking from all the leading banks. For INR payment, you can use CCAvenue Payment Gateway. For USD payment, you can pay by Paypal. We also have EMI options available.",
-          },
-          {
-            question: "What if I have more queries?",
-            answer:
-              "Just give us a CALL at +91 1234567890 OR email at sales@teclearns.com Toll free number is 1800 123 4567.",
-          },
-        ],
-      },
-    },
+  
 
     {
       id: 22,
@@ -443,7 +317,6 @@ For those aspiring to embark on the journey of ITIL certification courses, the I
           ],
         },
         knowledgeHut: {
-          title: "WHY KNOWLEDGEHUT FOR ITIL CERTIFICATION TRAINING",
           subtitle: "The KnowledgeHut Advantage",
           knowledgeHutData: [
             {
@@ -749,6 +622,662 @@ Don't settle for less—choose Pro for an unmatched learning path to success.`,
           "Includes Exam Fee, eBook, and PeopleCert Training Material",
           "Gear up for a thriving IT career and enjoy greater job security",
           "Immersive Learning with Simulations, Case Studies, Assessments, and more!",
+        ],
+      },
+    },
+
+
+    {
+      id: 23,
+      title: "Leading SAFe® 6.0",
+      courseSubtitle: "Leading SAFe® 6.0 Training with SAFe Agile Certification",
+      description:
+        "Become an In-Demand SAFe Agilist and Lead Enterprise Lean-Agile Transformation",
+      // background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      // type: "Agile Management",
+      courseDetail: {
+        courseCategory: "Agile Management",
+        careerDetail: [
+          { carrer: "SAFe-Certified Professionals", value: "12,000" },
+          { carrer: "Agile Transformations", value: "300" },
+          { carrer: "Global Scaled Agile Partner", value: "Top 10" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "16 Hours of Live Instructor-Led Training ",
+            },
+            {
+              icon: "",
+              value: "Earn·16 PDUs and 16 SEUs for Continual Learning",
+            },
+            {
+              icon: "",
+              value: "Real-World Simulations and Activities",
+            },
+            {
+              icon: "",
+              value: "Unlock Exam Success with Comprehensive Exam Support",
+            },
+            {
+              icon: "",
+              value: "All-Inclusive Learning with Exam Fee Included",
+            },
+            {
+              icon: "",
+              value: "Comprehensive Job Support including AI-Resume Builder",
+            },
+            {
+              icon: "",
+              value: "Embrace the SAFe Way with Access to the SAFe Studio",
+            },
+            {
+              icon: "",
+              value: "Access 1-Year SAFe Community Membership",
+            },
+            {
+              icon: "",
+              value: "Mentorship by Agile Industry Experts",
+            },
+          ],
+          overviewDetail: `The Leading SAFe certification has become a standard requirement for Lean-Agile enterprises. It expands your horizons in terms of potential career paths and value within the sector. The Scaled Agile Framework (SAFe) is the most widely adopted enterprise Agile approach according to most survey data, with 53% using it, according to the 16th Annual State of Agile Report.
+
+While Agile approaches have proven to be easily applicable to small teams, the majority of enterprises today work across collaborative teams, complex systems, and geographies. This requires Agile to work across your enterprise to bring in the benefits of faster delivery, better-quality products, and quick response to your customer queries. However, large-scale agile transformation is prone to failure due to a lack of suitable structure and processes, resulting in agile implementations that do not have the desired impact.
+
+The Scaled Agile Framework (SAFe) is a comprehensive framework for large-scale Agile project teams to easily implement an Agile transformation. The first step toward such a change is to use Lean/Agile principles and practices at all levels of your organization. The SAFe methodology synchronizes the alignment, collaboration, and delivery of numerous Agile teams with ease, paving the road for organizational success. Now, in its latest release (version 6.0), SAFe promises to bring in full business agility with significant advances in strategy, execution, and leadership competencies that will help individuals and enterprises deliver innovative business solutions and outperform the competition in its latest release (version 6.0).`,
+          overviewPoints: [
+            {
+              title: "16-Hour Live Instructor-Led Online Training",
+              value:
+                "Our course is designed to be engaging and interactive, with a seasoned instructor leading you through 16 hours of live, real-time training. You'll have the opportunity to ask questions, participate in discussions, and apply what you learn in a supportive virtual environment.",
+            },
+            {
+              title: "Earn 16 PDUs and 16 SEUs for Continual Learning",
+              value:
+                "Continuous learning is key to staying at the forefront of Agile practices. By completing this course, you'll earn 16 Professional Development Units (PDUs) and 16 Scrum Education Units (SEUs), recognized by leading industry bodies, to support your professional growth.",
+            },
+            {
+              title: "Unlock Exam Success with Comprehensive Exam Support",
+              value:
+                "We're here to ensure you're fully prepared to ace the SAFe certification exam. Our course includes comprehensive exam preparation materials, practice tests, and guidance to boost your confidence and success on exam day.",
+            },
+            {
+              title: "All-Inclusive Learning ",
+              value:
+                " Exam Fee Included: Your investment in this course covers not only the training but also the SAFe certification exam fee. This means there are no hidden costs, and you can focus on your learning journey without worrying about additional expenses.",
+            },
+            {
+              title: "Comprehensive Career Support with Job Boost 360:",
+              value:
+                "Accelerate your professional growth with our holistic program. Gain access to job placement assistance, resume workshops, interview preparation, and personalized coaching designed to propel your career forward.",
+            },
+            {
+              title: "Embrace the SAFe Way with Access to the SAFe Studio:",
+              value:
+                "Gain access to the SAFe Studio, a treasure trove of resources that includes a wealth of SAFe content, videos, and tools to deepen your understanding of the framework and its practical applications.",
+            },
+            {
+              title: "Acquire Free 1-Year SAFe Community Membership:",
+              value:
+                "As a course participant, you'll gain access to the vibrant SAFe community. You'll have the opportunity to network with Agile enthusiasts, access valuable resources, and stay updated on the latest developments in the SAFe framework throughout your one-year free membership.",
+            },
+            {
+              title: "Gateway to the Largest Global Agile Community",
+              value:
+                "Connect, collaborate, and stay updated on industry trends through our exclusive gateway. Access forums, events, and networking opportunities to forge connections and share best practices with fellow practitioners worldwide",
+            },
+            {
+              title: "Mentorship by Agile Industry Experts",
+              value:
+                "Tap into the knowledge and experience of Agile leaders. Benefit from personalized guidance, feedback, and insights tailored to your career goals, empowering you to make informed decisions and achieve success in your Agile journey.",
+            },
+          ],
+          overviewCourseDescription: `We're excited to embark on this SAFe journey with you, equipping you with the skills and knowledge you need to lead Agile transformation initiatives successfully. Let's embrace the SAFe way together and achieve excellence in Agile practices. Welcome to the Leading SAFe course!`,
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "DEMAND FOR LEADING SAFE CERTIFIED PROFESSIONALS",
+          demandHeading:
+            "Soaring Demand and Accelerated Growth",
+          demandDetail: `While Agile methods have been found to be readily applicable to small teams, most organizations today work across collaborative teams, complex systems and geographies. This requires Agile to work across the enterprise to bring in the benefits of faster delivery, better quality products and quick response to customer queries. However, agile transformation across such a large scale is prone to failures due to a lack of proper structure and processes, which results in agile implementations not yielding the expected impact.
+          The Scaled Agile Framework® (SAFe®) is a complete methodology for large-scale Agile project teams to carry out an Agile transformation seamlessly. Applying Lean/Agile principles and practices across all levels within an enterprise is the first step toward such a change. The SAFe® methodology effortlessly synchronizes the alignment, collaboration, and delivery of multiple Agile teams, leading the way to enterprise success. Now in its latest release (version 6.0), SAFe® promises to bring in full business agility with significant advances in strategy, execution, and leadership competencies that will help individuals and organizations deliver innovative business solutions and supersede the competition.
+
+          With more than 70% of US Fortune 100 companies actively employing SAFe®, it is clear that the demand for Leading SAFe® is on a constant rise. Earning the Leading SAFe® 6.0 certification from Scaled Agile, Inc. - a globally renowned accreditation body, gives you a major lead over your peers and places you at the helm of Agile transformation in enterprises.
+
+          A Leading SAFe® certificate will not just merit a salary raise in your present organization but also offers several other benefits as listed below:
+
+          ORGANIZATIONAL BENEFITS
+
+          Apply SAFe® 6.0 in an enterprise context.
+          Deliver more value.
+          Improve communication and collaboration across all projects.
+          Introduce Agile not just to your IT delivery teams but the whole organization.
+          INDIVIDUAL BENEFITS
+
+          Lead transformation in Agile teams.
+          Become a top-earning Agile professional.
+          Grab more career opportunities.
+          Keep up with the swift-changing market trends.`,
+          demandData: [
+            {
+              type: "SAFe Agilist",
+              averageSalary: [18, 25, 36],
+              hiringCompany: [],
+              demand: {
+                percant: "70%",
+                description:
+                  "Of Fortune 500 companies actively employ SAFe",
+              },
+            },
+            {
+              type: "Scrum Master",
+              averageSalary: [11, 15, 22],
+              hiringCompany: [],
+              demand: {
+                percant: "1M",
+                description:
+                  "Professionals around the world are SAFe certified",
+              },
+            },
+            {
+              type: "Product Owner",
+              averageSalary: [14, 20, 28],
+              hiringCompany: [],
+              demand: {
+                percant: "20,000+",
+                description:
+                  "Organizations around the world use SAFe",
+              },
+              
+            },
+            {
+              type: "Agile Coach",
+              averageSalary: [19, 28, 37],
+              hiringCompany: [],
+              demand: {
+                percant: "6,000+",
+                description:
+                  "Job openings demanding SAFe experience, just in the US",
+              },
+              
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Experiential Workshops",
+              value:
+                "High-energy workshops with Agile activities, team-based exercises and practical case studies",
+            },
+            {
+              icon: "",
+              topic: "SAFe Practice Consultant Trainers",
+              value:
+                "Get trained by accredited SPCTs with over a decade of experience across industries around the world.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship by Industry Experts",
+              value:
+                "Acquire real-world tips, proven strategies and practical insights from seasoned industry experts.",
+            },
+            {
+              icon: "",
+              topic: "Join the Largest SAFe Network",
+              value:
+                "1-year free SAFe Community Platform membership - your gateway to the largest Scaled Agile communities.",
+            },
+            {
+              icon: "",
+              topic: "Continual Learning Support",
+              value:
+                "Webinars, e-books, tutorials, articles, and interview questions - we're right by you in your learning journey!",
+            },
+            {
+              icon: "",
+              topic: "Scaled Agile Gold SPCT Partner",
+              value:
+                "We're a Global Top 10 Scaled Agile Gold SPCT partner. 12K+ SAFe career transformations facilitated!",
+            },
+            {
+              icon: "",
+              topic: "Comprehensive Job Support",
+              value:
+                "Make the most of LinkedIn profile reviews, AI-resume builder and access to 1500+ job listings",
+            },
+            {
+              icon: "",
+              topic: "Comprehensive Job Support",
+              value:
+                "Benefit from complete job support, including LinkedIn assistance, resume refinement and mentorship.",
+            },
+          ],
+        },
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/John Mulligan 96-4a9492fa47f043c3a24c4cb6f41a27a5.svg",
+            instructorName: "John Mulligan",
+            instructorProfession: "SAFe (SPC), Senior Consultant",
+            experience: "15",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/Capital_One_SAFE_SSM_02-ea30660d254643c6bcc4d19635a47285.svg",
+            instructorDetail: `Mr. Mulligan is an Agile consultant at Applied Frameworks, specializing in Agile transformations and team train... 
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Ritika Birla 96-daba7b3289584f77bbb6382cd39f46c8.svg",
+            instructorName: "Ratika Birla",
+            instructorProfession: "SPC, Agile and Lean Coach",
+            experience: "10",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/AON_60x26_revised-75dd7507c60441e29b4173fdd9f3f538.svg",
+            instructorDetail: `Ratika Birla is an accomplished SAFe Program Consultant, Agile and Lean Coach/Trainer, Enterprise Coach, Produc...  
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle: "Ready to unlock your potential as a SAFe Agilist?",
+          certificationDetail:
+            "On clearing your Leading SAFe exam, you receive the coveted SAFe Agilist certificate from the esteemed Scaled Agile Framework (SAFe) and join the elite club of SAFe 6 Agilist certification holders worldwide.",
+          certificateImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Leading SAfe-6dae20cba5d842d09eca98d50f1a30fd.svg",
+        },
+        prerequisites: [
+          "There are no prerequisites to attend this course.",
+          "5+ years experience in software development and testing is useful.",
+          "Experience in product or project management is recommended.",
+          "Prior working experience in Scrum is beneficial."
+        ],
+        courseCurriculm: [
+          {
+            title: "Thriving in the Digital Age with Business Agility",
+            isPreview: false,
+            objective:
+              "Get introduced to the fundamental concepts of Business Agility and decipher the major competencies of Business Agility.",
+            topics: [
+              "Thriving in the Digital Age",
+              "SAFe as an operating system for Business Agility",
+              "The Seven Core Competencies of Business Agility",
+                            
+            ],
+          },
+          {
+            title: "Building a Foundation with Mindset, Values, and Principles",
+            isPreview: false,
+            objective:
+              "Gain a solid understanding of important SAFe principles and develop a Lean-Agile mindset like successful Agile leaders.",
+            topics: [
+              "The Lean-Agile Mindset",
+              "SAFe Core Values",
+              "SAFe Lean-Agile Principles",
+            ],
+          },
+          {
+            title: "Establishing Team and Technical Agility",
+            isPreview: false,
+            objective:
+              "Learn how to manage cross-functional Agile teams and deliver ROI-driven results on a consistent basis.",
+            topics: [
+              "Forming Cross-Functional Agile Teams",
+              "Built-In Quality",
+              "Organizing Agile Release Trains around Flow of Value"
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Effective Scaling",
+            description:
+              "SAFe® values of a Lean-Agile mindset to scale Lean and Agile development in your enterprise. ",
+          },
+          {
+            title: "Lean-Agile Principles",
+            description:
+              "Applying the Lean-Agile mindset and principles to become a Lean-thinking manager.",
+          },
+          {
+            title: "Maximize Value",
+            description:
+              "Integrate, deploy, and release value to support PI planning and events in Program execution. ",
+          },
+          {
+            title: "Seven Core competencies",
+            description:
+              "The seven core competencies in SAFe 6.0 and the development of large solutions.",
+          },
+          {
+            title: "Lean-Agile Mindset",
+            description:
+              "Scaling Lean and Agile with the Lean-Agile Mindset and principles.",
+          },
+          {
+            title: "Program Increments",
+            description:
+              "Plan and successfully execute Program Increments.",
+          },
+          {
+            title: "Agile Release Trains",
+            description:
+              "Execute and release value through Agile Release Trains.",
+          },
+          {
+            title: "Lean-Agile Budgeting",
+            description:
+              "Build an Agile portfolio with Lean-Agile budgeting.",
+          },
+          {
+            title: "Lean-Agile Transformation",
+            description:
+              "Leading the transformation with the SAFe® Implementation Roadmap.",
+          },
+          {
+            title: "Lean Portfolio Management",
+            description:
+              "Alignment and execution with Strategic Themes and Lean Portfolio Management (LPM).",
+          },
+        ],
+        whoCanAttendCourse: [
+          "Executives and Leaders",
+          "Infrastructure Management personnel",
+          "Project Managers",
+          "Product Managers",
+          "Leads and Managers",
+          "Enterprise, System, Solution Architects",
+        ],
+        aboutCourse: [
+          {
+            question: "What is the SAFe Agilist certification all about?",
+            answer: "A Certified SAFe Agilist (SA) is a professional who has completed the Leading SAFe certification and been successful in the Scaled Agile Framework certification test. By acquiring the SAFe Agilist certification provided by Scaled Agile, Inc, you will be able to address the critical challenges of creating and delivering enterprise-level software and systems in the shortest time. It gives guidance for all levels of organizations involved in solution development: Portfolio, Program, Team, and Large Solutions.",
+          },
+          {
+            question: "Why should I go for the SAFe Agilist certification?",
+            answer: `Holding the SAFe Agilist certification shows your proficiency in implementing lean thinking, SAFe Framework, and Product development flow principles in an organizational context. Our two-day Leading SAFe training course gives you practical experience of applying the Scaled Agile Framework in large enterprises and is delivered by a SAFe Practice Consultant, authorized by Scaled Agile, Inc.`,
+          },
+
+          {
+            question: "What is the importance of a SAFe 6.0 Agilist certification?",
+            answer: `While applying Lean/Agile principles at the team or department level is relatively straightforward, achieving the same benefits at the enterprise level presents significant challenges due to the scale of the required change. Consequently, organizations often turn to the Scaled Agile Framework (SAFe) to facilitate large-scale, multi-team transformations seamlessly.
+            SAFe 6.0 Agilists are highly sought after for their proficiency in spearheading this transformation. They excel in planning and executing program releases with careful consideration and possess the ability to identify the necessary roles and structures essential for scaling Agile practices to the program level.`,
+          },
+          {
+            question: "Who offers the SAFe Agilist certification?",
+            answer:
+              "Scaled Agile, Inc. is the provider of SAFe which is one of the best-known frameworks for enterprise agility. SAFe was initially released in 2011 by Dean Leffingwell as a knowledge base for enterprises to adopt Agile. It is the leading provider of SAFe courses for implementing Agile practices at enterprise level. The SAFe Agilist (SA) Certification is given to those who have undertaken the SAFe 6.0 Agilist Certification Exam and received a passing score. ",
+          },
+          {
+            question:
+              "How much does the SAFe Agilist certification cost?",
+            answer: "The Scaled Agile Framework certification cost is included in the SAFe Agilist course fee.",
+          },
+        ],
+        faqs: [
+          {
+            type: "Course",
+            question:
+              "What will I accomplish after completing the Leading SAFe online course?",
+            answer: `The Leading SAFe course has been thoughtfully designed to help you prepare for the Certified SAFe Agilist exam. On completing this course, you will be equipped with all the tools and techniques to:
+
+Apply SAFe values to scale Lean-Agile development in your enterprise.
+Apply the Lean-Agile principles as a Lean-thinking manager.
+Integrate, deploy, and release value to support PI planning as well as the events in Program execution.
+Understand the core competencies in SAFe 6.0 and coordinate the development of products.
+Enhance your Lean-Agile leadership skills and create high-performing, purpose-bound Agile teams.
+Support a Lean-Agile transformation in your enterprise with the SAFe Implementation Roadmap.
+Establish business alignment via Strategic Themes and Lean Portfolio Management (LPM).`,
+          },
+          {
+            type: "Course",
+            question:
+              "What practical skills can I expect to have after completing this course?",
+            answer:
+              `Our Leading SAFe training aims to equip you with all the skills to be a sought-after SAFe Agilist. In this engaging and interactive two-day program, you will develop the practical skills employers look for in a SAFe Agilist:
+              Leadership
+              Coaching
+              Change management
+              Motivation
+              Conflict management
+              Lean-Agile management
+              Design thinking
+              Systems thinking
+              An understanding of DevOps principles
+              Executing Program Increments
+              Executing Agile Release Trains
+              Lean-Agile Budgeting
+              Lead Portfolio Management
+`,
+          },
+
+          {
+            type: "PDUs and SEUs",
+            question: "How many PDUs & SEUs will I be eligible for?",
+            answer: `You will earn 16 PDUs and 16 SEUs by participating in this two-day Leading SAFe training program.`,
+          },
+
+          {
+            type: "PDUs and SEUs",
+            question:
+              "How many PDUs will I need to maintain my SAFe Agilist certification?",
+            answer: "You will need 10 continuing education or outreach hours (PDUs) to maintain your SAFe Agilist certification.",
+          },
+          {
+            type: "PDUs and SEUs",
+            question: "What are PDUs and SEUs?",
+            answer: `PDUs are Professional Development Units issued by the Project Management Institute®. They can be earned by completing educational training or learning opportunities, which serve to validate your participation and continued proficiency in the principles and practices of project management.
+
+PDUs are the measuring unit used to quantify your project management professional development as part of the PMI’s Continuing Certification Requirements (CCR) program. 1 PDU = 1 hour of learning/activity.
+
+SEUs are Scrum Educational Units, issued by the Scrum Alliance. They can be earned by completing educational training or learning opportunities, which serve to validate your participation and continued proficiency in the principles and practices of Scrum.
+
+SEUs demonstrate that you are furthering your proficiency as a Scrum practitioner. SEUs follow a 1:1 ratio, where one hour of participation or preparation towards increasing your proficiency in Scrum is equal to one SEU. To maintain your certification from Scrum Alliance, you are required to earn a certain number of SEUs every two years.`,
+          },
+
+          {
+            type: "Standard and Pro Plans",
+            question: "Are there any differences in course content between the Standard and Pro plans?",
+            answer: `While the core content remains consistent across both plans, the Pro plan enriches your experience with supplementary resources and advanced learning material. It is a meticulously crafted pathway not just for achieving the CSPO certification, but also for propelling your Product Owner career growth to new heights.`,
+          },
+          {
+            type: "Standard and Pro Plans",
+            question: "How do I know which plan is right for me?",
+            answer: `When deciding between the Standard and Pro plans, consider your aspirations, budget, and the level of support you desire. With the Pro plan, you'll gain access to additional guidance and premium resources, ensuring you reach your full potential.
+
+Don't settle for less—choose Pro for an unmatched learning path to success.`,
+          },
+          {
+            type: "Standard and Pro Plans",
+            question: "How do I know which plan is right for me?",
+            answer: `When deciding between the Standard and Pro plans, consider your aspirations, budget, and the level of support you desire. With the Pro plan, you'll gain access to additional guidance and premium resources, ensuring you reach your full potential.
+
+Don't settle for less—choose Pro for an unmatched learning path to success.`,
+          },
+          {
+            type: "Workshop Experience ",
+            question: "What are the modes of training offered for this course?",
+            answer: `The Leading SAFe workshop at KnowledgeHut is delivered through our immersive learning experience platform, via live and interactive instructor-led training sessions.
+
+Listen, learn, ask questions, and get all your doubts clarified from your instructor, who is an experienced practitioner.`,
+          },
+          {
+            type: "Workshop Experience ",
+            question: "How different is the Leading SAFe online training from the conventional in-person training?",
+            answer: `The conventional in-person Leading SAFe training from Scaled Agile, Inc. (SAI) will be delivered for 2-days. The online course is divided into several sessions of shorter duration, unlike the in-person class that consists of 2 classes with 7 to 8 hours-long sessions. The size of the class is capped at 30 so that students gain a better learning experience. The participants and our trainers will be able to virtually collaborate with one another with the help of webcam tool.`,
+          },
+          {
+            type: "Workshop Experience ",
+            question: "Who are the instructors?",
+            answer: `Our SAFe® Program Consultants (SPCs) are:
+Professionals licensed by Scaled Agile, Inc. to teach the official curriculum
+Masters in SAFe who have immense experience in leading, applying, coaching, and teaching it
+Skilled in SAFe framework and agile software development
+Subject matter experts who are active in software development and local Agile communities, along with the broader global SAFe and Agile movements.`,
+          },
+        ],
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "41,500+ Enrolled",
+        bannerImage:
+          "https://ww2.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FTop%20Banner_02-c9719aad47ad4255a95097a79c146264.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        highlights: [
+          "Get trained by globally renowned SAFe Practice Consultants",
+          "Unlock opportunities in top-tier organizations seeking SAFe expertise",
+          "Experiential learning, simulations, engaging role-plays and much more!",
+        ],
+      },
+    },
+    
+    
+    
+    
+    
+    
+    {
+      id: 1,
+      title: "Microsoft Project",
+      description: "Analyze the facts and make forecasts.",
+      background: "linear-gradient(110deg, #53a2ff, #2a387b)",
+      type: "",
+      curriculm: [
+        {
+          heading: "Introduction to Microsoft® Project",
+          description: "",
+          type: "curriculm",
+          objective:
+            "Familiarize with MS project tool and the initial settings. ",
+          topic:
+            "The Interface, Tabs (Task, Resource, Report, Project, View, Format), Backstage view, Project Information, Setup a new project, Setup Project Calendar, Setup non working days, Enter basic project information.",
+        },
+        {
+          heading: "Creating Tasks and Task Management",
+          description: "",
+          type: "curriculm",
+          objective: "Understand how to define scope on project. ",
+          topic:
+            "Auto Scheduled and Manually Scheduled Tasks, Entering Tasks and subtasks, Duration, Notes, Constraints, Hyperlinks, Deadlines, Entering and Deleting Tasks, Indent and Outdent, Establishing Dependencies and Assigning Milestones, Recurring Tasks.",
+        },
+        {
+          heading: "Listing Resources, Assigning Resources and Project Costs",
+          description: "",
+          type: "curriculm",
+          objective:
+            "Understand how to create resources and assign resources, understanding how to view costs for individual Tasks, Modules and the Total Project. ",
+          topic:
+            "Creating Resources, Resource type, Group, Code, Setting Resource Calendar, Cost, Notes, Assigning Resources and Resource Load Analysis, Viewing Project Costs.",
+        },
+      ],
+
+      courseDescription: {
+        courseHeading: "Course Description",
+        courseData: [
+          {
+            question: "About The Course",
+            answer:
+              "This self-paced online program covers the overview of Project Management and explains how to manage projects using Microsoft Project. Microsoft Project assists Project Managers to do Scope Planning, Assign Resources, Prepare Schedule, Baseline, Update Progress, Track and Report. This training is imperative for all who need to plan, track and effectively communicate with stakeholders. This course helps participants to practically implement the learning through hands-on on MS Project.",
+          },
+          {
+            question: "Course Objectives",
+            answer: `After the completion of Microsoft Project Course at Edureka, you should be able to:<br/>
+
+                1. Understand the importance of MS Project in following a structured approach to managing projects.<br/>
+                2. Define the initial settings in MS Project.<br/>
+                3. Prepare and use MS Project for planning, tracking and reporting on projects.<br/>
+                4. Understand how to document lessons learned and close projects.<br/>`,
+          },
+          {
+            question: "Who should go for this course?",
+            answer: `Anybody associated with Project Management, in any industry or domain can attend this course.`,
+          },
+          {
+            question: "Pre-requisites",
+            answer:
+              "A basic understanding of the project and project environment is helpful.",
+          },
+          {
+            question: "Why Learn Microsoft® Project 2013?",
+            answer:
+              "MS Project is used across industries in many organizations. Many clients want the projects to be planned and tracked in MS Project.",
+          },
+        ],
+      },
+
+      faqs: {
+        faqsHeading: "FAQ's",
+        faqsData: [
+          {
+            question:
+              "How soon after Signing up would I get access to the Learning Content?",
+            answer:
+              "As soon as you enrol into the course, your LMS (The Learning Management System) access will be functional. You will immediately get access to our course content in the form of a complete set of videos, PPTs, PDFs and  Assignments. You can start learning right away.",
+          },
+          {
+            question:
+              "For how long will I have access to the course materials?",
+            answer: `All the videos and other materials like PPTs, Quiz and Assignments, etc are hosted in our Learning Management System (LMS) and you will have a lifetime access to that. `,
+          },
+          {
+            question:
+              "Are there any pre-requisite to attend MS Project training?",
+            answer: `There are no pre-requisites for this course. But basic understanding of the project and project environment will be helpful.`,
+          },
+          {
+            question: "What is MS Project?",
+            answer:
+              "Microsoft Project is a project management software program, developed by Microsoft, which is designed to assist a project manager in developing a plan, assigning resources to tasks, tracking progress, managing the budget, and analyzing workloads.",
+          },
+          {
+            question: "What will happen if I have technical queries?",
+            answer:
+              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
+          },
+
+          {
+            question: "What will happen if I have technical queries?",
+            answer:
+              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
+          },
+          {
+            question: "What are new features of MS project 2013?",
+            answer:
+              "1. Run Project in the cloud 2. Improved scheduling engine 3. Improved Workflow Management engine 4. Enhanced Reporting capabilities 5. Simplified time sheets and task 6. management Lightweight project management leveraging SharePoint 7. Simpler Security Model.",
+          },
+          {
+            question: "How will be the practicals done?",
+            answer:
+              "By following the instructions provided in the Installation guide present in the LMS, you can install MS Project on your local system and execute all the practicals present in the course. ",
+          },
+          {
+            question: "What are the payment options?",
+            answer:
+              "You can pay by Credit Card, Debit Card or Net Banking from all the leading banks. For INR payment, you can use CCAvenue Payment Gateway. For USD payment, you can pay by Paypal. We also have EMI options available.",
+          },
+          {
+            question: "What if I have more queries?",
+            answer:
+              "Just give us a CALL at +91 1234567890 OR email at sales@teclearns.com Toll free number is 1800 123 4567.",
+          },
         ],
       },
     },
