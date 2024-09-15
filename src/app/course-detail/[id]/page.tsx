@@ -3,7 +3,9 @@ import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import AdvisorForm from "@/components/courseDetail/advisorForm";
 import Banner from "@/components/courseDetail/banner";
-import OverviewSection from "@/components/courseDetail/overviewSection";
+import OverviewSection, {
+  SecretSauceCourse,
+} from "@/components/courseDetail/overviewSection";
 import StickyHeader from "@/components/courseDetail/stickyHeader";
 import { homeData } from "@/constants";
 import { Course } from "@/types";
@@ -42,8 +44,11 @@ const CourseDetail = () => {
   return (
     <div className="overflow-x-hidden">
       <Header isSticky={false} />
+
+      <Banner courseData={courseData} />
+
       <div ref={bannerRef}>
-        <Banner courseData={courseData} />
+        <SecretSauceCourse data={courseData?.courseDetail?.secretSauce} />
       </div>
 
       <div className="flex relative w-full max-w-[1280px] mx-auto">
@@ -51,7 +56,7 @@ const CourseDetail = () => {
 
         <div className="w-[70%] p-4">
           <div className="mb-8 h-auto">
-           <OverviewSection courseData={courseData} />
+            <OverviewSection courseData={courseData} />
           </div>
         </div>
 

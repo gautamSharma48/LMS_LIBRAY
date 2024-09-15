@@ -18,8 +18,10 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
   const overview = courseData?.courseDetail?.overview;
   return (
     <section className="mt-5">
+      
       {/* upper-banner */}
       <CarrerDetailBanner data={courseData?.courseDetail?.careerDetail} />
+      
 
       {/* most effective section */}
       <MostEffectiveSection courseData={courseData} overview={overview} />
@@ -73,6 +75,37 @@ const OverviewSection: React.FC<any> = ({ courseData }) => {
         courseName={courseData?.title}
         data={courseData?.courseDetail?.faqs}
       />
+    </section>
+  );
+};
+
+export const SecretSauceCourse: React.FC<any> = ({ data }) => {
+
+  if(!data?.length){
+    return;
+  }
+  return (
+    <section className="max-w-[1280px] mx-auto">
+      <div className="text-center text-3xl font-bold">
+        Our Secret Sauce for Exam and Career Success
+      </div>
+      <div className="grid grid-cols-4 place-items-center gap-4 mt-5">
+        {data?.map((element:any, index:number) => (
+          <div
+            key={index}
+            className="bg-white-10 border border-grey-10 shadow-2xl drop-shadow rounded-xl"
+          >
+            <img
+              className="w-full h-[188px]"
+              src={element?.image}
+              alt=""
+            />
+            <div className="w-full bg-grey-50 text-center p-4 rounded-xl text-ellipsis">
+              {element?.detail}
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
@@ -199,7 +232,7 @@ export const FaqsQuestions: React.FC<any> = ({ data, courseName = "" }) => {
 export const AccordinCourse: React.FC<any> = ({ courseName, data }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  if(!data?.length){
+  if (!data?.length) {
     return;
   }
   return (

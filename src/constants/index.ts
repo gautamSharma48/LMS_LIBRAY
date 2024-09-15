@@ -1270,7 +1270,8 @@ The Agile and Scrum Training program is delivered both in a Blended Learning and
         courseInstructor: [],
         courseAuthor: [],
         certification: {
-          bannerImage: "https://d2o2utebsixu4k.cloudfront.net/Imgcert cta-10-356e659eed7f437f83063de6a2cc85eb.svg",
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Imgcert cta-10-356e659eed7f437f83063de6a2cc85eb.svg",
           bannerTitle: "Ready to go from novice to Agile and Scrum expert?",
           certificationDetail: "",
           certificateImage: "",
@@ -1290,7 +1291,7 @@ The Agile and Scrum Training program is delivered both in a Blended Learning and
               "A day in the life of a Project Manager",
               "The need for change",
               "Traditional Projects vs Agile Projects",
-              "Benefits of Agile Methodology"
+              "Benefits of Agile Methodology",
             ],
           },
           {
@@ -1325,7 +1326,7 @@ The Agile and Scrum Training program is delivered both in a Blended Learning and
               "Investing in User stories",
               "Prioritizing User stories",
               "User story maturity",
-              "Minimum viable product and minimum marketable feature"
+              "Minimum viable product and minimum marketable feature",
             ],
           },
         ],
@@ -1337,8 +1338,7 @@ The Agile and Scrum Training program is delivered both in a Blended Learning and
           },
           {
             title: "Agile Business Inputs",
-            description:
-              "Learn about user stories and how to create them.",
+            description: "Learn about user stories and how to create them.",
           },
           {
             title: "Agile Planning Events",
@@ -1357,7 +1357,8 @@ The Agile and Scrum Training program is delivered both in a Blended Learning and
           },
           {
             title: "Scaling Agile",
-            description: "Discover how to scale Agile effectively at the enterprise level.",
+            description:
+              "Discover how to scale Agile effectively at the enterprise level.",
           },
         ],
         whoCanAttendCourse: [
@@ -1366,13 +1367,13 @@ The Agile and Scrum Training program is delivered both in a Blended Learning and
           "Product Owners",
           "Managers-Software Development",
           "Architects-Software Development",
-          "Product Managers"
+          "Product Managers",
         ],
         aboutCourse: [],
         faqs: [
           {
             type: "Training",
-           question:
+            question:
               "What practical skills can I expect to have after completing the Agile and Scrum training course?",
             answer: `Our Agile and Scrum introductory course is designed to make you a skilled contributor to your Scrum team. You will develop the skills to:
 
@@ -1395,7 +1396,8 @@ Scale Agile with SAFE®, DAD, and LeSS and lead enterprise-wide Agile transforma
 
           {
             type: "Workshop",
-            question: "What are the modes of training offered for the Agile and Scrum Course?",
+            question:
+              "What are the modes of training offered for the Agile and Scrum Course?",
             answer: `The Agile and Scrum workshop at KnowledgeHut is delivered through PRISM, our immersive learning experience platform, via two modes of delivery:
 Blended learning:
 
@@ -1409,22 +1411,23 @@ Learn conveniently at your own pace, whenever and wherever you choose. Spend as 
 
           {
             type: "Workshop",
-            question:
-              "Who are the instructors?",
+            question: "Who are the instructors?",
             answer:
               "Your instructors are experienced industry professionals who have significant experience in Agile and Scrum across various industries. They are leading practitioners who bring current best practices and case studies from their experience to the live and interactive training sessions. The instructors are industry-recognized experts with more than 10 years of experience implementing Agile.",
           },
 
           {
             type: "Finance",
-            question: "Can I cancel my enrolment to the Agile and Scrum course? Do I get a refund?",
+            question:
+              "Can I cancel my enrolment to the Agile and Scrum course? Do I get a refund?",
             answer: `You can cancel your enrolment and receive refunds in line with our Cancellations and Refunds policy.`,
           },
 
           {
             type: "Finance",
-            question:"Can I switch my start date?",
-            answer: "Yes, you may switch your start date with prior notice of at least 24 hrs and subject to availability in the desired batch."
+            question: "Can I switch my start date?",
+            answer:
+              "Yes, you may switch your start date with prior notice of at least 24 hrs and subject to availability in the desired batch.",
           },
           {
             type: "Finance",
@@ -1442,10 +1445,585 @@ Scrum stands out as the most dominant Agile framework with a 58% adoption rate a
           },
           {
             type: "Agile and  Scrum",
-            question: "What is the difference between Agile Scrum Master and Certified Scrum Master?",
+            question:
+              "What is the difference between Agile Scrum Master and Certified Scrum Master?",
             answer: `Agile Scrum Master is a certification offered by EXIN, a foundation originally established by the Ministry of Economic Affairs in the Netherlands. The EXIN Foundation provides certification standards and examinations for technology professionals. Agile Scrum Master is one of the certifications from this organization. It validates a professional’s ability to use coach and facilitate teams in Agile and Scrum practices. The course is open to all who want to pursue a career as Scrum and Agile professionals.
 
 The Certified ScrumMaster® (CSM®) on the other hand, is offered by Scrum Alliance®, a world-renowned body dedicated to furthering the practices of Scrum and Agile. The CSM is an entry-level credential, accepted globally and has high credibility. It validates the holder’s ability to successfully perform the role of servant leader, coach, facilitator, and creator of high-performing scrum teams.`,
+          },
+        ],
+      },
+    },
+
+    {
+      id: 25,
+      title: "PMP Certification",
+      courseSubtitle:
+        "PMP® (Project Management Professional) Certification Training",
+      description:
+        "The Most Comprehensive PMP  Certification Course for Guaranteed Exam Success",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Project Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "40,335+ Enrolled",
+        bannerImage:
+          "https://www.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FTop%20Banner_04%20copy-19384d3ccbf24ef0b51b6eed763ee54d.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        secretSauce: [
+          {
+            image:
+              "https://d2o2utebsixu4k.cloudfront.net/Learn%20With%20Us_Experiential%20Learning_CSM_Revised-79e5519eb45244c98cf06fa7153f5d22.svg",
+            detail: "Premium 2000+ Question Bank",
+          },
+          {
+            image:
+              "https://d2o2utebsixu4k.cloudfront.net/Learn%20With%20Us_Complimentary%20Mock%20Tests_CSM-01-2b7c9e6768584b72bc6c2d4a0b6a466d.svg",
+            detail: "Free PMP Exam Simulator",
+          },
+          {
+            image:
+              "https://d2o2utebsixu4k.cloudfront.net/Learn With Us_Scrum Enablement Sessions_CSM-6a6626d72fe14f6e9a86191dd6b507f9.svg",
+            detail: "Complimentary Mock Tests",
+          },
+          {
+            image:
+              "https://d2o2utebsixu4k.cloudfront.net/Learn%20With%20Us_Free%20Agile%20and%20Scrum_20%20SEUs_CSM-01-01-91096e895f5e427db5635a1a7ccc8a81.svg",
+            detail: "Guaranteed Exam Pass Study Plan",
+          },
+        ],
+        highlights: [
+          "World's #1 PMP Exam Prep to Pass in Your First Attempt",
+          "Proven Step-by-Step Blueprint for PMP Exam Success",
+          "Aligned with the Latest PMP Exam Content Outline",
+        ],
+        careerDetail: [
+          { carrer: "Career transformations", value: "450k" },
+          { carrer: "Workshops every month", value: "200" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "36 Contact Hours with Live, Instructor-Led Sessions",
+            },
+            {
+              icon: "",
+              value: "Complimentary On-Demand Course with 35 Contact Hours",
+            },
+            {
+              icon: "",
+              value: "Mentor-Led Guaranteed Exam Pass Study Plan",
+            },
+            {
+              icon: "",
+              value: "2000+ Question Bank for Hands-On Practice",
+            },
+            {
+              icon: "",
+              value: "Complimentary Mock Tests and Exams for Hands-On Practice",
+            },
+            {
+              icon: "",
+              value: "Free PMP Exam Simulator for Real Exam Experience",
+            },
+            {
+              icon: "",
+              value: "Exact PMP Exam Questions Replica Set from PMI",
+            },
+            {
+              icon: "",
+              value: "500+ Premium Exam Questions Exclusive from PMI",
+            },
+            {
+              icon: "",
+              value: "12 Full-Length Simulation Tests (180 Qs Each)",
+            },
+          ],
+          overviewDetail: `Have you been wondering where to get started with your PMP exam preparation and whether you’ll have sufficient time to prepare alongside your full-time job? Wouldn’t it be good to have experts you can reach out to regularly to clear any doubts you may have? Are you struggling to get hold of the right kind of learning material that will help you crack the PMP exam right in the first attempt?
+Well, you’ve come to just the right place! Get all of this and more in the most comprehensive mentor-guided Project Management Professional (PMP)® Certification Course. PMP certification is a globally recognized certification for project managers worldwide.
+Our PMP program is led by Program Director, Kevin Davis, who brings on board over two decades of rich project management experience across industries in addition to top-notch training experience, having trained thousands of students across domains including professionals in the US military. When you sign up for KnowledgeHut's PMP course, you also receive a complimentary on-demand video course by acclaimed project management thought leader, and risk management guru, Carl Pritchard. With over three decades of cross-domain experience, Carl is also an author of eight texts and a dynamic keynote speaker. Recognized for making learning enjoyable, he received PMI's 2019 "Best of the Best" award and has judged competitions for PMI and the Federal Highways Administration..`,
+          overviewPoints: [
+            {
+              title: "Earn 36 Contact Hours with Live Instructor-Led Sessions",
+              value:
+                "Get the best of live PMP training by industry experts with over a decade’s project management experience across industries all over the globe.",
+            },
+            {
+              title:
+                "Enjoy a Complimentary Self-Paced PMP Certification Course by Carl Pritchard",
+              value:
+                "This is a highly sought-after on-demand program by Carl Pritchard, one of the most renowned project and risk management gurus of the industry. The program helps you earn 35 contact hours.",
+            },
+            {
+              title: "Follow Step-by-Step 5-Week Mentor-Led Study Plan",
+              value:
+                "Get access to a meticulously crafted, practical, and mentor-led study plan, put together by Kevin himself. No more wasting time searching for what you should plan for—successful execution depends on impeccable planning, after all.",
+            },
+            {
+              title: "Attend Our Regular Doubt-Clearing Sessions.",
+              value:
+                "We’re with you every step of the way, with regular sessions to clear any doubts you may have throughout your preparation.",
+            },
+            {
+              title: "First-Attempt Success Guarantee:",
+              value:
+                "Apply for your PMP exam only once your mentor endorses it and aim for an above target score under mentor guidance.",
+            },
+            {
+              title: "Attend Refresher Courses with 180-Day Grand Pass",
+              value:
+                " Need a refresher course to brush up on PMP exam concepts? With our 180-Day Grand Pass, you can rejoin any of our live workshops as many times as you want.",
+            },
+            {
+              title: "Get Hands-On Practice with a 2000+ Solid Question Bank",
+              value:
+                "Delve into a comprehensive question bank with over 2000 questions for hands-on practice. Strengthen your understanding and master PMP concepts through in-depth, varied, and targeted practice.",
+            },
+            {
+              title: "Free PMP Exam Simulator",
+              value:
+                "Experience the real PMP exam environment with our free PMP Exam Simulator. Simulate exam conditions, ensuring you're well-prepared for the actual test day.",
+            },
+            {
+              title:
+                "Boost Your Confidence to Ace the Exam with Exclusive PMI Questions",
+              value:
+                "Access a collection of 500+ premium exam questions curated exclusively from PMI. Sharpen your skills with these meticulously selected questions, ensuring you're well-prepared for the PMP exam.",
+            },
+          ],
+          overviewCourseDescription: `In all, you’re in for the most efficient and the most effective, PMP exam prep journey with a training package that ensures assured success. Our PMP course is fully aligned with the newest version of the PMP exam’s objectives and the 7th Edition of the PMBOK® Guide. KnowledgeHut is a Premier Authorized Training Partner (ATP) of PMI®.
+Join the ranks of our successful learners by taking advantage of our Specially Discounted PMP Exam Vouchers! As a PMI Authorized Training Partner, we're thrilled to offer our students not just exceptional training but also the best value on PMP exam vouchers.
+🌟 Special ATP Discount: Unlock unbeatable savings on your PMP exam voucher when you purchase through us.
+💡 Pro Tip: Before you proceed, touch base with our dedicated sales team to secure the most competitive PMP exam voucher rate available in the market.
+Don't miss out on this opportunity to enhance your learning journey and save on your certification cost. Get in touch with our sales experts today and set yourself up for PMP success!`,
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "Demand for  PMP Certified Professionals",
+          demandHeading: "10M+ Job Openings in Project Management By 2030",
+          demandDetail: `The profession of project management has recently become one of the hottest jobs, not only in the tech market, but across industries. Demand for project managers is growing faster than demand for workers in other occupations and by 2027, 90 million individuals will need to be skilled in project-oriented roles.
+
+The PMP certification can help you land lucrative roles in IT, manufacturing, finance, healthcare, and other exciting industries. With more than 1.2 million PMP certification holders worldwide, the median salary for PMP holders across the world is 16% higher (as high as 32% in the US) than what their non-certified peers earn.
+
+Build your Project Management skills, get PMI certified, and be sure to capitalize on the high demand across industries.`,
+          demandData: [
+            {
+              type: "Project Manager",
+              averageSalary: [10, 17, 25],
+              hiringCompany: [],
+              demand: {
+                percant: "33% Increase",
+                description:
+                  "anticipated in Project Management-oriented roles globally by 2027",
+              },
+            },
+            {
+              type: "Project Lead",
+              averageSalary: [15, 31, 46],
+              hiringCompany: [],
+              demand: {
+                percant: "22M",
+                description:
+                  "new Project Management jobs will be created by 2027 globally",
+              },
+            },
+            {
+              type: "PMO Lead",
+              averageSalary: [18, 38, 56],
+              hiringCompany: [],
+              demand: {
+                percant: "88M",
+                description:
+                  "individuals needed for Project Management roles by 2027",
+              },
+            },
+            {
+              type: "Project Director",
+              averageSalary: [22, 43, 63],
+              hiringCompany: [],
+              demand: {
+                percant: "US$ 208 Billion",
+                description:
+                  "GDP risk due to potential PM talent shortages by 2027",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Latest Curriculum",
+              value:
+                "Fully updated curriculum aligned with the latest PMP exam content guideline and PMBOK 7 standards.",
+            },
+            {
+              icon: "",
+              topic: "Guaranteed-To-Pass",
+              value:
+                "PMP Exam Prep designed to ensure success in passing the PMP exam the very first time.",
+            },
+            {
+              icon: "",
+              topic: "Detailed Study Guide",
+              value:
+                "Get a step-by-step guide with clarity on daily study goals with expert help all along the way.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive PMI-Licensed Learning",
+              value:
+                "Engaging audio-video content, eBooks, PDFs, assessments, and dynamic discussion forums.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship",
+              value:
+                "Weekly mentor guidance to ensure continuously improvment in speed, accuracy, concepts.",
+            },
+            {
+              icon: "",
+              topic: "Exam Application Assistance",
+              value:
+                "Expert guidance on PMI registration, membership, review, and submission of your exam application.",
+            },
+            {
+              icon: "",
+              topic: "180-Day Grand Pass",
+              value:
+                "Free access to rejoin any of our live training sessions and get all your doubts clarified.",
+            },
+            {
+              icon: "",
+              topic: "Comprehensive Job Support",
+              value:
+                "LinkedIn profile review, AI-resume builder, access to 1,500+ job listings",
+            },
+            {
+              icon: "",
+              topic: "Flexible Learning Options",
+              value:
+                "Need more flexibility with your learning times? Get tried-and-tested training, live or on your schedule",
+            },
+          ],
+        },
+        courseAuthor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Maheshwar Nynaru-661980df7288463f842b2aae105322a0.svg",
+            instructorName: "Maheshwar Nynarus",
+            instructorProfession: "Trainer & Consultant",
+            experience: "30",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/capgemini 60x26-45b78461bcc14011898baf17b9965ddb.svg",
+            instructorDetail: `With 30+ years of experience in Banking and IT, Maheshwar Nynaru is a seasoned consultant specializing in Project Management and IT Service Management. A PMP Certified professional and PMI Authorized Training Partner Instructor, he holds the ITIL Expert Level Certification and has delivered over 500 ITIL and PMP training sessions, showcasing a commitment to excellence and knowledge dissemination in the field.`,
+          },
+        ],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Alpesh Vasant-9cfb4f70ff2444cf8e37e21aa85ec8e5.svg",
+            instructorName: "Alpesh Vasant",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+            Alpesh Vasant is an experienced and certified professional, currently leading as the Director and Principal Trainer. With a strong background in ITIL4, he excels in understanding client operations and processes, identifying technical training needs, and providing customized, effective solutions. Alpesh's expertise extends to offering turnkey consultancy and fostering a culture of continuous process improvement within organizations. 
+            His ITIL 2011 certification complements his wide array of specialties, including Project Management (covering PMP 6th Edition, PRINCE2, Prince2Agile, Scrum), Office Automation (expertise in various Office suites and Macro Programming using VBA), Databases (Oracle, SQL Server, MySQL, PostgreSQL, MongoDB), Web Technology (HTML, CSS, JavaScript, XML, ASP, JSP), and Networking (Windows, Linux, Server Administration). Alpesh is also skilled in Six Sigma DMAIC Methodology, Minitab, FMEA, 5 S, and 8 D. 
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Santhosh Kannan-100a3c877b1544cc8a8dc0fe7a7a987b.svg",
+            instructorName: "Santhosh Kannan",
+            instructorProfession: "Trainer & Consultant",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+            Alpesh Vasant is an experienced and certified professional, currently leading as the Director and Principal Trainer. With a strong background in ITIL4, he excels in understanding client operations and processes, identifying technical training needs, and providing customized, effective solutions. Alpesh's expertise extends to offering turnkey consultancy and fostering a culture of continuous process improvement within organizations. 
+            His ITIL 2011 certification complements his wide array of specialties, including Project Management (covering PMP 6th Edition, PRINCE2, Prince2Agile, Scrum), Office Automation (expertise in various Office suites and Macro Programming using VBA), Databases (Oracle, SQL Server, MySQL, PostgreSQL, MongoDB), Web Technology (HTML, CSS, JavaScript, XML, ASP, JSP), and Networking (Windows, Linux, Server Administration). Alpesh is also skilled in Six Sigma DMAIC Methodology, Minitab, FMEA, 5 S, and 8 D. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle:
+            "Maximize Your PMP Exam Success with Our Exclusive Offer!",
+          certificationDetail:
+            "On clearing your PMP exam, you earn more than just project management skills: you receive the coveted PMP certificate from the esteemed Project Management Institute and join the elite club of 1.4 Million PMP certification holders worldwide.",
+          certificateImage:
+            "https://d2o2utebsixu4k.cloudfront.net/PMP-52632d2cc0024411a1b1fd83a30497b2.svg",
+        },
+        prerequisites: [
+          "No prior experience or knowledge is required to attend our PMP Certification Training.",
+          "To qualify for the PMP exam, you'll need to have a 4-year degree, high-school Diploma or associate degree.",
+          "You'll also need 36-60 months of experience leading projects within the past 8 years, depending on your educational background.",
+          "35 contact hours of project management education or training is mandatory to qualify for the exam.",
+        ],
+        courseCurriculm: [
+          {
+            title: " Agile Fundamentals and Traditional PM Foundations",
+            isPreview: false,
+            objective: `
+            Gain a comprehensive understanding of the Agile/Scrum Framework, Project Management Framework, and Fundamentals through our course. Dive into the PMP Process Groups and explore the revised PMP Exam Content Outline.
+
+This module in our PMP curriculum also includes a lesson on Business Environment, which covers the essential concepts and business areas that are crucial to grasp before embarking on a project. It aligns with the "Business Environment" domain in the Exam Content Outline and supports learning in the "Business Acumen" aspect of the PMI Talent Triangle.`,
+            topics: [
+              "Agile/Scrum Framework - From Agile Practice Guide",
+              "Introduction to Project Management Fundamentals",
+              "Project Management Framework",
+              "Summary",
+              "Assessment",
+              "Aligning with Organizational Trends and Global Strategy",
+              "Project benefits and business value",
+              "Organizational Culture and Change Management",
+              "Project Governance",
+              "Project Compliance",
+              "Assessment",
+            ],
+          },
+          {
+            title: "Start the Project",
+            isPreview: false,
+            objective:
+              "In this module, you will learn to define and discuss stakeholders and the most effective ways to communicate with them, explain the best ways to form a team, describe how to build the most effective understanding of a project and how doing so relates to executing a project successfully and explain how predictive and adaptive project life cycles work; explain what a hybrid development approach is.",
+            topics: [
+              "Identify and Engage Stakeholders",
+              "Form the Team",
+              "Build a Shared Understanding of the Project",
+              "Project Approach",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Team Building",
+            description:
+              "Define team ground rules, build a shared understanding, engage, and support virtual teams, and more.",
+          },
+          {
+            title: "Negotiating Project",
+            description:
+              "Learn how to empower team members and stakeholders by negotiating project agreements",
+          },
+          {
+            title: "Managing Conflict",
+            description:
+              "Learn how to manage compliances and achieve project benefits and value using PMP methodologies.",
+          },
+          {
+            title: "Choosing the Right Project Methodology",
+            description:
+              "Learn the best approach for project completion, and plan and manage scope, budget and resources.",
+          },
+          {
+            title: "Managing Risks",
+            description:
+              "Learn how to manage and plan scope, analyze and manage risk, and more.",
+          },
+          {
+            title: "Project Governance",
+            description:
+              "Learn to handle project changes, choose the right methods, practices, project governance, and more.",
+          },
+          {
+            title: "Delivering Business Value",
+            description:
+              "Learn to manage communications, risks and stakeholders while executing projects.",
+          },
+          {
+            title: "Managing Compliances",
+            description:
+              "Learn to manage compliances and deliver project benefits and value using PMP methodologies.",
+          },
+          {
+            title: "Continuous Process Improvement",
+            description:
+              "Assess and respond to changes in the internal and external business environment.",
+          },
+          {
+            title: "Project Continuity",
+            description:
+              "Manage project challenges and adjustments, as well as knowledge transfer.",
+          },
+
+          {
+            title: "Emotional Intelligence",
+            description:
+              "Learn about managing conflicts, stakeholder collaboration and prioritizing performance.",
+          },
+
+          {
+            title: "Business Analysis",
+            description:
+              "Learn to assess changes in the company and environment to help organizations transform.",
+          },
+        ],
+        whoCanAttendCourse: [
+          "Mid-Level Project Managers",
+          "Senior Project Managers",
+          "Project Coordinators",
+          "Project Analysts",
+          "Project Leaders",
+          "Product Managers",
+          "Program Managers",
+        ],
+        aboutCourse: [
+          {
+            question: "How do I get the PMP certification?",
+            answer: `The best way to achieve the PMP certification is by getting trained by an industry expert and following a meticulously structured approach to exam prep. With KnowledgeHut, you have a tried and tested learning path that's guaranteed for PMP Exam success. Follow the learning path and study plan and prepare to pass your exam on the first attempt with the utmost confidence.
+            The entire content ranging from the on-demand PMP course by an industry expert, to the 5-week mentor-led study plan and the full-length simulator exams and PMP mock tests for practice have been developed thoroughly by KnowledgeHut experts in collaboration with industry veterans over the past decade factoring in feedback from the several thousands of workshops carried out to date.`,
+          },
+          {
+            question:
+              " What are the eligibility criteria for PMP certification?",
+            answer: `Securing your PMP certification certainly involves a significant commitment—but that's precisely what makes it so valuable. If you've ventured into the realm of project management and garnered practical experience, you've overcome the toughest obstacle. Before you apply, make sure you meet one of the following sets of PMP Certification requirements:
+
+You will need to have a 4-Year Degree, 36 months of experience leading projects within the past 8 years and 35 contact hours of project management education or training
+OR
+
+A Secondary Degree (high-school diploma or Associates Degree) with 60 months of experience leading projects within the past 8 years and 35 contact hours of project management education or training.
+You can apply even if you did not officially have the title of Project Manager.
+
+Need help assessing your eligibility? Get in touch with us at kh.reachus@upgrad.com and our Learning Advisor will help you out.`,
+          },
+        ],
+        faqs: [
+          {
+            type: "Training",
+            question:
+              "What practical skills can I expect to have after completing the Agile and Scrum training course?",
+            answer: `Our Agile and Scrum introductory course is designed to make you a skilled contributor to your Scrum team. You will develop the skills to:
+
+Apply the Agile manifesto, the 4 Agile values, and the 12 Agile Principles to drive successful projects
+Create User Stories using the User Story format to enhance collaboration and creativity
+Apply User story prioritization techniques to a product backlog and use the mandatory 3 Cs
+Distinguish High-level overview for Agile variants and run the Project lifecycle for Agile Product development
+Understand the responsibilities for Scrum and Other roles in an Agile setup
+Run Scrum ceremonies and apply techniques of Agile estimation
+Apply Agile planning events and conduct Daily Scrum to reach goals
+Scale Agile with SAFE®, DAD, and LeSS and lead enterprise-wide Agile transformation`,
+          },
+          {
+            type: "Training",
+            question:
+              "How can KnowledgeHut help me pass my PMP exam in the first attempt?",
+            answer: `There is no set of eligibility requirements to attend this Scrum Master Certification course and it can be taken by novices or professionals.
+`,
+          },
+
+          {
+            type: "Workshop",
+            question:
+              "What are the modes of training offered for the PMP course?",
+            answer: `The PMP Training is offered as a blended training program which consists of both live instructor-led training and self-paced learning sessions.
+
+KnowledgeHut delivers an immersive learning experience through PRISM, our Learning Experience Platform.`,
+          },
+
+          {
+            type: "Workshop",
+            question: "Who are the instructors?",
+            answer: `
+            Our PMP instructors are professionals who have extensive experience in training PMP programs as well as experience managing real projects.
+
+Our trainers provide training that goes beyond just being compliant to PMI requirements by helping learners understand how to apply the learning and principles outlined in the PMP course in real-world environments.`,
+          },
+
+          {
+            type: "Workshop",
+            question: "What are the software and system requirements?",
+            answer: `
+           The Software Requirements for this course would include access to an internet browser and MS Word or similar application. Apart from this you will need a workstation or laptop with Windows or a comparable environment with high-speed Internet.`,
+          },
+
+          {
+            type: "Finance",
+            question: ". Can I cancel my enrolment? Do I get a refund?",
+            answer: `At upGrad KnowledgeHut, we strive diligently to make sure that your learning experience with us is second to none and you are assured of the highest standards of quality. However, if for any reason your expectations are not met, we will process refunds in accordance with our Cancellation, Refund, and Deferment Policy.`,
+          },
+
+          {
+            type: "Finance",
+            question: "Can I switch my start date?",
+            answer:
+              "Yes, you may switch your start date in line with our Cancellation, Refund, and Deferment Policy.",
+          },
+          {
+            type: "Finance",
+            question: " Is there a money-back guarantee?",
+            answer: `Yes, there is a 100% money-back guarantee for this course in line with our 100% Satisfaction Guarantee. At upGrad KnowledgeHut, we strive diligently to make sure that your learning experience with us is second to none and you are assured of the highest standards of quality. However, if for any reason your expectations are not met, we will process refunds in accordance with our Cancellation, Refund, and Deferment Policy.
+
+(*Not applicable for Singapore region).`,
+          },
+
+          {
+            type: "Career Benefits",
+            question: "Who is a Project Management Professional (PMP)?",
+            answer:`
+            A Project Management Professional (PMP) is a certification and designation provided by the Project Management Institute (PMI). The PMP is one of the most widely recognized and respected credentials for project managers globally. It signifies a certain level of competence, knowledge, and experience in the field of project management.
+
+Getting PMP® certified is advised as it aids project managers in advancing their careers by allowing them to apply for the best positions at the most prestigious corporations worldwide.
+            `,
+          },
+
+          {
+            type: "Career Benefits",
+            question: "How to become a PMP-certified Professional?",
+            answer:
+              "To become a PMP certified Professional, your first step is to confirm your eligibility to take the PMP exam. You are required to complete 35 hours of training from an Authorized Training Partner of PMI. The PMP preparation time will depend on your background in project management. Once you are ready, you can take the exam, and clear it to get certified as a PMP Professional.",
+          },
+
+          {
+            type: "Career Benefits",
+            question: "What are the roles and responsibilities of a Project Management Professional?",
+            answer:
+              "Project managers take the lead in project planning, project execution, project monitoring, control, and closure. Project Manager responsibilities include the entire project scope including the project team, resources, budget, and the overall success of the project.",
+          },
+
+          {
+            type: "Exam Preparation",
+            question: "Which book is best for PMP Exam preparation?",
+            answer:
+              "A thorough understanding of the PMBOK Guide is necessary to prepare well for the PMP exam. Apart from this, you can refer to self-help books like the “PMP Exam Prep Book- Tenth Edition by Rita Mulcahy” to give you a wider perspective on project management. Additionally, considering a reputable PMP course can complement your study materials and provide valuable guidance in your exam preparation journey.",
+          },
+
+          {
+            type: "Exam Preparation",
+            question: "Which Mock Test is best for PMP exam preparation?",
+            answer:
+              "Practicing mock exams is essential for passing the PMP exam. Participating in as many mock exams as possible is the best way to prepare for the PMP exam. KnowledgeHut offers 5 mock tests and 2000+ practice questions, making it a top choice for comprehensive PMP training and exam preparation, ensuring you approach the PMP exam with confidence.",
+          },
+          {
+            type: "Exam Preparation",
+            question: "What has changed in the new PMP exam format?",
+            answer:
+              `The PMP exam in its new format contains 180 questions. The questions are based on the three domains of People, Process, and Business Environment. You will need to answer this in the allotted 230 minutes. If you are writing the exam online, you get to take one 10-minute break. There is no break if you attend the exam physically. The questions will be a combination of multiple choice, multiple responses, matching, hot area, and fill-in-the-blanks.
+
+Apart from assessing a candidate's knowledge of project management principles, the PMP exam updates also evaluate their understanding of real-world implementation. For successful preparation and certification, keeping up with the latest PMP examination pattern, including the new question formats and domains, is essential. Enrolling in a reputable PMP training program can help you navigate these changes and be well-prepared for the updated exam format.`,
           },
         ],
       },
