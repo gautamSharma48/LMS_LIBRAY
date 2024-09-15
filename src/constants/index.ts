@@ -633,8 +633,8 @@ Don't settle for less—choose Pro for an unmatched learning path to success.`,
       courseSubtitle: "Leading SAFe® 6.0 Training with SAFe Agile Certification",
       description:
         "Become an In-Demand SAFe Agilist and Lead Enterprise Lean-Agile Transformation",
-      // background: "linear-gradient(242deg, #f49cae, #b05ce2)",
-      // type: "Agile Management",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
       courseDetail: {
         courseCategory: "Agile Management",
         careerDetail: [
