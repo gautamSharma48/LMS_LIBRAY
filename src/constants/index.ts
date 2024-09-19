@@ -2029,6 +2029,337 @@ Apart from assessing a candidate's knowledge of project management principles, t
       },
     },
 
+
+    {
+      id: 26,
+      title: "Six Sigma Yellow Belt Certification",
+      courseSubtitle:
+        "Lean Six Sigma Yellow Belt Training",
+      description:
+        "Gain a strong foundation in Lean and Six Sigma with Six Sigma Yellow Belt Certification",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Project Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "40,335+ Enrolled",
+        bannerImage:
+          "https://www.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FTop%20Banner_04%20copy-19384d3ccbf24ef0b51b6eed763ee54d.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        secretSauce: [],
+        highlights: [
+          "Learn how to implement, perform, interpret and apply Lean Six Sigma",
+          "Address problems, smoothen processes and deliver value to end-users",
+          "Accelerate your career by earning a valuable Lean Six Sigma Yellow Belt Certification",
+        ],
+        careerDetail: [
+          { carrer: "Professionals trained", value: "450,000" },
+          { carrer: "Workshops every month", value: "250" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "8-Hours Live Instructor-Led Sessions",
+            },
+            {
+              icon: "",
+              value: "Earn 8 PDUs on Course Completion",
+            },
+            {
+              icon: "",
+              value: "Interactive Sessions with Activities",
+            },
+            {
+              icon: "",
+              value: "Real-World Simulations, Case Studies , and more",
+            },
+            {
+              icon: "",
+              value: "Lifetime Access to the Courseware",
+            },
+            {
+              icon: "",
+              value: "Expert trainers with quality management experience",
+            }
+          ],
+          overviewDetail: `
+          Learn the foundations of the Lean Six Sigma process improvement methodology that bridges the gap between Lean and Six Sigma principles and practices. Identify and remove the causes of error in business processes, and build your own quality toolkit. Reduce wastage, speed up time-to-market, and eliminate the use of marginal methods in traditional settings.
+
+KnowledgeHut is an Accredited Training Organization of PeopleCert®. IASSC Lean Sigma Yellow Belt™ Certification Training is provided through PeopleCert®.
+
+The Lean Six Sigma Yellow Belt will make you a valuable member of complex improvement projects teams. Our Six Sigma Yellow Belt Course will give you strong foundation of the Lean Six Sigma Method.
+          `,
+          overviewPoints: [],
+          overviewCourseDescription:"",
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "Demand for Six Sigma Yellow Belt Professionals",
+          demandHeading: "Why get the Lean Six Sigma Yellow Belt Certification?",
+          demandDetail: `Lean Six Sigma works on the premise that perfection is a dynamic goal, and there is always scope for improvement in operational processes. As quality continues to drive the competitive advantage in the world of business, expertise in this popular and productive approach to process improvement is highly sought after. A Six Sigma Yellow Belt Certification will equip you with the quality and process improvement skills that all companies value.
+
+As a Certified Lean Six Sigma Yellow Belt, you will work as a valued team member in a Six Sigma Project Team. This certification will validate your capability of streamlining processes and improving quality. You will be responsible for monitoring and evaluating work progress and process enhancements. By reducing waste and eliminating bottlenecks, costs can be optimized and efficiency enhanced.
+
+Professionals with a Six Sigma Certification earn over $107,000 and are among the highest-paid professionals globally. The average annual salary of a Management Analyst is $87,660 according to the US Bureau of Labor Statistics with a 14% annual job growth.`,
+          demandData: [
+            {
+              type: "Quality Engineer",
+              averageSalary: [8, 15, 24],
+              hiringCompany: [],
+              demand: {
+                percant: "13% Increase",
+                description:
+                  "Annual Growth (CAGR) in Six Sigma Job Market",
+              },
+            },
+            {
+              type: "Process Analyst",
+              averageSalary: [6, 12, 23],
+              hiringCompany: [],
+              demand: {
+                percant: "7000+",
+                description:
+                  "Professionals hold an IASSC Certification",
+              },
+            },
+            {
+              type: "Operations Manager",
+              averageSalary: [9, 16, 27],
+              hiringCompany: [],
+              demand: {
+                percant: "1.5M",
+                description:
+                  "Six Sigma Practitioners Around the World",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Solid Track Record",
+              value:
+                "KnowledgeHut has empowered over 250,000 professionals with certifications in various domains. ",
+            },
+            {
+              icon: "",
+              topic: "Experiential Workshops",
+              value:
+                "Make the best of engaging activities, team-based exercises and practical case studies.",
+            },
+            {
+              icon: "",
+              topic: "Elite Panel of Experienced Trainers",
+              value:
+                "Get trained by accredited trainers with over a decade of experience across industries.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship by Industry Experts",
+              value:
+                "Get real-world tips and time-tested techniques from highly qualified mentors.",
+            },
+            {
+              icon: "",
+              topic: "Continual Learning Support ",
+              value:
+                "Webinars, e-books, tutorials, articles, and interview questions - supporting your learning journey.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive Post-Training Sessions",
+              value:
+                "Six months of post-training mentor guidance to overcome challenges in your professional career.",
+            }
+          ],
+        },
+        courseAuthor: [],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Himanshu Saxena-a951fafcd0ba49f483a18b1ebaf58f88.svg",
+            instructorName: "Himanshu Saxena",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+          Embarking on a fulfilling career as a Real Management Consultant, Himanshu Saxena has found joy in crafting and executing improvement projects, as well as devising innovative marketing strategies for multiple organizations. His journey of development encompasses a diverse range of initiatives, including process improvement, re-engineering, Root Cause Analysis (RCA), Failure Modes and Effects Analysis (FMEA), and 5S projects spanning various domains.
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Shivendra Sharma-b14d0ed279c14aeabd416fe71fbd7649.svg",
+            instructorName: "Shivendra Sharma",
+            instructorProfession: "Consultant, Author",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+           Shivendra Sharma brings a wealth of expertise to the table with a robust background in business and digital transformation, strategy consulting, and process improvement. Armed with an MBA in Human Resources and the distinguished Lean Six Sigma Master Black Belt certification, Shivendra has accumulated 15 years of extensive experience in orchestrating transformative initiatives. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle:
+            "Maximize Your PMP Exam Success with Our Exclusive Offer!",
+          certificationDetail: "",
+          certificateImage: "",
+        },
+        prerequisites: [
+          "There are no prerequisites for attending the course or to sit for the IASSC Certified Yellow Belt™ (ICYB™) exam."
+        ],
+        courseCurriculm: [
+          {
+            title: " Agile Fundamentals and Traditional PM Foundations",
+            isPreview: false,
+            objective: `
+            Gain a comprehensive understanding of the Agile/Scrum Framework, Project Management Framework, and Fundamentals through our course. Dive into the PMP Process Groups and explore the revised PMP Exam Content Outline.
+
+This module in our PMP curriculum also includes a lesson on Business Environment, which covers the essential concepts and business areas that are crucial to grasp before embarking on a project. It aligns with the "Business Environment" domain in the Exam Content Outline and supports learning in the "Business Acumen" aspect of the PMI Talent Triangle.`,
+            topics: [
+              "Agile/Scrum Framework - From Agile Practice Guide",
+              "Introduction to Project Management Fundamentals",
+              "Project Management Framework",
+              "Summary",
+              "Assessment",
+              "Aligning with Organizational Trends and Global Strategy",
+              "Project benefits and business value",
+              "Organizational Culture and Change Management",
+              "Project Governance",
+              "Project Compliance",
+              "Assessment",
+            ],
+          },
+          {
+            title: "Start the Project",
+            isPreview: false,
+            objective:
+              "In this module, you will learn to define and discuss stakeholders and the most effective ways to communicate with them, explain the best ways to form a team, describe how to build the most effective understanding of a project and how doing so relates to executing a project successfully and explain how predictive and adaptive project life cycles work; explain what a hybrid development approach is.",
+            topics: [
+              "Identify and Engage Stakeholders",
+              "Form the Team",
+              "Build a Shared Understanding of the Project",
+              "Project Approach",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Error Detection and Prevention",
+            description:
+              "Learn to detect and prevent errors, and achieve process improvement to maintain productivity.",
+          },
+          {
+            title: "Customer Satisfaction",
+            description:
+              "Learn how to maintain and provide customer satisfaction by improving the quality of the end product.",
+          },
+          {
+            title: "Efficient Production",
+            description:
+              "Explore how to speed up the production process that helps businesses to stay competitive and meet customer demands.",
+          },
+          {
+            title: "Lower Costs",
+            description:
+              "Reduce the costs of production drastically by minimizing variability and eliminating various kinds of waste.",
+          },
+          {
+            title: "Problem Evaluation",
+            description:
+              "Evaluate problems, statistically and quantitatively in your team or organization for smooth workflow.",
+          },
+          {
+            title: "Process Understanding",
+            description:
+              "Grasp an understanding of processes, to provide assistance to achieve organizational objectives.",
+          }
+        ],
+        whoCanAttendCourse: [
+          "IT Managers",
+          "HR Managers",
+          "Change Managers",
+          "Project Managers",
+          "Improvement Managers",
+          "Operational Line Managers",
+          "IT Analysts",
+          "Team Managers",
+          "Finance Managers",
+          "Program Managers",
+          "Quality System Managers"
+        ],
+        aboutCourse: [
+          {
+            question: "How do I get the PMP certification?",
+            answer: `The best way to achieve the PMP certification is by getting trained by an industry expert and following a meticulously structured approach to exam prep. With KnowledgeHut, you have a tried and tested learning path that's guaranteed for PMP Exam success. Follow the learning path and study plan and prepare to pass your exam on the first attempt with the utmost confidence.
+            The entire content ranging from the on-demand PMP course by an industry expert, to the 5-week mentor-led study plan and the full-length simulator exams and PMP mock tests for practice have been developed thoroughly by KnowledgeHut experts in collaboration with industry veterans over the past decade factoring in feedback from the several thousands of workshops carried out to date.`,
+          },
+          {
+            question:
+              " What are the eligibility criteria for PMP certification?",
+            answer: `Securing your PMP certification certainly involves a significant commitment—but that's precisely what makes it so valuable. If you've ventured into the realm of project management and garnered practical experience, you've overcome the toughest obstacle. Before you apply, make sure you meet one of the following sets of PMP Certification requirements:
+
+You will need to have a 4-Year Degree, 36 months of experience leading projects within the past 8 years and 35 contact hours of project management education or training
+OR
+
+A Secondary Degree (high-school diploma or Associates Degree) with 60 months of experience leading projects within the past 8 years and 35 contact hours of project management education or training.
+You can apply even if you did not officially have the title of Project Manager.
+
+Need help assessing your eligibility? Get in touch with us at kh.reachus@upgrad.com and our Learning Advisor will help you out.`,
+          },
+        ],
+        faqs: [
+          {
+            type: "Training",
+            question:
+              "What is Six Sigma Yellow Belt certification?",
+            answer: "Six Sigma Yellow Belt is the entry level certification in the Lean Six Sigma certifications offered by IASSC and PeopleCert. This certification is provided to professionals who can pass the IASSC Lean Six Sigma Yellow Belt exam. This is the entry level certification for Six Sigma. This can be a steppingstone towards higher certifications like the Green Belt and Black Belt.",
+          },
+          {
+            type: "Training",
+            question:
+              "What is the process to get Yellow Belt certified?",
+            answer: `
+            The steps to get the Six Sigma Yellow belt certification can be summarized as below: 
+
+          Step 1: Enroll for the Lean Six Sigma Yellow Belt Training 
+
+          Step 2: Attend the 8-hour training from an authorized institution 
+
+          Step 3: Prepare for the Lean Six Sigma Yellow Belt Exam 
+
+          Step 4: Schedule the exam once you are satisfied with your preparation 
+
+          Step 5: Clear the exam and get certified
+            `,
+          },
+        ],
+      },
+    },
+
     {
       id: 1,
       title: "Microsoft Project",
