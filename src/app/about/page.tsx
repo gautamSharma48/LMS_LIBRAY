@@ -81,7 +81,7 @@ const AboutPage = () => {
           {aboutUsData?.team?.map((data, index) => (
             <div
               key={index}
-              className="flex items-center w-full  min-h-[300px] justify-between border-b"
+              className="flex md:flex-row  flex-col items-center w-full  min-h-[300px] justify-between border-b"
               // initial={{
               //   opacity: 0,
               //   // if odd index card,slide from right instead of left
@@ -96,7 +96,7 @@ const AboutPage = () => {
               // }}
               // viewport={{ once: true }}
             >
-              {index % 2 === 0 && (
+              {index % 2 === 0  && (
                 <div className="flex-1 flex flex-col items-center justify-center gap-3">
                   <img
                     src={"https://teclearns.com/images/edu-avatar.jpg"}
