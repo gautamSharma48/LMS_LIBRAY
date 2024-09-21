@@ -81,7 +81,7 @@ const OverviewSection: React.FC<any> = ({ courseData, id }) => {
 };
 
 export const OtherCourses: React.FC<any> = ({ id, courses }) => {
-  const otherCourses = courses?.filter((data: any) => data?.id !== id);
+  const otherCourses = courses?.filter((data: any) => data?.id !== Number(id));
   const router = useRouter();
   return (
     <section className="">

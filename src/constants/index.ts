@@ -3032,6 +3032,1154 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
         ],
       },
     },
+
+    {
+      id: 29,
+      title: "PRINCE2 Practitioner Certification Training",
+      courseSubtitle: "PRINCE2 Practitioner Training",
+      description:
+        "Master your project management skills and start leading projects to success",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Project Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "36,057+ Enrolled",
+        bannerImage:
+          "https://www.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FBI-11-71c171a6ddb74a21aea37971f8ae1282.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        secretSauce: [],
+        highlights: [
+          "Equip yourself with the tools and strategies to drive project success",
+          "Learn to successfully juggle and deliver multiple projects at the same time",
+          "This course prepares you for the PRINCE2 Practitioner, 7th Edition exam",
+        ],
+        careerDetail: [
+          { carrer: "Career transformations", value: "450K" },
+          { carrer: "Workshops every month", value: "250" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "16 Hours of Live Instructor-Led Sessions",
+            },
+            {
+              icon: "",
+              value: "75+ Hours of On-Demand Self-Paced Learning",
+            },
+            {
+              icon: "",
+              value: "Earn 16 PDUs on Completion of the Course",
+            },
+            {
+              icon: "",
+              value: "20 Assessments, 14 Case Studies, 3 Mock Tests, More",
+            },
+            {
+              icon: "",
+              value: "Exam Fee Included in the Course Fee",
+            },
+            {
+              icon: "",
+              value: "Lifetime Access to Prince2 Practitioner Courseware",
+            },
+          ],
+          overviewDetail: `
+     Master the PRINCE2 methodology, take your project management role to the next level, and widen your career opportunities in this two-day AXELOS certified PRINCE2 Practitioner certification training. The course is designed to help you understand all the theoretical and practical aspects of PRINCE2 and the best practices for managing successful projects, irrespective of their type or scale, and is aligned to PRINCE2, 7th Edition updates.
+
+You'll understand how the PRINCE2 methodology can be tailored and applied on a real-world project and dive deep into the four integrated components of PRINCE2 - the principles, themes, processes, and project environment. This PRINCE2 Practitioner course will then explore how each of the components impacts each other and learn how to deliver projects in a coordinated, consistent, and transparent manner. In the final module, you'll focus on exam preparation with sample papers and pointers so you can aim for a first-time pass of the exam and gain the PRINCE2 Practitioner credential.
+
+PRINCE2 Practitioner, a designation offered by AXELOS to practitioners who demonstrate their understanding by passing the exam, validates your expertise as a project management professional.
+
+PRINCE2, PRINCE2 Foundation, PRINCE2 Practitioner, and AXELOS are registered trademarks of AXELOS Limited, used under the permission of AXELOS Limited. The Swirl logo™ is a trademark of AXELOS Limited, used under the permission of AXELOS Limited. PeopleCert is the registered trademark of PeopleCert International Ltd., the sole Examination Institute (EI) for the delivery of AXELOS Accreditation and Examination services worldwide. KnowledgeHut is a Certified Partner of AXELOS and an Accredited Training Organization (ATO) with PeopleCert.
+          `,
+          overviewPoints: [],
+          overviewCourseDescription: "",
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "Why Get PRINCE2 Practitioner Certification",
+          demandHeading: "Growing Demand for Prince2 Practitioners",
+          demandDetail: `
+         The profession of project management has recently become one of the hottest jobs, not only in the tech market, but across industries. Demand for project managers is growing faster than demand for workers in other occupations and by 2027, 88 million individuals will need to be skilled into project management-oriented roles.
+
+The PRINCE2 certification can help you land lucrative roles in IT, manufacturing, finance, healthcare, and other exciting industries. Companies like Shell, BP, Transpower New Zealand, IBM, HP, Aquasoft, Getronics, Siemens, and many more have adopted PRINCE2 and PRINCE2 certified professionals can earn an average salary of $97,915 per annum.
+
+Build your Project Management skills, get PRINCE2 Practitioner certified and be sure to capitalize on the high demand across industries.
+          `,
+          demandData: [
+            {
+              type: "Project Manager",
+              averageSalary: [10, 17, 25],
+              hiringCompany: [],
+              demand: {
+                percant: "33% Increase",
+                description:
+                  "anticipated in Project Management-oriented roles globally by 2027",
+              },
+            },
+            {
+              type: "Process Lead",
+              averageSalary: [15, 31, 46],
+              hiringCompany: [],
+              demand: {
+                percant: "22M",
+                description:
+                  "new Project Management jobs will be created by 2027 globally",
+              },
+            },
+            {
+              type: "PMO Lead",
+              averageSalary: [18, 38, 56],
+              hiringCompany: [],
+              demand: {
+                percant: "88M",
+                description:
+                  "individuals needed for Project Management roles by 2027",
+              },
+            },
+
+            {
+              type: "Project Director",
+              averageSalary: [22, 43, 63],
+              hiringCompany: [],
+              demand: {
+                percant: "$208 Billon",
+                description:
+                  "GDP risk due to potential PM talent shortages by 2027",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Live, Fun and Interactive sessions",
+              value:
+                "Experiential learning with real-world simulations, role-plays, and case studies.",
+            },
+            {
+              icon: "",
+              topic: "Experiential Workshops",
+              value: "Elite Panel of Expert Trainers",
+            },
+            {
+              icon: "",
+              topic:
+                "PRINCE2-certified expert trainers with experience across industries.",
+              value:
+                "Get trained by accredited trainers with over a decade of experience across industries.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship by Industry Experts",
+              value:
+                "One-to-one mentorship, real-world tips and time-tested techniques for your PRINCE2 toolbox.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive GRAND PASS ",
+              value:
+                "Avail KnowledgeHut's Exclusive GRAND PASS for 180 days and take advantage of the Free Refresher Course.",
+            },
+            {
+              icon: "",
+              topic: "Certification Journey Support",
+              value:
+                "Need help at any step of PRINCE2 certification? From enrolling to certification, we've got your back.",
+            },
+            {
+              icon: "",
+              topic: "Continual Learning Support",
+              value:
+                "Webinars, e-books, tutorials, articles, and more - we're right by you in your learning journey.",
+            },
+            {
+              icon: "",
+              topic: "PeopleCert Accredited Training Organisation",
+              value:
+                "As a PeopleCert ATO, we've transformed thousands of careers and lives to date.",
+            },
+          ],
+        },
+        courseAuthor: [],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Himanshu Saxena-a951fafcd0ba49f483a18b1ebaf58f88.svg",
+            instructorName: "Himanshu Saxena",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+          Embarking on a fulfilling career as a Real Management Consultant, Himanshu Saxena has found joy in crafting and executing improvement projects, as well as devising innovative marketing strategies for multiple organizations. His journey of development encompasses a diverse range of initiatives, including process improvement, re-engineering, Root Cause Analysis (RCA), Failure Modes and Effects Analysis (FMEA), and 5S projects spanning various domains.
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Shivendra Sharma-b14d0ed279c14aeabd416fe71fbd7649.svg",
+            instructorName: "Shivendra Sharma",
+            instructorProfession: "Consultant, Author",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+           Shivendra Sharma brings a wealth of expertise to the table with a robust background in business and digital transformation, strategy consulting, and process improvement. Armed with an MBA in Human Resources and the distinguished Lean Six Sigma Master Black Belt certification, Shivendra has accumulated 15 years of extensive experience in orchestrating transformative initiatives. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle: "Ready to elevate your project management expertise?",
+          certificationDetail: "",
+          certificateImage: "",
+        },
+        prerequisites: [
+          "To benefit from the PRINCE2® Practitioner certification training, learners must have a firm grasp of the foundations of PRINCE2®.",
+          "There are very specific eligibility requirements to qualify for the PRINCE2 Practitioner exam. For more information, see FAQs.",
+        ],
+        courseCurriculm: [
+          {
+            title: "Course Overview and Exam Techniques",
+            isPreview: false,
+            objective:
+              "Get an introduction to PRINCE2 Practitioner, with an outline of the structure of PRINCE2 Practitioner. Recognize the exam style and techniques.",
+            topics: [
+              "Introduction and Exam technique",
+              "Overview of PRINCE2 Practitioner",
+              "Course structure",
+              "Exam style and technique",
+            ],
+          },
+          {
+            title: "PRINCE2 Principles",
+            isPreview: true,
+            objective:
+              "Refresh your memory on the PRINCE2 principles. Explain the roles responsible for a specific activity, and how we handle the documentation relating to decisions on tailoring the project.",
+            topics: [
+              "Review of PRINCE2 principles",
+              "PRINCE2 principles – a quick recap",
+              "Deeper dive into PRINCE2 Principles - Part 1",
+              "Deeper dive into PRINCE2 Principles - Part 2",
+              "Tailor to suit the Project environment",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Tailoring PRINCE2",
+            description:
+              "Learn the concepts of tailoring PRINCE2 and adopting it in an organization.",
+          },
+          {
+            title: "PRINCE2 Principles",
+            description:
+              "Understand the 7 PRINCE2 Principles, apply and tailor it to different organizational contexts.",
+          },
+          {
+            title: "PRINCE2 Themes",
+            description:
+              "Understand the 7 PRINCE2 themes and apply them to provide a good framework for the organization.",
+          },
+          {
+            title: "PRINCE2 Processes",
+            description:
+              "Understand the 7 PRINCE2 Processes, and apply it in the context of a project and organization.",
+          },
+          {
+            title: "Project Risks",
+            description:
+              "Learn how to apply PRINCE2 fundamentals to control and mitigate risks.",
+          },
+          {
+            title: "PRINCE2 Best Practices",
+            description:
+              "Learn the latest PRINCE2 best practices and apply them across diverse projects and portfolios.",
+          },
+        ],
+        whoCanAttendCourse: [
+          "Product Owners",
+          "Scrum Masters",
+          "Scrum Developers",
+          "Project Managers",
+          "Change Managers",
+          "Finance Managers",
+          "Project Managers",
+          "Project Sponsors",
+          "PMO",
+        ],
+        aboutCourse: [
+          {
+            question: "What is PRINCE2 Practitioner certification?",
+            answer: `PRINCE2 Practitioner is the advanced level certification for PRINCE2. This certification is awarded to professionals passing the PRINCE2 Practitioner exam. It is a credential recognized worldwide and in high demand. There are over a million professionals worldwide with PRINCE2 certifications making it one of the most popular certifications.`,
+          },
+
+          {
+            question: " How does a PRINCE2 Practitioner certification help me?",
+            answer: `A PRINCE2 Practitioner certification is proof of a professional’s expertise in project management and in using the PRINCE2 framework. The learners also learn to tailor PRINCE2 for specific project requirements. There is a great demand for certified project management professionals across industries and geographies.`,
+          },
+
+          {
+            question:
+              "Is PRINCE2 Practitioner certification globally recognized?",
+            answer: `Yes, PRINCE2 Practitioner is one of the most popular certifications in project management. It is recognized all over the world and PRINCE2 is the most used framework for project management. Getting a PRINCE2 certification will include learning how to manage large and complex projects with the help of the PRINCE2 framework.`,
+          },
+        ],
+        faqs: [
+          {
+            type: "Course",
+            question: "What is the PRINCE2 Practitioner course about?",
+            answer: `The PRINCE2 Practitioner course online will help the learner understand how to work with the PRINCE2 framework and how to tailor it to meet your project requirements. The PRINCE2 Practitioner curriculum can be divided into,
+
+PRINCE2 principles
+
+PRINCE2 themes
+
+PRINCE2 processes
+
+There will also be a module on exam preparation
+              `,
+          },
+          {
+            type: "Course",
+            question: "What level is PRINCE2 Practitioner equivalent to? ",
+            answer: `
+     PRINCE2 Practitioner certification is an intermediate to advanced level certification. It is comparable to a PMP certification. It trains learners how to manage large and complex projects using the PRINCE2 framework and empowers them with work ready skills.
+            `,
+          },
+          {
+            type: "Course",
+            question:
+              "Why should I consider taking a PRINCE2 Practitioner course? ",
+            answer: `
+    A PRINCE2 Practitioner course will upgrade your project management skills significantly while familiarizing you with the PRINCE2 framework and helping you understand how to get the best out of it. It is also a widely recognized credential that is in demand across the world. The practical aspect of building project management skills that are readily applicable to the job makes the certification even more appealing.
+            `,
+          },
+
+          {
+            type: "Training",
+            question: "Who should attend PRINCE2 Practitioner training? ",
+            answer: `
+   Anyone interested in learning about project management or about the PRINCE2 framework can benefit from the PRINCE2 Practitioner training. To take the PRINCE2 Practitioner exam, you must hold either a PRINCE2 Foundation certificate or some other project management certification equivalent to it. The type of candidates that benefit the most from this training are: 
+
+Project Managers 
+Project Coordinators 
+Project Analysts 
+Project Leaders 
+Product Managers 
+Program Managers 
+Project Sponsors 
+Team Leaders
+            `,
+          },
+
+          {
+            type: "Training",
+            question: "What will I learn in PRINCE2 Practitioner training? ",
+            answer: `
+     The PRINCE2 Practitioner training covers a wide range of topics. This can be classified under a few heads.  
+
+Overview 
+PRINCE2 principles 
+PRINCE2 themes 
+PRINCE2 processes 
+Exam preparation
+            `,
+          },
+
+          {
+            type: "Exam",
+            question: " Who conducts the PRINCE2 Practitioner exam? ",
+            answer: `
+   PRINCE2 Practitioner exams are conducted by PeopleCert. PeopleCert has a network of over 8000 testing centers in 165 countries. You can also opt to take the exam online through PeopleCert’s online exam environment.
+            `,
+          },
+
+          {
+            type: "Exam",
+            question: " Can I take the PRINCE2 Practitioner exam online? ",
+            answer: `
+  Yes, you can schedule the PRINCE2 Practitioner Exam online. This will be a proctored exam you can schedule as per your convenience. You will do this through purchasing an exam voucher from PeopleCert.
+            `,
+          },
+        ],
+      },
+    },
+
+    {
+      id: 30,
+      title: "PMI-ACP® Certification",
+      courseSubtitle:
+        "PMI-ACP® (PMI Agile Certified Practitioner) Certification",
+      description:
+        "Become an Industry-Recognized Agile Leader with the PMI-ACP Certification Training",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Agile Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "31,206+ Enrolled",
+        bannerImage:
+          "https://www.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FBI-11-71c171a6ddb74a21aea37971f8ae1282.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        secretSauce: [],
+        highlights: [
+          "Practice the latest Agile principles and techniques",
+          "Immersive course, designed by experienced Agilists",
+          "Experiential learning, real-world simulations, case studies, and more",
+        ],
+        careerDetail: [
+          { carrer: "Professional Trained", value: "450K" },
+          { carrer: "Workshops every month", value: "250" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "21 Hours of Live Instructor-Led Sessions",
+            },
+            {
+              icon: "",
+              value: "Earn 21 PDUs on Course Completion",
+            },
+            {
+              icon: "",
+              value: "Real-World Simulations, Activities",
+            },
+            {
+              icon: "",
+              value: "Six Months Post-Class Career Guidance",
+            },
+            {
+              icon: "",
+              value: "Comprehensive Exam Prep Support",
+            },
+            {
+              icon: "",
+              value: "Digital Library of Learning Resources",
+            },
+          ],
+          overviewDetail: `
+   Enhance and validate your knowledge of Agile practices and techniques with the PMI-ACP® certification. Explore various approaches to agility including Scrum, Kanban, Lean, Extreme Programming (XP) and Test-Driven Development (TDD). Learn to cultivate an Agile mindset and gain hands-on expertise in Agile Project Management.
+
+By the end of the course, you’ll have mastered the practices and techniques that Agile practitioners use to improve team performance, resolve problems and engage in continuous process improvements and be equipped with job-ready skills.
+
+PMI-ACP® is a designation offered by Project Management Institute (PMI)® to candidates who can demonstrate their understanding by passing the assessment exam. PMI-ACP® is a registered trademark owned by PMI. KnowledgeHut is an Authorized Training Partner of PMI.
+          `,
+          overviewPoints: [],
+          overviewCourseDescription: "",
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "Why get the PMI-ACP Certification Training",
+          demandHeading: "Rising Demand for Agile Practitioners",
+          demandDetail: `
+        Project management is a discipline that holds huge promise with an estimated requirement of 2.3 million project-oriented jobs opening up every year till the year 2030. Agile adoption is widespread and growing fast with 97% of organizations reporting using Agile in some manner according to the 17th State of Agile report.
+
+PMI-ACP is a certification that is widely accepted and carries weight in both project management and Agile circles.
+          `,
+          demandData: [
+            {
+              type: "Project Manager",
+              averageSalary: [10, 17, 25],
+              hiringCompany: [],
+              demand: {
+                percant: "33% Increase",
+                description:
+                  "anticipated in Project Management-oriented roles globally by 2027",
+              },
+            },
+            {
+              type: "Agile Project Manager",
+              averageSalary: [12, 21, 35],
+              hiringCompany: [],
+              demand: {
+                percant: "37%",
+                description:
+                  "faster project delivery by teams practicing Agile",
+              },
+            },
+            {
+              type: "Agile Coach",
+              averageSalary: [17, 33, 51],
+              hiringCompany: [],
+              demand: {
+                percant: "94%",
+                description:
+                  "of organizations practicing Agile report increased quality in their projects",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Experiential Workshops",
+              value:
+                "Activities, team-based exercises, case studies: High energy workshops with hands-on learning.",
+            },
+            {
+              icon: "",
+              topic: "Elite Panel of Agilists",
+              value:
+                "Learn from the best certified Agilists with experience across different industries.",
+            },
+            {
+              icon: "",
+              topic: "Expert Practitioners",
+              value:
+                "Get actionable tips and techniques for your Agile toolbox from our expert practitioners.",
+            },
+            {
+              icon: "",
+              topic: "Exam Preparation Support",
+              value:
+                "Our training ensures that participants can pass the exam on their first attempt.",
+            },
+            {
+              icon: "",
+              topic: "Continual Learning Support",
+              value:
+                "Webinars, e-books, tutorials, articles, and more - we're right by you in your learning journey!",
+            },
+            {
+              icon: "",
+              topic: "Certification Journey Support",
+              value:
+                "Need help at any step of PRINCE2 certification? From enrolling to certification, we've got your back.",
+            },
+            {
+              icon: "",
+              topic: "Continual Learning Support",
+              value:
+                "Webinars, e-books, tutorials, articles, and more - we're right by you in your learning journey.",
+            },
+            {
+              icon: "",
+              topic: "Post-Training Sessions",
+              value:
+                "Six months of post-training mentor guidance to overcome challenges in your Agile career.",
+            },
+          ],
+        },
+        courseAuthor: [],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Himanshu Saxena-a951fafcd0ba49f483a18b1ebaf58f88.svg",
+            instructorName: "Himanshu Saxena",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+          Embarking on a fulfilling career as a Real Management Consultant, Himanshu Saxena has found joy in crafting and executing improvement projects, as well as devising innovative marketing strategies for multiple organizations. His journey of development encompasses a diverse range of initiatives, including process improvement, re-engineering, Root Cause Analysis (RCA), Failure Modes and Effects Analysis (FMEA), and 5S projects spanning various domains.
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Shivendra Sharma-b14d0ed279c14aeabd416fe71fbd7649.svg",
+            instructorName: "Shivendra Sharma",
+            instructorProfession: "Consultant, Author",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+           Shivendra Sharma brings a wealth of expertise to the table with a robust background in business and digital transformation, strategy consulting, and process improvement. Armed with an MBA in Human Resources and the distinguished Lean Six Sigma Master Black Belt certification, Shivendra has accumulated 15 years of extensive experience in orchestrating transformative initiatives. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle: "Ready to become a skilled Agile practitioner?",
+          certificationDetail: "",
+          certificateImage: "",
+        },
+        prerequisites: [
+          "There are no prerequisites to attend this training program.",
+          "To qualify for the PMI-ACP exam, PMI requires candidates to complete 21 hours of training in Agile practices by an authorized training partner of PMI. ",
+        ],
+        courseCurriculm: [
+          {
+            title: "ACP Exam Prep",
+            isPreview: false,
+            objective:
+              "Prepare for the PMI-ACP exam by understanding the course overview, completing the exam application, gaining insights into the exam structure, and adopting effective approaches to navigate the examination process on PMI Island.",
+            topics: [
+              "Course Overview",
+              "The Exam Application",
+              "The PMI-ACP Exam",
+              "Welcome to PMI Island! (Approaching the Exam)",
+            ],
+          },
+          {
+            title: "Leading Your Agile Team and Project",
+            isPreview: true,
+            objective:
+              "Gain a comprehensive understanding of agile methodologies, principles, and terminologies, covering PMBOK, predictive vs adaptive approaches, the historical evolution of agile, and a diverse range of specific methodologies like Scrum, Lean, Kanban, and more, culminating in the ability to critically assess and apply the most suitable agile method for various project scenarios.",
+            topics: [
+              "The PMBOK Guide",
+              "Predictive vs Adaptive Methodologies",
+              " The History of Agile",
+              "Basic Agile Concepts",
+              "Choosing Your Priorities",
+              "Terminology of Agile",
+              "Agile Methodologies: Scrum",
+              "Agile Methodologies: Extreme Programming",
+              "Agile Methodologies: Lean Software Development",
+              "Agile Methodologies: Feature-Driven Development (FDD)",
+              "Agile Methodologies: Dynamic Systems Development (DSDM)",
+              "Agile Methodologies: Crystal Development",
+              "Agile Methodologies: Kanban",
+              "Agile Methodologies: Scrum of Scrums, SAFe, and Disciplined Agile Development",
+              "Agile Methodologies - LeSS",
+              "Agile Methodologies: Nexus",
+              "Agile Methodologies: Picking the Perfect Method",
+              "Agile Principles and Mindset: EXAM Review",
+            ],
+          },
+
+          {
+            title: " Delivering Value in Agile Projects",
+            isPreview: false,
+            objective:
+              "Understand the principles of Value-Driven Delivery in Agile, encompassing concepts such as business value, project charter creation, value stream mapping, prioritization, story mapping, risk management, Deming's PDCA cycle, decision tree analysis, EMV, agile contracting, earned value, and the utilization of agile tracking tools, with a focus on preparing for the exam through a comprehensive review of Value Driven Delivery.",
+            topics: [
+              "What is Value Driven Delivery?",
+              "Understanding Business Value",
+              "The Project Charter",
+              "Value Stream Mapping",
+              "Prioritizing in Agile",
+              "Story Maps",
+              "Risk in Agile Projects",
+              "Deming and the PDCA",
+              "Decision Tree Analysis and EM",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Agile Projects",
+            description:
+              "Learn about Agile project management. Learn how to implement them at your organization.",
+          },
+          {
+            title: "Agile Mindset",
+            description:
+              "Discover what having an Agile mindset is about and how it can make a difference for you.",
+          },
+          {
+            title: "Product Quality",
+            description:
+              "Find out how an Agile practitioner prioritises the quality of the product being delivered.",
+          },
+          {
+            title: "Stakeholder Engagement",
+            description:
+              "Learn to communicate effectively with stakeholders and work by combining different inputs.",
+          },
+          {
+            title: "Risk Management",
+            description:
+              "Learn to mitigate and manage risks by using Agile techniques in your organization.",
+          },
+          {
+            title: "Continuous Improvement",
+            description:
+              "Learn to experiment continuously to find better way of doing things and improving processes.",
+          },
+        ],
+        whoCanAttendCourse: [
+          "Software Engineers",
+          "Product Managers",
+          "Team Leaders",
+          "Business Analysts",
+          "Development Team Members",
+          "Testers",
+          "Aspiring Agilists",
+        ],
+        aboutCourse: [],
+        faqs: [
+          {
+            type: "Certification",
+            question: "PMI-ACP Certification",
+            answer: `The PMI-ACP certification is offered by PMI, a world-renowned body dedicated to helping professionals, leaders and organizations learn and validate their knowledge and skills in project management and professional development.
+              `,
+          },
+          {
+            type: "Certification",
+            question: "Can I get PMI-ACP certified without taking the course? ",
+            answer: `
+ You cannot get PMI-ACP certified without undertaking the course as per PMI requirements which includes 21 hours of training by an Authorized Training Partner.
+            `,
+          },
+          {
+            type: "PDUs",
+            question:
+              " How many PDUs do I earn by completing KnowledgeHut’s PMI-ACP certification training? ",
+            answer: `
+ You earn 21 PDUs by participating in KnowledgeHut’s PMI-ACP training program.
+            `,
+          },
+
+          {
+            type: "PDUs",
+            question:
+              " How many PDUs do I earn by completing KnowledgeHut’s PMI-ACP certification training?  ",
+            answer: `
+ You will earn 21 PDUs by completing our training program for PMI-ACP certification.
+            `,
+          },
+          {
+            type: "PDUs",
+            question: "What if I have more questions about PDUs? ",
+            answer: `
+ You can write to us at support@knowledgehut.com
+            `,
+          },
+
+          {
+            type: "Workshop Experience",
+            question: "Who are the instructors?  ",
+            answer: `All KnowledgeHut’s PMI-ACP certification training is delivered by our team of accredited trainers. They deliver high quality training at par with the standards of excellence set out by PMI. Every candidate receives the same standard of training and content, irrespective of the trainer and the location.
+            `,
+          },
+
+          {
+            type: "Workshop Experience",
+            question: "How are the workshops structured? ",
+            answer: `Our PMI-ACP course focuses on engaging interaction — we only use lectures to cover the basic terms and concepts. Most class time is dedicated to fun exercises, lively discussions and team collaboration. We focus on practical solutions to real-world, challenges drawn from decades of experience as Agile practitioners, coaches, and professionals in Agile environments.
+            `,
+          },
+
+          {
+            type: "Workshop Experience",
+            question:
+              "Are course materials and workshop instructions provided in advance?  ",
+            answer: `Yes, your course material will be provided in advance. You will receive an email with a link to set your password a few days in advance of the scheduled course. You will have access to the study plan and all the course material.`,
+          },
+
+          {
+            type: "Finance",
+            question:
+              " Can I cancel my enrolment to the PMI-ACP course? Do I get a refund?",
+            answer: `
+  You can cancel your enrolment and receive refunds in line with our Cancellations and Refunds policy.
+            `,
+          },
+
+          {
+            type: "Exam",
+            question:
+              " Is the certification fee inclusive of the PMI-ACP course fee?  ",
+            answer: `
+  No, the PMI-ACP certification fee is not included in KnowledgeHut’s training fee.
+            `,
+          },
+        ],
+      },
+    },
+
+    {
+      id: 31,
+      title: "PMI-PBA® Certification",
+      courseSubtitle:
+        "PMI-ACP® (PMI Agile Certified Practitioner) Certification",
+      description:
+        "Become a business analytics powerhouse and drive data-driven decisions with our PMI-PBA course",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Business Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "11,999+ Enrolled",
+        bannerImage:
+          "https://www.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FBI-11-71c171a6ddb74a21aea37971f8ae1282.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        secretSauce: [],
+        highlights: [
+          "Learn the skills and gain the clarity needed to effectively perform a business analyst’s role",
+          "Learn the core terminology, principles, and practices of Business Analysis",
+          "Define requirements, shape project outcomes, and deliver expected results",
+        ],
+        careerDetail: [
+          { carrer: "Professional Trained", value: "4,50,000" },
+          { carrer: "Workshops every month", value: "250" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "35 Hours of Live Instructor-Led Training",
+            },
+            {
+              icon: "",
+              value: "Earn 35 PDUs on Completing the Course",
+            },
+            {
+              icon: "",
+              value: "Training by Authorized Training Partner (ATP) of PMI",
+            },
+            {
+              icon: "",
+              value: "Real-Life Simulations and Case Studies",
+            },
+            {
+              icon: "",
+              value: "Access to PMI® Approved Courseware",
+            },
+            {
+              icon: "",
+              value: "Access to Digital Library of Learning Resources",
+            },
+          ],
+          overviewDetail: `
+   The Project Management Institute’s Professional in Business Analysis ® (PMI-PBA) is one of the top certifications to validate your skill set and technical expertise as a business analyst. This credential demonstrates your knowledge and skills in business analysis, and your ability to competently use BA tools and techniques to enhance project success.
+
+This comprehensive course on PMI-PBA® will not only help you gain the certification but also hands-on, practical skills that will help you succeed in your role as a BA. You will learn the discipline of working with stakeholders to define requirements and shaping the output of projects to deliver the expected benefits. Join today and master the concepts of BA for a defining career! PMI-PBA is a certification offered by PMI®. KnowledgeHut is a Premier Authorized Training Partner (ATP) of PMI.
+          `,
+          overviewPoints: [],
+          overviewCourseDescription: "",
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "Why get the PMI-ACP Certification Training",
+          demandHeading: "Rising Demand for Agile Practitioners",
+          demandDetail: `
+        Project management is a discipline that holds huge promise with an estimated requirement of 2.3 million project-oriented jobs opening up every year till the year 2030. Agile adoption is widespread and growing fast with 97% of organizations reporting using Agile in some manner according to the 17th State of Agile report.
+
+PMI-ACP is a certification that is widely accepted and carries weight in both project management and Agile circles.
+          `,
+          demandData: [
+            {
+              type: "Project Manager",
+              averageSalary: [10, 17, 25],
+              hiringCompany: [],
+              demand: {
+                percant: "33% Increase",
+                description:
+                  "anticipated in Project Management-oriented roles globally by 2027",
+              },
+            },
+            {
+              type: "Agile Project Manager",
+              averageSalary: [12, 21, 35],
+              hiringCompany: [],
+              demand: {
+                percant: "37%",
+                description:
+                  "faster project delivery by teams practicing Agile",
+              },
+            },
+            {
+              type: "Agile Coach",
+              averageSalary: [17, 33, 51],
+              hiringCompany: [],
+              demand: {
+                percant: "94%",
+                description:
+                  "of organizations practicing Agile report increased quality in their projects",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Solid Track Record  ",
+              value:
+                "KnowledgeHut has empowered 450,000+ professionals with skills and certifications in various domains.",
+            },
+            {
+              icon: "",
+              topic: "Learn from Industry Experts",
+              value:
+                "Interact and engage with certified instructors with a wealth of industry experience and subject mastery.",
+            },
+            {
+              icon: "",
+              topic: "Advanced Curriculum ",
+              value:
+                "Learn from the latest, most up-to-date curriculum, designed with industry needs in focus.",
+            },
+            {
+              icon: "",
+              topic: "Hands-On Training",
+              value:
+                "Learn with the help of practical individual and group exercises, quizzes, and activities.",
+            },
+            {
+              icon: "",
+              topic: "Strengthen Foundations",
+              value:
+                "Learn concepts from scratch by learning through step-by-step guidance and detailed feedback.",
+            },
+            {
+              icon: "",
+              topic: "Continual Learning Support",
+              value:
+                "Choose from monthly webinars, e-books, tutorials and more to strengthen your learning.",
+            },
+          ],
+        },
+        courseAuthor: [],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Himanshu Saxena-a951fafcd0ba49f483a18b1ebaf58f88.svg",
+            instructorName: "Himanshu Saxena",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+          Embarking on a fulfilling career as a Real Management Consultant, Himanshu Saxena has found joy in crafting and executing improvement projects, as well as devising innovative marketing strategies for multiple organizations. His journey of development encompasses a diverse range of initiatives, including process improvement, re-engineering, Root Cause Analysis (RCA), Failure Modes and Effects Analysis (FMEA), and 5S projects spanning various domains.
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Shivendra Sharma-b14d0ed279c14aeabd416fe71fbd7649.svg",
+            instructorName: "Shivendra Sharma",
+            instructorProfession: "Consultant, Author",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+           Shivendra Sharma brings a wealth of expertise to the table with a robust background in business and digital transformation, strategy consulting, and process improvement. Armed with an MBA in Human Resources and the distinguished Lean Six Sigma Master Black Belt certification, Shivendra has accumulated 15 years of extensive experience in orchestrating transformative initiatives. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle: "Ready to become a skilled Agile practitioner?",
+          certificationDetail: "",
+          certificateImage: "",
+        },
+        prerequisites: [
+          "The PMI-PBA certification is a great way to boost your business analyst skills! Anyone can take the PMI-PBA course to learn the ropes,",
+          "Secondary degree (or equivalent)",
+          "7,500 hours of business analysis experience",
+          "2,000 hours working on project teams*",
+          "35 contact hours of education in business analysis",
+        ],
+        courseCurriculm: [
+          {
+            title: "Introduction to Business Analysis",
+            isPreview: false,
+            objective: "",
+            topics: [
+              "Definition, Role, Requirements, Methodologies",
+              "Project Management Institute’s (PMI)® Code of Ethics",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Introduction",
+            description:
+              "Get introduced to business analysis and the roles and responsibilities of a business analyst.",
+          },
+          {
+            title: "Needs Assessment",
+            description:
+              "Understand the reason behind performing needs assessments and how to identify opportunities.",
+          },
+          {
+            title: "Business Analysis Planning",
+            description:
+              "Understand the importance of business analysis planning and how it is crucial for gathering requirements",
+          },
+          {
+            title: "Gathering Requirements",
+            description:
+              "Learn about the various ways of gathering business requirements for analysis and their significance.",
+          },
+          {
+            title: "Traceability and Monitoring",
+            description:
+              "Continuously monitor and document requirements and manage the requirements lifecycle.",
+          },
+          {
+            title: "Solution Evaluation",
+            description:
+              "Understand if the final solution(s) delivered meet business needs and the changes required (if any).",
+          },
+        ],
+        whoCanAttendCourse: [
+          "Business Analysts",
+          "Business Systems Analysts",
+          "New Product Development PMs",
+          "Project Coordinators",
+          "Project Managers and Team Leaders",
+          "Systems Architects and Developers",
+          "IT Managers/Directors",
+          "Software Developers",
+          "Systems Testers and Analysts",
+          "QA Professionals",
+          "Business Customers, Users or Partners",
+        ],
+        aboutCourse: [],
+        faqs: [
+          {
+            type: "Training",
+            question:
+              "What can I expect to accomplish after completing the PMI-PBA Training?",
+            answer: `On completion of the PMI-PBA Training, you will be able to develop an understanding of the following topics:
+
+Skills and clarity needed to effectively perform a business analyst’s role
+Core Terminology, principles, and practices of Business Analysis
+Achieving reliable, quality results with enhanced efficiency and consistency
+              `,
+          },
+          {
+            type: "Training",
+            question: "Who should attend this course? ",
+            answer: `
+ All those who are involved in Business Analysis and Project management will be able to enhance their career by undertaking this training. This course will provide value to:
+
+Business Analysts
+Business Systems Analysts
+Business customers, users, or partners
+New Product Development PMs
+            `,
+          },
+          {
+            type: "Training",
+            question: "What next after the PMI-PBA course?",
+            answer: `
+Like all other certifications from PMI®, the PMI-PBA® is also relevant across sectors and geographies and defines a flexible approach to project analysis and management. A PMI-PBA® certification also helps your prospects of salary increase as compared to your non-certified counterparts. After this, you can continue your journey of excellence by pursuing other PMI certifications such as Project Management Professional (PMP)®.
+            `,
+          },
+
+          {
+            type: "Training",
+            question: "What are the eligibility criteria for PMI-PBA exam?",
+            answer: `
+ To qualify for the PMI-PBA exam, candidates would need to fulfill any of these three criteria:
+            `,
+          },
+          {
+            type: "Exam",
+            question:
+              "What are the number of questions, and how long do I have to complete the exam?   ",
+            answer: `The certification exam has 200 multiple-choice questions to be completed in four hours`,
+          },
+
+          {
+            type: "Exam",
+            question: "Who are the instructors?  ",
+            answer: `PMI Member: ₹23,459.00 Non-member: ₹42,863.00`,
+          },
+
+          {
+            type: "Workshop Experience",
+            question: "What are the modes of training offered for the course?",
+            answer: `Currently, all our courses are offered online as live, interactive, trainer-led sessions where you will get to learn directly from the trainer with opportunities to discuss and clear doubts.`,
+          },
+
+          {
+            type: "Workshop Experience",
+            question:
+              "Are course materials and workshop instructions provided in advance?  ",
+            answer: `Yes, your course material will be provided in advance. You will receive an email with a link to set your password a few days in advance of the scheduled course. You will have access to the study plan and all the course material.`,
+          },
+
+          {
+            type: "Workshop Experience",
+            question: "Who are the instructors?",
+            answer: `Our instructors are PMI-certified professionals who are also PMI-PBA certified. They have hands-on experience and will be able to tell you the practical aspects of what you are learning.`,
+          },
+
+          {
+            type: "Workshop Experience",
+            question: " How are the workshops structured? ",
+            answer: `Our courses are delivered through live interactive virtual classrooms. Our training focuses on interactive learning, split across hands-on exercises, discussions, and team collaboration, all facilitated by PMI-PBA certified professionals. The focus is on finding practical solutions to real-world scenarios in various development environments, both big and small.`,
+          },
+
+          {
+            type: "Finance",
+            question: "Can I cancel my enrolment? Do I get a refund?",
+            answer:
+              "You can cancel your enrolment and receive refunds in line with our Cancellations and Refunds policy.",
+          },
+          {
+            type: "Finance",
+            question: "Can I switch my start date?",
+            answer:
+              "Yes, with at least 24 hours' notice and subject to availability in the desired batch, you can change your start date.",
+          },
+          {
+            type: "Finance",
+            question: "Are there any scholarships available?",
+            answer: `Yes, we have scholarships available for students and veterans with grants that can vary up to 50% of the course fees.
+
+To avail of the scholarships, please contact us at support@knowledgehut.com. You will receive the forms and instructions from the team. Based on the responses and answers that we receive, our panel of experts decides on the Grant. Please note that the entire process could take about 7 to 15 days.`,
+          },
+        ],
+      },
+    },
   ],
   reviewUsers: [
     {

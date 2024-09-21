@@ -13,12 +13,12 @@ const CourseCard = ({ title, data }) => {
         delay={0.4}
         text={title}
       />
-      <div className="grid grid-cols-4">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {data?.map((element, index) => (
           <div
             onClick={()=> router.push(`/course-detail/${element?.id}`)}
             key={index}
-            className="shadow-lg hover:shadow-blackShadow-20 bg-white-10 hover:scale-105 cursor-pointer transition-all rounded-lg  max-w-[300px] ml-4 my-4"
+            className="shadow-lg hover:shadow-blackShadow-20 bg-white-10 hover:scale-105 cursor-pointer transition-all rounded-lg  md:max-w-[300px] ml-4 my-4"
           >
             <i class="courseicon_Course-Icon-94"></i>
             <div
