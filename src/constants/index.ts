@@ -1983,7 +1983,7 @@ Our trainers provide training that goes beyond just being compliant to PMI requi
           {
             type: "Career Benefits",
             question: "Who is a Project Management Professional (PMP)?",
-            answer:`
+            answer: `
             A Project Management Professional (PMP) is a certification and designation provided by the Project Management Institute (PMI). The PMP is one of the most widely recognized and respected credentials for project managers globally. It signifies a certain level of competence, knowledge, and experience in the field of project management.
 
 Getting PMP® certified is advised as it aids project managers in advancing their careers by allowing them to apply for the best positions at the most prestigious corporations worldwide.
@@ -1999,7 +1999,8 @@ Getting PMP® certified is advised as it aids project managers in advancing thei
 
           {
             type: "Career Benefits",
-            question: "What are the roles and responsibilities of a Project Management Professional?",
+            question:
+              "What are the roles and responsibilities of a Project Management Professional?",
             answer:
               "Project managers take the lead in project planning, project execution, project monitoring, control, and closure. Project Manager responsibilities include the entire project scope including the project team, resources, budget, and the overall success of the project.",
           },
@@ -2020,8 +2021,7 @@ Getting PMP® certified is advised as it aids project managers in advancing thei
           {
             type: "Exam Preparation",
             question: "What has changed in the new PMP exam format?",
-            answer:
-              `The PMP exam in its new format contains 180 questions. The questions are based on the three domains of People, Process, and Business Environment. You will need to answer this in the allotted 230 minutes. If you are writing the exam online, you get to take one 10-minute break. There is no break if you attend the exam physically. The questions will be a combination of multiple choice, multiple responses, matching, hot area, and fill-in-the-blanks.
+            answer: `The PMP exam in its new format contains 180 questions. The questions are based on the three domains of People, Process, and Business Environment. You will need to answer this in the allotted 230 minutes. If you are writing the exam online, you get to take one 10-minute break. There is no break if you attend the exam physically. The questions will be a combination of multiple choice, multiple responses, matching, hot area, and fill-in-the-blanks.
 
 Apart from assessing a candidate's knowledge of project management principles, the PMP exam updates also evaluate their understanding of real-world implementation. For successful preparation and certification, keeping up with the latest PMP examination pattern, including the new question formats and domains, is essential. Enrolling in a reputable PMP training program can help you navigate these changes and be well-prepared for the updated exam format.`,
           },
@@ -2029,12 +2029,10 @@ Apart from assessing a candidate's knowledge of project management principles, t
       },
     },
 
-
     {
       id: 26,
       title: "Six Sigma Yellow Belt Certification",
-      courseSubtitle:
-        "Lean Six Sigma Yellow Belt Training",
+      courseSubtitle: "Lean Six Sigma Yellow Belt Training",
       description:
         "Gain a strong foundation in Lean and Six Sigma with Six Sigma Yellow Belt Certification",
       background: "linear-gradient(242deg, #f49cae, #b05ce2)",
@@ -2099,7 +2097,7 @@ Apart from assessing a candidate's knowledge of project management principles, t
             {
               icon: "",
               value: "Expert trainers with quality management experience",
-            }
+            },
           ],
           overviewDetail: `
           Learn the foundations of the Lean Six Sigma process improvement methodology that bridges the gap between Lean and Six Sigma principles and practices. Identify and remove the causes of error in business processes, and build your own quality toolkit. Reduce wastage, speed up time-to-market, and eliminate the use of marginal methods in traditional settings.
@@ -2109,11 +2107,12 @@ KnowledgeHut is an Accredited Training Organization of PeopleCert®. IASSC Lean 
 The Lean Six Sigma Yellow Belt will make you a valuable member of complex improvement projects teams. Our Six Sigma Yellow Belt Course will give you strong foundation of the Lean Six Sigma Method.
           `,
           overviewPoints: [],
-          overviewCourseDescription:"",
+          overviewCourseDescription: "",
         },
         highDemandAndAccerlated: {
           demandTitle: "Demand for Six Sigma Yellow Belt Professionals",
-          demandHeading: "Why get the Lean Six Sigma Yellow Belt Certification?",
+          demandHeading:
+            "Why get the Lean Six Sigma Yellow Belt Certification?",
           demandDetail: `Lean Six Sigma works on the premise that perfection is a dynamic goal, and there is always scope for improvement in operational processes. As quality continues to drive the competitive advantage in the world of business, expertise in this popular and productive approach to process improvement is highly sought after. A Six Sigma Yellow Belt Certification will equip you with the quality and process improvement skills that all companies value.
 
 As a Certified Lean Six Sigma Yellow Belt, you will work as a valued team member in a Six Sigma Project Team. This certification will validate your capability of streamlining processes and improving quality. You will be responsible for monitoring and evaluating work progress and process enhancements. By reducing waste and eliminating bottlenecks, costs can be optimized and efficiency enhanced.
@@ -2126,8 +2125,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
               hiringCompany: [],
               demand: {
                 percant: "13% Increase",
-                description:
-                  "Annual Growth (CAGR) in Six Sigma Job Market",
+                description: "Annual Growth (CAGR) in Six Sigma Job Market",
               },
             },
             {
@@ -2136,8 +2134,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
               hiringCompany: [],
               demand: {
                 percant: "7000+",
-                description:
-                  "Professionals hold an IASSC Certification",
+                description: "Professionals hold an IASSC Certification",
               },
             },
             {
@@ -2146,8 +2143,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
               hiringCompany: [],
               demand: {
                 percant: "1.5M",
-                description:
-                  "Six Sigma Practitioners Around the World",
+                description: "Six Sigma Practitioners Around the World",
               },
             },
           ],
@@ -2190,7 +2186,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
               topic: "Exclusive Post-Training Sessions",
               value:
                 "Six months of post-training mentor guidance to overcome challenges in your professional career.",
-            }
+            },
           ],
         },
         courseAuthor: [],
@@ -2229,28 +2225,21 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
           certificateImage: "",
         },
         prerequisites: [
-          "There are no prerequisites for attending the course or to sit for the IASSC Certified Yellow Belt™ (ICYB™) exam."
+          "There are no prerequisites for attending the course or to sit for the IASSC Certified Yellow Belt™ (ICYB™) exam.",
         ],
         courseCurriculm: [
           {
-            title: " Agile Fundamentals and Traditional PM Foundations",
+            title: " Define Phase: The Basics of Six Sigma",
             isPreview: false,
-            objective: `
-            Gain a comprehensive understanding of the Agile/Scrum Framework, Project Management Framework, and Fundamentals through our course. Dive into the PMP Process Groups and explore the revised PMP Exam Content Outline.
-
-This module in our PMP curriculum also includes a lesson on Business Environment, which covers the essential concepts and business areas that are crucial to grasp before embarking on a project. It aligns with the "Business Environment" domain in the Exam Content Outline and supports learning in the "Business Acumen" aspect of the PMI Talent Triangle.`,
+            objective:
+              "In the define phase of the Six Sigma Yellow Belt syllabus, explore the basics of Six Sigma and its meaning. Delve into the general history of Six Sigma and its roles & responsibilities.",
             topics: [
-              "Agile/Scrum Framework - From Agile Practice Guide",
-              "Introduction to Project Management Fundamentals",
-              "Project Management Framework",
-              "Summary",
-              "Assessment",
-              "Aligning with Organizational Trends and Global Strategy",
-              "Project benefits and business value",
-              "Organizational Culture and Change Management",
-              "Project Governance",
-              "Project Compliance",
-              "Assessment",
+              "Meanings of Six Sigma",
+              "General History of Six Sigma & Continuous Improvement",
+              "Deliverables of a Lean Six Sigma Project",
+              "The Problem-Solving Strategy Y = f(x)",
+              "Voice of the Customer, Business and Employee",
+              "Six Sigma Roles & Responsibilities",
             ],
           },
           {
@@ -2296,7 +2285,7 @@ This module in our PMP curriculum also includes a lesson on Business Environment
             title: "Process Understanding",
             description:
               "Grasp an understanding of processes, to provide assistance to achieve organizational objectives.",
-          }
+          },
         ],
         whoCanAttendCourse: [
           "IT Managers",
@@ -2309,39 +2298,19 @@ This module in our PMP curriculum also includes a lesson on Business Environment
           "Team Managers",
           "Finance Managers",
           "Program Managers",
-          "Quality System Managers"
+          "Quality System Managers",
         ],
-        aboutCourse: [
-          {
-            question: "How do I get the PMP certification?",
-            answer: `The best way to achieve the PMP certification is by getting trained by an industry expert and following a meticulously structured approach to exam prep. With KnowledgeHut, you have a tried and tested learning path that's guaranteed for PMP Exam success. Follow the learning path and study plan and prepare to pass your exam on the first attempt with the utmost confidence.
-            The entire content ranging from the on-demand PMP course by an industry expert, to the 5-week mentor-led study plan and the full-length simulator exams and PMP mock tests for practice have been developed thoroughly by KnowledgeHut experts in collaboration with industry veterans over the past decade factoring in feedback from the several thousands of workshops carried out to date.`,
-          },
-          {
-            question:
-              " What are the eligibility criteria for PMP certification?",
-            answer: `Securing your PMP certification certainly involves a significant commitment—but that's precisely what makes it so valuable. If you've ventured into the realm of project management and garnered practical experience, you've overcome the toughest obstacle. Before you apply, make sure you meet one of the following sets of PMP Certification requirements:
-
-You will need to have a 4-Year Degree, 36 months of experience leading projects within the past 8 years and 35 contact hours of project management education or training
-OR
-
-A Secondary Degree (high-school diploma or Associates Degree) with 60 months of experience leading projects within the past 8 years and 35 contact hours of project management education or training.
-You can apply even if you did not officially have the title of Project Manager.
-
-Need help assessing your eligibility? Get in touch with us at kh.reachus@upgrad.com and our Learning Advisor will help you out.`,
-          },
-        ],
+        aboutCourse: [],
         faqs: [
           {
             type: "Training",
-            question:
-              "What is Six Sigma Yellow Belt certification?",
-            answer: "Six Sigma Yellow Belt is the entry level certification in the Lean Six Sigma certifications offered by IASSC and PeopleCert. This certification is provided to professionals who can pass the IASSC Lean Six Sigma Yellow Belt exam. This is the entry level certification for Six Sigma. This can be a steppingstone towards higher certifications like the Green Belt and Black Belt.",
+            question: "What is Six Sigma Yellow Belt certification?",
+            answer:
+              "Six Sigma Yellow Belt is the entry level certification in the Lean Six Sigma certifications offered by IASSC and PeopleCert. This certification is provided to professionals who can pass the IASSC Lean Six Sigma Yellow Belt exam. This is the entry level certification for Six Sigma. This can be a steppingstone towards higher certifications like the Green Belt and Black Belt.",
           },
           {
             type: "Training",
-            question:
-              "What is the process to get Yellow Belt certified?",
+            question: "What is the process to get Yellow Belt certified?",
             answer: `
             The steps to get the Six Sigma Yellow belt certification can be summarized as below: 
 
@@ -2359,6 +2328,713 @@ Need help assessing your eligibility? Get in touch with us at kh.reachus@upgrad.
         ],
       },
     },
+
+    {
+      id: 27,
+      title: "Six Sigma Green Belt Certification ",
+      courseSubtitle: "Lean Six Sigma Green Belt Training",
+      description:
+        "Harness proven strategies to enhance quality standards with Six Sigma Green Belt Certification",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Project Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "36,700+ Enrolled",
+        bannerImage:
+          "https://www.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FBI-16-10b16af90826486fa4227ad16e5e52ef.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        secretSauce: [],
+        highlights: [
+          "Learn how toDrive a Lean mindset, cut waste, and slash defects",
+          "Drive career growth with an in-demand IASSC certification",
+          "Ace your Six Sigma Green Belt Certification exam in the first go",
+        ],
+        careerDetail: [
+          { carrer: "Professionals trained", value: "450,000" },
+          { carrer: "Workshops every month", value: "250" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "24 Hours of Live Instructor-Led Sessions",
+            },
+            {
+              icon: "",
+              value: "Complete the Training Session and Earn 24 PDUs",
+            },
+            {
+              icon: "",
+              value:
+                "Learn from Certified Experts with Quality Management Experience",
+            },
+            {
+              icon: "",
+              value: "Prepare to Ace Your Exam with 5 Simulation Exams",
+            },
+            {
+              icon: "",
+              value: "End-To-End Exam Prep Support and Assistance",
+            },
+            {
+              icon: "",
+              value:
+                "Explore Practical Applications with Industry Case Studies",
+            },
+            {
+              icon: "",
+              value: "Access Unlimited Classes with 180-Day Grand Pass",
+            },
+            {
+              icon: "",
+              value: "Enhance Learning with 200+ Recall Quizzes",
+            },
+            {
+              icon: "",
+              value: "Hands-On Learning with Real-World Projects",
+            },
+          ],
+          overviewDetail: `
+         As a Lean Six Sigma Green Belt™ certified professional, you’ll be able to lead improvement projects or serve as a valuable team member of a process improvement team. Validate your expertise in bringing about organizational transformation as a dynamic change leader, analyze and address quality problems and create a high-performance organization.
+
+KnowledgeHut’s comprehensive course covers in-depth all the objectives covered in the Lean Six Sigma Green Belt certification exam. The course and subsequent certification will give you expertise in the DMAIC processes and their implementation. This course builds upon and adds to the topics covered in this course. The Lean Six Sigma Green Belt certification will equip you to lead complex improvement projects to success.
+
+KnowledgeHut is an Accredited Training Organization of PeopleCert®. The IASSC Lean Sigma Green Belt™ Certification Training is provided through PeopleCert®. This Six Sigma green belt course is curated by top experts to ensure that you’re proficient in the foundation principles of Lean and Six Sigma.
+          `,
+          overviewPoints: [],
+          overviewCourseDescription: "",
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "Demand for Six Sigma-Certified Professionals",
+          demandHeading:
+            "Ride the Wave of Demand for Certified Six Sigma Professionals",
+          demandDetail: `
+          As businesses aim for continuous improvement, they look for experts who can use problem-solving skills and business knowledge to improve internal processes. Lean Six Sigma prepares you to lead quality management initiatives and analyze data strategically and scientifically by utilizing process planning, risk management, and benchmarking abilities. A Six Sigma Green Belt Certification will give you the requisite skills to accelerate quality improvement projects in your organization.
+
+Lean Six Sigma Green belts can occupy positions such as Lean Six Sigma Consultant, Lead Manufacturing Engineer, Process Development Engineer, Data Scientist, Director, Performance Excellence and more. The average salary for Lean Six Sigma Green Belt certified professionals ranges from approximately $42,372 per year for Process Technician to $81,222 per year for Business Consultant.
+          `,
+          demandData: [
+            {
+              type: "Quality Engineer",
+              averageSalary: [8, 15, 24],
+              hiringCompany: [],
+              demand: {
+                percant: "13% Increase",
+                description: "Annual Growth (CAGR) in Six Sigma Job Market",
+              },
+            },
+            {
+              type: "Process Analyst",
+              averageSalary: [6, 12, 23],
+              hiringCompany: [],
+              demand: {
+                percant: "7000+",
+                description: "Professionals hold an IASSC Certification",
+              },
+            },
+            {
+              type: "Operations Manager",
+              averageSalary: [9, 16, 27],
+              hiringCompany: [],
+              demand: {
+                percant: "1.5M",
+                description: "Six Sigma Practitioners Around the World",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Solid Track Record",
+              value:
+                "KnowledgeHut has empowered over 250,000 professionals with certifications in various domains. ",
+            },
+            {
+              icon: "",
+              topic: "Experiential Workshops",
+              value:
+                "Make the best of engaging activities, team-based exercises and practical case studies.",
+            },
+            {
+              icon: "",
+              topic: "Elite Panel of Experienced Trainers",
+              value:
+                "Get trained by accredited trainers with over a decade of experience across industries.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship by Industry Experts",
+              value:
+                "Get real-world tips and time-tested techniques from highly qualified mentors.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive GRAND PASS ",
+              value:
+                "Avail KnowledgeHut's Exclusive GRAND PASS for 180 days and take advantage of the Free Refresher Course.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive Post-Training Sessions",
+              value:
+                "Six months of post-training mentor guidance to overcome challenges in your professional career.",
+            },
+          ],
+        },
+        courseAuthor: [],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Himanshu Saxena-a951fafcd0ba49f483a18b1ebaf58f88.svg",
+            instructorName: "Himanshu Saxena",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+          Embarking on a fulfilling career as a Real Management Consultant, Himanshu Saxena has found joy in crafting and executing improvement projects, as well as devising innovative marketing strategies for multiple organizations. His journey of development encompasses a diverse range of initiatives, including process improvement, re-engineering, Root Cause Analysis (RCA), Failure Modes and Effects Analysis (FMEA), and 5S projects spanning various domains.
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Shivendra Sharma-b14d0ed279c14aeabd416fe71fbd7649.svg",
+            instructorName: "Shivendra Sharma",
+            instructorProfession: "Consultant, Author",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+           Shivendra Sharma brings a wealth of expertise to the table with a robust background in business and digital transformation, strategy consulting, and process improvement. Armed with an MBA in Human Resources and the distinguished Lean Six Sigma Master Black Belt certification, Shivendra has accumulated 15 years of extensive experience in orchestrating transformative initiatives. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle:
+            "Maximize Your PMP Exam Success with Our Exclusive Offer!",
+          certificationDetail: "",
+          certificateImage: "",
+        },
+        prerequisites: [
+          "There are no prerequisites for attending this Six Sigma Green Belt Certification course.",
+          "Some degree of real-world Lean Six Sigma work experience is recommended.",
+        ],
+        courseCurriculm: [
+          {
+            title: " Define Phase: The Basics of Six Sigma",
+            isPreview: false,
+            objective:
+              "In the define phase of the Six Sigma Yellow Belt syllabus, explore the basics of Six Sigma and its meaning. Delve into the general history of Six Sigma and its roles & responsibilities.",
+            topics: [
+              "Meanings of Six Sigma",
+              "General History of Six Sigma & Continuous Improvement",
+              "Deliverables of a Lean Six Sigma Project",
+              "The Problem-Solving Strategy Y = f(x)",
+              "Voice of the Customer, Business and Employee",
+              "Six Sigma Roles & Responsibilities",
+            ],
+          },
+          {
+            title: "Define Phase: The Fundamentals of Six Sigma",
+            isPreview: false,
+            objective:
+              "Explore the fundamentals of Six Sigma in the next define phase of this Six Sigma Green Belt Certification. Learn how to define a process and the Pareto Analysis.",
+            topics: [
+              "Defining a Process",
+              "Critical to Quality Characteristics (CTQ’s)",
+              "Cost of Poor Quality (COPQ)",
+              "Pareto Analysis (80:20 rule)",
+              "Basic Six Sigma Metrics",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Error Detection and Prevention",
+            description:
+              "Learn to detect and prevent errors, and achieve process improvement to maintain productivity.",
+          },
+          {
+            title: "Customer Satisfaction",
+            description:
+              "Learn how to maintain and provide customer satisfaction by improving the quality of the end product.",
+          },
+          {
+            title: "Efficient Production",
+            description:
+              "Explore how to speed up the production process that helps businesses to stay competitive and meet customer demands.",
+          },
+          {
+            title: "Lower Costs",
+            description:
+              "Reduce the costs of production drastically by minimizing variability and eliminating various kinds of waste.",
+          },
+          {
+            title: "Problem Evaluation",
+            description:
+              "Evaluate problems, statistically and quantitatively in your team or organization for smooth workflow.",
+          },
+          {
+            title: "Process Understanding",
+            description:
+              "Grasp an understanding of processes, to provide assistance to achieve organizational objectives.",
+          },
+        ],
+        whoCanAttendCourse: [
+          "IT Analysts",
+          "HR Managers",
+          "CEO, CFO, CTO",
+          "Team Managers",
+          "Change Managers",
+          "Finance Managers",
+        ],
+        aboutCourse: [
+          {
+            question: "What is the Six Sigma Green Belt certification?",
+            answer: `The Lean Six Sigma Green Belt Certification is a professional credential that validates your skills and knowledge in applying Lean Six Sigma methodologies to improve business processes.  
+
+After successfully passing the Six Sigma Green Belt examination, you will be provided with a certificate which proves that you possess in-depth knowledge of Lean Six Sigma principles, tools and techniques. `,
+          },
+
+          {
+            question: "What is the process to get Green Belt certified?",
+            answer: `TAfter successful completion of our Lean Six Sigma Green Belt online course, you will need to register for an exam through the IASSC website. After cracking the exam and scoring more than 70%, you will be awarded the designation of Certified Lean Six Sigma Green Belt™ (ICGB™). `,
+          },
+
+          {
+            question:
+              "What are the prerequisites for the Lean Six Sigma Green Belt course?",
+            answer: `There are no prerequisites for attending this Lean Six Sigma Green Belt Certification.`,
+          },
+
+          {
+            question: "Who provides the Green Belt certification?",
+            answer: `Lean Six Sigma certifications are offered by the IASSC in partnership with PEOPLECERT.
+
+This is the first level of the Lean Six Sigma Certification scheme, and more advanced levels include the Lean Six Sigma Black Belt Certification.`,
+          },
+        ],
+        faqs: [
+          {
+            type: "Course",
+            question: "Who is the Lean Six Sigma Green Belt  course for? ",
+            answer: `KnowledgeHut’s Six Sigma Green Belt training course is for anyone who wants to gain a deep understanding of Lean Six Sigma principles and drive process changes in their organization.
+
+Six Sigma is a data-driven philosophy that focuses on process improvements and increasing business capabilities. If you possess a data driven mindset and want to use it to better the processes of your business our online Six Sigma Green Belt training is the perfect choice for you.
+              `,
+          },
+          {
+            type: "Course",
+            question:
+              "How long will it take for me to complete the LSSGB Curriculum? ",
+            answer: `
+        The LSSGB curriculum is extensive, including all the subjects necessary to enable you to comprehend and apply advanced analysis. Additionally, you will discover ways to stop quality flaws. Therefore, it can take you many months to fully comprehend the course material. 
+            `,
+          },
+
+          {
+            type: "Carrer Benfefits",
+            question:
+              "What are the career opportunities after Six Sigma Green Belt certification?  ",
+            answer: `
+       After successfully completing our Lean Six Sigma Green Belt Certification course and acing the exam with the help of our exam prep and simulations, various career opportunities will be open to you, some of them are: 
+
+Quality Analyst 
+Process Improvement Specialist 
+Project Manager 
+Business Analyst 
+            `,
+          },
+
+          {
+            type: "Carrer Benfefits",
+            question:
+              "How can organizations benefit from having Six Sigma Green Belt certified professionals?  ",
+            answer: `
+       Professionals who have successfully completed a Six Sigma Certification course can be invaluable for an organization. They possess in-depth knowledge about how to improve processes and business operations, resulting in a drastic increase in revenue and customer satisfaction. 
+
+Our online Six Sigma Green Belt Certification can help you align skill development with business objectives and drive increased employee productivity. 
+            `,
+          },
+        ],
+      },
+    },
+
+    {
+      id: 28,
+      title: "Six Sigma Black Belt Certification Training Course",
+      courseSubtitle: "Lean Six Sigma Black Belt Training",
+      description:
+        "Master Lean Six Sigma principles and ace the LSSBB exam on the first go",
+      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
+      type: "",
+      courseDetail: {
+        courseCategory: "Quality Management",
+        enrolledImage:
+          "https://d2o2utebsixu4k.cloudfront.net/Banner user icons combo-690564ff6367412f95b702a69888a2dd.svg",
+        learnersEnrolled: "16,850+ Enrolled",
+        bannerImage:
+          "https://www.knowledgehut.com/_next/image?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FBI-37-eaeb2531d73f4c9aafb36823cadd3391.webp&w=1920&q=75",
+        rating: [
+          {
+            from: "google",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Google Hero-37dcc2260d4744ae8fe228fe6e6c1788.svg",
+            rate: 4.8,
+          },
+          {
+            from: "facebook",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Facebook Hero-d61abee306184aba8b1e115096044bb9.svg",
+            rate: 4.7,
+          },
+          {
+            from: "reddit",
+            logo: "https://d2o2utebsixu4k.cloudfront.net/Switchup Logo  175x175 (1)-88854d4c722847d9812d42d1059f2535.svg",
+            rate: 4.9,
+          },
+        ],
+        secretSauce: [],
+        highlights: [
+          "Lead Lean Six Sigma implementation across your organization",
+          "Comprehensive exam prep to ace the Lean Six Sigma Black Belt exam",
+          "Gear up for a high-growth career with the sought-after Lean Six Sigma certification",
+        ],
+        careerDetail: [
+          { carrer: "Professionals trained", value: "450,000" },
+          { carrer: "Workshops every month", value: "250" },
+          { carrer: "Countries and counting", value: "100" },
+        ],
+        overview: {
+          courseDetail: [
+            {
+              icon: "",
+              value: "Earn 36 PDUs with Live, Instructor-Led Sessions",
+            },
+            {
+              icon: "",
+              value: "5 Simulation Exams, Projects, 200+ Quizzes",
+            },
+            {
+              icon: "",
+              value: "Interactive Sessions with Activities",
+            },
+            {
+              icon: "",
+              value: "Real-World Simulations, Case Studies , and more",
+            },
+            {
+              icon: "",
+              value: "Expert trainers with quality management experience",
+            },
+            {
+              icon: "",
+              value:
+                "Explore Practical Applications with Industry Case StudiesAccess Unlimited Classes with 180-Day Grand Pass",
+            },
+          ],
+          overviewDetail: `
+        Learn to implement Lean Six Sigma methodology to drive process improvements, optimize costs, and improve quality across the organization. Identify and remove the causes of error in business processes and build your own quality toolkit. Reduce wastage, speed up time-to-market, and eliminate the use of marginal methods in traditional settings.
+
+The lean six sigma Black belt certification training is scheduled for five days. In the hands-on six sigma black belt course, you will cover advanced concepts and practices that constitute the knowledge and skills that a six sigma black belt practitioner should have.
+
+KnowledgeHut is an Accredited Training Organization of PeopleCert®. IASSC Lean Six Sigma Black Belt™ Certification Training is provided through PeopleCert®. This certification is an advanced-level qualification.
+          `,
+          overviewPoints: [],
+          overviewCourseDescription: "",
+        },
+        highDemandAndAccerlated: {
+          demandTitle: "Demand for Six Sigma Black Belt Professionals",
+          demandHeading: "Rising Demand for Six Sigma-Certified Professionals",
+          demandDetail: `
+          Lean Six Sigma works on the premise that perfection is a dynamic goal, and there is always scope for improvement in operational processes. As quality continues to drive the competitive advantage in the world of business, expertise in this popular and productive approach to process improvement is highly sought after.
+
+As a Certified Lean Six Sigma Black Belt, you will lead project teams by identifying issues and areas of improvement. This certification will validate your capability of streamlining processes and improving quality. By reducing waste and eliminating bottlenecks you will learn to reduce costs and enhance efficiency.
+
+Professionals with a Six Sigma Certification earn over $107,000 and are among the highest-paid professionals globally. The average annual salary of a Management Analyst is $87,660 according to the US Bureau of Labor Statistics with a 14% annual job growth.
+          `,
+          demandData: [
+            {
+              type: "Quality Engineer",
+              averageSalary: [8, 15, 24],
+              hiringCompany: [],
+              demand: {
+                percant: "13% Increase",
+                description: "Annual Growth (CAGR) in Six Sigma Job Market",
+              },
+            },
+            {
+              type: "Process Analyst",
+              averageSalary: [6, 12, 23],
+              hiringCompany: [],
+              demand: {
+                percant: "7000+",
+                description: "Professionals hold an IASSC Certification",
+              },
+            },
+            {
+              type: "Operations Manager",
+              averageSalary: [9, 16, 27],
+              hiringCompany: [],
+              demand: {
+                percant: "1.5M",
+                description: "Six Sigma Practitioners Around the World",
+              },
+            },
+          ],
+        },
+        knowledgeHut: {
+          subtitle: "The KnowledgeHut Advantage",
+          knowledgeHutData: [
+            {
+              icon: "",
+              topic: "Solid Track Record",
+              value:
+                "KnowledgeHut has empowered over 250,000 professionals with certifications in various domains. ",
+            },
+            {
+              icon: "",
+              topic: "Experiential Workshops",
+              value:
+                "Make the best of engaging activities, team-based exercises and practical case studies.",
+            },
+            {
+              icon: "",
+              topic: "Elite Panel of Experienced Trainers",
+              value:
+                "Get trained by accredited trainers with over a decade of experience across industries.",
+            },
+            {
+              icon: "",
+              topic: "Mentorship by Industry Experts",
+              value:
+                "Get real-world tips and time-tested techniques from highly qualified mentors.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive GRAND PASS ",
+              value:
+                "Avail KnowledgeHut's Exclusive GRAND PASS for 180 days and take advantage of the Free Refresher Course.",
+            },
+            {
+              icon: "",
+              topic: "Exclusive Post-Training Sessions",
+              value:
+                "Six months of post-training mentor guidance to overcome challenges in your professional career.",
+            },
+          ],
+        },
+        courseAuthor: [],
+        courseInstructor: [
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Himanshu Saxena-a951fafcd0ba49f483a18b1ebaf58f88.svg",
+            instructorName: "Himanshu Saxena",
+            instructorProfession: "Trainer",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/datamatics global services-8023d23da18945aca9fad29da46f29ae.svg",
+            instructorDetail: `
+          Embarking on a fulfilling career as a Real Management Consultant, Himanshu Saxena has found joy in crafting and executing improvement projects, as well as devising innovative marketing strategies for multiple organizations. His journey of development encompasses a diverse range of initiatives, including process improvement, re-engineering, Root Cause Analysis (RCA), Failure Modes and Effects Analysis (FMEA), and 5S projects spanning various domains.
+            `,
+          },
+          {
+            profilePic:
+              "https://d2o2utebsixu4k.cloudfront.net/Instructor Profile Pics_96x96- Shivendra Sharma-b14d0ed279c14aeabd416fe71fbd7649.svg",
+            instructorName: "Shivendra Sharma",
+            instructorProfession: "Consultant, Author",
+            experience: "20",
+            companyLogo:
+              "https://d2o2utebsixu4k.cloudfront.net/hewlett packard-8e96f0a02b894bcaa884ae68eedb37b3.svg",
+            instructorDetail: `
+           Shivendra Sharma brings a wealth of expertise to the table with a robust background in business and digital transformation, strategy consulting, and process improvement. Armed with an MBA in Human Resources and the distinguished Lean Six Sigma Master Black Belt certification, Shivendra has accumulated 15 years of extensive experience in orchestrating transformative initiatives. 
+            `,
+          },
+        ],
+        certification: {
+          bannerImage:
+            "https://d2o2utebsixu4k.cloudfront.net/Certificate Section CTA-01-9dadc37a3ad44e15a8c5103e1e85eef4.svg",
+          bannerTitle:
+            "Maximize Your PMP Exam Success with Our Exclusive Offer!",
+          certificationDetail: "",
+          certificateImage: "",
+        },
+        prerequisites: [
+          "There are no prerequisites for attending the course or to sit for the IASSC Certified Black Belt™ (ICBB™) exam.",
+        ],
+        courseCurriculm: [
+          {
+            title: " Define Phase: The Basics of Six Sigma",
+            isPreview: false,
+            objective:
+              "In the define phase of the Six Sigma Yellow Belt syllabus, explore the basics of Six Sigma and its meaning. Delve into the general history of Six Sigma and its roles & responsibilities.",
+            topics: [
+              "Meanings of Six Sigma",
+              "General History of Six Sigma & Continuous Improvement",
+              "Deliverables of a Lean Six Sigma Project",
+              "The Problem-Solving Strategy Y = f(x)",
+              "Voice of the Customer, Business and Employee",
+              "Six Sigma Roles & Responsibilities",
+            ],
+          },
+          {
+            title: "Define Phase: The Fundamentals of Six Sigma",
+            isPreview: false,
+            objective:
+              "Explore the fundamentals of Six Sigma in the next define phase of this Six Sigma Green Belt Certification. Learn how to define a process and the Pareto Analysis.",
+            topics: [
+              "Defining a Process",
+              "Critical to Quality Characteristics (CTQ’s)",
+              "Cost of Poor Quality (COPQ)",
+              "Pareto Analysis (80:20 rule)",
+              "Basic Six Sigma Metrics",
+            ],
+          },
+        ],
+        learningObjective: [
+          {
+            title: "Error Detection and Prevention",
+            description:
+              "Learn to detect and prevent errors, and achieve process improvement to maintain productivity.",
+          },
+          {
+            title: "Customer Satisfaction",
+            description:
+              "Learn how to maintain and provide customer satisfaction by improving the quality of the end product.",
+          },
+          {
+            title: "Efficient Production",
+            description:
+              "Explore how to speed up the production process that helps businesses to stay competitive and meet customer demands.",
+          },
+          {
+            title: "Lower Costs",
+            description:
+              "Reduce the costs of production drastically by minimizing variability and eliminating various kinds of waste.",
+          },
+          {
+            title: "Problem Evaluation",
+            description:
+              "Evaluate problems, statistically and quantitatively in your team or organization for smooth workflow.",
+          },
+          {
+            title: "Process Understanding",
+            description:
+              "Grasp an understanding of processes, to provide assistance to achieve organizational objectives.",
+          },
+        ],
+        whoCanAttendCourse: [
+          "IT Managers",
+          "IT Analysts",
+          "HR Managers",
+          "Team Managers",
+          "Change Managers",
+          "Finance Managers",
+          "Project Managers",
+          "Change Managers",
+          "Program Managers",
+          "Improvement Managers",
+          "Quality System Managers",
+          "Operational Line Managers",
+        ],
+        aboutCourse: [
+          {
+            question: "What is Six Sigma Black Belt certification?",
+            answer: `The Six Sigma Black Belt certification is the highest level of six sigma certifications. This denotes that the certification holder has a great level of understanding of six sigma concepts and can apply them in process improvements, quality control and other areas. `,
+          },
+
+          {
+            question: " Is Six Sigma Black Belt certification worth it?",
+            answer: `Yes, the Lean Six Sigma Black Belt is a credential that will bring you recognition and competence as a six sigma practitioner capable of using six sigma to encourage continuous improvement and improve quality. This will open the door to better roles along with attractive compensation. `,
+          },
+
+          {
+            question:
+              "What are the prerequisites for the Lean Six Sigma Green Belt course?",
+            answer: `There are no prerequisites for attending this Lean Six Sigma Green Belt Certification.`,
+          },
+
+          {
+            question: "Is Six Sigma Black Belt certification globally recognized?",
+            answer: `Yes, Six Sigma Black Belt is a designation that is globally recognized. There are multiple certification bodies that offer six sigma certifications. Six sigma is a proven method that has been in use in various industries for decades. The success has encouraged more organizations to adopt six sigma practices. `,
+          },
+        ],
+        faqs: [
+          {
+            type: "Course",
+            question: "Who is the Lean Six Sigma Black Belt course for?",
+            answer: `The Lean Six Sigma Black Belt course is for professionals who hold the Lean Six Sigma Green Belt certificate or for professionals who have extensive training and experience in Six Sigma. There is no restriction on who can get training or certification except that they must pass the Lean Six Sigma Black Belt exam.
+              `,
+          },
+          {
+            type: "Course",
+            question:
+              "What is Lean Six Sigma Black Belt training? ",
+            answer: `
+       Lean Six Sigma Black Belt training online is a program that prepares candidates to understand all the aspects of the lean six sigma method as prescribed by IASSC Lean Six Sigma Black Belt Body of Knowledge™.
+            `,
+          },
+          {
+            type: "Course",
+            question:
+              "Who is eligible to enroll in a Six Sigma Black Belt course? ",
+            answer: `
+     There is no eligibility requirement for the Six Sigma Black Belt course. If you are new to Six Sigma, it is not advisable to attempt the Six Sigma Black Belt course before attempting the yellow belt and green belt certifications. The Lean Six Sigma Black Belt is one of the most advanced certifications in six sigma and it is not beginner friendly. 
+            `,
+          },
+
+          {
+            type: "Course",
+            question:
+              "How long will it take for me to complete the LSSBB Curriculum? ",
+            answer: `
+    36 hours is the time it takes for the live training lead by a qualified trainer. The Lean Six Sigma Black Belt classes may be over four days or spread over a longer timeframe depending on the length of each session. The time it takes to prepare for the exam will take up to three months. A serious amount of preparation is needed to successfully clear the Lean Six Sigma Black Belt exam. 
+            `,
+          },
+
+          {
+            type: "Carrer Benfefits",
+            question:
+              "What are the career opportunities after Six Sigma Black Belt certification? ",
+            answer: `
+       Professionals with a Lean Six Sigma Black Belt certification online can get hired in various jobs. They are in demand in a lot of leadership and management roles due to their problem solving and analytic skills. They are also in demand in roles that demand analytic skills, quality control skills and project management skills. Six Sigma skills are useful for contractors, and consultants as well.
+            `,
+          },
+
+          {
+            type: "Carrer Benfefits",
+            question:
+              "Does Six Sigma Black Belt help you get a job? ",
+            answer: `
+     Six Sigma Black Belt is an advanced certification with a comprehensive training in a range of tools and techniques that help you address various business needs. The Lean Six Sigma Black Belt credential will make you an attractive candidate in the eyes of a recruiter. The certification is proof of your advanced skill and competence. It is also a credential that is recognized across the world.   
+            `,
+          },
+        ],
+      },
+    },
+
+
 
     {
       id: 1,
