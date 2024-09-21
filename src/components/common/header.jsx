@@ -51,7 +51,7 @@ const Header = ({isSticky = true}) => {
           </div>
           <div className="flex-1 flex items-center justify-end">
             <div className="items-center gap-10 text-white-10 cursor-pointer hidden lg:flex">
-              <motion.button whileTap={{ scale: 0.85 }}>
+              <motion.button whileTap={{ scale: 0.85 }} onClick={()=> navigation("/courses") }>
                 <span className="whitespace-nowrap text-ellipsis">Courses</span>
               </motion.button>
 

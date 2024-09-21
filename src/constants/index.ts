@@ -1463,7 +1463,7 @@ The Certified ScrumMaster® (CSM®) on the other hand, is offered by Scrum Allia
       description:
         "The Most Comprehensive PMP  Certification Course for Guaranteed Exam Success",
       background: "linear-gradient(242deg, #f49cae, #b05ce2)",
-      type: "",
+      type: "recent-addition",
       courseDetail: {
         courseCategory: "Project Management",
         enrolledImage:
@@ -2036,7 +2036,7 @@ Apart from assessing a candidate's knowledge of project management principles, t
       description:
         "Gain a strong foundation in Lean and Six Sigma with Six Sigma Yellow Belt Certification",
       background: "linear-gradient(242deg, #f49cae, #b05ce2)",
-      type: "",
+      type: "carrer-related",
       courseDetail: {
         courseCategory: "Project Management",
         enrolledImage:
@@ -2336,7 +2336,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
       description:
         "Harness proven strategies to enhance quality standards with Six Sigma Green Belt Certification",
       background: "linear-gradient(242deg, #f49cae, #b05ce2)",
-      type: "",
+      type: "carrer-related",
       courseDetail: {
         courseCategory: "Project Management",
         enrolledImage:
@@ -2690,7 +2690,7 @@ Our online Six Sigma Green Belt Certification can help you align skill developme
       description:
         "Master Lean Six Sigma principles and ace the LSSBB exam on the first go",
       background: "linear-gradient(242deg, #f49cae, #b05ce2)",
-      type: "",
+      type: "recent-addition",
       courseDetail: {
         courseCategory: "Quality Management",
         enrolledImage:
@@ -2976,7 +2976,8 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
           },
 
           {
-            question: "Is Six Sigma Black Belt certification globally recognized?",
+            question:
+              "Is Six Sigma Black Belt certification globally recognized?",
             answer: `Yes, Six Sigma Black Belt is a designation that is globally recognized. There are multiple certification bodies that offer six sigma certifications. Six sigma is a proven method that has been in use in various industries for decades. The success has encouraged more organizations to adopt six sigma practices. `,
           },
         ],
@@ -2989,8 +2990,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
           },
           {
             type: "Course",
-            question:
-              "What is Lean Six Sigma Black Belt training? ",
+            question: "What is Lean Six Sigma Black Belt training? ",
             answer: `
        Lean Six Sigma Black Belt training online is a program that prepares candidates to understand all the aspects of the lean six sigma method as prescribed by IASSC Lean Six Sigma Black Belt Body of Knowledge™.
             `,
@@ -3024,212 +3024,13 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
 
           {
             type: "Carrer Benfefits",
-            question:
-              "Does Six Sigma Black Belt help you get a job? ",
+            question: "Does Six Sigma Black Belt help you get a job? ",
             answer: `
      Six Sigma Black Belt is an advanced certification with a comprehensive training in a range of tools and techniques that help you address various business needs. The Lean Six Sigma Black Belt credential will make you an attractive candidate in the eyes of a recruiter. The certification is proof of your advanced skill and competence. It is also a credential that is recognized across the world.   
             `,
           },
         ],
       },
-    },
-
-
-
-    {
-      id: 1,
-      title: "Microsoft Project",
-      description: "Analyze the facts and make forecasts.",
-      background: "linear-gradient(110deg, #53a2ff, #2a387b)",
-      type: "",
-      curriculm: [
-        {
-          heading: "Introduction to Microsoft® Project",
-          description: "",
-          type: "curriculm",
-          objective:
-            "Familiarize with MS project tool and the initial settings. ",
-          topic:
-            "The Interface, Tabs (Task, Resource, Report, Project, View, Format), Backstage view, Project Information, Setup a new project, Setup Project Calendar, Setup non working days, Enter basic project information.",
-        },
-        {
-          heading: "Creating Tasks and Task Management",
-          description: "",
-          type: "curriculm",
-          objective: "Understand how to define scope on project. ",
-          topic:
-            "Auto Scheduled and Manually Scheduled Tasks, Entering Tasks and subtasks, Duration, Notes, Constraints, Hyperlinks, Deadlines, Entering and Deleting Tasks, Indent and Outdent, Establishing Dependencies and Assigning Milestones, Recurring Tasks.",
-        },
-        {
-          heading: "Listing Resources, Assigning Resources and Project Costs",
-          description: "",
-          type: "curriculm",
-          objective:
-            "Understand how to create resources and assign resources, understanding how to view costs for individual Tasks, Modules and the Total Project. ",
-          topic:
-            "Creating Resources, Resource type, Group, Code, Setting Resource Calendar, Cost, Notes, Assigning Resources and Resource Load Analysis, Viewing Project Costs.",
-        },
-      ],
-
-      courseDescription: {
-        courseHeading: "Course Description",
-        courseData: [
-          {
-            question: "About The Course",
-            answer:
-              "This self-paced online program covers the overview of Project Management and explains how to manage projects using Microsoft Project. Microsoft Project assists Project Managers to do Scope Planning, Assign Resources, Prepare Schedule, Baseline, Update Progress, Track and Report. This training is imperative for all who need to plan, track and effectively communicate with stakeholders. This course helps participants to practically implement the learning through hands-on on MS Project.",
-          },
-          {
-            question: "Course Objectives",
-            answer: `After the completion of Microsoft Project Course at Edureka, you should be able to:<br/>
-
-                1. Understand the importance of MS Project in following a structured approach to managing projects.<br/>
-                2. Define the initial settings in MS Project.<br/>
-                3. Prepare and use MS Project for planning, tracking and reporting on projects.<br/>
-                4. Understand how to document lessons learned and close projects.<br/>`,
-          },
-          {
-            question: "Who should go for this course?",
-            answer: `Anybody associated with Project Management, in any industry or domain can attend this course.`,
-          },
-          {
-            question: "Pre-requisites",
-            answer:
-              "A basic understanding of the project and project environment is helpful.",
-          },
-          {
-            question: "Why Learn Microsoft® Project 2013?",
-            answer:
-              "MS Project is used across industries in many organizations. Many clients want the projects to be planned and tracked in MS Project.",
-          },
-        ],
-      },
-
-      faqs: {
-        faqsHeading: "FAQ's",
-        faqsData: [
-          {
-            question:
-              "How soon after Signing up would I get access to the Learning Content?",
-            answer:
-              "As soon as you enrol into the course, your LMS (The Learning Management System) access will be functional. You will immediately get access to our course content in the form of a complete set of videos, PPTs, PDFs and  Assignments. You can start learning right away.",
-          },
-          {
-            question:
-              "For how long will I have access to the course materials?",
-            answer: `All the videos and other materials like PPTs, Quiz and Assignments, etc are hosted in our Learning Management System (LMS) and you will have a lifetime access to that. `,
-          },
-          {
-            question:
-              "Are there any pre-requisite to attend MS Project training?",
-            answer: `There are no pre-requisites for this course. But basic understanding of the project and project environment will be helpful.`,
-          },
-          {
-            question: "What is MS Project?",
-            answer:
-              "Microsoft Project is a project management software program, developed by Microsoft, which is designed to assist a project manager in developing a plan, assigning resources to tasks, tracking progress, managing the budget, and analyzing workloads.",
-          },
-          {
-            question: "What will happen if I have technical queries?",
-            answer:
-              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
-          },
-
-          {
-            question: "What will happen if I have technical queries?",
-            answer:
-              "We will conduct a doubt clearing session once in a month. You can send your queries to us from the LMS by generating a ticket. The date and time of the session will be intimated via email.",
-          },
-          {
-            question: "What are new features of MS project 2013?",
-            answer:
-              "1. Run Project in the cloud 2. Improved scheduling engine 3. Improved Workflow Management engine 4. Enhanced Reporting capabilities 5. Simplified time sheets and task 6. management Lightweight project management leveraging SharePoint 7. Simpler Security Model.",
-          },
-          {
-            question: "How will be the practicals done?",
-            answer:
-              "By following the instructions provided in the Installation guide present in the LMS, you can install MS Project on your local system and execute all the practicals present in the course. ",
-          },
-          {
-            question: "What are the payment options?",
-            answer:
-              "You can pay by Credit Card, Debit Card or Net Banking from all the leading banks. For INR payment, you can use CCAvenue Payment Gateway. For USD payment, you can pay by Paypal. We also have EMI options available.",
-          },
-          {
-            question: "What if I have more queries?",
-            answer:
-              "Just give us a CALL at +91 1234567890 OR email at sales@teclearns.com Toll free number is 1800 123 4567.",
-          },
-        ],
-      },
-    },
-    {
-      id: 2,
-      title: "Microsoft Excel",
-      description: "Analyze the facts and make forecasts.",
-      background: "linear-gradient(242deg, #f49cae, #b05ce2)",
-      type: "",
-    },
-    {
-      id: 3,
-      title: "PRINCE2® Foundation",
-      description: "Develop project-related abilities",
-      background: "linear-gradient(240deg,#6568ff,#d879ec)",
-      type: "",
-    },
-    {
-      id: 4,
-      title: "PMI RMP Certification Training Course",
-      description: "Schedules that PMI RMP course will include",
-      background: "linear-gradient(240deg,#d677c0,#41bbbd)",
-      type: "",
-    },
-    {
-      id: 5,
-      title: "PMP® Certification Training Course",
-      description: "Schedules that PMP course will include",
-      background: "linear-gradient(240deg,#d677c0,#41bbbd)",
-    },
-    {
-      id: 6,
-      title: "Six Sigma yellow",
-      description: "Learn Six Sigma Expert",
-      background: "linear-gradient(240deg,#ff6364,#ff88bc)",
-    },
-    {
-      id: 7,
-      title: "Business Case Writing",
-      description: "Business Case Writing",
-      background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
-      type: "carrer-related",
-    },
-    {
-      id: 8,
-      title: "CBAP® Certification Training Course",
-      description: "CBAP® Certification Training Course",
-      background: "linear-gradient(240deg,#ff6364,#ff88bc)",
-      type: "carrer-related",
-    },
-    {
-      id: 9,
-      title: "PMI-ACP",
-      description: "PMI-ACP",
-      background: "linear-gradient(240deg,#55e4ef,#c23af1)",
-      type: "carrer-related",
-    },
-    {
-      id: 10,
-      title: "Leading SAFe 5.1",
-      description: "Business Case Writing",
-      background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
-      type: "recent-addition",
-    },
-    {
-      id: 11,
-      title: "Agile Scrum Master (ASM®)",
-      description: "Agile Scrum Master (ASM®)",
-      background: "linear-gradient(240deg,#70bc55,#ea6f6f)",
-      type: "recent-addition",
     },
   ],
   reviewUsers: [
@@ -3264,29 +3065,29 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
     "Nurture talent with instructor-led courses on trending technologies",
   whyChooseData: [
     {
-      img: "https://teclearns.com/images/icn-track.jpg",
+      img: "/icn-track.jpg",
       heading1: "Live Instructors to address",
       heading2: "questions in real time",
     },
     {
-      img: "https://teclearns.com/images/icn-unlimited.jpg",
+      img: "/icn-unlimited.jpg",
       heading1: "Online Training Portal",
       heading2: "with Unlimited Access",
     },
     {
-      img: "https://teclearns.com/images/icn-24-7.jpg",
+      img: "/icn-24-7.jpg",
       heading1: "Seek guidance from a",
       heading2: "learning assistant",
     },
     {
-      img: "https://teclearns.com/images/icn-realtime.jpg",
+      img: "/icn-realtime.jpg",
       heading1: "Monitor Your ",
       heading2: "Learning",
     },
   ],
   blogPost: [
     {
-      img: "https://teclearns.com/images/blog/blog-1.jpg",
+      img: "/blog-1.jpg",
       title: "Microsoft Project",
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting
                       industry. Lorem Ipsum has been the industry's standard dummy text
@@ -3294,7 +3095,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
                       type...`,
     },
     {
-      img: "https://teclearns.com/images/blog/blog-3.jpg",
+      img: "/blog-3.jpg",
       title: "Business Management",
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting
                       industry. Lorem Ipsum has been the industry's standard dummy text
@@ -3302,7 +3103,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
                       type...`,
     },
     {
-      img: "https://teclearns.com/images/blog/blog-4.jpg",
+      img: "/blog-4.jpg",
       title: "Finance Modeling",
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting
                       industry. Lorem Ipsum has been the industry's standard dummy text
@@ -3310,7 +3111,7 @@ Professionals with a Six Sigma Certification earn over $107,000 and are among th
                       type...`,
     },
     {
-      img: "https://teclearns.com/images/blog/blog-2.jpg",
+      img: "/blog-2.jpg",
       title: "Prince2 Foundation",
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting
                       industry. Lorem Ipsum has been the industry's standard dummy text
