@@ -28,15 +28,15 @@ const ContactPage = () => {
 
         <div className="text-black-60 text-xl text-center">Contact Us</div>
         <BlurFadeText
-          className="text-black-70 text-center text-lg mt-2 w-full"
+          className="text-black-70 text-center text-base md:text-lg mt-2 w-full"
           yOffset={3}
           delay={0.4}
           text={"Any question or remarks? Just write us a message!"}
         />
 
         <div className="flex flex-col  md:flex-row items-cneter max-w-[1196px] mx-auto mt-10 px-3 lg:px-0">
-          <div className="bg-black-60 p-8 flex-1 rounded-xl md:rounded-none md:rounded-tl md:rounded-bl shadow-2xl drop-shadow relative z-10 ">
-            <p className="text-white-10 text-xl lg:text-3xl font-bold">
+          <div className="bg-black-60 md:p-8 p-5 flex-1 rounded-xl md:rounded-none md:rounded-tl md:rounded-bl shadow-2xl drop-shadow relative z-10 ">
+            <p className="text-white-10 text-sm md:text-xl lg:text-3xl font-bold">
               Contact information
             </p>
             <p className="text-grey-30 text-sm mt-2">
@@ -44,37 +44,37 @@ const ContactPage = () => {
             </p>
 
             <div className="mt-25.5 flex flex-col items-start gap-10">
-              <p className="text-white-10">
+              <p className="text-white-10 text-xs md:text-lg">
                 LOOKING FOR A COURSE FOR YOURSELF?
               </p>
-              <div className="flex items-center gap-10 w-full">
-                <div className="flex items-center gap-3">
-                  <PhoneCallIcon className="text-white-10" />
-                  <p className="text-grey-30">+91 12345 67890</p>
+              <div className="flex items-center md:gap-10 gap-3 w-full">
+                <div className="flex items-center md:gap-3 gap-2">
+                  <PhoneCallIcon className="text-white-10 " />
+                  <p className="text-grey-30 text-xs md:text-lg text-ellipsis text-nowrap">+91 12345 67890</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <MailIcon className="text-white-10" />
-                  <p className="text-grey-30">sales@teclearns.com </p>
+                  <p className="text-grey-30 text-xs md:text-lg">sales@teclearns.com </p>
                 </div>
               </div>
 
-              <p className="text-white-10">
+              <p className="text-white-10 text-xs md:text-lg">
                 NEED A CORPORATE LEARNING SOLUTION?
               </p>
-              <div className="flex items-center gap-10 w-full">
+              <div className="flex items-center  md:gap-10 gap-3  w-full">
                 <div className="flex items-center gap-3">
                   <PhoneCallIcon className="text-white-10" />
-                  <p className="text-grey-30">+91 12345 67890</p>
+                  <p className="text-grey-30 text-xs md:text-lg text-ellipsis text-nowrap">+91 12345 67890</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <MailIcon className="text-white-10" />
-                  <p className="text-grey-30">corp@teclearns.com</p>
+                  <p className="text-grey-30 text-xs md:text-lg">corp@teclearns.com</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 ]">
+              <div className="flex items-center gap-3 ">
                 <MapPin className="text-white-10" />
-                <p className="text-grey-30 max-w-[300px] text-ellipsis">
+                <p className="text-grey-30 max-w-[300px] text-ellipsis text-xs md:text-lg">
                   132 Dartmouth Street Boston, Massachusetts 02156 United States
                 </p>
               </div>
@@ -82,7 +82,7 @@ const ContactPage = () => {
 
             {/* <div className="w-36 h-36 rounded-full bg-grey-40 shadow-2xl -right-10 -bottom-9 z-3 absolute" /> */}
           </div>
-          <div className="flex-1 bg-white-10 shadow-2xl drop-shadow md:rounded-none lg:rounded-tr rounded-xl mt-5 lg:mt-0 lg:rounded-br p-8 z-10">
+          <div className="flex-1 bg-white-10 shadow-2xl drop-shadow md:rounded-none lg:rounded-tr rounded-xl mt-5 lg:mt-0 lg:rounded-br md:p-8 p-5 z-10">
             <div className="flex items-center gap-3 w-full  ">
               <div className="flex-1">
                 <label htmlFor="email">First Name</label>
