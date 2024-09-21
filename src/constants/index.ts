@@ -2685,7 +2685,7 @@ Our online Six Sigma Green Belt Certification can help you align skill developme
 
     {
       id: 28,
-      title: "Six Sigma Black Belt Certification Training Course",
+      title: "Six Sigma Black Belt Certification",
       courseSubtitle: "Lean Six Sigma Black Belt Training",
       description:
         "Master Lean Six Sigma principles and ace the LSSBB exam on the first go",
