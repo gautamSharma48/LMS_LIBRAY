@@ -4214,23 +4214,19 @@ To avail of the scholarships, please contact us at support@knowledgehut.com. You
   whyChooseData: [
     {
       img: "/icn-track.jpg",
-      heading1: "Live Instructors to address",
-      heading2: "questions in real time",
+       title: "Live Instructors to address questions in real time",
     },
     {
       img: "/icn-unlimited.jpg",
-      heading1: "Online Training Portal",
-      heading2: "with Unlimited Access",
+      title: "Online Training Portal with Unlimited Access",
     },
     {
       img: "/icn-24-7.jpg",
-      heading1: "Seek guidance from a",
-      heading2: "learning assistant",
+      title: "Seek guidance from a learning assistant",
     },
     {
       img: "/icn-realtime.jpg",
-      heading1: "Monitor Your ",
-      heading2: "Learning",
+      title: "Monitor Your Learning",
     },
   ],
   blogPost: [

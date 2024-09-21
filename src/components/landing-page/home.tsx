@@ -23,14 +23,14 @@ const HomePage = () => {
         loading="lazy"
         alt=""
       />
-      <div className="bg-white grid grid-cols-3 gap-10 max-w-[1124px] mx-auto relative -top-10 ">
+      <div className="bg-white grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[1124px] mx-auto relative -top-10 px-4 md:px-0">
         {homeData?.become?.map((ele, index) => (
           <div key={index} className="relative">
             <div
               key={index}
               className="px-3 py-3 flex flex-col items-center gap-4 rounded-lg bg-linear-grad-yellow-10 shadow-md "
             >
-              <h1 className="text-xl text-pretty font-semibold text-white-10 text-center whitespace-nowrap uppercase ">
+              <h1 className="text-base md:text-xl text-pretty font-semibold text-white-10 text-center whitespace-nowrap uppercase ">
                 {ele?.title}
               </h1>
             </div>
@@ -62,10 +62,10 @@ const BottomBanner = () => {
         alt="business"
       />
       <div className="max-w-[1520px] mx-auto">
-        <div className="text-2xl text-white-10 absolute  top-12 px-15 ">
+        <div className="text-sm  md:text-2xl text-white-10 absolute  top-12  md:px-15 px-5 ">
           {homeData?.bannerMsgTitle}
         </div>
-        <div className="text-xl text-white-10 absolute  top-20 px-15 ">
+        <div className="text-xs md:text-xl text-white-10 absolute  md:top-20 top-20 md:px-15 px-5  md:block hidden">
           {homeData?.bannerMsgTitle2}
         </div>
         <button className="w-[170px] bg-white-10 hover:bg-indigo-600 hover:scale-110 hover:text-white-10 transition-all inset-0 top-29 mx-auto mt-5 uppercase h-10 rounded-sm text-ft12-18 text-[#0c5397] absolute">
@@ -78,14 +78,14 @@ const BottomBanner = () => {
 
 const UserReview = () => {
   return (
-    <motion.div className="max-w-[1280px] mx-auto my-10">
+    <motion.div className="max-w-[1280px] mx-auto my-10 md:px-0 px-3">
       <BlurFadeText
         className="text-gray-600 my-10  px-4 w-full text-center text-2xl font-bold uppercase"
         yOffset={3}
         delay={0.4}
         text={"Reviews"}
       />
-      <div className="grid place-items-center gap-4 grid-flow-col   grid-cols-auto ">
+      <div className="grid place-items-center gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {homeData?.reviewUsers?.map((review, index) => (
           <UserReviewCard key={index} review={review} />
         ))}
@@ -106,17 +106,16 @@ const WhyChooseUs = () => {
         <p className="text-center text-gray-600 text-2xl font-bold uppercase">
           Why Choose Us
         </p>
-        <div className="grid-cols-4 grid place-items-center text-center">
+        <div className="md:grid-cols-4 grid-cols-2 grid place-items-center text-center">
           {homeData?.whyChooseData?.map((ele, index) => (
-            <div className="grid place-items-center" key={index}>
+            <div className="grid place-items-center mt-3" key={index}>
               <img
                 loading="lazy"
                 src={ele?.img}
                 alt="why-choose"
                 className="w-auto"
               ></img>
-              <p>Live Instructor to address </p>
-              <p>question in real time</p>
+              <p className="mt-3 text-sm">{ele?.title} </p>
             </div>
           ))}
         </div>
@@ -129,7 +128,7 @@ const Banner = () => {
   return (
     <motion.div className="p-5 bg-linear-grad-blue-20 w-full my-10">
       <motion.div className="flex items-center w-full justify-center">
-        <motion.p className="uppercase text-white-10">
+        <motion.p className="uppercase text-white-10 text-sm md:text-lg">
           When you learn better you do better! Study with us, grow with us.
         </motion.p>
         <motion.button
@@ -145,12 +144,12 @@ const Banner = () => {
 
 const BlogPost = () => {
   return (
-    <motion.div className="max-w-[1280px] mx-auto my-10">
+    <motion.div className="max-w-[1280px] mx-auto md:px-0 px-3 my-10">
       <p className="text-gray-600 my-10  px-4 text-center text-2xl font-bold uppercase">
         Latest blog post
       </p>
 
-      <div className="grid grid-cols-3 lg:grid-cols-4 place-items-center">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-3  lg:grid-cols-4 place-items-center">
         {homeData?.blogPost?.map((element, i) => (
           <motion.div
             key={i}
