@@ -44,7 +44,7 @@ const Header = ({isSticky = true}) => {
           <div className=" items-center flex-1  bg-white-10 mx-10 rounded-full px-3 hidden sm:flex">
             <SearchIcon className="animate-spin" />
             <input
-              className="pl-2 w-full h-10 min-w-[100px] rounded-lg bg-background hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none transition-colors duration-300 ease-in-out"
+              className="pl-2 w-full  h-10 min-w-[100px] rounded-lg bg-white-10 outline-none  transition-colors duration-300 ease-in-out"
               placeholder="Search courses, resources, and more..."
               type="text"
             />
