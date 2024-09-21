@@ -78,7 +78,7 @@ const BottomBanner = () => {
 
 const UserReview = () => {
   return (
-    <motion.div className="max-w-[1280px] mx-auto my-10 md:px-0 px-3">
+    <motion.div className="max-w-[1920px] mx-auto my-10 md:px-0 px-3">
       <BlurFadeText
         className="text-gray-600 my-10  px-4 w-full text-center text-2xl font-bold uppercase"
         yOffset={3}
@@ -144,17 +144,17 @@ const Banner = () => {
 
 const BlogPost = () => {
   return (
-    <motion.div className="max-w-[1280px] mx-auto md:px-0 px-3 my-10">
+    <motion.div className="max-w-[1920] mx-auto md:px-0 px-3 my-10">
       <p className="text-gray-600 my-10  px-4 text-center text-2xl font-bold uppercase">
         Latest blog post
       </p>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-3  lg:grid-cols-4 place-items-center">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-7  lg:grid-cols-4 place-items-center md:px-10 px-3">
         {homeData?.blogPost?.map((element, i) => (
           <motion.div
             key={i}
             whileHover={{ scale: "1.06" }}
-            className="rounded-xl cursor-pointer bg-white-10 lg:w-[300px] p-4 flex flex-col gap-4 shadow-2xl drop-shadow"
+            className="rounded-xl cursor-pointer bg-white-10  p-4 flex flex-col gap-4 shadow-2xl drop-shadow"
           >
             <motion.span
               className="text-blue-10 text-center text-xl font-bold"
