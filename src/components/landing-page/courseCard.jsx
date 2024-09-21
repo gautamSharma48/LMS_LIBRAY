@@ -6,19 +6,19 @@ const CourseCard = ({ title, data }) => {
   const router = useRouter();
 
   return (
-    <div className=" mx-auto my-10">
+    <div className=" mx-auto my-10 max-w-[1920px]">
       <BlurFadeText
         className="text-gray-600 my-10  px-4 w-full text-center text-2xl font-bold uppercase"
         yOffset={3}
         delay={0.4}
         text={title}
       />
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-6">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10 px-4 md:px-6">
         {data?.map((element, index) => (
           <div
             onClick={()=> router.push(`/course-detail/${element?.id}`)}
             key={index}
-            className="shadow-lg hover:shadow-blackShadow-20 bg-white-10 hover:scale-105 cursor-pointer transition-all rounded-lg  md:max-w-[300px] "
+            className="shadow-lg hover:shadow-blackShadow-20 bg-white-10 hover:scale-105 cursor-pointer transition-all rounded-lg "
           >
             <i class="courseicon_Course-Icon-94"></i>
             <div
